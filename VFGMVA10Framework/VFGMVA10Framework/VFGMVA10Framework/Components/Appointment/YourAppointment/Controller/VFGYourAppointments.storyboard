@@ -1,0 +1,726 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="vodafone-bold.ttf">
+            <string>VodafoneRg-Bold</string>
+        </array>
+        <array key="vodafone-lite.ttf">
+            <string>VodafoneLt-Regular</string>
+        </array>
+        <array key="vodafone-regular.ttf">
+            <string>VodafoneRg-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Your Appointments View Controller-->
+        <scene sceneID="1bo-Kj-eKZ">
+            <objects>
+                <viewController storyboardIdentifier="VFGYourAppointmentsViewController" id="Zfk-P4-PCe" customClass="VFGYourAppointmentsViewController" customModule="VFGMVA10Framework" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="BFR-Bh-Kpt">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xbz-0E-BWu">
+                                <rect key="frame" x="0.0" y="44" width="414" height="766"/>
+                                <subviews>
+                                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k8L-81-BHc" userLabel="contentView">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="625"/>
+                                        <subviews>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Upcoming" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e3V-ij-3g2" customClass="VFGLabel" customModule="VFGMVA10Framework" customModuleProvider="target">
+                                                <rect key="frame" x="20" y="14" width="374" height="34"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="34" id="acB-Qb-VsI"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="VodafoneRg-Regular" family="Vodafone Rg" pointSize="22"/>
+                                                <color key="textColor" name="VFGPrimaryText"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="G64-a5-PTM">
+                                                <rect key="frame" x="0.0" y="54" width="414" height="450"/>
+                                                <color key="backgroundColor" name="VFGLightGreyBackground"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="450" id="3gI-hq-faK"/>
+                                                </constraints>
+                                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="fQl-lq-kXL">
+                                                    <size key="itemSize" width="128" height="128"/>
+                                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                </collectionViewFlowLayout>
+                                                <cells>
+                                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="noAppointments" id="Xqy-fD-fnh" customClass="VFGNoAppointmentCollectionViewCell" customModule="VFGMVA10Framework" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="342" height="450"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="6Nk-KM-wz9">
+                                                            <rect key="frame" x="0.0" y="0.0" width="342" height="450"/>
+                                                            <autoresizingMask key="autoresizingMask"/>
+                                                            <subviews>
+                                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="imw-Ug-jxf">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="342" height="450"/>
+                                                                    <subviews>
+                                                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="Vqe-c6-ltW" userLabel="No Appointment Stack View">
+                                                                            <rect key="frame" x="32" y="18" width="278" height="263"/>
+                                                                            <subviews>
+                                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icClockHiLightTheme" translatesAutoresizingMaskIntoConstraints="NO" id="pet-JL-RjD">
+                                                                                    <rect key="frame" x="87" y="0.0" width="104" height="104"/>
+                                                                                    <accessibility key="accessibilityConfiguration">
+                                                                                        <bool key="isElement" value="YES"/>
+                                                                                    </accessibility>
+                                                                                    <constraints>
+                                                                                        <constraint firstAttribute="width" constant="104" id="YbB-MB-GSW"/>
+                                                                                        <constraint firstAttribute="height" constant="104" id="zIk-lw-1ao"/>
+                                                                                    </constraints>
+                                                                                </imageView>
+                                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No appointment title" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IJa-xY-3uy" customClass="VFGLabel" customModule="VFGMVA10Foundation">
+                                                                                    <rect key="frame" x="54" y="119" width="170.5" height="44"/>
+                                                                                    <constraints>
+                                                                                        <constraint firstAttribute="height" constant="44" id="Ygw-0h-8BJ"/>
+                                                                                    </constraints>
+                                                                                    <fontDescription key="fontDescription" name="VodafoneRg-Bold" family="Vodafone Rg" pointSize="18.700000762939453"/>
+                                                                                    <nil key="textColor"/>
+                                                                                    <nil key="highlightedColor"/>
+                                                                                </label>
+                                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No appointment subtitle" textAlignment="center" lineBreakMode="middleTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="7Dt-gL-L5h" customClass="VFGLabel" customModule="VFGMVA10Foundation">
+                                                                                    <rect key="frame" x="60" y="178" width="158.5" height="35"/>
+                                                                                    <constraints>
+                                                                                        <constraint firstAttribute="height" constant="35" id="I2I-fP-hnl"/>
+                                                                                    </constraints>
+                                                                                    <fontDescription key="fontDescription" name="VodafoneRg-Regular" family="Vodafone Rg" pointSize="14.699999809265137"/>
+                                                                                    <nil key="textColor"/>
+                                                                                    <nil key="highlightedColor"/>
+                                                                                </label>
+                                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No appointment desc" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="GSi-3h-hvb" customClass="VFGLabel" customModule="VFGMVA10Foundation">
+                                                                                    <rect key="frame" x="68" y="228" width="142.5" height="35"/>
+                                                                                    <constraints>
+                                                                                        <constraint firstAttribute="height" constant="35" id="GWp-zS-ptu"/>
+                                                                                    </constraints>
+                                                                                    <fontDescription key="fontDescription" name="VodafoneRg-Regular" family="Vodafone Rg" pointSize="14.699999809265137"/>
+                                                                                    <nil key="textColor"/>
+                                                                                    <nil key="highlightedColor"/>
+                                                                                </label>
+                                                                            </subviews>
+                                                                        </stackView>
+                                                                    </subviews>
+                                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="height" constant="500" id="Tzw-nn-qOT"/>
+                                                                        <constraint firstAttribute="trailing" secondItem="Vqe-c6-ltW" secondAttribute="trailing" constant="32" id="hgK-4G-quj"/>
+                                                                        <constraint firstItem="Vqe-c6-ltW" firstAttribute="top" secondItem="imw-Ug-jxf" secondAttribute="top" constant="18" id="v6r-fn-KjW"/>
+                                                                        <constraint firstItem="Vqe-c6-ltW" firstAttribute="leading" secondItem="imw-Ug-jxf" secondAttribute="leading" constant="32" id="y5C-5p-9c3"/>
+                                                                    </constraints>
+                                                                </view>
+                                                            </subviews>
+                                                            <constraints>
+                                                                <constraint firstItem="imw-Ug-jxf" firstAttribute="leading" secondItem="6Nk-KM-wz9" secondAttribute="leading" id="AL5-Nf-v7s"/>
+                                                                <constraint firstItem="imw-Ug-jxf" firstAttribute="top" secondItem="6Nk-KM-wz9" secondAttribute="top" id="MsU-s6-nxg"/>
+                                                                <constraint firstAttribute="trailing" secondItem="imw-Ug-jxf" secondAttribute="trailing" id="ZhB-rc-dLa"/>
+                                                                <constraint firstAttribute="bottom" secondItem="imw-Ug-jxf" secondAttribute="bottom" id="c8z-hT-1ZM"/>
+                                                            </constraints>
+                                                        </collectionViewCellContentView>
+                                                        <size key="customSize" width="342" height="450"/>
+                                                        <connections>
+                                                            <outlet property="descLabel" destination="GSi-3h-hvb" id="7oH-3R-bld"/>
+                                                            <outlet property="imageView" destination="pet-JL-RjD" id="dek-9L-enh"/>
+                                                            <outlet property="subtitleLabel" destination="7Dt-gL-L5h" id="A6j-jm-NhE"/>
+                                                            <outlet property="titleLabel" destination="IJa-xY-3uy" id="Pkh-pj-SDJ"/>
+                                                        </connections>
+                                                    </collectionViewCell>
+                                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="shimmerCell" id="bCM-h0-7EV" customClass="VFGYourAppointmentsShimmerViewCell" customModule="VFGMVA10Framework" customModuleProvider="target">
+                                                        <rect key="frame" x="342" y="0.0" width="342" height="450"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="RFQ-Vk-iuV">
+                                                            <rect key="frame" x="0.0" y="0.0" width="342" height="450"/>
+                                                            <autoresizingMask key="autoresizingMask"/>
+                                                            <subviews>
+                                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c8z-Od-2fd">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="342" height="450"/>
+                                                                    <subviews>
+                                                                        <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="o0d-DF-Fiw">
+                                                                            <rect key="frame" x="8" y="8" width="326" height="434"/>
+                                                                            <subviews>
+                                                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UfY-Nd-5bT" customClass="VFGShimmerView" customModule="VFGMVA10Foundation">
+                                                                                    <rect key="frame" x="192" y="20" width="116" height="12.5"/>
+                                                                                    <color key="backgroundColor" systemColor="systemGray3Color"/>
+                                                                                    <constraints>
+                                                                                        <constraint firstAttribute="height" constant="12.5" id="1ac-iT-Kf2"/>
+                                                                                        <constraint firstAttribute="width" constant="116" id="pLe-ZO-ybq"/>
+                                                                                    </constraints>
+                                                                                </view>
+                                                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ge5-pL-5Ta" customClass="VFGShimmerView" customModule="VFGMVA10Foundation">
+                                                                                    <rect key="frame" x="131" y="63.5" width="64" height="64"/>
+                                                                                    <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                                                                    <constraints>
+                                                                                        <constraint firstAttribute="height" constant="64" id="0LH-mv-Q1g"/>
+                                                                                        <constraint firstAttribute="width" constant="64" id="Co3-hZ-p9B"/>
+                                                                                    </constraints>
+                                                                                    <userDefinedRuntimeAttributes>
+                                                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                                            <real key="value" value="32"/>
+                                                                                        </userDefinedRuntimeAttribute>
+                                                                                    </userDefinedRuntimeAttributes>
+                                                                                </view>
+                                                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qK2-uC-Cf6" customClass="VFGShimmerView" customModule="VFGMVA10Foundation">
+                                                                                    <rect key="frame" x="35" y="168.5" width="256" height="12.5"/>
+                                                                                    <color key="backgroundColor" name="VFGShimmerViewEdge"/>
+                                                                                    <constraints>
+                                                                                        <constraint firstAttribute="height" constant="12.5" id="7RW-ej-2ce"/>
+                                                                                    </constraints>
+                                                                                </view>
+                                                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d7a-WA-yRw">
+                                                                                    <rect key="frame" x="16" y="209" width="294" height="104"/>
+                                                                                    <subviews>
+                                                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hUI-BB-Xg7" customClass="VFGShimmerView" customModule="VFGMVA10Foundation">
+                                                                                            <rect key="frame" x="14" y="37" width="30" height="30"/>
+                                                                                            <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                                                                            <constraints>
+                                                                                                <constraint firstAttribute="height" constant="30" id="5eV-8Q-IXj"/>
+                                                                                                <constraint firstAttribute="width" constant="30" id="vOv-J2-fSa"/>
+                                                                                            </constraints>
+                                                                                            <userDefinedRuntimeAttributes>
+                                                                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                                                    <real key="value" value="15"/>
+                                                                                                </userDefinedRuntimeAttribute>
+                                                                                            </userDefinedRuntimeAttributes>
+                                                                                        </view>
+                                                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iN1-Ps-30I" customClass="VFGShimmerView" customModule="VFGMVA10Foundation">
+                                                                                            <rect key="frame" x="52" y="14" width="192" height="12.5"/>
+                                                                                            <color key="backgroundColor" systemColor="systemGray3Color"/>
+                                                                                            <constraints>
+                                                                                                <constraint firstAttribute="height" constant="12.5" id="L6D-7f-30R"/>
+                                                                                            </constraints>
+                                                                                        </view>
+                                                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qlC-ul-1m3" customClass="VFGShimmerView" customModule="VFGMVA10Foundation">
+                                                                                            <rect key="frame" x="52" y="34.5" width="192" height="12.5"/>
+                                                                                            <color key="backgroundColor" systemColor="systemGray3Color"/>
+                                                                                            <constraints>
+                                                                                                <constraint firstAttribute="height" constant="12.5" id="KDL-O2-fly"/>
+                                                                                            </constraints>
+                                                                                        </view>
+                                                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cBe-RP-es8" customClass="VFGShimmerView" customModule="VFGMVA10Foundation">
+                                                                                            <rect key="frame" x="52" y="55" width="192" height="12.5"/>
+                                                                                            <color key="backgroundColor" systemColor="systemGray3Color"/>
+                                                                                            <constraints>
+                                                                                                <constraint firstAttribute="height" constant="12.5" id="dUn-8j-zWP"/>
+                                                                                            </constraints>
+                                                                                        </view>
+                                                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0LT-Pp-iMa" customClass="VFGShimmerView" customModule="VFGMVA10Foundation">
+                                                                                            <rect key="frame" x="52" y="75.5" width="192" height="12.5"/>
+                                                                                            <color key="backgroundColor" systemColor="systemGray3Color"/>
+                                                                                            <constraints>
+                                                                                                <constraint firstAttribute="height" constant="12.5" id="5jd-3S-Jl2"/>
+                                                                                            </constraints>
+                                                                                        </view>
+                                                                                    </subviews>
+                                                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                    <constraints>
+                                                                                        <constraint firstAttribute="trailing" secondItem="iN1-Ps-30I" secondAttribute="trailing" constant="50" id="1x6-t0-kaq"/>
+                                                                                        <constraint firstItem="qlC-ul-1m3" firstAttribute="trailing" secondItem="iN1-Ps-30I" secondAttribute="trailing" id="8me-nQ-nyY"/>
+                                                                                        <constraint firstItem="0LT-Pp-iMa" firstAttribute="trailing" secondItem="iN1-Ps-30I" secondAttribute="trailing" id="Ayu-FO-JHa"/>
+                                                                                        <constraint firstAttribute="height" constant="104" id="Cb8-Mi-D0H"/>
+                                                                                        <constraint firstItem="iN1-Ps-30I" firstAttribute="top" secondItem="d7a-WA-yRw" secondAttribute="top" constant="14" id="DgX-Di-uhM"/>
+                                                                                        <constraint firstItem="qlC-ul-1m3" firstAttribute="top" secondItem="iN1-Ps-30I" secondAttribute="bottom" constant="8" id="R3B-Cx-OZh"/>
+                                                                                        <constraint firstItem="hUI-BB-Xg7" firstAttribute="centerY" secondItem="d7a-WA-yRw" secondAttribute="centerY" id="Z1n-Ib-G0y"/>
+                                                                                        <constraint firstItem="qlC-ul-1m3" firstAttribute="leading" secondItem="iN1-Ps-30I" secondAttribute="leading" id="ZZ4-2d-L71"/>
+                                                                                        <constraint firstItem="cBe-RP-es8" firstAttribute="leading" secondItem="iN1-Ps-30I" secondAttribute="leading" id="eKz-3t-wrH"/>
+                                                                                        <constraint firstItem="cBe-RP-es8" firstAttribute="top" secondItem="qlC-ul-1m3" secondAttribute="bottom" constant="8" id="fg1-Fn-Sb7"/>
+                                                                                        <constraint firstItem="cBe-RP-es8" firstAttribute="trailing" secondItem="iN1-Ps-30I" secondAttribute="trailing" id="gi3-YP-uHS"/>
+                                                                                        <constraint firstItem="iN1-Ps-30I" firstAttribute="leading" secondItem="hUI-BB-Xg7" secondAttribute="trailing" constant="8" id="hcg-BM-uFN"/>
+                                                                                        <constraint firstItem="0LT-Pp-iMa" firstAttribute="leading" secondItem="iN1-Ps-30I" secondAttribute="leading" id="kPz-pT-5Pc"/>
+                                                                                        <constraint firstItem="0LT-Pp-iMa" firstAttribute="top" secondItem="cBe-RP-es8" secondAttribute="bottom" constant="8" id="lAO-Hv-NEd"/>
+                                                                                        <constraint firstItem="hUI-BB-Xg7" firstAttribute="leading" secondItem="d7a-WA-yRw" secondAttribute="leading" constant="14" id="odT-mB-2rn"/>
+                                                                                        <constraint firstAttribute="bottom" secondItem="0LT-Pp-iMa" secondAttribute="bottom" constant="16" id="yMe-5b-wb4"/>
+                                                                                    </constraints>
+                                                                                    <userDefinedRuntimeAttributes>
+                                                                                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                                            <real key="value" value="1"/>
+                                                                                        </userDefinedRuntimeAttribute>
+                                                                                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                                            <color key="value" name="VFGShimmerViewEdge"/>
+                                                                                        </userDefinedRuntimeAttribute>
+                                                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                                            <real key="value" value="6.2000000000000002"/>
+                                                                                        </userDefinedRuntimeAttribute>
+                                                                                    </userDefinedRuntimeAttributes>
+                                                                                </view>
+                                                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9hL-fT-kVn" customClass="VFGShimmerView" customModule="VFGMVA10Foundation">
+                                                                                    <rect key="frame" x="35" y="335" width="256" height="12.5"/>
+                                                                                    <color key="backgroundColor" systemColor="systemGray3Color"/>
+                                                                                    <constraints>
+                                                                                        <constraint firstAttribute="height" constant="12.5" id="B1j-HX-fn4"/>
+                                                                                    </constraints>
+                                                                                </view>
+                                                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2xu-Zj-zVX" customClass="VFGShimmerView" customModule="VFGMVA10Foundation">
+                                                                                    <rect key="frame" x="16" y="382.5" width="143" height="30"/>
+                                                                                    <color key="backgroundColor" systemColor="systemGray3Color"/>
+                                                                                    <constraints>
+                                                                                        <constraint firstAttribute="height" constant="30" id="dI9-95-YoW"/>
+                                                                                    </constraints>
+                                                                                </view>
+                                                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FOH-pz-wD0" customClass="VFGShimmerView" customModule="VFGMVA10Foundation">
+                                                                                    <rect key="frame" x="167" y="382.5" width="143" height="30"/>
+                                                                                    <color key="backgroundColor" systemColor="systemGray3Color"/>
+                                                                                    <constraints>
+                                                                                        <constraint firstAttribute="height" constant="30" id="2fd-lP-ick"/>
+                                                                                    </constraints>
+                                                                                </view>
+                                                                            </subviews>
+                                                                            <color key="backgroundColor" name="VFGWhiteBackground"/>
+                                                                            <constraints>
+                                                                                <constraint firstItem="9hL-fT-kVn" firstAttribute="top" secondItem="d7a-WA-yRw" secondAttribute="bottom" constant="22" id="4aM-Bd-oNU"/>
+                                                                                <constraint firstAttribute="trailing" secondItem="d7a-WA-yRw" secondAttribute="trailing" constant="16" id="8w8-y6-f3a"/>
+                                                                                <constraint firstItem="qK2-uC-Cf6" firstAttribute="leading" secondItem="o0d-DF-Fiw" secondAttribute="leading" constant="35" id="Bmr-h2-Yvg"/>
+                                                                                <constraint firstAttribute="trailing" secondItem="qK2-uC-Cf6" secondAttribute="trailing" constant="35" id="G5M-Yh-XFx"/>
+                                                                                <constraint firstItem="2xu-Zj-zVX" firstAttribute="leading" secondItem="o0d-DF-Fiw" secondAttribute="leading" constant="16" id="J1j-dh-dl2"/>
+                                                                                <constraint firstItem="d7a-WA-yRw" firstAttribute="leading" secondItem="o0d-DF-Fiw" secondAttribute="leading" constant="16" id="LpT-5t-Q0P"/>
+                                                                                <constraint firstItem="9hL-fT-kVn" firstAttribute="leading" secondItem="o0d-DF-Fiw" secondAttribute="leading" constant="35" id="Ouu-Eb-mZ6"/>
+                                                                                <constraint firstItem="qK2-uC-Cf6" firstAttribute="top" secondItem="Ge5-pL-5Ta" secondAttribute="bottom" constant="41" id="Q2e-m1-A5b"/>
+                                                                                <constraint firstItem="FOH-pz-wD0" firstAttribute="leading" secondItem="2xu-Zj-zVX" secondAttribute="trailing" constant="8" id="SSz-ef-iGv"/>
+                                                                                <constraint firstItem="FOH-pz-wD0" firstAttribute="width" secondItem="2xu-Zj-zVX" secondAttribute="width" id="TnY-cN-adg"/>
+                                                                                <constraint firstAttribute="trailing" secondItem="9hL-fT-kVn" secondAttribute="trailing" constant="35" id="Xjy-DF-zco"/>
+                                                                                <constraint firstAttribute="trailing" secondItem="UfY-Nd-5bT" secondAttribute="trailing" constant="18" id="Y9q-ZV-OwW"/>
+                                                                                <constraint firstItem="FOH-pz-wD0" firstAttribute="centerY" secondItem="2xu-Zj-zVX" secondAttribute="centerY" id="Yb2-1Z-7MM"/>
+                                                                                <constraint firstItem="Ge5-pL-5Ta" firstAttribute="centerX" secondItem="o0d-DF-Fiw" secondAttribute="centerX" id="gGq-8q-vu7"/>
+                                                                                <constraint firstAttribute="trailing" secondItem="FOH-pz-wD0" secondAttribute="trailing" constant="16" id="gkG-se-K6o"/>
+                                                                                <constraint firstItem="2xu-Zj-zVX" firstAttribute="top" secondItem="9hL-fT-kVn" secondAttribute="bottom" constant="35" id="h4R-e1-2Ax"/>
+                                                                                <constraint firstItem="UfY-Nd-5bT" firstAttribute="top" secondItem="o0d-DF-Fiw" secondAttribute="top" constant="20" id="jzd-39-sKh"/>
+                                                                                <constraint firstItem="Ge5-pL-5Ta" firstAttribute="top" secondItem="UfY-Nd-5bT" secondAttribute="bottom" constant="31" id="ocK-dZ-L9W"/>
+                                                                                <constraint firstItem="d7a-WA-yRw" firstAttribute="top" secondItem="qK2-uC-Cf6" secondAttribute="bottom" constant="28" id="zUQ-IP-6gD"/>
+                                                                            </constraints>
+                                                                            <userDefinedRuntimeAttributes>
+                                                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                                    <real key="value" value="6.2000000000000002"/>
+                                                                                </userDefinedRuntimeAttribute>
+                                                                            </userDefinedRuntimeAttributes>
+                                                                        </view>
+                                                                    </subviews>
+                                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="height" constant="500" id="Cf1-kP-5sB"/>
+                                                                        <constraint firstItem="o0d-DF-Fiw" firstAttribute="leading" secondItem="c8z-Od-2fd" secondAttribute="leading" constant="8" id="cNt-hz-hfW"/>
+                                                                        <constraint firstAttribute="trailing" secondItem="o0d-DF-Fiw" secondAttribute="trailing" constant="8" id="fwi-yE-ORF"/>
+                                                                        <constraint firstItem="o0d-DF-Fiw" firstAttribute="top" secondItem="c8z-Od-2fd" secondAttribute="top" constant="8" id="gdZ-FC-bLX"/>
+                                                                        <constraint firstAttribute="bottom" secondItem="o0d-DF-Fiw" secondAttribute="bottom" constant="8" id="tJL-WI-kVK"/>
+                                                                    </constraints>
+                                                                    <userDefinedRuntimeAttributes>
+                                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                            <real key="value" value="0.0"/>
+                                                                        </userDefinedRuntimeAttribute>
+                                                                    </userDefinedRuntimeAttributes>
+                                                                </view>
+                                                            </subviews>
+                                                            <constraints>
+                                                                <constraint firstAttribute="bottom" secondItem="c8z-Od-2fd" secondAttribute="bottom" id="ENd-j0-bMq"/>
+                                                                <constraint firstAttribute="trailing" secondItem="c8z-Od-2fd" secondAttribute="trailing" id="Tt0-SB-6bb"/>
+                                                                <constraint firstItem="c8z-Od-2fd" firstAttribute="top" secondItem="RFQ-Vk-iuV" secondAttribute="top" id="kCv-Lq-VDu"/>
+                                                                <constraint firstItem="c8z-Od-2fd" firstAttribute="leading" secondItem="RFQ-Vk-iuV" secondAttribute="leading" id="l4Z-C6-b49"/>
+                                                            </constraints>
+                                                        </collectionViewCellContentView>
+                                                        <size key="customSize" width="342" height="450"/>
+                                                        <connections>
+                                                            <outletCollection property="shimmerViews" destination="UfY-Nd-5bT" collectionClass="NSMutableArray" id="d9L-8p-mBq"/>
+                                                            <outletCollection property="shimmerViews" destination="Ge5-pL-5Ta" collectionClass="NSMutableArray" id="0zg-U3-N85"/>
+                                                            <outletCollection property="shimmerViews" destination="qK2-uC-Cf6" collectionClass="NSMutableArray" id="xGr-Rx-TzD"/>
+                                                            <outletCollection property="shimmerViews" destination="hUI-BB-Xg7" collectionClass="NSMutableArray" id="r1O-5P-LJc"/>
+                                                            <outletCollection property="shimmerViews" destination="iN1-Ps-30I" collectionClass="NSMutableArray" id="sLK-WE-QVJ"/>
+                                                            <outletCollection property="shimmerViews" destination="qlC-ul-1m3" collectionClass="NSMutableArray" id="JUo-1d-R7m"/>
+                                                            <outletCollection property="shimmerViews" destination="cBe-RP-es8" collectionClass="NSMutableArray" id="6tz-yn-uoN"/>
+                                                            <outletCollection property="shimmerViews" destination="0LT-Pp-iMa" collectionClass="NSMutableArray" id="C7l-Le-9vP"/>
+                                                            <outletCollection property="shimmerViews" destination="9hL-fT-kVn" collectionClass="NSMutableArray" id="xWb-yG-jMw"/>
+                                                            <outletCollection property="shimmerViews" destination="2xu-Zj-zVX" collectionClass="NSMutableArray" id="1kn-Tm-eBd"/>
+                                                            <outletCollection property="shimmerViews" destination="FOH-pz-wD0" collectionClass="NSMutableArray" id="MTM-4U-yBS"/>
+                                                        </connections>
+                                                    </collectionViewCell>
+                                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="appointmentCell" id="xsD-hU-F4L" userLabel="AppointmentsCell" customClass="VFGAppointmentsCollectionViewCell" customModule="VFGMVA10Framework" customModuleProvider="target">
+                                                        <rect key="frame" x="684" y="0.0" width="342" height="450"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="aWE-GX-BSL">
+                                                            <rect key="frame" x="0.0" y="0.0" width="342" height="450"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <subviews>
+                                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6zM-35-H9P">
+                                                                    <rect key="frame" x="8" y="8" width="326" height="434"/>
+                                                                    <subviews>
+                                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="recycleImage" translatesAutoresizingMaskIntoConstraints="NO" id="mTr-Sn-ZB4">
+                                                                            <rect key="frame" x="287" y="18" width="20" height="20"/>
+                                                                        </imageView>
+                                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="11H-oA-vQ0" customClass="VFGButton" customModule="VFGMVA10Foundation">
+                                                                            <rect key="frame" x="287" y="18" width="20" height="20"/>
+                                                                            <accessibility key="accessibilityConfiguration">
+                                                                                <bool key="isElement" value="NO"/>
+                                                                            </accessibility>
+                                                                            <constraints>
+                                                                                <constraint firstAttribute="height" constant="20" id="msV-f1-q4o"/>
+                                                                                <constraint firstAttribute="width" constant="20" id="sb0-kV-A74"/>
+                                                                            </constraints>
+                                                                            <state key="normal" title="Button"/>
+                                                                            <buttonConfiguration key="configuration" style="plain"/>
+                                                                            <connections>
+                                                                                <action selector="cancelButtonPressed:" destination="xsD-hU-F4L" eventType="touchUpInside" id="M3c-UE-1ti"/>
+                                                                            </connections>
+                                                                        </button>
+                                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icScreenRepairHiLightTheme" translatesAutoresizingMaskIntoConstraints="NO" id="adw-ig-b8u" customClass="VFGImageView">
+                                                                            <rect key="frame" x="113" y="50" width="100" height="100"/>
+                                                                            <constraints>
+                                                                                <constraint firstAttribute="height" constant="100" id="Hwa-IH-7PB"/>
+                                                                                <constraint firstAttribute="width" constant="100" id="jss-hM-djs"/>
+                                                                            </constraints>
+                                                                        </imageView>
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Hardware repair assistance" textAlignment="center" lineBreakMode="middleTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B7q-ts-aBl" customClass="VFGLabel" customModule="VFGMVA10Foundation">
+                                                                            <rect key="frame" x="37.5" y="171.5" width="251" height="28"/>
+                                                                            <fontDescription key="fontDescription" name="VodafoneLt-Regular" family="Vodafone Lt" pointSize="25"/>
+                                                                            <color key="textColor" name="VFGPrimaryText"/>
+                                                                            <nil key="highlightedColor"/>
+                                                                        </label>
+                                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TN8-Ar-tRA" customClass="VFGButton" customModule="VFGMVA10Foundation">
+                                                                            <rect key="frame" x="200" y="14" width="85" height="28"/>
+                                                                            <fontDescription key="fontDescription" name="VodafoneRg-Regular" family="Vodafone Rg" pointSize="14"/>
+                                                                            <state key="normal" title="Cancel booking">
+                                                                                <color key="titleColor" name="VFGLinkText"/>
+                                                                            </state>
+                                                                            <connections>
+                                                                                <action selector="cancelButtonPressed:" destination="xsD-hU-F4L" eventType="touchUpInside" id="rdE-s5-6gj"/>
+                                                                            </connections>
+                                                                        </button>
+                                                                        <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" spacing="12.5" translatesAutoresizingMaskIntoConstraints="NO" id="kQn-mc-kYG">
+                                                                            <rect key="frame" x="16" y="213.5" width="294" height="116.5"/>
+                                                                            <subviews>
+                                                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="M5y-bA-IoH" customClass="VFGAddressView" customModule="VFGMVA10Framework" customModuleProvider="target">
+                                                                                    <rect key="frame" x="0.0" y="0.0" width="294" height="104"/>
+                                                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                    <constraints>
+                                                                                        <constraint firstAttribute="height" constant="104" id="ysQ-zV-xjB"/>
+                                                                                    </constraints>
+                                                                                    <userDefinedRuntimeAttributes>
+                                                                                        <userDefinedRuntimeAttribute type="number" keyPath="iconLeadingConstant">
+                                                                                            <real key="value" value="16"/>
+                                                                                        </userDefinedRuntimeAttribute>
+                                                                                        <userDefinedRuntimeAttribute type="number" keyPath="iconTrailingConstant">
+                                                                                            <real key="value" value="8"/>
+                                                                                        </userDefinedRuntimeAttribute>
+                                                                                    </userDefinedRuntimeAttributes>
+                                                                                </view>
+                                                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HJn-yL-iv7" customClass="AppointmentRequirementsView" customModule="VFGMVA10Framework" customModuleProvider="target">
+                                                                                    <rect key="frame" x="0.0" y="116.5" width="294" height="0.0"/>
+                                                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                </view>
+                                                                            </subviews>
+                                                                        </stackView>
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Wednesday, 15th of March 4pm - 5pm" textAlignment="center" lineBreakMode="middleTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s8y-ic-7Er" customClass="VFGLabel" customModule="VFGMVA10Foundation">
+                                                                            <rect key="frame" x="8" y="314" width="310" height="19"/>
+                                                                            <fontDescription key="fontDescription" name="VodafoneRg-Bold" family="Vodafone Rg" pointSize="16"/>
+                                                                            <color key="textColor" name="VFGPrimaryText"/>
+                                                                            <nil key="highlightedColor"/>
+                                                                        </label>
+                                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EVh-ek-Nkd" customClass="VFGButton" customModule="VFGMVA10Foundation">
+                                                                            <rect key="frame" x="16" y="365" width="143" height="36"/>
+                                                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                            <constraints>
+                                                                                <constraint firstAttribute="height" constant="36" id="Byn-1u-v6P"/>
+                                                                            </constraints>
+                                                                            <fontDescription key="fontDescription" name="VodafoneRg-Bold" family="Vodafone Rg" pointSize="17"/>
+                                                                            <state key="normal" title="Change booking">
+                                                                                <color key="titleColor" name="VFGPrimaryText"/>
+                                                                            </state>
+                                                                            <userDefinedRuntimeAttributes>
+                                                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                                    <real key="value" value="5"/>
+                                                                                </userDefinedRuntimeAttribute>
+                                                                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                                    <real key="value" value="1"/>
+                                                                                </userDefinedRuntimeAttribute>
+                                                                                <userDefinedRuntimeAttribute type="number" keyPath="buttonStyle">
+                                                                                    <integer key="value" value="2"/>
+                                                                                </userDefinedRuntimeAttribute>
+                                                                            </userDefinedRuntimeAttributes>
+                                                                            <connections>
+                                                                                <action selector="changeBookButtonPressed:" destination="xsD-hU-F4L" eventType="touchUpInside" id="mPG-Pt-dkw"/>
+                                                                            </connections>
+                                                                        </button>
+                                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LgF-IK-VQr" customClass="VFGButton" customModule="VFGMVA10Foundation">
+                                                                            <rect key="frame" x="167" y="365" width="143" height="36"/>
+                                                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                            <constraints>
+                                                                                <constraint firstAttribute="height" constant="36" id="xZX-zV-N2E"/>
+                                                                            </constraints>
+                                                                            <fontDescription key="fontDescription" name="VodafoneRg-Bold" family="Vodafone Rg" pointSize="17"/>
+                                                                            <state key="normal" title="Get store direction">
+                                                                                <color key="titleColor" name="VFGPrimaryText"/>
+                                                                            </state>
+                                                                            <userDefinedRuntimeAttributes>
+                                                                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                                    <real key="value" value="1"/>
+                                                                                </userDefinedRuntimeAttribute>
+                                                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                                    <real key="value" value="5"/>
+                                                                                </userDefinedRuntimeAttribute>
+                                                                                <userDefinedRuntimeAttribute type="number" keyPath="buttonStyle">
+                                                                                    <integer key="value" value="2"/>
+                                                                                </userDefinedRuntimeAttribute>
+                                                                            </userDefinedRuntimeAttributes>
+                                                                            <connections>
+                                                                                <action selector="storeLocationButtonPressed:" destination="xsD-hU-F4L" eventType="touchUpInside" id="HbM-hN-b3M"/>
+                                                                            </connections>
+                                                                        </button>
+                                                                    </subviews>
+                                                                    <color key="backgroundColor" name="VFGWhiteBackground"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="434" id="0Uu-AR-aIM"/>
+                                                                        <constraint firstItem="11H-oA-vQ0" firstAttribute="centerY" secondItem="TN8-Ar-tRA" secondAttribute="centerY" id="3F1-qq-kCU"/>
+                                                                        <constraint firstItem="adw-ig-b8u" firstAttribute="top" secondItem="TN8-Ar-tRA" secondAttribute="bottom" constant="8" id="7Ry-ay-zSq"/>
+                                                                        <constraint firstItem="s8y-ic-7Er" firstAttribute="top" secondItem="kQn-mc-kYG" secondAttribute="bottom" constant="12.5" id="7oI-7R-z36"/>
+                                                                        <constraint firstItem="kQn-mc-kYG" firstAttribute="top" secondItem="B7q-ts-aBl" secondAttribute="bottom" constant="14" id="Fda-vb-pQb"/>
+                                                                        <constraint firstItem="B7q-ts-aBl" firstAttribute="top" secondItem="adw-ig-b8u" secondAttribute="bottom" constant="21" id="J0L-VG-8xD"/>
+                                                                        <constraint firstAttribute="trailing" secondItem="kQn-mc-kYG" secondAttribute="trailing" constant="16" id="JjB-n2-fa8"/>
+                                                                        <constraint firstItem="B7q-ts-aBl" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6zM-35-H9P" secondAttribute="leading" constant="8" id="Kcr-Cg-6Va"/>
+                                                                        <constraint firstItem="11H-oA-vQ0" firstAttribute="top" secondItem="6zM-35-H9P" secondAttribute="top" constant="18" id="L8e-h0-zYM"/>
+                                                                        <constraint firstAttribute="trailing" secondItem="LgF-IK-VQr" secondAttribute="trailing" constant="16" id="LIC-97-WGU"/>
+                                                                        <constraint firstAttribute="trailing" secondItem="s8y-ic-7Er" secondAttribute="trailing" constant="8" id="MA4-O6-CMP"/>
+                                                                        <constraint firstItem="EVh-ek-Nkd" firstAttribute="top" secondItem="s8y-ic-7Er" secondAttribute="bottom" constant="32" id="U0z-k4-UFA"/>
+                                                                        <constraint firstItem="EVh-ek-Nkd" firstAttribute="leading" secondItem="6zM-35-H9P" secondAttribute="leading" constant="16" id="WMa-Ld-vsE"/>
+                                                                        <constraint firstItem="kQn-mc-kYG" firstAttribute="leading" secondItem="6zM-35-H9P" secondAttribute="leading" constant="16" id="XOr-Jv-FP3"/>
+                                                                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="B7q-ts-aBl" secondAttribute="trailing" constant="8" id="cli-Gb-jXF"/>
+                                                                        <constraint firstItem="s8y-ic-7Er" firstAttribute="leading" secondItem="6zM-35-H9P" secondAttribute="leading" constant="8" id="dwa-MN-nKL"/>
+                                                                        <constraint firstAttribute="trailing" secondItem="11H-oA-vQ0" secondAttribute="trailing" constant="19" id="esA-sc-l5g"/>
+                                                                        <constraint firstItem="B7q-ts-aBl" firstAttribute="centerX" secondItem="6zM-35-H9P" secondAttribute="centerX" id="gV9-9F-QDf"/>
+                                                                        <constraint firstItem="LgF-IK-VQr" firstAttribute="leading" secondItem="EVh-ek-Nkd" secondAttribute="trailing" constant="8" id="hHK-FO-E3z"/>
+                                                                        <constraint firstItem="LgF-IK-VQr" firstAttribute="centerY" secondItem="EVh-ek-Nkd" secondAttribute="centerY" id="kGG-60-hbp"/>
+                                                                        <constraint firstItem="adw-ig-b8u" firstAttribute="centerX" secondItem="6zM-35-H9P" secondAttribute="centerX" id="tFH-rS-Bdd"/>
+                                                                        <constraint firstItem="mTr-Sn-ZB4" firstAttribute="trailing" secondItem="11H-oA-vQ0" secondAttribute="trailing" id="vbg-Vd-Ye3"/>
+                                                                        <constraint firstItem="11H-oA-vQ0" firstAttribute="leading" secondItem="TN8-Ar-tRA" secondAttribute="trailing" constant="2" id="vjO-WA-nZh"/>
+                                                                        <constraint firstItem="mTr-Sn-ZB4" firstAttribute="leading" secondItem="11H-oA-vQ0" secondAttribute="leading" id="wXj-bn-wcy"/>
+                                                                        <constraint firstItem="LgF-IK-VQr" firstAttribute="width" secondItem="EVh-ek-Nkd" secondAttribute="width" id="wri-d1-M9s"/>
+                                                                        <constraint firstItem="mTr-Sn-ZB4" firstAttribute="bottom" secondItem="11H-oA-vQ0" secondAttribute="bottom" id="x1T-jv-MLJ"/>
+                                                                        <constraint firstAttribute="width" constant="326" id="xLf-j5-7M4"/>
+                                                                        <constraint firstItem="mTr-Sn-ZB4" firstAttribute="top" secondItem="11H-oA-vQ0" secondAttribute="top" id="xXP-yn-0bU"/>
+                                                                        <constraint firstAttribute="bottom" secondItem="EVh-ek-Nkd" secondAttribute="bottom" constant="33" id="y8f-CG-p3H"/>
+                                                                    </constraints>
+                                                                    <userDefinedRuntimeAttributes>
+                                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                            <real key="value" value="5"/>
+                                                                        </userDefinedRuntimeAttribute>
+                                                                    </userDefinedRuntimeAttributes>
+                                                                </view>
+                                                            </subviews>
+                                                            <constraints>
+                                                                <constraint firstAttribute="trailing" secondItem="6zM-35-H9P" secondAttribute="trailing" constant="8" id="O1s-4y-3fA"/>
+                                                                <constraint firstItem="6zM-35-H9P" firstAttribute="leading" secondItem="aWE-GX-BSL" secondAttribute="leading" constant="8" id="O7h-di-O22"/>
+                                                                <constraint firstItem="6zM-35-H9P" firstAttribute="top" secondItem="aWE-GX-BSL" secondAttribute="top" constant="8" id="RKX-6y-ky0"/>
+                                                                <constraint firstAttribute="bottom" secondItem="6zM-35-H9P" secondAttribute="bottom" constant="8" id="Xhg-z4-jD5"/>
+                                                            </constraints>
+                                                        </collectionViewCellContentView>
+                                                        <size key="customSize" width="342" height="450"/>
+                                                        <connections>
+                                                            <outlet property="addressView" destination="M5y-bA-IoH" id="Yr5-hM-MKl"/>
+                                                            <outlet property="appointmentDateLabel" destination="s8y-ic-7Er" id="ut6-fS-78Y"/>
+                                                            <outlet property="appointmentTitleLabel" destination="B7q-ts-aBl" id="add-11-KbM"/>
+                                                            <outlet property="cancelButton" destination="TN8-Ar-tRA" id="Sqp-M8-IBf"/>
+                                                            <outlet property="changeBookingButton" destination="EVh-ek-Nkd" id="K0g-7x-KQS"/>
+                                                            <outlet property="getStoreDirectionButton" destination="LgF-IK-VQr" id="TAs-44-OE5"/>
+                                                            <outlet property="requirementsView" destination="HJn-yL-iv7" id="U5r-De-Vfl"/>
+                                                            <outlet property="serviceIconImageView" destination="adw-ig-b8u" id="kjQ-UR-PyI"/>
+                                                        </connections>
+                                                    </collectionViewCell>
+                                                </cells>
+                                            </collectionView>
+                                            <view hidden="YES" clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cwb-Fg-j8i">
+                                                <rect key="frame" x="0.0" y="520" width="414" height="89"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </view>
+                                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vMd-BP-njR" customClass="VFGButton" customModule="VFGMVA10Foundation">
+                                                <rect key="frame" x="17" y="537" width="380" height="46"/>
+                                                <color key="backgroundColor" name="VFGPrimaryButton"/>
+                                                <accessibility key="accessibilityConfiguration" identifier="APbookAppointmentButton"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="46" id="ZgO-6o-Hav"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="VodafoneRg-Regular" family="Vodafone Rg" pointSize="18.700000762939453"/>
+                                                <state key="normal" title="Book an in-store appointment">
+                                                    <color key="titleColor" name="VFGPrimaryButtonActiveTextRedBG"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="6.2000000000000002"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="buttonStyle">
+                                                        <integer key="value" value="0"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="bookAppointmentButtonPressed:" destination="Zfk-P4-PCe" eventType="touchUpInside" id="6hp-9g-0yf"/>
+                                                </connections>
+                                            </button>
+                                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sY2-Oh-GJi" customClass="VFGShimmerView" customModule="VFGMVA10Foundation">
+                                                <rect key="frame" x="17" y="537" width="380" height="30"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="30" id="sj7-MU-HsC"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" name="VFGLightGreyBackground"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="G64-a5-PTM" secondAttribute="trailing" id="3Iv-Xp-RDC"/>
+                                            <constraint firstAttribute="trailing" secondItem="sY2-Oh-GJi" secondAttribute="trailing" constant="17" id="41e-ax-ejc"/>
+                                            <constraint firstItem="sY2-Oh-GJi" firstAttribute="leading" secondItem="k8L-81-BHc" secondAttribute="leading" constant="17" id="45B-vr-qza"/>
+                                            <constraint firstItem="vMd-BP-njR" firstAttribute="leading" secondItem="k8L-81-BHc" secondAttribute="leading" constant="17" id="9UU-3W-rhY"/>
+                                            <constraint firstItem="Cwb-Fg-j8i" firstAttribute="top" secondItem="G64-a5-PTM" secondAttribute="bottom" constant="16" id="ACo-O3-eL3"/>
+                                            <constraint firstItem="e3V-ij-3g2" firstAttribute="leading" secondItem="k8L-81-BHc" secondAttribute="leading" constant="20" id="CVA-dy-gPM"/>
+                                            <constraint firstAttribute="bottom" secondItem="vMd-BP-njR" secondAttribute="bottom" constant="42" id="Iai-YW-klR"/>
+                                            <constraint firstItem="vMd-BP-njR" firstAttribute="top" secondItem="G64-a5-PTM" secondAttribute="bottom" constant="33" id="Khd-II-RCN"/>
+                                            <constraint firstItem="G64-a5-PTM" firstAttribute="top" secondItem="e3V-ij-3g2" secondAttribute="bottom" constant="6" id="Uys-3N-rjJ"/>
+                                            <constraint firstItem="G64-a5-PTM" firstAttribute="leading" secondItem="k8L-81-BHc" secondAttribute="leading" id="YMe-Sc-7dg"/>
+                                            <constraint firstAttribute="trailing" secondItem="Cwb-Fg-j8i" secondAttribute="trailing" id="by8-Q4-ywj"/>
+                                            <constraint firstItem="e3V-ij-3g2" firstAttribute="top" secondItem="k8L-81-BHc" secondAttribute="top" constant="14" id="e3d-S1-p3A"/>
+                                            <constraint firstAttribute="bottom" secondItem="Cwb-Fg-j8i" secondAttribute="bottom" constant="16" id="eol-v9-89O"/>
+                                            <constraint firstAttribute="trailing" secondItem="e3V-ij-3g2" secondAttribute="trailing" constant="20" id="gFx-WD-tcP"/>
+                                            <constraint firstAttribute="bottom" secondItem="sY2-Oh-GJi" secondAttribute="bottom" constant="58" id="hFe-fk-jMa"/>
+                                            <constraint firstAttribute="trailing" secondItem="vMd-BP-njR" secondAttribute="trailing" constant="17" id="mEP-Y8-y2j"/>
+                                            <constraint firstItem="Cwb-Fg-j8i" firstAttribute="leading" secondItem="k8L-81-BHc" secondAttribute="leading" id="ywS-tp-Iwx"/>
+                                            <constraint firstItem="sY2-Oh-GJi" firstAttribute="top" secondItem="G64-a5-PTM" secondAttribute="bottom" constant="33" id="zlr-5r-g68"/>
+                                        </constraints>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="hFe-fk-jMa"/>
+                                            </mask>
+                                        </variation>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" name="VFGLightGreyBackground"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="k8L-81-BHc" secondAttribute="trailing" id="QF3-yh-qMb"/>
+                                    <constraint firstAttribute="bottom" secondItem="k8L-81-BHc" secondAttribute="bottom" id="Vig-oT-erb"/>
+                                    <constraint firstItem="k8L-81-BHc" firstAttribute="leading" secondItem="xbz-0E-BWu" secondAttribute="leading" id="Yno-jb-npP"/>
+                                    <constraint firstItem="k8L-81-BHc" firstAttribute="top" secondItem="xbz-0E-BWu" secondAttribute="top" id="aer-7y-i5O"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="WcX-N5-a1P"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="lE4-x3-pxY"/>
+                            </scrollView>
+                            <view hidden="YES" clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="v3e-57-Arp">
+                                <rect key="frame" x="0.0" y="810" width="414" height="86"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="86" id="7UJ-mO-VzB"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ush-Hf-zwH"/>
+                        <color key="backgroundColor" name="VFGLightGreyBackground"/>
+                        <constraints>
+                            <constraint firstItem="xbz-0E-BWu" firstAttribute="leading" secondItem="ush-Hf-zwH" secondAttribute="leading" id="A28-Rv-6V4"/>
+                            <constraint firstItem="v3e-57-Arp" firstAttribute="leading" secondItem="ush-Hf-zwH" secondAttribute="leading" id="U2t-c4-i9T"/>
+                            <constraint firstAttribute="bottom" secondItem="v3e-57-Arp" secondAttribute="bottom" id="a1o-eS-lZg"/>
+                            <constraint firstItem="xbz-0E-BWu" firstAttribute="width" secondItem="BFR-Bh-Kpt" secondAttribute="width" id="kEq-In-7gV"/>
+                            <constraint firstItem="ush-Hf-zwH" firstAttribute="trailing" secondItem="xbz-0E-BWu" secondAttribute="trailing" id="mIP-Ib-j5M"/>
+                            <constraint firstItem="xbz-0E-BWu" firstAttribute="top" secondItem="ush-Hf-zwH" secondAttribute="top" id="t6q-55-RiH"/>
+                            <constraint firstItem="k8L-81-BHc" firstAttribute="centerX" secondItem="ush-Hf-zwH" secondAttribute="centerX" id="tYw-tX-UGp"/>
+                            <constraint firstItem="v3e-57-Arp" firstAttribute="top" secondItem="xbz-0E-BWu" secondAttribute="bottom" id="xCn-eT-E4z"/>
+                            <constraint firstItem="v3e-57-Arp" firstAttribute="trailing" secondItem="ush-Hf-zwH" secondAttribute="trailing" id="ysl-fh-ZgU"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="appointmentsCollectionView" destination="G64-a5-PTM" id="odx-ka-txD"/>
+                        <outlet property="bookAppointmentButton" destination="vMd-BP-njR" id="XXv-np-Bct"/>
+                        <outlet property="bookAppointmentButtonBottomConstraint" destination="Iai-YW-klR" id="RB8-M6-W4n"/>
+                        <outlet property="bookAppointmentButtonShimmerView" destination="sY2-Oh-GJi" id="wGj-ns-maG"/>
+                        <outlet property="collectionViewHeightConstraint" destination="3gI-hq-faK" id="mbw-j2-Xbc"/>
+                        <outlet property="customBottomView" destination="v3e-57-Arp" id="ZBd-0d-k4p"/>
+                        <outlet property="customBottomViewHeightConstraint" destination="7UJ-mO-VzB" id="bZE-EO-zEp"/>
+                        <outlet property="customView" destination="Cwb-Fg-j8i" id="yjX-TW-XZ4"/>
+                        <outlet property="sectionTitleLabel" destination="e3V-ij-3g2" id="nzp-9p-hRm"/>
+                        <outlet property="sectionTitleLabelHeightConstraint" destination="acB-Qb-VsI" id="vLG-vc-qca"/>
+                        <outlet property="shimmerButtonBottomConstraint" destination="hFe-fk-jMa" id="Fpz-k3-uVh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8Hv-wP-H4X" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1227.536231884058" y="-28.125"/>
+        </scene>
+    </scenes>
+    <designables>
+        <designable name="11H-oA-vQ0">
+            <size key="intrinsicContentSize" width="24" height="14"/>
+        </designable>
+        <designable name="7Dt-gL-L5h">
+            <size key="intrinsicContentSize" width="158.5" height="17.5"/>
+        </designable>
+        <designable name="B7q-ts-aBl">
+            <size key="intrinsicContentSize" width="304" height="29.5"/>
+        </designable>
+        <designable name="EVh-ek-Nkd">
+            <size key="intrinsicContentSize" width="126" height="32"/>
+        </designable>
+        <designable name="GSi-3h-hvb">
+            <size key="intrinsicContentSize" width="142.5" height="17.5"/>
+        </designable>
+        <designable name="IJa-xY-3uy">
+            <size key="intrinsicContentSize" width="170.5" height="22"/>
+        </designable>
+        <designable name="LgF-IK-VQr">
+            <size key="intrinsicContentSize" width="141" height="32"/>
+        </designable>
+        <designable name="TN8-Ar-tRA">
+            <size key="intrinsicContentSize" width="99" height="29"/>
+        </designable>
+        <designable name="adw-ig-b8u">
+            <size key="intrinsicContentSize" width="101" height="101"/>
+        </designable>
+        <designable name="e3V-ij-3g2">
+            <size key="intrinsicContentSize" width="102" height="26"/>
+        </designable>
+        <designable name="s8y-ic-7Er">
+            <size key="intrinsicContentSize" width="274.5" height="19"/>
+        </designable>
+        <designable name="vMd-BP-njR">
+            <size key="intrinsicContentSize" width="250" height="34"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="icClockHiLightTheme" width="120" height="120"/>
+        <image name="icScreenRepairHiLightTheme" width="101" height="101"/>
+        <image name="recycleImage" width="24" height="24"/>
+        <namedColor name="VFGLightGreyBackground">
+            <color red="0.95686274509803926" green="0.95686274509803926" blue="0.95686274509803926" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="VFGLinkText">
+            <color red="0.90196078431372551" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="VFGPrimaryButton">
+            <color red="0.90200001001358032" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="VFGPrimaryButtonActiveTextRedBG">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="VFGPrimaryText">
+            <color red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="VFGSecondaryButtonOutline">
+            <color red="0.60000002384185791" green="0.60000002384185791" blue="0.60000002384185791" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <namedColor name="VFGShimmerViewEdge">
+            <color red="0.92941176470588238" green="0.92941176470588238" blue="0.92941176470588238" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="VFGWhiteBackground">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray3Color">
+            <color red="0.7803921568627451" green="0.7803921568627451" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

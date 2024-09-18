@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="vodafone-regular.ttf">
+            <string>VodafoneRg-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="VFGCustomizedPermissionsViewController" customModule="VFGMVA10Framework" customModuleProvider="target">
+            <connections>
+                <outlet property="confirmButton" destination="Qe5-Ca-0IG" id="atK-ea-QCg"/>
+                <outlet property="permissionsTableView" destination="pKI-gM-PUw" id="5sM-h9-4wS"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="pKI-gM-PUw">
+                    <rect key="frame" x="0.0" y="44" width="414" height="741"/>
+                    <color key="backgroundColor" name="VFGLightGreyBackground"/>
+                </tableView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aUB-32-MWJ" userLabel="separator View">
+                    <rect key="frame" x="16" y="785" width="382" height="1"/>
+                    <color key="backgroundColor" name="VFGGreyDividerOne"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="1Z2-N5-jon"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qe5-Ca-0IG" customClass="VFGButton" customModule="VFGMVA10Foundation">
+                    <rect key="frame" x="16" y="818" width="382" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="22C-ZU-uZu"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="VodafoneRg-Regular" family="Vodafone Rg" pointSize="18.700000762939453"/>
+                    <state key="normal" title="Confirm">
+                        <color key="titleColor" name="VFGPrimaryButtonActiveText"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="6.2000000000000002"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="buttonStyle">
+                            <integer key="value" value="0"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="backgroundStyle">
+                            <integer key="value" value="0"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="confirmButtonDidPress:" destination="-1" eventType="touchUpInside" id="89o-jG-ddj"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" name="VFGLightGreyBackground"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Qe5-Ca-0IG" secondAttribute="trailing" constant="16" id="BSA-ou-XXQ"/>
+                <constraint firstItem="pKI-gM-PUw" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="El0-am-U1M"/>
+                <constraint firstItem="pKI-gM-PUw" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="Fyz-Bk-wcO"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="aUB-32-MWJ" secondAttribute="trailing" constant="16" id="QQY-N5-kKS"/>
+                <constraint firstItem="Qe5-Ca-0IG" firstAttribute="top" secondItem="aUB-32-MWJ" secondAttribute="bottom" constant="32" id="RDC-IB-w0b"/>
+                <constraint firstItem="pKI-gM-PUw" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="V4i-et-02m"/>
+                <constraint firstItem="aUB-32-MWJ" firstAttribute="top" secondItem="pKI-gM-PUw" secondAttribute="bottom" id="VGz-tE-4EN"/>
+                <constraint firstItem="Qe5-Ca-0IG" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="WsQ-GL-fSg"/>
+                <constraint firstItem="aUB-32-MWJ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="nrd-Ez-Ak6"/>
+                <constraint firstAttribute="bottom" secondItem="Qe5-Ca-0IG" secondAttribute="bottom" constant="38" id="zId-Wg-URb"/>
+            </constraints>
+            <point key="canvasLocation" x="82.608695652173921" y="139.95535714285714"/>
+        </view>
+    </objects>
+    <designables>
+        <designable name="Qe5-Ca-0IG">
+            <size key="intrinsicContentSize" width="59" height="33"/>
+        </designable>
+    </designables>
+    <resources>
+        <namedColor name="VFGGreyDividerOne">
+            <color red="0.92156862745098034" green="0.92156862745098034" blue="0.92156862745098034" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="VFGLightGreyBackground">
+            <color red="0.95686274509803926" green="0.95686274509803926" blue="0.95686274509803926" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="VFGPrimaryButtonActiveText">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

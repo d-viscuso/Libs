@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="vodafone-bold.ttf">
+            <string>VodafoneRg-Bold</string>
+        </array>
+        <array key="vodafone-lite.ttf">
+            <string>VodafoneLt-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="InProgressOrdersViewController" customModule="VFGMVA10Framework" customModuleProvider="target">
+            <connections>
+                <outlet property="emptyOrdersSubTitle" destination="oCf-xZ-N0W" id="itj-lc-PJO"/>
+                <outlet property="emptyOrdersTitle" destination="Xlq-rQ-2WL" id="Nyw-Ih-vY4"/>
+                <outlet property="emptyOrdersView" destination="oF3-HV-lBb" id="oA1-cX-vDv"/>
+                <outlet property="emptyOrdersViewHeightConstraint" destination="ADF-ww-MRc" id="IKZ-7c-Ldz"/>
+                <outlet property="inProgressOrdersTableView" destination="UWk-1J-uC6" id="QFV-nO-SX8"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" style="grouped" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="1" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="UWk-1J-uC6">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </tableView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oF3-HV-lBb">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="0.0"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You don’t have any order in progress" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xlq-rQ-2WL" customClass="VFGLabel" customModule="VFGMVA10Framework" customModuleProvider="target">
+                            <rect key="frame" x="20" y="32" width="374" height="22.5"/>
+                            <fontDescription key="fontDescription" name="VodafoneRg-Bold" family="Vodafone Rg" pointSize="20"/>
+                            <color key="textColor" name="VFGPrimaryText"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="We will notify you when there is a new update." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oCf-xZ-N0W" customClass="VFGLabel" customModule="VFGMVA10Framework" customModuleProvider="target">
+                            <rect key="frame" x="16" y="70.5" width="382" height="18"/>
+                            <fontDescription key="fontDescription" name="VodafoneLt-Regular" family="Vodafone Lt" pointSize="16"/>
+                            <color key="textColor" name="VFGPrimaryText"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" id="ADF-ww-MRc"/>
+                        <constraint firstItem="oCf-xZ-N0W" firstAttribute="top" secondItem="Xlq-rQ-2WL" secondAttribute="bottom" constant="16" id="Bdr-dz-SB7"/>
+                        <constraint firstAttribute="trailing" secondItem="Xlq-rQ-2WL" secondAttribute="trailing" constant="20" id="Ctu-LC-GLk"/>
+                        <constraint firstItem="Xlq-rQ-2WL" firstAttribute="leading" secondItem="oF3-HV-lBb" secondAttribute="leading" constant="20" id="Rfm-NT-wr1"/>
+                        <constraint firstAttribute="trailingMargin" secondItem="oCf-xZ-N0W" secondAttribute="trailing" constant="8" id="Xlh-Qn-oyU"/>
+                        <constraint firstItem="oCf-xZ-N0W" firstAttribute="leading" secondItem="oF3-HV-lBb" secondAttribute="leadingMargin" constant="8" id="k5N-WI-5X0"/>
+                        <constraint firstItem="Xlq-rQ-2WL" firstAttribute="top" secondItem="oF3-HV-lBb" secondAttribute="top" constant="32" id="xBb-rg-DEz"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="oF3-HV-lBb" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Fad-bX-XM3"/>
+                <constraint firstItem="UWk-1J-uC6" firstAttribute="top" secondItem="oF3-HV-lBb" secondAttribute="bottom" id="NbI-UJ-YqB"/>
+                <constraint firstItem="UWk-1J-uC6" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="SGj-5t-GBm"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="UWk-1J-uC6" secondAttribute="trailing" id="UeA-nV-9Tt"/>
+                <constraint firstAttribute="bottom" secondItem="UWk-1J-uC6" secondAttribute="bottom" id="V5V-cf-itH"/>
+                <constraint firstItem="oF3-HV-lBb" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Xwm-nt-HJ1"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="oF3-HV-lBb" secondAttribute="trailing" id="nnK-9T-ZAd"/>
+            </constraints>
+            <point key="canvasLocation" x="-104.34782608695653" y="101.78571428571428"/>
+        </view>
+    </objects>
+    <designables>
+        <designable name="Xlq-rQ-2WL">
+            <size key="intrinsicContentSize" width="303" height="22.5"/>
+        </designable>
+        <designable name="oCf-xZ-N0W">
+            <size key="intrinsicContentSize" width="278" height="18"/>
+        </designable>
+    </designables>
+    <resources>
+        <namedColor name="VFGPrimaryText">
+            <color red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

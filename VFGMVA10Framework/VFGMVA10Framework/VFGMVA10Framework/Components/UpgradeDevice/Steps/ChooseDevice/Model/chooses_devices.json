@@ -1,0 +1,46 @@
+{
+  "devices": [
+    {
+      "id": "apple_iphone_11_pro",
+      "brand": "Apple",
+      "title": "iPhone 11 Pro",
+      "imageUrl": "device",
+      "price": {
+        "upfrontPrice": 120,
+        "recurringPrice": 24,
+        "recurrencePeriod": "month",
+        "contractPeriod": 24,
+        "currency": "€"
+      },
+      "isRecommended": true
+    },
+     {
+      "id": "apple_iphone_11",
+      "brand": "Apple",
+      "title": "iPhone 11",
+      "imageUrl": "device",
+      "price": {
+        "upfrontPrice": 140,
+        "recurringPrice": 12,
+        "recurrencePeriod": "month",
+        "contractPeriod": 24,
+        "currency": "€"
+      },
+      "isRecommended": false
+     },
+     {
+         "id": "P30_lite_new_edition",
+         "brand": "Huawei",
+         "title": "P30 Lite New Edition",
+         "imageUrl": "device2",
+         "price": {
+             "upfrontPrice": 29,
+             "recurringPrice": 26,
+             "recurrencePeriod": "month",
+             "contractPeriod": 24,
+             "currency": "€"
+         },
+         "isRecommended": false
+     }
+  ]
+}

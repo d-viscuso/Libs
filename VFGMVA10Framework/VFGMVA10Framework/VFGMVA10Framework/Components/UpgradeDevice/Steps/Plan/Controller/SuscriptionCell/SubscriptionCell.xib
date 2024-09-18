@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="SubscriptionCell" id="gTV-IL-0wX" customClass="SubscriptionCell" customModule="VFGMVA10Framework" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="66" height="42"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="66" height="42"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JVI-gE-Wm3">
+                        <rect key="frame" x="0.0" y="0.0" width="66" height="42"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icNetflix" translatesAutoresizingMaskIntoConstraints="NO" id="vDK-XF-PCh" customClass="VFGImageView" customModule="VFGMVA10Foundation">
+                                <rect key="frame" x="0.0" y="0.0" width="42" height="42"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="42" id="9br-0s-4IM"/>
+                                    <constraint firstAttribute="height" constant="42" id="OfK-ZA-nNr"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="vDK-XF-PCh" secondAttribute="trailing" constant="24" id="QJH-ie-5bL"/>
+                            <constraint firstItem="vDK-XF-PCh" firstAttribute="top" secondItem="JVI-gE-Wm3" secondAttribute="top" id="ZnD-2O-Eam"/>
+                            <constraint firstItem="vDK-XF-PCh" firstAttribute="leading" secondItem="JVI-gE-Wm3" secondAttribute="leading" id="imB-g6-KbE"/>
+                            <constraint firstAttribute="bottom" secondItem="vDK-XF-PCh" secondAttribute="bottom" id="mfi-ef-6TF"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="JVI-gE-Wm3" firstAttribute="bottom" secondItem="gTV-IL-0wX" secondAttribute="bottom" id="Qav-db-2fJ"/>
+                <constraint firstAttribute="top" secondItem="JVI-gE-Wm3" secondAttribute="top" id="WAz-iH-4Jv"/>
+                <constraint firstAttribute="leading" secondItem="JVI-gE-Wm3" secondAttribute="leading" id="keg-b3-B05"/>
+                <constraint firstItem="JVI-gE-Wm3" firstAttribute="trailing" secondItem="gTV-IL-0wX" secondAttribute="trailing" id="l0C-mM-AIU"/>
+            </constraints>
+            <size key="customSize" width="201" height="155"/>
+            <connections>
+                <outlet property="subscriptionImageView" destination="vDK-XF-PCh" id="ehk-Ex-Kg3"/>
+            </connections>
+            <point key="canvasLocation" x="94.20289855072464" y="63.616071428571423"/>
+        </collectionViewCell>
+    </objects>
+    <designables>
+        <designable name="vDK-XF-PCh">
+            <size key="intrinsicContentSize" width="44" height="43"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="icNetflix" width="44" height="43"/>
+    </resources>
+</document>

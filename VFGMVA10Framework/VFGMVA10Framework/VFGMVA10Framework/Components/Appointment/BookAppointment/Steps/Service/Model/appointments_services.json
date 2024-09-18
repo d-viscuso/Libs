@@ -1,0 +1,25 @@
+{
+    "allServices": [
+        {
+            "title": "Mobile health check",
+            "duration": "15 min",
+            "details": "Book an appointment with an in-store assistant to investigate your mobile issues.",
+            "iconImageName": "icDiagnostics",
+            "summaryIconImageName": "icHealthCheckScreen"
+        },
+        {
+            "title": "Product showcase",
+            "duration": "30 min",
+            "details": "Book an appointment with an in-store assistant to explore new devices available for you.",
+            "iconImageName": "icMultisceen",
+            "summaryIconImageName": "icProductShowcaseScreen"
+        },
+        {
+            "title": "Hardware repair",
+            "duration": "1 hour",
+            "details": "Book an appointment with an in-store assistant to check up on your hardware problem.",
+            "iconImageName": "icScreenRepair",
+            "summaryIconImageName": "icScreenRepairHiLightTheme"
+        }
+    ]
+}

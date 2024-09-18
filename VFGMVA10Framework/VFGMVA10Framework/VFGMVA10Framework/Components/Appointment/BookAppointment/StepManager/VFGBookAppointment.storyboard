@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Book Appointment View Controller-->
+        <scene sceneID="ETo-0W-m9k">
+            <objects>
+                <viewController storyboardIdentifier="VFGBookAppointment" id="Aak-pN-4DB" customClass="VFGBookAppointmentViewController" customModule="VFGMVA10Framework" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9xN-9T-WNX">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tPv-I1-k1Q" userLabel="Step Container">
+                                <rect key="frame" x="0.0" y="44" width="414" height="80"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wqZ-PX-M5w" customClass="VFGHorizontalStepControl" customModule="VFGMVA10Foundation">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="80"/>
+                                        <color key="backgroundColor" name="VFGWhiteBackground"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" name="VFGWhiteBackground"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="wqZ-PX-M5w" secondAttribute="trailing" id="7ZE-42-GVV"/>
+                                    <constraint firstItem="wqZ-PX-M5w" firstAttribute="height" secondItem="tPv-I1-k1Q" secondAttribute="height" id="LHp-bV-pNN"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="80" id="bzu-tp-ms6"/>
+                                    <constraint firstItem="wqZ-PX-M5w" firstAttribute="leading" secondItem="tPv-I1-k1Q" secondAttribute="leading" id="fD5-2b-Rw8"/>
+                                    <constraint firstItem="wqZ-PX-M5w" firstAttribute="top" secondItem="tPv-I1-k1Q" secondAttribute="top" id="vC0-v1-Xbd"/>
+                                </constraints>
+                            </view>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="eGd-ZF-Hda">
+                                <rect key="frame" x="0.0" y="124" width="414" height="772"/>
+                                <color key="backgroundColor" name="VFGLightGreyBackground"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="34I-MR-mlg">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="eA9-Tl-UN4"/>
+                        <color key="backgroundColor" name="VFGLightGreyBackground"/>
+                        <constraints>
+                            <constraint firstItem="eA9-Tl-UN4" firstAttribute="trailing" secondItem="eGd-ZF-Hda" secondAttribute="trailing" id="FfC-N7-AJh"/>
+                            <constraint firstItem="tPv-I1-k1Q" firstAttribute="top" secondItem="eA9-Tl-UN4" secondAttribute="top" id="Qtb-N3-2KV"/>
+                            <constraint firstAttribute="bottom" secondItem="eGd-ZF-Hda" secondAttribute="bottom" id="Sp0-Gg-ZAY"/>
+                            <constraint firstItem="tPv-I1-k1Q" firstAttribute="trailing" secondItem="eA9-Tl-UN4" secondAttribute="trailing" id="T70-sx-n6P"/>
+                            <constraint firstItem="eGd-ZF-Hda" firstAttribute="top" secondItem="tPv-I1-k1Q" secondAttribute="bottom" id="lN8-ic-m5k"/>
+                            <constraint firstItem="eGd-ZF-Hda" firstAttribute="leading" secondItem="eA9-Tl-UN4" secondAttribute="leading" id="yUI-Jb-6En"/>
+                            <constraint firstItem="tPv-I1-k1Q" firstAttribute="leading" secondItem="eA9-Tl-UN4" secondAttribute="leading" id="zCq-Ah-Fje"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="collectionView" destination="eGd-ZF-Hda" id="Wh3-qR-1sP"/>
+                        <outlet property="stepController" destination="wqZ-PX-M5w" id="O7P-4c-dhi"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="420-iv-XD2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-13.043478260869566" y="-66.294642857142861"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="VFGLightGreyBackground">
+            <color red="0.95686274509803926" green="0.95686274509803926" blue="0.95686274509803926" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="VFGWhiteBackground">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

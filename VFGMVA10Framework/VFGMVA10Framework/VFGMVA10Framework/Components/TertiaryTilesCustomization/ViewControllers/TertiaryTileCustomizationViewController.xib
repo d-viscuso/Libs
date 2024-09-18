@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="vodafone-regular.ttf">
+            <string>VodafoneRg-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TertiaryTileCustomizationViewController" customModule="VFGMVA10Framework" customModuleProvider="target">
+            <connections>
+                <outlet property="confirmButton" destination="HMC-h4-PmJ" id="VfY-vD-cQw"/>
+                <outlet property="subTitleLabel" destination="vDC-Kj-Cvu" id="2fh-cs-oIp"/>
+                <outlet property="tableView" destination="P4p-FB-bFf" id="4fn-Fg-nQp"/>
+                <outlet property="tableViewHeightConstraint" destination="q0I-xS-JQB" id="B7z-dd-JRd"/>
+                <outlet property="titleLabel" destination="Jya-fM-oRN" id="Df5-qQ-u6h"/>
+                <outlet property="view" destination="G9u-Fp-FgX" id="5Dj-ke-a50"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="G9u-Fp-FgX" userLabel="Tertiary Customization View">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="P78-ON-jQD" userLabel="ScrollBackView">
+                    <rect key="frame" x="0.0" y="48" width="414" height="740"/>
+                    <subviews>
+                        <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UBk-yl-GHU">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="740"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RzR-8y-XKq">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="728.5"/>
+                                    <subviews>
+                                        <tableView clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="P4p-FB-bFf">
+                                            <rect key="frame" x="15" y="111.5" width="384" height="617"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="617" id="q0I-xS-JQB"/>
+                                            </constraints>
+                                        </tableView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jya-fM-oRN" customClass="VFGLabel" customModule="VFGMVA10Framework" customModuleProvider="target">
+                                            <rect key="frame" x="20" y="33.5" width="374" height="32"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="32" id="rK2-it-ghG"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" name="VFGPrimaryText"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vDC-Kj-Cvu" customClass="VFGLabel" customModule="VFGMVA10Framework" customModuleProvider="target">
+                                            <rect key="frame" x="20" y="81" width="374" height="20.5"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" name="VFGSecondaryText"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" name="VFGLightGreyBackground"/>
+                                    <constraints>
+                                        <constraint firstAttribute="bottom" secondItem="P4p-FB-bFf" secondAttribute="bottom" id="7fH-DZ-ele"/>
+                                        <constraint firstItem="P4p-FB-bFf" firstAttribute="leading" secondItem="RzR-8y-XKq" secondAttribute="leading" constant="15" id="CqA-Tj-twp"/>
+                                        <constraint firstAttribute="trailing" secondItem="Jya-fM-oRN" secondAttribute="trailing" constant="20" id="J4N-Zg-QXH"/>
+                                        <constraint firstItem="vDC-Kj-Cvu" firstAttribute="top" secondItem="Jya-fM-oRN" secondAttribute="bottom" constant="15.5" id="JcJ-qq-uPK"/>
+                                        <constraint firstItem="Jya-fM-oRN" firstAttribute="top" secondItem="RzR-8y-XKq" secondAttribute="top" constant="33.299999999999997" id="N08-IK-Yha"/>
+                                        <constraint firstItem="P4p-FB-bFf" firstAttribute="top" secondItem="vDC-Kj-Cvu" secondAttribute="bottom" constant="10" id="dKu-bZ-ybc"/>
+                                        <constraint firstItem="Jya-fM-oRN" firstAttribute="leading" secondItem="RzR-8y-XKq" secondAttribute="leading" constant="20" id="dTW-B7-JRs"/>
+                                        <constraint firstItem="vDC-Kj-Cvu" firstAttribute="trailing" secondItem="Jya-fM-oRN" secondAttribute="trailing" id="mn0-Nw-7FR"/>
+                                        <constraint firstAttribute="trailing" secondItem="P4p-FB-bFf" secondAttribute="trailing" constant="15" id="pZL-9a-G3r"/>
+                                        <constraint firstItem="vDC-Kj-Cvu" firstAttribute="leading" secondItem="Jya-fM-oRN" secondAttribute="leading" id="zrm-37-jL2"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="RzR-8y-XKq" firstAttribute="height" secondItem="UBk-yl-GHU" secondAttribute="height" priority="250" id="K2c-DY-5Ag"/>
+                                <constraint firstItem="RzR-8y-XKq" firstAttribute="leading" secondItem="UBk-yl-GHU" secondAttribute="leading" id="QS8-ZV-zkp"/>
+                                <constraint firstItem="RzR-8y-XKq" firstAttribute="width" secondItem="UBk-yl-GHU" secondAttribute="width" id="duV-1l-kxJ"/>
+                                <constraint firstAttribute="trailing" secondItem="RzR-8y-XKq" secondAttribute="trailing" id="uV8-CK-pgU"/>
+                                <constraint firstAttribute="bottom" secondItem="RzR-8y-XKq" secondAttribute="bottom" id="uYg-lc-Kgf"/>
+                                <constraint firstItem="RzR-8y-XKq" firstAttribute="top" secondItem="UBk-yl-GHU" secondAttribute="top" id="uda-8e-E56"/>
+                            </constraints>
+                        </scrollView>
+                    </subviews>
+                    <color key="backgroundColor" name="VFGLightGreyBackground"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="UBk-yl-GHU" secondAttribute="bottom" id="AVX-76-QQ1"/>
+                        <constraint firstItem="UBk-yl-GHU" firstAttribute="leading" secondItem="P78-ON-jQD" secondAttribute="leading" id="LOD-ah-kpn"/>
+                        <constraint firstAttribute="trailing" secondItem="UBk-yl-GHU" secondAttribute="trailing" id="TI6-xz-szb"/>
+                        <constraint firstItem="UBk-yl-GHU" firstAttribute="top" secondItem="P78-ON-jQD" secondAttribute="top" id="jdS-LF-Bgp"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HMC-h4-PmJ" customClass="VFGButton" customModule="VFGMVA10Foundation">
+                    <rect key="frame" x="16" y="818" width="382" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="gxZ-ei-tKc"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="VodafoneRg-Regular" family="Vodafone Rg" pointSize="16"/>
+                    <state key="normal" title="Button">
+                        <color key="titleColor" name="VFGWhiteText"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="buttonStyle">
+                            <integer key="value" value="0"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="6.2000000000000002"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="confirmButtonDidPress:" destination="-1" eventType="touchUpInside" id="owc-Rg-UmL"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="wGP-61-Fh1"/>
+            <color key="backgroundColor" name="VFGLightGreyBackground"/>
+            <constraints>
+                <constraint firstItem="P78-ON-jQD" firstAttribute="leading" secondItem="wGP-61-Fh1" secondAttribute="leading" id="He7-Vk-unk"/>
+                <constraint firstItem="wGP-61-Fh1" firstAttribute="bottom" secondItem="HMC-h4-PmJ" secondAttribute="bottom" id="Jpt-Eo-BKz"/>
+                <constraint firstItem="HMC-h4-PmJ" firstAttribute="leading" secondItem="wGP-61-Fh1" secondAttribute="leading" constant="15.9" id="SI5-Cr-eOX"/>
+                <constraint firstItem="wGP-61-Fh1" firstAttribute="trailing" secondItem="HMC-h4-PmJ" secondAttribute="trailing" constant="15.9" id="Snv-Pm-Hf0"/>
+                <constraint firstItem="P78-ON-jQD" firstAttribute="top" secondItem="wGP-61-Fh1" secondAttribute="top" id="eHT-rK-h8f"/>
+                <constraint firstItem="HMC-h4-PmJ" firstAttribute="top" secondItem="P78-ON-jQD" secondAttribute="bottom" constant="30" id="mjD-vF-VUy"/>
+                <constraint firstItem="P78-ON-jQD" firstAttribute="centerX" secondItem="wGP-61-Fh1" secondAttribute="centerX" id="yMQ-Kw-kcq"/>
+            </constraints>
+            <point key="canvasLocation" x="-3" y="25"/>
+        </view>
+    </objects>
+    <designables>
+        <designable name="HMC-h4-PmJ">
+            <size key="intrinsicContentSize" width="43" height="30"/>
+        </designable>
+        <designable name="Jya-fM-oRN">
+            <size key="intrinsicContentSize" width="41.5" height="20.5"/>
+        </designable>
+        <designable name="vDC-Kj-Cvu">
+            <size key="intrinsicContentSize" width="41.5" height="20.5"/>
+        </designable>
+    </designables>
+    <resources>
+        <namedColor name="VFGLightGreyBackground">
+            <color red="0.95686274509803926" green="0.95686274509803926" blue="0.95686274509803926" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="VFGPrimaryText">
+            <color red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="VFGSecondaryText">
+            <color red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="VFGWhiteText">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

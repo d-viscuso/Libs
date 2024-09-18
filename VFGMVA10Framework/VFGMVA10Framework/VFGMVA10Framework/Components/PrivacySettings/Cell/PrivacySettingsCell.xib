@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="vodafone-bold.ttf">
+            <string>VodafoneRg-Bold</string>
+        </array>
+        <array key="vodafone-regular.ttf">
+            <string>VodafoneRg-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="PrivacySettingsCell" rowHeight="182" id="KGk-i7-Jjw" customClass="PrivacySettingsCell" customModule="VFGMVA10Framework" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="381" height="182.5"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="381" height="182.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YMz-3k-ddc" customClass="VFGLabel" customModule="VFGMVA10Foundation">
+                        <rect key="frame" x="16" y="0.0" width="349" height="29.5"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <fontDescription key="fontDescription" name="VodafoneRg-Bold" family="Vodafone Rg" pointSize="25"/>
+                        <color key="textColor" name="VFGDarkGreyTwoHeader"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QeG-Ur-aAy" customClass="VFGLabel" customModule="VFGMVA10Foundation">
+                        <rect key="frame" x="16" y="46.5" width="349" height="20"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <fontDescription key="fontDescription" name="VodafoneRg-Regular" family="Vodafone Rg" pointSize="17"/>
+                        <color key="textColor" name="VFGSecondaryText"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wPA-RW-CNo">
+                        <rect key="frame" x="16" y="82.5" width="349" height="58"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icAdmin" translatesAutoresizingMaskIntoConstraints="NO" id="800-RF-Drz" customClass="VFGImageView" customModule="VFGMVA10Foundation">
+                                <rect key="frame" x="16" y="12.5" width="33" height="33"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <bool key="isElement" value="YES"/>
+                                </accessibility>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="33" id="H7S-aD-KDV"/>
+                                    <constraint firstAttribute="height" constant="33" id="g2G-sQ-ZyC"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="imageName" value="icAdmin"/>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t85-SW-yMf" customClass="VFGLabel" customModule="VFGMVA10Foundation">
+                                <rect key="frame" x="65" y="18.5" width="235" height="21.5"/>
+                                <fontDescription key="fontDescription" name="VodafoneRg-Regular" family="Vodafone Rg" pointSize="19"/>
+                                <color key="textColor" name="VFGDarkGreyTwoHeader"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icChevronRightRedWhite" translatesAutoresizingMaskIntoConstraints="NO" id="pcj-47-yhs" customClass="VFGImageView" customModule="VFGMVA10Foundation">
+                                <rect key="frame" x="300" y="12.5" width="33" height="33"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="33" id="dto-C2-cVi"/>
+                                    <constraint firstAttribute="height" constant="33" id="ts4-1K-iSE"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="imageName" value="icChevronRightRedWhite"/>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" name="VFGWhiteBackground"/>
+                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="pcj-47-yhs" secondAttribute="trailing" constant="16" id="6D4-eM-q2Y"/>
+                            <constraint firstItem="t85-SW-yMf" firstAttribute="centerY" secondItem="wPA-RW-CNo" secondAttribute="centerY" id="CBb-eX-Loj"/>
+                            <constraint firstItem="pcj-47-yhs" firstAttribute="centerY" secondItem="wPA-RW-CNo" secondAttribute="centerY" id="LD5-1U-92s"/>
+                            <constraint firstItem="800-RF-Drz" firstAttribute="centerY" secondItem="wPA-RW-CNo" secondAttribute="centerY" id="R1m-h4-4ON"/>
+                            <constraint firstItem="t85-SW-yMf" firstAttribute="leading" secondItem="800-RF-Drz" secondAttribute="trailing" constant="16" id="UcD-F8-FIX"/>
+                            <constraint firstItem="800-RF-Drz" firstAttribute="leading" secondItem="wPA-RW-CNo" secondAttribute="leading" constant="16" id="Weq-5G-wcT"/>
+                            <constraint firstItem="pcj-47-yhs" firstAttribute="leading" secondItem="t85-SW-yMf" secondAttribute="trailing" id="uJh-bO-aIU"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="6"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ozN-E0-DpW" customClass="VFGButton" customModule="VFGMVA10Foundation">
+                        <rect key="frame" x="16" y="82.5" width="349" height="58"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="58" id="23N-jG-QmP"/>
+                        </constraints>
+                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <state key="normal" title="Button"/>
+                        <buttonConfiguration key="configuration" style="plain"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="6"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="titleColor">
+                                <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                        <connections>
+                            <action selector="privacySettingsButtonDidPress:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="YId-qO-kEc"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="ozN-E0-DpW" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="1DY-lt-Lre"/>
+                    <constraint firstAttribute="bottom" secondItem="ozN-E0-DpW" secondAttribute="bottom" constant="42" id="1bt-dE-ThA"/>
+                    <constraint firstItem="wPA-RW-CNo" firstAttribute="leading" secondItem="ozN-E0-DpW" secondAttribute="leading" id="7z4-NU-OfM"/>
+                    <constraint firstItem="wPA-RW-CNo" firstAttribute="trailing" secondItem="ozN-E0-DpW" secondAttribute="trailing" id="JLl-my-QJD"/>
+                    <constraint firstItem="ozN-E0-DpW" firstAttribute="top" secondItem="QeG-Ur-aAy" secondAttribute="bottom" constant="16" id="MZb-n8-u8h"/>
+                    <constraint firstAttribute="trailing" secondItem="YMz-3k-ddc" secondAttribute="trailing" constant="16" id="Q9v-4i-RAx"/>
+                    <constraint firstItem="QeG-Ur-aAy" firstAttribute="top" secondItem="YMz-3k-ddc" secondAttribute="bottom" constant="17" id="UKG-RI-rD1"/>
+                    <constraint firstItem="wPA-RW-CNo" firstAttribute="top" secondItem="ozN-E0-DpW" secondAttribute="top" id="bPB-fe-3tF"/>
+                    <constraint firstAttribute="trailing" secondItem="ozN-E0-DpW" secondAttribute="trailing" constant="16" id="ded-Jd-YUs"/>
+                    <constraint firstItem="YMz-3k-ddc" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="h3y-hI-CRj"/>
+                    <constraint firstItem="wPA-RW-CNo" firstAttribute="bottom" secondItem="ozN-E0-DpW" secondAttribute="bottom" id="it3-Pq-u1f"/>
+                    <constraint firstItem="YMz-3k-ddc" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="tV9-72-hzf"/>
+                    <constraint firstAttribute="trailing" secondItem="QeG-Ur-aAy" secondAttribute="trailing" constant="16" id="u3x-DI-ycs"/>
+                    <constraint firstItem="QeG-Ur-aAy" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="xYy-nn-k5o"/>
+                </constraints>
+                <userDefinedRuntimeAttributes>
+                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                        <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </userDefinedRuntimeAttribute>
+                </userDefinedRuntimeAttributes>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                    <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <connections>
+                <outlet property="actionIcon" destination="800-RF-Drz" id="nef-Wb-6b9"/>
+                <outlet property="actionTitle" destination="t85-SW-yMf" id="nWi-Tq-eTM"/>
+                <outlet property="actionView" destination="wPA-RW-CNo" id="o6s-YQ-DAZ"/>
+                <outlet property="privacySettingsButton" destination="ozN-E0-DpW" id="TvX-Pc-NPQ"/>
+                <outlet property="subtitleLabel" destination="QeG-Ur-aAy" id="VhN-Se-1Tn"/>
+                <outlet property="titleLabel" destination="YMz-3k-ddc" id="RzL-LR-Kzh"/>
+            </connections>
+            <point key="canvasLocation" x="181.8840579710145" y="129.57589285714286"/>
+        </tableViewCell>
+    </objects>
+    <designables>
+        <designable name="800-RF-Drz">
+            <size key="intrinsicContentSize" width="26" height="26"/>
+        </designable>
+        <designable name="QeG-Ur-aAy">
+            <size key="intrinsicContentSize" width="36.5" height="19.5"/>
+        </designable>
+        <designable name="YMz-3k-ddc">
+            <size key="intrinsicContentSize" width="59" height="28"/>
+        </designable>
+        <designable name="ozN-E0-DpW">
+            <size key="intrinsicContentSize" width="24" height="14"/>
+        </designable>
+        <designable name="pcj-47-yhs">
+            <size key="intrinsicContentSize" width="35" height="35"/>
+        </designable>
+        <designable name="t85-SW-yMf">
+            <size key="intrinsicContentSize" width="41" height="21.5"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="icAdmin" width="26" height="26"/>
+        <image name="icChevronRightRedWhite" width="35" height="35"/>
+        <namedColor name="VFGDarkGreyTwoHeader">
+            <color red="0.20000000298023224" green="0.20000000298023224" blue="0.20000000298023224" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="VFGSecondaryText">
+            <color red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="VFGWhiteBackground">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="vodafone-regular.ttf">
+            <string>VodafoneRg-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Permissions View Controller-->
+        <scene sceneID="mAM-fE-tvZ">
+            <objects>
+                <viewController storyboardIdentifier="VFGPermissionViewController" id="PnG-yB-UqY" customClass="VFGPermissionsViewController" customModule="VFGMVA10Framework" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="XDv-76-jok"/>
+                        <viewControllerLayoutGuide type="bottom" id="xpe-tS-9jx"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="zCi-KP-Mzx">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D0Q-cu-Aud">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="652"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="enT-DJ-5RA">
+                                        <rect key="frame" x="0.0" y="27" width="375" height="180"/>
+                                        <subviews>
+                                            <tableView clipsSubviews="YES" contentMode="scaleToFill" placeholderIntrinsicWidth="345" placeholderIntrinsicHeight="200" bounces="NO" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" contentViewInsetsToSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f2P-dH-lfZ">
+                                                <rect key="frame" x="20" y="27" width="335" height="153"/>
+                                                <color key="backgroundColor" name="VFGWhiteBackground"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="153" id="JZG-KG-61U"/>
+                                                </constraints>
+                                                <prototypes>
+                                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="PermissionsTableViewCell" rowHeight="120" id="Cs0-cn-Eye">
+                                                        <rect key="frame" x="0.0" y="24.5" width="335" height="120"/>
+                                                        <autoresizingMask key="autoresizingMask"/>
+                                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Cs0-cn-Eye" id="I2o-XJ-gKH">
+                                                            <rect key="frame" x="0.0" y="0.0" width="335" height="120"/>
+                                                            <autoresizingMask key="autoresizingMask"/>
+                                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </tableViewCellContentView>
+                                                        <color key="backgroundColor" name="VFGWhiteBackground"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="6"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </tableViewCell>
+                                                </prototypes>
+                                                <connections>
+                                                    <outlet property="dataSource" destination="PnG-yB-UqY" id="XRh-so-X8d"/>
+                                                </connections>
+                                            </tableView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="f2P-dH-lfZ" secondAttribute="trailing" constant="20" id="3bR-Be-s3E"/>
+                                            <constraint firstAttribute="bottom" secondItem="f2P-dH-lfZ" secondAttribute="bottom" id="BIS-SC-ACd"/>
+                                            <constraint firstItem="f2P-dH-lfZ" firstAttribute="top" secondItem="enT-DJ-5RA" secondAttribute="top" constant="27" id="pRx-cG-zcL"/>
+                                            <constraint firstItem="f2P-dH-lfZ" firstAttribute="leading" secondItem="enT-DJ-5RA" secondAttribute="leading" constant="20" id="wD3-3X-qfI"/>
+                                        </constraints>
+                                    </view>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" text="Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu." textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YUc-hU-a6G">
+                                        <rect key="frame" x="63" y="242" width="249" height="76"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="textColor" name="VFGDefaultInputLabel"/>
+                                        <fontDescription key="fontDescription" name="VodafoneRg-Regular" family="Vodafone Rg" pointSize="16.600000381469727"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" text="Settings" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="hsY-x7-z9K" userLabel="Settings Text View">
+                                        <rect key="frame" x="63" y="308" width="249" height="36"/>
+                                        <color key="textColor" name="VFGLinkDarkGreyText"/>
+                                        <fontDescription key="fontDescription" name="VodafoneRg-Regular" family="Vodafone Rg" pointSize="16.600000381469727"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="hsY-x7-z9K" firstAttribute="leading" secondItem="D0Q-cu-Aud" secondAttribute="leading" constant="63" id="0Ad-Xx-6JF"/>
+                                    <constraint firstAttribute="trailing" secondItem="enT-DJ-5RA" secondAttribute="trailing" id="3WP-4a-Whd"/>
+                                    <constraint firstItem="hsY-x7-z9K" firstAttribute="top" secondItem="YUc-hU-a6G" secondAttribute="bottom" constant="-10" id="Djp-d2-ef8"/>
+                                    <constraint firstAttribute="trailing" secondItem="hsY-x7-z9K" secondAttribute="trailing" constant="63" id="LjD-mP-F1M"/>
+                                    <constraint firstAttribute="bottom" secondItem="hsY-x7-z9K" secondAttribute="bottom" id="X1g-Vq-Thl"/>
+                                    <constraint firstItem="enT-DJ-5RA" firstAttribute="leading" secondItem="D0Q-cu-Aud" secondAttribute="leading" id="Yvd-Gq-Eo8"/>
+                                    <constraint firstItem="YUc-hU-a6G" firstAttribute="leading" secondItem="D0Q-cu-Aud" secondAttribute="leading" constant="63" id="bLF-Se-3pM"/>
+                                    <constraint firstAttribute="trailing" secondItem="YUc-hU-a6G" secondAttribute="trailing" constant="63" id="dvb-8q-lAc"/>
+                                    <constraint firstItem="hsY-x7-z9K" firstAttribute="centerX" secondItem="YUc-hU-a6G" secondAttribute="centerX" id="hVG-he-lTq"/>
+                                    <constraint firstItem="YUc-hU-a6G" firstAttribute="top" secondItem="enT-DJ-5RA" secondAttribute="bottom" constant="35" id="tVX-HS-NgP"/>
+                                    <constraint firstItem="enT-DJ-5RA" firstAttribute="top" secondItem="D0Q-cu-Aud" secondAttribute="top" constant="27" id="z19-i6-vFg"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" name="VFGLightGreyBackground"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="D0Q-cu-Aud" secondAttribute="bottom" constant="15" id="lBe-BT-8tP"/>
+                            <constraint firstItem="D0Q-cu-Aud" firstAttribute="top" secondItem="XDv-76-jok" secondAttribute="bottom" id="lYP-YI-Qg7"/>
+                            <constraint firstItem="D0Q-cu-Aud" firstAttribute="leading" secondItem="zCi-KP-Mzx" secondAttribute="leading" id="osJ-U1-kWc"/>
+                            <constraint firstAttribute="trailing" secondItem="D0Q-cu-Aud" secondAttribute="trailing" id="wiK-Tz-0gd"/>
+                            <constraint firstItem="enT-DJ-5RA" firstAttribute="width" secondItem="zCi-KP-Mzx" secondAttribute="width" id="yTT-4X-IDK"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="footerTextView" destination="YUc-hU-a6G" id="keV-1E-nh9"/>
+                        <outlet property="settingsTextView" destination="hsY-x7-z9K" id="3wQ-TB-tfC"/>
+                        <outlet property="tableView" destination="f2P-dH-lfZ" id="68S-gb-RBM"/>
+                        <outlet property="tableViewHeightConstraint" destination="JZG-KG-61U" id="3ew-kR-rpo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EHM-Ed-7bh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-216.80000000000001" y="-52.623688155922046"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="VFGDefaultInputLabel">
+            <color red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="VFGLightGreyBackground">
+            <color red="0.95686274509803926" green="0.95686274509803926" blue="0.95686274509803926" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="VFGLinkDarkGreyText">
+            <color red="0.20000000298023224" green="0.20000000298023224" blue="0.20000000298023224" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="VFGWhiteBackground">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

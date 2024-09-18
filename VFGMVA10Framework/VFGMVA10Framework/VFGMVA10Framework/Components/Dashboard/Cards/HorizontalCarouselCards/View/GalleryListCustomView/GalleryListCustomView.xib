@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="GalleryListCustomView" customModule="VFGMVA10Framework" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="228"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <collectionView autoresizesSubviews="NO" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="Tic-up-eWu">
+                    <rect key="frame" x="0.0" y="10" width="414" height="208"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="208" id="Jia-9p-l7y"/>
+                    </constraints>
+                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="I8t-kn-6sR">
+                        <size key="itemSize" width="200" height="128"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <constraints>
+                <constraint firstItem="Tic-up-eWu" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="CrK-9f-irn"/>
+                <constraint firstAttribute="trailing" secondItem="Tic-up-eWu" secondAttribute="trailing" id="GD7-7i-DAo"/>
+                <constraint firstItem="Tic-up-eWu" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="aha-9e-Yqq"/>
+                <constraint firstAttribute="bottom" secondItem="Tic-up-eWu" secondAttribute="bottom" constant="10" id="qAP-wI-j2Z"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="collectionViewBottomConstraint" destination="qAP-wI-j2Z" id="7xd-nS-Tqd"/>
+                <outlet property="collectionViewHeightConstraint" destination="Jia-9p-l7y" id="N3N-mb-wfc"/>
+                <outlet property="collectionViewLeadingConstraint" destination="aha-9e-Yqq" id="49j-0O-YKT"/>
+                <outlet property="collectionViewTopConstraint" destination="CrK-9f-irn" id="LWL-vg-qGL"/>
+                <outlet property="galleryCollectionView" destination="Tic-up-eWu" id="MXe-C8-j5k"/>
+            </connections>
+            <point key="canvasLocation" x="171" y="100"/>
+        </view>
+    </objects>
+</document>

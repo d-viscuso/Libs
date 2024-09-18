@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="vodafone-bold.ttf">
+            <string>VodafoneRg-Bold</string>
+        </array>
+        <array key="vodafone-regular.ttf">
+            <string>VodafoneRg-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="iN0-l3-epB" customClass="VFGInfoConfirmationAlert" customModule="VFGMVA10Foundation" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="342"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icInfoCircleHi" translatesAutoresizingMaskIntoConstraints="NO" id="Rjh-ck-5kv" customClass="VFGImageView" customModule="VFGMVA10Foundation" customModuleProvider="target">
+                    <rect key="frame" x="159" y="13" width="96" height="96"/>
+                    <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <accessibility key="accessibilityConfiguration">
+                        <bool key="isElement" value="YES"/>
+                    </accessibility>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="96" id="Dyf-kA-Bc6"/>
+                        <constraint firstAttribute="width" constant="96" id="KeL-Ik-uYQ"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="imageName" value="icInfoCircleHi"/>
+                    </userDefinedRuntimeAttributes>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Why is my bill showing a negative balance?" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K5I-DC-DNK" customClass="VFGLabel" customModule="VFGMVA10Foundation" customModuleProvider="target">
+                    <rect key="frame" x="16" y="117" width="382" height="20.5"/>
+                    <fontDescription key="fontDescription" name="VodafoneRg-Bold" family="Vodafone Rg" pointSize="18"/>
+                    <color key="textColor" name="VFGPrimaryText"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nmN-cq-78r" customClass="VFGLabel" customModule="VFGMVA10Foundation" customModuleProvider="target">
+                    <rect key="frame" x="18" y="153.5" width="377" height="54"/>
+                    <string key="text">A negative bill indicates that your account was charged with enough money to cover the current bill and still have some balance left.</string>
+                    <fontDescription key="fontDescription" name="VodafoneRg-Regular" family="Vodafone Rg" pointSize="16"/>
+                    <color key="textColor" name="VFGPrimaryText"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="inX-Ge-mx5" customClass="VFGButton" customModule="VFGMVA10Foundation" customModuleProvider="target">
+                    <rect key="frame" x="16" y="239.5" width="382" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="69X-nS-Ypq"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <state key="normal" title="Button"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="buttonStyle">
+                            <integer key="value" value="0"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="backgroundStyle">
+                            <integer key="value" value="0"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="6"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="confirm:" destination="iN0-l3-epB" eventType="touchUpInside" id="6gN-Sy-QKX"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="K5I-DC-DNK" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="0Pm-Ah-2H6"/>
+                <constraint firstItem="K5I-DC-DNK" firstAttribute="top" secondItem="Rjh-ck-5kv" secondAttribute="bottom" constant="8" id="5dS-5b-mr2"/>
+                <constraint firstAttribute="trailing" secondItem="nmN-cq-78r" secondAttribute="trailing" constant="19" id="JHO-wM-2bP"/>
+                <constraint firstAttribute="trailing" secondItem="inX-Ge-mx5" secondAttribute="trailing" constant="16" id="JgV-pQ-Oau"/>
+                <constraint firstAttribute="trailing" secondItem="K5I-DC-DNK" secondAttribute="trailing" constant="16" id="RSu-49-vYN"/>
+                <constraint firstItem="inX-Ge-mx5" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="ZuG-J3-Y7F"/>
+                <constraint firstItem="nmN-cq-78r" firstAttribute="top" secondItem="K5I-DC-DNK" secondAttribute="bottom" constant="16" id="bNp-4z-Shk"/>
+                <constraint firstItem="Rjh-ck-5kv" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="fEk-Kc-iPe"/>
+                <constraint firstItem="nmN-cq-78r" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="18" id="nA5-ag-HmA"/>
+                <constraint firstItem="Rjh-ck-5kv" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="13" id="pZx-Dg-Lem"/>
+                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="inX-Ge-mx5" secondAttribute="bottom" constant="37" id="pf4-an-dCG"/>
+                <constraint firstItem="inX-Ge-mx5" firstAttribute="top" secondItem="nmN-cq-78r" secondAttribute="bottom" constant="32" id="tHO-F9-bNu"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="confirmButton" destination="inX-Ge-mx5" id="z6i-Lo-AUz"/>
+                <outlet property="infoAnswerLabel" destination="nmN-cq-78r" id="7gc-ZS-cA9"/>
+                <outlet property="infoIconImageBottomSpace" destination="5dS-5b-mr2" id="oZC-hg-QT3"/>
+                <outlet property="infoIconImageTopSpace" destination="pZx-Dg-Lem" id="5zL-p4-J2u"/>
+                <outlet property="infoIconImageView" destination="Rjh-ck-5kv" id="iDX-Kv-MmI"/>
+                <outlet property="infoIconImageViewHeight" destination="Dyf-kA-Bc6" id="VPw-9j-uAH"/>
+                <outlet property="infoIconImageViewWidth" destination="KeL-Ik-uYQ" id="m2H-yx-JaE"/>
+                <outlet property="infoQuestionLabel" destination="K5I-DC-DNK" id="xGn-tJ-dwr"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="320.75892857142856"/>
+        </view>
+    </objects>
+    <designables>
+        <designable name="K5I-DC-DNK">
+            <size key="intrinsicContentSize" width="323" height="20.5"/>
+        </designable>
+        <designable name="Rjh-ck-5kv">
+            <size key="intrinsicContentSize" width="96" height="96"/>
+        </designable>
+        <designable name="inX-Ge-mx5">
+            <size key="intrinsicContentSize" width="54" height="34"/>
+        </designable>
+        <designable name="nmN-cq-78r">
+            <size key="intrinsicContentSize" width="818" height="18"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="icInfoCircleHi" width="96" height="96"/>
+        <namedColor name="VFGPrimaryText">
+            <color red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

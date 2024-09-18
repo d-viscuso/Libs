@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="vodafone-regular.ttf">
+            <string>VodafoneRg-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="VFGTopUpOfferView" customModule="VFGMVA10Framework" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="351" height="355"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4DU-Dh-ysP" customClass="VFGButton" customModule="VFGMVA10Foundation">
+                    <rect key="frame" x="16" y="216" width="319" height="44"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <accessibility key="accessibilityConfiguration" identifier="TPacceptOfferButton"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="lAS-tQ-sd2"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="VodafoneRg-Regular" family="Vodafone Rg" pointSize="19"/>
+                    <state key="normal" title="Button">
+                        <color key="titleColor" name="VFGTertiaryButtonActiveText"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="6"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="backgroundStyle">
+                            <integer key="value" value="0"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="buttonStyle">
+                            <integer key="value" value="0"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="topUpButtonClicked:" destination="iN0-l3-epB" eventType="touchUpInside" id="zBK-h3-KEY"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="252" text="Offer ends on Thursday." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nTM-7N-pYb" customClass="VFGLabel" customModule="VFGMVA10Foundation">
+                    <rect key="frame" x="16" y="146.5" width="319" height="19.5"/>
+                    <accessibility key="accessibilityConfiguration" identifier="TPofferEndDate"/>
+                    <fontDescription key="fontDescription" name="VodafoneRg-Regular" family="Vodafone Rg" pointSize="17"/>
+                    <color key="textColor" name="VFGPrimaryText"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="252" text="Normal price 10€" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dCX-JU-fi1" customClass="VFGLabel" customModule="VFGMVA10Foundation">
+                    <rect key="frame" x="16" y="118.5" width="319" height="20"/>
+                    <accessibility key="accessibilityConfiguration" identifier="TPofferNormalPrice"/>
+                    <fontDescription key="fontDescription" name="VodafoneRg-Regular" family="Vodafone Rg" pointSize="17"/>
+                    <color key="textColor" name="VFGPrimaryText"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="251" text="If you top-up by £15 you can get 5GB of data for only £5." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ftZ-b3-qLv" customClass="VFGLabel" customModule="VFGMVA10Foundation">
+                    <rect key="frame" x="16" y="0.0" width="319" height="110.5"/>
+                    <accessibility key="accessibilityConfiguration" identifier="TPofferMainTitle"/>
+                    <fontDescription key="fontDescription" name="VodafoneRg-Regular" family="Vodafone Rg" pointSize="29"/>
+                    <color key="textColor" name="VFGPrimaryText"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xFt-iF-TLn" customClass="VFGButton" customModule="VFGMVA10Foundation">
+                    <rect key="frame" x="16" y="276" width="319" height="44"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <accessibility key="accessibilityConfiguration" identifier="TPnoThanksButton"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="Qep-lk-ml5"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="VodafoneRg-Regular" family="Vodafone Rg" pointSize="19"/>
+                    <state key="normal" title="Button">
+                        <color key="titleColor" name="VFGPrimaryText"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="6"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="backgroundStyle">
+                            <integer key="value" value="0"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="buttonStyle">
+                            <integer key="value" value="2"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="noButtonClicked:" destination="iN0-l3-epB" eventType="touchUpInside" id="Q9j-1D-8Ge"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="dCX-JU-fi1" secondAttribute="trailing" constant="16" id="AwF-W2-bqc"/>
+                <constraint firstItem="ftZ-b3-qLv" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="Aws-ue-irI"/>
+                <constraint firstAttribute="bottom" secondItem="xFt-iF-TLn" secondAttribute="bottom" constant="35" id="C53-Tm-vTc"/>
+                <constraint firstItem="4DU-Dh-ysP" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="Dri-Ip-PLe"/>
+                <constraint firstItem="xFt-iF-TLn" firstAttribute="top" secondItem="4DU-Dh-ysP" secondAttribute="bottom" constant="16" id="Duc-zJ-gKp"/>
+                <constraint firstItem="nTM-7N-pYb" firstAttribute="top" secondItem="dCX-JU-fi1" secondAttribute="bottom" constant="8" id="FsQ-8Z-PNX"/>
+                <constraint firstItem="dCX-JU-fi1" firstAttribute="top" secondItem="ftZ-b3-qLv" secondAttribute="bottom" constant="8" id="UYZ-34-hyi"/>
+                <constraint firstItem="nTM-7N-pYb" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="VBP-ek-xG3"/>
+                <constraint firstAttribute="trailing" secondItem="4DU-Dh-ysP" secondAttribute="trailing" constant="16" id="XUq-wh-CRh"/>
+                <constraint firstAttribute="trailing" secondItem="ftZ-b3-qLv" secondAttribute="trailing" constant="16" id="Yuv-rI-88F"/>
+                <constraint firstItem="xFt-iF-TLn" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="ozq-Qc-SdA"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="nTM-7N-pYb" secondAttribute="trailing" constant="16" id="peg-sg-Xg0"/>
+                <constraint firstItem="ftZ-b3-qLv" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="pew-mm-E8Q"/>
+                <constraint firstItem="4DU-Dh-ysP" firstAttribute="top" secondItem="nTM-7N-pYb" secondAttribute="bottom" constant="50" id="phW-d7-thw"/>
+                <constraint firstItem="dCX-JU-fi1" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="vR9-SP-bE9"/>
+                <constraint firstAttribute="trailing" secondItem="xFt-iF-TLn" secondAttribute="trailing" constant="16" id="xwN-Wf-4Rl"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="noButton" destination="xFt-iF-TLn" id="ZMf-4g-BJO"/>
+                <outlet property="normalPriceLabel" destination="dCX-JU-fi1" id="5fU-SR-Luj"/>
+                <outlet property="offerEndLabel" destination="nTM-7N-pYb" id="pde-67-a44"/>
+                <outlet property="offerTextLabel" destination="ftZ-b3-qLv" id="Cpz-rN-Ham"/>
+                <outlet property="topUpButton" destination="4DU-Dh-ysP" id="J4U-hJ-gXN"/>
+            </connections>
+            <point key="canvasLocation" x="146.40000000000001" y="-312.59370314842579"/>
+        </view>
+    </objects>
+    <designables>
+        <designable name="4DU-Dh-ysP">
+            <size key="intrinsicContentSize" width="51" height="34"/>
+        </designable>
+        <designable name="dCX-JU-fi1">
+            <size key="intrinsicContentSize" width="115" height="19.5"/>
+        </designable>
+        <designable name="ftZ-b3-qLv">
+            <size key="intrinsicContentSize" width="631.5" height="32.5"/>
+        </designable>
+        <designable name="nTM-7N-pYb">
+            <size key="intrinsicContentSize" width="155.5" height="19.5"/>
+        </designable>
+        <designable name="xFt-iF-TLn">
+            <size key="intrinsicContentSize" width="51" height="34"/>
+        </designable>
+    </designables>
+    <resources>
+        <namedColor name="VFGPrimaryText">
+            <color red="0.050980392156862744" green="0.050980392156862744" blue="0.050980392156862744" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="VFGTertiaryButtonActiveText">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

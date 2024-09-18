@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="VFGSwitchAccountViewController" customModule="VFGMVA10Framework" customModuleProvider="target">
+            <connections>
+                <outlet property="addAccountButton" destination="mVS-f4-mfu" id="zZR-Xx-0JL"/>
+                <outlet property="cancelButton" destination="6A4-NW-mTx" id="Oay-F7-Sfd"/>
+                <outlet property="mainStackBottomConstraint" destination="voX-07-1HV" id="Gki-7S-KQ6"/>
+                <outlet property="mainStackHeightConstraint" destination="KCT-Ih-9Rm" id="dnV-gq-ki0"/>
+                <outlet property="stackviewTopConstraint" destination="W4H-Fr-eBC" id="X6e-0W-XhL"/>
+                <outlet property="tableView" destination="k5n-c7-Mh2" id="aKF-C1-Qt8"/>
+                <outlet property="tableViewHeightConstraint" destination="kc3-hu-Wbg" id="56D-rg-XoP"/>
+                <outlet property="view" destination="iN0-l3-epB" id="bkE-MX-uaF"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="369" height="411"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="lR9-8P-t87">
+                    <rect key="frame" x="0.0" y="-35" width="369" height="411"/>
+                    <subviews>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" placeholderIntrinsicWidth="512" placeholderIntrinsicHeight="370" alwaysBounceVertical="YES" style="grouped" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="k5n-c7-Mh2">
+                            <rect key="frame" x="0.0" y="0.0" width="369" height="337"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="150" id="kc3-hu-Wbg"/>
+                            </constraints>
+                        </tableView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6A4-NW-mTx" customClass="VFGButton" customModule="VFGMVA10Foundation">
+                            <rect key="frame" x="16" y="369" width="337" height="42"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="42" id="bqR-Sh-L5E"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <state key="normal" title="Cancel"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="buttonStyle">
+                                    <integer key="value" value="2"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="cancelButtonDidPress:" destination="-1" eventType="touchUpInside" id="EYY-gT-Lda"/>
+                            </connections>
+                        </button>
+                        <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mVS-f4-mfu" customClass="VFGButton" customModule="VFGMVA10Foundation">
+                            <rect key="frame" x="16" y="411" width="337" height="42"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="42" id="xKa-t4-J0y"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" title="Add an account"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="buttonStyle">
+                                    <integer key="value" value="1"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="addAccountButtonDidPress:" destination="-1" eventType="touchUpInside" id="jRu-xF-xZP"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" name="VFGWhiteBackground"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="k5n-c7-Mh2" secondAttribute="trailing" id="59S-Nx-EXg"/>
+                        <constraint firstItem="k5n-c7-Mh2" firstAttribute="top" secondItem="lR9-8P-t87" secondAttribute="top" id="FIx-oS-5Da"/>
+                        <constraint firstAttribute="height" priority="750" id="KCT-Ih-9Rm"/>
+                        <constraint firstItem="6A4-NW-mTx" firstAttribute="leading" secondItem="lR9-8P-t87" secondAttribute="leading" constant="16" id="OBd-Yj-sQc"/>
+                        <constraint firstItem="mVS-f4-mfu" firstAttribute="leading" secondItem="lR9-8P-t87" secondAttribute="leading" constant="16" id="RjN-nt-4Wp"/>
+                        <constraint firstAttribute="trailing" secondItem="6A4-NW-mTx" secondAttribute="trailing" constant="16" id="Tye-CC-fao"/>
+                        <constraint firstAttribute="trailing" secondItem="mVS-f4-mfu" secondAttribute="trailing" constant="16" id="ZqH-UQ-qd9"/>
+                        <constraint firstItem="k5n-c7-Mh2" firstAttribute="leading" secondItem="lR9-8P-t87" secondAttribute="leading" id="qQf-MY-E9x"/>
+                    </constraints>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" name="VFGWhiteBackground"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="lR9-8P-t87" secondAttribute="trailing" id="2Yu-Cq-fkI"/>
+                <constraint firstItem="lR9-8P-t87" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="Ksp-li-hQV"/>
+                <constraint firstItem="lR9-8P-t87" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="-35" id="W4H-Fr-eBC"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="lR9-8P-t87" secondAttribute="bottom" priority="750" constant="35" id="voX-07-1HV"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="39.855072463768117" y="-39.174107142857139"/>
+        </view>
+    </objects>
+    <designables>
+        <designable name="6A4-NW-mTx">
+            <size key="intrinsicContentSize" width="48" height="30"/>
+        </designable>
+        <designable name="mVS-f4-mfu">
+            <size key="intrinsicContentSize" width="108" height="30"/>
+        </designable>
+    </designables>
+    <resources>
+        <namedColor name="VFGWhiteBackground">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

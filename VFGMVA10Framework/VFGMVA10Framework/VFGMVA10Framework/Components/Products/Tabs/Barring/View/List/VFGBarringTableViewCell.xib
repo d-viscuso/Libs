@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="vodafone-regular.ttf">
+            <string>VodafoneRg-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="114" id="KGk-i7-Jjw" customClass="VFGBarringTableViewCell" customModule="VFGMVA10Framework" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="524" height="114"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="524" height="114"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b0c-or-JSk" customClass="VFGLabel" customModule="VFGMVA10Foundation">
+                        <rect key="frame" x="16" y="27" width="414" height="0.0"/>
+                        <fontDescription key="fontDescription" name="VodafoneRg-Regular" family="Vodafone Rg" pointSize="18"/>
+                        <color key="textColor" name="VFGPrimaryText"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zwh-9T-IAf" customClass="VFGButton" customModule="VFGMVA10Foundation">
+                        <rect key="frame" x="446" y="7" width="62" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="3lc-zP-l8d"/>
+                            <constraint firstAttribute="width" constant="62" id="Epc-pj-LUZ"/>
+                        </constraints>
+                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                        <state key="normal" image="definition_toggle_on"/>
+                        <connections>
+                            <action selector="toggleButtonPressed:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Ge9-VG-r5a"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CQ0-br-Xyk" customClass="VFGLabel" customModule="VFGMVA10Foundation">
+                        <rect key="frame" x="16" y="41" width="492" height="55"/>
+                        <fontDescription key="fontDescription" name="VodafoneRg-Regular" family="Vodafone Rg" pointSize="14"/>
+                        <color key="textColor" name="VFGPrimaryText"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="J4U-3P-ra8">
+                        <rect key="frame" x="16" y="113" width="492" height="1"/>
+                        <color key="backgroundColor" red="0.92156862745098034" green="0.92156862745098034" blue="0.92156862745098034" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="EcJ-Qz-sjI"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="CQ0-br-Xyk" firstAttribute="leading" secondItem="b0c-or-JSk" secondAttribute="leading" id="2Un-17-Yv4"/>
+                    <constraint firstItem="J4U-3P-ra8" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="8ma-NC-Bv8"/>
+                    <constraint firstAttribute="trailing" secondItem="J4U-3P-ra8" secondAttribute="trailing" constant="16" id="ABR-U7-XG0"/>
+                    <constraint firstItem="zwh-9T-IAf" firstAttribute="trailing" secondItem="CQ0-br-Xyk" secondAttribute="trailing" id="AcX-5p-FAn"/>
+                    <constraint firstItem="b0c-or-JSk" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="Mc9-L3-cl0"/>
+                    <constraint firstItem="b0c-or-JSk" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="27" id="Wxo-ny-85H"/>
+                    <constraint firstItem="zwh-9T-IAf" firstAttribute="leading" secondItem="b0c-or-JSk" secondAttribute="trailing" constant="16" id="Yfp-b4-jhh"/>
+                    <constraint firstItem="CQ0-br-Xyk" firstAttribute="top" secondItem="b0c-or-JSk" secondAttribute="bottom" constant="14" id="cWE-DR-8iv"/>
+                    <constraint firstAttribute="bottom" secondItem="J4U-3P-ra8" secondAttribute="bottom" id="lcG-t4-D3O"/>
+                    <constraint firstAttribute="trailing" secondItem="zwh-9T-IAf" secondAttribute="trailing" constant="16" id="qea-SR-Wpv"/>
+                    <constraint firstItem="J4U-3P-ra8" firstAttribute="top" secondItem="CQ0-br-Xyk" secondAttribute="bottom" constant="17" id="yD8-RC-PDy"/>
+                    <constraint firstItem="zwh-9T-IAf" firstAttribute="centerY" secondItem="b0c-or-JSk" secondAttribute="centerY" id="ySL-aP-lMj"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="descriptionLabel" destination="CQ0-br-Xyk" id="SSf-nH-Pql"/>
+                <outlet property="separatorView" destination="J4U-3P-ra8" id="ckH-Bt-ae2"/>
+                <outlet property="titleLabel" destination="b0c-or-JSk" id="tjf-2j-0nj"/>
+                <outlet property="toggleButton" destination="zwh-9T-IAf" id="nN4-Bc-yGj"/>
+            </connections>
+            <point key="canvasLocation" x="-82.608695652173921" y="48.214285714285715"/>
+        </tableViewCell>
+    </objects>
+    <designables>
+        <designable name="CQ0-br-Xyk"/>
+        <designable name="b0c-or-JSk"/>
+        <designable name="zwh-9T-IAf">
+            <size key="intrinsicContentSize" width="40" height="24"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="definition_toggle_on" width="40" height="24"/>
+        <namedColor name="VFGPrimaryText">
+            <color red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

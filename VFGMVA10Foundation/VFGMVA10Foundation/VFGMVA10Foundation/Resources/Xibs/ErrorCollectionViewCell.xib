@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="vodafone-bold.ttf">
+            <string>VodafoneRg-Bold</string>
+        </array>
+        <array key="vodafone-regular.ttf">
+            <string>VodafoneRg-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ErrorCollectionViewCell" rowHeight="450" id="Ih6-X9-Uwa" customClass="ErrorCollectionViewCell" customModule="VFGMVA10Foundation" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="450"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Ih6-X9-Uwa" id="zci-Kg-VY5">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="450"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UvK-V3-vpN">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="450"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="67" translatesAutoresizingMaskIntoConstraints="NO" id="oKP-bC-VoC" userLabel="No Appointment Stack View">
+                                <rect key="frame" x="32" y="18" width="256" height="414"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icWarningHiLightTheme" translatesAutoresizingMaskIntoConstraints="NO" id="gcD-f9-hUS" customClass="VFGImageView" customModule="VFGMVA10Foundation" customModuleProvider="target">
+                                        <rect key="frame" x="76" y="0.0" width="104" height="104"/>
+                                        <accessibility key="accessibilityConfiguration">
+                                            <bool key="isElement" value="YES"/>
+                                        </accessibility>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="104" id="GOY-UN-rJO"/>
+                                            <constraint firstAttribute="width" constant="104" id="x2j-6H-oAP"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Error title" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="67X-Kb-r3U" customClass="VFGLabel" customModule="VFGMVA10Foundation">
+                                        <rect key="frame" x="90" y="171" width="76.5" height="44"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="v9k-2i-VJC"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="VodafoneRg-Bold" family="Vodafone Rg" pointSize="18.700000762939453"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Error Description" textAlignment="center" lineBreakMode="middleTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="E2v-bw-wZ0" customClass="VFGLabel" customModule="VFGMVA10Foundation">
+                                        <rect key="frame" x="80" y="282" width="96" height="35"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="35" id="8YJ-2z-szW"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="VodafoneRg-Regular" family="Vodafone Rg" pointSize="14.699999809265137"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TY9-zF-tdR">
+                                        <rect key="frame" x="88" y="384" width="80" height="30"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rzS-43-tNZ" customClass="VFGButton" customModule="VFGMVA10Foundation">
+                                                <rect key="frame" x="0.0" y="0.0" width="80" height="25"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="Button"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="titleColor">
+                                                        <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="tryAgainButtonDidPress:" destination="Ih6-X9-Uwa" eventType="touchUpInside" id="BQV-Aj-lYv"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Try again" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="91r-AN-FQA" customClass="VFGLabel" customModule="VFGMVA10Foundation">
+                                                <rect key="frame" x="0.0" y="9" width="51" height="16.5"/>
+                                                <fontDescription key="fontDescription" name="VodafoneRg-Regular" family="Vodafone Rg" pointSize="14.600000381469727"/>
+                                                <color key="textColor" name="VFGErrorInputHelperText"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icRefreshRed" translatesAutoresizingMaskIntoConstraints="NO" id="MxH-7h-2ck" customClass="VFGImageView" customModule="VFGMVA10Foundation">
+                                                <rect key="frame" x="55" y="5" width="25" height="25"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="25" id="kmB-qP-C0u"/>
+                                                    <constraint firstAttribute="width" constant="25" id="lyx-Kd-I1p"/>
+                                                </constraints>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="MxH-7h-2ck" secondAttribute="bottom" id="5a1-e5-OKz"/>
+                                            <constraint firstItem="MxH-7h-2ck" firstAttribute="top" secondItem="TY9-zF-tdR" secondAttribute="top" constant="5" id="9kw-s4-eMc"/>
+                                            <constraint firstItem="MxH-7h-2ck" firstAttribute="leading" secondItem="91r-AN-FQA" secondAttribute="trailing" constant="4" id="MJo-ig-I1M"/>
+                                            <constraint firstItem="91r-AN-FQA" firstAttribute="top" secondItem="TY9-zF-tdR" secondAttribute="top" constant="9" id="YXk-ca-TVh"/>
+                                            <constraint firstItem="91r-AN-FQA" firstAttribute="leading" secondItem="TY9-zF-tdR" secondAttribute="leading" id="ilq-cE-MOe"/>
+                                            <constraint firstAttribute="trailing" secondItem="MxH-7h-2ck" secondAttribute="trailing" id="qRk-UH-xl8"/>
+                                            <constraint firstAttribute="height" constant="30" id="yX6-Ng-Yf8"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="oKP-bC-VoC" firstAttribute="leading" secondItem="UvK-V3-vpN" secondAttribute="leading" constant="32" id="1XF-U4-yd3"/>
+                            <constraint firstItem="oKP-bC-VoC" firstAttribute="top" secondItem="UvK-V3-vpN" secondAttribute="top" constant="18" id="LSg-f9-pXx"/>
+                            <constraint firstAttribute="trailing" secondItem="oKP-bC-VoC" secondAttribute="trailing" constant="32" id="T0Y-vT-Xog"/>
+                            <constraint firstAttribute="bottom" secondItem="oKP-bC-VoC" secondAttribute="bottom" constant="18" id="VmQ-Pd-e2F"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="UvK-V3-vpN" firstAttribute="leading" secondItem="zci-Kg-VY5" secondAttribute="leading" id="Crb-xf-i34"/>
+                    <constraint firstItem="UvK-V3-vpN" firstAttribute="top" secondItem="zci-Kg-VY5" secondAttribute="top" id="Lsc-97-bdh"/>
+                    <constraint firstAttribute="trailing" secondItem="UvK-V3-vpN" secondAttribute="trailing" id="gOG-Gi-OhX"/>
+                    <constraint firstAttribute="bottom" secondItem="UvK-V3-vpN" secondAttribute="bottom" id="kcQ-DS-mJe"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="errorDescriptionLabel" destination="E2v-bw-wZ0" id="EGx-ne-yR8"/>
+                <outlet property="errorTitleLabel" destination="67X-Kb-r3U" id="fsD-gH-iPV"/>
+                <outlet property="tryAgainButton" destination="rzS-43-tNZ" id="yNz-Ti-4cH"/>
+                <outlet property="tryAgainImageView" destination="MxH-7h-2ck" id="SIY-QH-lWz"/>
+                <outlet property="tryAgainLabel" destination="91r-AN-FQA" id="yAc-00-Cxy"/>
+                <outlet property="tryAgainView" destination="TY9-zF-tdR" id="dJI-bO-ekI"/>
+                <outlet property="warningImageView" destination="gcD-f9-hUS" id="sSt-9Z-4aG"/>
+            </connections>
+            <point key="canvasLocation" x="-13.043478260869566" y="154.01785714285714"/>
+        </tableViewCell>
+    </objects>
+    <designables>
+        <designable name="67X-Kb-r3U">
+            <size key="intrinsicContentSize" width="76.5" height="21"/>
+        </designable>
+        <designable name="91r-AN-FQA">
+            <size key="intrinsicContentSize" width="51" height="16.5"/>
+        </designable>
+        <designable name="E2v-bw-wZ0">
+            <size key="intrinsicContentSize" width="96" height="16.5"/>
+        </designable>
+        <designable name="MxH-7h-2ck">
+            <size key="intrinsicContentSize" width="26" height="26"/>
+        </designable>
+        <designable name="rzS-43-tNZ">
+            <size key="intrinsicContentSize" width="46" height="30"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="icRefreshRed" width="26" height="26"/>
+        <image name="icWarningHiLightTheme" width="125" height="125"/>
+        <namedColor name="VFGErrorInputHelperText">
+            <color red="0.90196078431372551" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

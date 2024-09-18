@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="vodafone-regular.ttf">
+            <string>VodafoneRg-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="U6b-Vx-4bR" customClass="TitleHeaderCollectionReusableView" customModule="VFGMVA10Framework" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="38"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Quick links" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ydO-ON-GTb" customClass="VFGLabel" customModule="VFGMVA10Framework" customModuleProvider="target">
+                    <rect key="frame" x="16" y="0.0" width="304" height="28"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="28" id="KPn-Gu-DFb"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="VodafoneRg-Regular" family="Vodafone Rg" pointSize="24"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="VXr-Tz-HHm"/>
+            <constraints>
+                <constraint firstItem="ydO-ON-GTb" firstAttribute="leading" secondItem="U6b-Vx-4bR" secondAttribute="leading" constant="16" id="Q1T-jN-fpx"/>
+                <constraint firstItem="ydO-ON-GTb" firstAttribute="top" secondItem="U6b-Vx-4bR" secondAttribute="top" id="Qxa-P8-rK1"/>
+                <constraint firstAttribute="trailing" secondItem="ydO-ON-GTb" secondAttribute="trailing" id="UM3-kG-Dx7"/>
+                <constraint firstItem="VXr-Tz-HHm" firstAttribute="bottom" secondItem="ydO-ON-GTb" secondAttribute="bottom" constant="10" id="t1N-kT-JI3"/>
+            </constraints>
+            <connections>
+                <outlet property="titleLabel" destination="ydO-ON-GTb" id="ti4-1r-Ehk"/>
+            </connections>
+            <point key="canvasLocation" x="-46.376811594202906" y="36.160714285714285"/>
+        </collectionReusableView>
+    </objects>
+</document>

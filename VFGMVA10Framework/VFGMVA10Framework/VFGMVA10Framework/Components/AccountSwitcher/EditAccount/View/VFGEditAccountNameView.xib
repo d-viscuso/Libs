@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="vodafone-regular.ttf">
+            <string>VodafoneRg-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="VFGEditAccountNameView" customModule="VFGMVA10Framework" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="380" height="303"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="azA-Of-ZnS">
+                    <rect key="frame" x="16" y="6" width="348" height="111"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FI2-CV-Ypd" customClass="VFGLabel" customModule="VFGMVA10Framework" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="59" height="32"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="32" id="8Zh-5B-Muh"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="VodafoneRg-Regular" family="Vodafone Rg" pointSize="24"/>
+                            <color key="textColor" name="VFGPrimaryText"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xZ9-7s-2fd" customClass="VFGTextField" customModule="VFGMVA10Foundation">
+                            <rect key="frame" x="0.0" y="47" width="348" height="64"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="64" id="1Xg-vR-Upg"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="xZ9-7s-2fd" firstAttribute="width" secondItem="azA-Of-ZnS" secondAttribute="width" id="gsU-xr-uZJ"/>
+                    </constraints>
+                </stackView>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="FNS-Ew-ugl">
+                    <rect key="frame" x="16" y="139" width="348" height="104"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xeH-go-x6J" userLabel="Save Button" customClass="VFGButton" customModule="VFGMVA10Foundation">
+                            <rect key="frame" x="0.0" y="0.0" width="348" height="44"/>
+                            <accessibility key="accessibilityConfiguration" identifier="loginBtn"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="44" id="R0q-qP-ZQx"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="VodafoneRg-Regular" family="Vodafone Rg" pointSize="16"/>
+                            <state key="normal" title="Save account name"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="buttonStyle">
+                                    <integer key="value" value="0"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="backgroundStyle">
+                                    <integer key="value" value="0"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="saveButtonDidPress:" destination="iN0-l3-epB" eventType="touchUpInside" id="Hl1-11-gJ2"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ss7-ji-iVr" customClass="VFGButton" customModule="VFGMVA10Framework" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="60" width="348" height="44"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="44" id="BNg-ZD-YsU"/>
+                            </constraints>
+                            <color key="tintColor" name="VFGAlt1ButtonBoarder"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" title="Back">
+                                <fontDescription key="titleFontDescription" name="VodafoneRg-Regular" family="Vodafone Rg" pointSize="16"/>
+                            </buttonConfiguration>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="buttonStyle">
+                                    <integer key="value" value="0"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="6"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                    <real key="value" value="2"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                    <color key="value" name="VFGAlt1ButtonBoarder"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="backButtonDidPress:" destination="iN0-l3-epB" eventType="touchUpInside" id="qda-2E-o92"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="Ss7-ji-iVr" firstAttribute="width" secondItem="FNS-Ew-ugl" secondAttribute="width" id="9tu-mh-dwe"/>
+                        <constraint firstItem="xeH-go-x6J" firstAttribute="width" secondItem="FNS-Ew-ugl" secondAttribute="width" id="Jhr-yM-H0Q"/>
+                    </constraints>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="azA-Of-ZnS" secondAttribute="trailing" constant="16" id="E4c-JQ-CMf"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="FNS-Ew-ugl" secondAttribute="trailing" constant="16" id="NZt-uc-0tA"/>
+                <constraint firstItem="FNS-Ew-ugl" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="Pix-Sw-Lum"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="FNS-Ew-ugl" secondAttribute="bottom" constant="60" id="b16-Bi-crz"/>
+                <constraint firstItem="azA-Of-ZnS" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="bMn-kk-Knm"/>
+                <constraint firstItem="FNS-Ew-ugl" firstAttribute="top" secondItem="azA-Of-ZnS" secondAttribute="bottom" constant="22" id="ePR-F6-NJP"/>
+                <constraint firstItem="azA-Of-ZnS" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="6" id="yJC-Hf-W6h"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="backButton" destination="Ss7-ji-iVr" id="Hvj-Cu-aKo"/>
+                <outlet property="nameTextField" destination="xZ9-7s-2fd" id="cKE-eu-6ec"/>
+                <outlet property="saveButton" destination="xeH-go-x6J" id="u52-Tm-Pfx"/>
+                <outlet property="titleLabel" destination="FI2-CV-Ypd" id="MIa-ql-yxN"/>
+            </connections>
+            <point key="canvasLocation" x="126.71755725190839" y="-80.633802816901408"/>
+        </view>
+    </objects>
+    <designables>
+        <designable name="FI2-CV-Ypd">
+            <size key="intrinsicContentSize" width="59" height="28"/>
+        </designable>
+        <designable name="Ss7-ji-iVr">
+            <size key="intrinsicContentSize" width="60.5" height="33"/>
+        </designable>
+        <designable name="xeH-go-x6J">
+            <size key="intrinsicContentSize" width="142" height="31"/>
+        </designable>
+    </designables>
+    <resources>
+        <namedColor name="VFGAlt1ButtonBoarder">
+            <color red="0.050999999046325684" green="0.050999999046325684" blue="0.050999999046325684" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="VFGPrimaryText">
+            <color red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

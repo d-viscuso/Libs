@@ -1,0 +1,155 @@
+{
+  "currentPlan": {
+    "id": "id_5g_red_extra",
+    "name": "Vodafone Special 50GB",
+    "imageUrl": "icAccelerationMid",
+    "price": {
+      "recurringPrice": 16,
+      "recurrencePeriod": "month",
+      "contractPeriod": 24,
+      "currency": "€",
+      "details": [
+          {
+            "imageUrl": "dataSharing",
+            "description": "Unlimited data and calls in UK"
+          },
+          {
+            "imageUrl": "icRoaming",
+            "description": "100 Roaming destinations"
+          },
+          {
+            "imageUrl": "icSuperwifi",
+            "description": "3 months of Super WiFi"
+          },
+          {
+            "imageUrl": "icPrivacy",
+            "description": "Free SecureNet"
+          }
+      ]
+    },
+    "subscriptions": [
+      {
+        "imageUrl": "icNetflix"
+      },
+      {
+        "imageUrl": "icSpotify"
+      }
+    ]
+  },
+  "otherPlans": [
+    {
+      "id": "id_max_unlimited0",
+      "name": "Max Unlimited",
+      "price": {
+        "recurringPrice": 25,
+        "recurrencePeriod": "month",
+        "contractPeriod": 24,
+        "currency": "€",
+        "details": [
+            {
+              "imageUrl": "dataSharing",
+              "description": "Unlimited data and calls in UK"
+            },
+            {
+              "imageUrl": "icRoaming",
+              "description": "100 Roaming destinations"
+            },
+            {
+              "imageUrl": "icSuperwifi",
+              "description": "3 months of Super WiFi"
+            },
+            {
+              "imageUrl": "icPrivacy",
+              "description": "Free SecureNet"
+            }
+        ]
+      },
+      "subscriptions": [
+        {
+          "imageUrl": "icNetflix"
+        },
+        {
+          "imageUrl": "icSpotify"
+        }
+      ],
+      "isRecommended": true,
+      "imageUrl": "icAccelerationMid"
+    },
+    {
+      "id": "id_max_unlimited1",
+      "name": "Standard Unlimited",
+      "price": {
+        "recurringPrice": 20,
+        "recurrencePeriod": "month",
+        "contractPeriod": 24,
+        "currency": "€",
+        "details": [
+            {
+              "imageUrl": "dataSharing",
+              "description": "Unlimited data and calls in UK"
+            },
+            {
+              "imageUrl": "icRoaming",
+              "description": "100 Roaming destinations"
+            },
+            {
+              "imageUrl": "icSuperwifi",
+              "description": "3 months of Super WiFi"
+            },
+            {
+              "imageUrl": "icPrivacy",
+              "description": "Free SecureNet"
+            }
+        ]
+      },
+      "subscriptions": [
+          {
+            "imageUrl": "icNetflix"
+          },
+          {
+            "imageUrl": "icSpotify"
+          }
+      ],
+      "isRecommended": false,
+      "imageUrl": "icAccelerationMid"
+    },
+    {
+      "id": "id_max_unlimited2",
+      "name": "20G Red Extra",
+      "price": {
+        "recurringPrice": 17,
+        "recurrencePeriod": "month",
+        "contractPeriod": 24,
+        "currency": "€",
+        "details": [
+            {
+              "imageUrl": "dataSharing",
+              "description": "Unlimited data and calls in UK"
+            },
+            {
+              "imageUrl": "icRoaming",
+              "description": "100 Roaming destinations"
+            },
+            {
+              "imageUrl": "icSuperwifi",
+              "description": "3 months of Super WiFi"
+            },
+            {
+              "imageUrl": "icPrivacy",
+              "description": "Free SecureNet"
+            }
+        ]
+      },
+      "subscriptions": [
+          {
+            "imageUrl": "icNetflix"
+          },
+          {
+            "imageUrl": "icSpotify"
+          }
+      ],
+      "isRecommended": false,
+      "imageUrl": "icAccelerationMid"
+    }
+  ]
+}

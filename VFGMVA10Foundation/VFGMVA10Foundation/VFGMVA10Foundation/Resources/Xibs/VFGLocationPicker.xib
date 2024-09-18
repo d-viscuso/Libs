@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="VFGLocationPicker" customModule="VFGMVA10Foundation" customModuleProvider="target">
+            <connections>
+                <outlet property="contentView" destination="iN0-l3-epB" id="h9n-fQ-s19"/>
+                <outlet property="currentLocationButton" destination="dhD-kW-g3f" id="kCa-tH-cNa"/>
+                <outlet property="locationsCollectionView" destination="ko3-GH-tYK" id="zCl-Yg-yZv"/>
+                <outlet property="mapView" destination="vAz-sQ-PyG" id="ozs-rR-I30"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <mapView hidden="YES" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" pitchEnabled="NO" showsCompass="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vAz-sQ-PyG">
+                    <rect key="frame" x="0.0" y="48" width="414" height="848"/>
+                </mapView>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="ko3-GH-tYK" userLabel="Stores Collection View">
+                    <rect key="frame" x="0.0" y="656" width="414" height="200"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="200" id="nuB-f1-QB3"/>
+                    </constraints>
+                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="nIc-3K-EmB">
+                        <size key="itemSize" width="128" height="128"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="15" minY="0.0" maxX="15" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dhD-kW-g3f" userLabel="Current Location Button" customClass="VFGButton" customModule="VFGMVA10Foundation">
+                    <rect key="frame" x="350" y="78" width="40" height="40"/>
+                    <color key="backgroundColor" name="VFGPrimaryButton"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="40" id="0qL-GB-iXV"/>
+                        <constraint firstAttribute="height" constant="40" id="txg-51-wwV"/>
+                    </constraints>
+                    <state key="normal" image="icLocateMeWhite.png"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="buttonStyle">
+                            <integer key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="string" keyPath="imageName" value="icLocateMeWhite.png"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="currentLocationDidPress:" destination="-1" eventType="touchUpInside" id="g4X-f4-TWZ"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" name="VFGVeryLightGreyBackground"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="vAz-sQ-PyG" secondAttribute="bottom" id="5zs-fp-Nx5"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="vAz-sQ-PyG" secondAttribute="trailing" id="8MN-dN-PDL"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="dhD-kW-g3f" secondAttribute="trailing" constant="24" id="BVv-AU-2Qb"/>
+                <constraint firstItem="vAz-sQ-PyG" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="Cyf-FX-Sny"/>
+                <constraint firstItem="dhD-kW-g3f" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="30" id="LEf-7T-uol"/>
+                <constraint firstItem="ko3-GH-tYK" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="dWu-rX-SSq"/>
+                <constraint firstItem="vAz-sQ-PyG" firstAttribute="bottom" secondItem="ko3-GH-tYK" secondAttribute="bottom" constant="40" id="eBu-nh-4nc"/>
+                <constraint firstItem="vAz-sQ-PyG" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="uYQ-b9-8te"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="ko3-GH-tYK" secondAttribute="trailing" id="v7R-Lq-WYV"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-1" y="129"/>
+        </view>
+    </objects>
+    <designables>
+        <designable name="dhD-kW-g3f">
+            <size key="intrinsicContentSize" width="34" height="34"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="icLocateMeWhite.png" width="34" height="34"/>
+        <namedColor name="VFGPrimaryButton">
+            <color red="0.90200001001358032" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="VFGVeryLightGreyBackground">
+            <color red="0.92156862745098034" green="0.92156862745098034" blue="0.92156862745098034" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

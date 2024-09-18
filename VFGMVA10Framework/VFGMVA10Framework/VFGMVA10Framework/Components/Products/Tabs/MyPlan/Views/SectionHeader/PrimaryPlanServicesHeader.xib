@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="vodafone-bold.ttf">
+            <string>VodafoneRg-Bold</string>
+        </array>
+        <array key="vodafone-lite.ttf">
+            <string>VodafoneLt-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="iN0-l3-epB" customClass="PrimaryPlanServicesHeader" customModule="VFGMVA10Framework" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="101"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xru-k4-UpT">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="101"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RA5-2d-FJC" customClass="VFGLabel" customModule="VFGMVA10Foundation">
+                            <rect key="frame" x="16" y="16" width="38" height="20"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="20" id="gfv-P6-40I"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="VodafoneRg-Bold" family="Vodafone Rg" pointSize="16"/>
+                            <color key="textColor" name="VFGStatusTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4nh-pJ-swi" customClass="VFGLabel" customModule="VFGMVA10Foundation">
+                            <rect key="frame" x="16" y="52" width="58" height="35"/>
+                            <constraints>
+                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="29.5" id="ZrW-ap-3dN"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="VodafoneLt-Regular" family="Vodafone Lt" pointSize="28"/>
+                            <color key="textColor" name="VFGPrimaryText"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Q7r-lD-PY2">
+                            <rect key="frame" x="16" y="104" width="382" height="1"/>
+                            <color key="backgroundColor" name="VFGFirstDivider"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="v62-Ox-R0T"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="Q7r-lD-PY2" firstAttribute="top" secondItem="4nh-pJ-swi" secondAttribute="bottom" constant="16" id="6lB-zY-ZuO"/>
+                        <constraint firstItem="4nh-pJ-swi" firstAttribute="leading" secondItem="RA5-2d-FJC" secondAttribute="leading" id="7eX-Fq-oFB"/>
+                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="4nh-pJ-swi" secondAttribute="trailing" constant="16" id="JKw-N6-6SV"/>
+                        <constraint firstAttribute="bottom" secondItem="Q7r-lD-PY2" secondAttribute="bottom" constant="8" id="LK0-CY-Ud3"/>
+                        <constraint firstItem="4nh-pJ-swi" firstAttribute="top" secondItem="RA5-2d-FJC" secondAttribute="bottom" constant="8" id="PRc-ZP-A1i"/>
+                        <constraint firstItem="RA5-2d-FJC" firstAttribute="leading" secondItem="Xru-k4-UpT" secondAttribute="leading" constant="16" id="VwW-wp-DkE"/>
+                        <constraint firstItem="Q7r-lD-PY2" firstAttribute="leading" secondItem="RA5-2d-FJC" secondAttribute="leading" id="fsh-2U-aYS"/>
+                        <constraint firstAttribute="trailing" secondItem="Q7r-lD-PY2" secondAttribute="trailing" constant="16" id="rSH-H7-jOa"/>
+                        <constraint firstItem="RA5-2d-FJC" firstAttribute="top" secondItem="Xru-k4-UpT" secondAttribute="top" constant="16" id="wdh-d6-wN2"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="Xru-k4-UpT" secondAttribute="bottom" id="BhQ-x3-BTi"/>
+                <constraint firstItem="Xru-k4-UpT" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="a96-uF-l9N"/>
+                <constraint firstAttribute="trailing" secondItem="Xru-k4-UpT" secondAttribute="trailing" id="j42-lE-RLl"/>
+                <constraint firstItem="Xru-k4-UpT" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="l9F-Mg-6Ek"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="planNameLabel" destination="4nh-pJ-swi" id="Ps6-mc-waw"/>
+                <outlet property="separator" destination="Q7r-lD-PY2" id="vtX-LM-DW4"/>
+                <outlet property="statusLabel" destination="RA5-2d-FJC" id="in2-v4-ku4"/>
+            </connections>
+            <point key="canvasLocation" x="237.68115942028987" y="19.084821428571427"/>
+        </view>
+    </objects>
+    <designables>
+        <designable name="4nh-pJ-swi">
+            <size key="intrinsicContentSize" width="58" height="31.5"/>
+        </designable>
+        <designable name="RA5-2d-FJC">
+            <size key="intrinsicContentSize" width="38" height="18"/>
+        </designable>
+    </designables>
+    <resources>
+        <namedColor name="VFGFirstDivider">
+            <color red="0.74509803921568629" green="0.74500000476837158" blue="0.74500000476837158" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="VFGPrimaryText">
+            <color red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="VFGStatusText">
+            <color red="0.0" green="0.60000002384185791" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="VFGStatusTextColor">
+            <color red="0.0" green="0.54100000858306885" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

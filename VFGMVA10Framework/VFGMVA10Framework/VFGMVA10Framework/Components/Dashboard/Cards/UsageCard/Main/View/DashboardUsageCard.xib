@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="DashboardUsageCard" customModule="VFGMVA10Framework" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="226"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="LYr-XY-tap">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="226"/>
+                    <color key="backgroundColor" name="VFGWhiteBackground"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="1KH-yY-vbc">
+                        <size key="itemSize" width="50" height="50"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jRY-vl-b6Q" userLabel="Page Control Container">
+                    <rect key="frame" x="307" y="0.0" width="94" height="42"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AFL-N0-TsS" customClass="VFGPageControl" customModule="VFGMVA10Foundation">
+                            <rect key="frame" x="12" y="10" width="70" height="20"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="20" id="8QS-be-Ab4"/>
+                                <constraint firstAttribute="width" constant="70" id="mDg-vV-Vb8"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="AFL-N0-TsS" firstAttribute="top" secondItem="jRY-vl-b6Q" secondAttribute="top" constant="10" id="FBf-rh-5e4"/>
+                        <constraint firstAttribute="bottom" secondItem="AFL-N0-TsS" secondAttribute="bottom" constant="12" id="QAL-DA-dSP"/>
+                        <constraint firstAttribute="trailing" secondItem="AFL-N0-TsS" secondAttribute="trailing" constant="12" id="SXz-VG-tOi"/>
+                        <constraint firstItem="AFL-N0-TsS" firstAttribute="centerX" secondItem="jRY-vl-b6Q" secondAttribute="centerX" id="jzq-eJ-RyT"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="jRY-vl-b6Q" secondAttribute="trailing" constant="13" id="5q1-iG-0z7"/>
+                <constraint firstAttribute="trailing" secondItem="LYr-XY-tap" secondAttribute="trailing" id="5xH-1C-1wq"/>
+                <constraint firstItem="LYr-XY-tap" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="HXt-Sm-87T"/>
+                <constraint firstItem="jRY-vl-b6Q" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="VFa-sB-XeN"/>
+                <constraint firstItem="LYr-XY-tap" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="iPT-sw-lzU"/>
+                <constraint firstAttribute="bottom" secondItem="LYr-XY-tap" secondAttribute="bottom" id="ytj-m4-bjX"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="collectionView" destination="LYr-XY-tap" id="0oS-d0-JdD"/>
+                <outlet property="pageControl" destination="AFL-N0-TsS" id="rMh-1A-haL"/>
+            </connections>
+            <point key="canvasLocation" x="340.57971014492756" y="-140.625"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="VFGWhiteBackground">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

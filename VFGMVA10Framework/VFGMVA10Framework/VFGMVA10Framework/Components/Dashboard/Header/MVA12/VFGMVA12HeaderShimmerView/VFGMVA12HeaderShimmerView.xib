@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="U4s-xw-Yrt" customClass="VFGMVA12HeaderShimmerView" customModule="VFGMVA10Framework" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="347" height="178"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RjM-I5-Tc7" customClass="VFGShimmerView" customModule="VFGMVA10Foundation">
+                    <rect key="frame" x="307" y="44" width="24" height="24"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="24" id="Vhz-i2-hqh"/>
+                        <constraint firstAttribute="height" constant="24" id="jqH-em-Kyp"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="12"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PCA-wd-TsM" customClass="VFGShimmerView" customModule="VFGMVA10Foundation">
+                    <rect key="frame" x="267" y="44" width="24" height="24"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="24" id="Y0S-Ec-R9C"/>
+                        <constraint firstAttribute="width" constant="24" id="kMu-xD-2oa"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="12"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="63R-FL-IVi" customClass="VFGShimmerView" customModule="VFGMVA10Foundation">
+                    <rect key="frame" x="16" y="82" width="40" height="40"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="40" id="27i-uI-s9o"/>
+                        <constraint firstAttribute="height" constant="40" id="bWQ-zK-6FC"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="20"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lDu-Tj-EQs" customClass="VFGShimmerView" customModule="VFGMVA10Foundation">
+                    <rect key="frame" x="64" y="82" width="187" height="16"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="16" id="1zm-j1-RUe"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yJI-vL-WjL" customClass="VFGShimmerView" customModule="VFGMVA10Foundation">
+                    <rect key="frame" x="64" y="106" width="103" height="16"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="16" id="auB-mP-JQ3"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="I3x-w4-Ix7"/>
+            <color key="backgroundColor" name="VFGGreyBackground"/>
+            <constraints>
+                <constraint firstItem="yJI-vL-WjL" firstAttribute="leading" secondItem="63R-FL-IVi" secondAttribute="trailing" constant="8" id="4an-8k-wHp"/>
+                <constraint firstItem="I3x-w4-Ix7" firstAttribute="trailing" secondItem="RjM-I5-Tc7" secondAttribute="trailing" constant="16" id="8nl-Ti-6n6"/>
+                <constraint firstItem="lDu-Tj-EQs" firstAttribute="leading" secondItem="63R-FL-IVi" secondAttribute="trailing" constant="8" id="EGW-tl-NST"/>
+                <constraint firstItem="RjM-I5-Tc7" firstAttribute="leading" secondItem="PCA-wd-TsM" secondAttribute="trailing" constant="16" id="HHN-HP-NQa"/>
+                <constraint firstItem="63R-FL-IVi" firstAttribute="top" secondItem="RjM-I5-Tc7" secondAttribute="bottom" constant="14" id="LR3-yX-vRo"/>
+                <constraint firstItem="63R-FL-IVi" firstAttribute="leading" secondItem="I3x-w4-Ix7" secondAttribute="leading" constant="16" id="N74-zG-XwK"/>
+                <constraint firstItem="yJI-vL-WjL" firstAttribute="bottom" secondItem="63R-FL-IVi" secondAttribute="bottom" id="T3d-ku-tQr"/>
+                <constraint firstItem="lDu-Tj-EQs" firstAttribute="top" secondItem="63R-FL-IVi" secondAttribute="top" id="Ups-1Z-HWo"/>
+                <constraint firstItem="PCA-wd-TsM" firstAttribute="centerY" secondItem="RjM-I5-Tc7" secondAttribute="centerY" id="W9e-MS-2sp"/>
+                <constraint firstItem="PCA-wd-TsM" firstAttribute="leading" secondItem="lDu-Tj-EQs" secondAttribute="trailing" constant="16" id="b1N-F2-nlI"/>
+                <constraint firstItem="yJI-vL-WjL" firstAttribute="width" secondItem="lDu-Tj-EQs" secondAttribute="width" multiplier="0.55" id="cK7-rV-VlJ"/>
+                <constraint firstItem="RjM-I5-Tc7" firstAttribute="top" secondItem="U4s-xw-Yrt" secondAttribute="top" constant="44" id="rjK-1V-l20"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outletCollection property="shimmerViews" destination="RjM-I5-Tc7" collectionClass="NSMutableArray" id="6Va-H2-DVb"/>
+                <outletCollection property="shimmerViews" destination="PCA-wd-TsM" collectionClass="NSMutableArray" id="mYS-EG-ixz"/>
+                <outletCollection property="shimmerViews" destination="63R-FL-IVi" collectionClass="NSMutableArray" id="b8a-qO-THV"/>
+                <outletCollection property="shimmerViews" destination="lDu-Tj-EQs" collectionClass="NSMutableArray" id="wZj-Pl-K3R"/>
+                <outletCollection property="shimmerViews" destination="yJI-vL-WjL" collectionClass="NSMutableArray" id="zzR-bv-KjT"/>
+            </connections>
+            <point key="canvasLocation" x="80.434782608695656" y="-150"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="VFGGreyBackground">
+            <color red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

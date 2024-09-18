@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Web View Controller-->
+        <scene sceneID="64T-lm-04u">
+            <objects>
+                <viewController storyboardIdentifier="VFGWebViewController" id="3cn-qa-sd4" customClass="VFGWebViewController" customModule="VFGMVA10Foundation" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vEA-kF-Ep4">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mYo-if-ekZ" userLabel="Container View">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hzb-3m-cST" userLabel="Background View">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                        <color key="backgroundColor" name="VFGWhiteBackground"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="M8U-aa-jMg" userLabel="Status Bar Background View">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XSz-Y2-uLX" userLabel="Top Bar">
+                                        <rect key="frame" x="0.0" y="44" width="414" height="65"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KxV-9Z-g1h" userLabel="Close Button" customClass="VFGButton" customModule="VFGMVA10Foundation" customModuleProvider="target">
+                                                <rect key="frame" x="368" y="15" width="30" height="30"/>
+                                                <accessibility key="accessibilityConfiguration" identifier="VFGwebCloseButton"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="30" id="uGn-hS-cr4"/>
+                                                    <constraint firstAttribute="width" secondItem="KxV-9Z-g1h" secondAttribute="height" multiplier="1:1" id="zFF-RF-1Rk"/>
+                                                </constraints>
+                                                <state key="normal" image="icClose"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="imageName" value="icClose"/>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="buttonStyle">
+                                                        <integer key="value" value="5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="closeButton:" destination="3cn-qa-sd4" eventType="touchUpInside" id="6fO-yy-ua0"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pco-LS-PZ2" userLabel="Page Title Label" customClass="VFGLabel" customModule="VFGMVA10Foundation" customModuleProvider="target">
+                                                <rect key="frame" x="207" y="30" width="0.0" height="0.0"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" name="VFGPrimaryText"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tpk-ic-vqv" userLabel="Refresh Button" customClass="VFGButton" customModule="VFGMVA10Foundation" customModuleProvider="target">
+                                                <rect key="frame" x="59" y="15" width="30" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="30" id="hpR-oJ-RPT"/>
+                                                    <constraint firstAttribute="width" secondItem="tpk-ic-vqv" secondAttribute="height" multiplier="1:1" id="pjb-h8-KBW"/>
+                                                </constraints>
+                                                <state key="normal" image="icRefresh"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="imageName" value="icRefresh"/>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="buttonStyle">
+                                                        <integer key="value" value="5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="refreshButton:" destination="3cn-qa-sd4" eventType="touchUpInside" id="s5R-rg-ZV4"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gU0-Z3-Uyw" userLabel="Back Button" customClass="VFGButton" customModule="VFGMVA10Foundation" customModuleProvider="target">
+                                                <rect key="frame" x="16" y="15" width="30" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="gU0-Z3-Uyw" secondAttribute="height" multiplier="1:1" id="kFd-tn-wdK"/>
+                                                </constraints>
+                                                <state key="normal" image="icArrowLeft"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="imageName" value="icArrowLeft"/>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="buttonStyle">
+                                                        <integer key="value" value="5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="backButton:" destination="3cn-qa-sd4" eventType="touchUpInside" id="l0R-cq-sYP"/>
+                                                </connections>
+                                            </button>
+                                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="DKf-VR-So8">
+                                                <rect key="frame" x="0.0" y="63" width="414" height="2"/>
+                                                <color key="tintColor" red="1" green="0.028948515599999999" blue="0.024998886599999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="2" id="2yU-HP-USg"/>
+                                                </constraints>
+                                            </progressView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="gU0-Z3-Uyw" firstAttribute="leading" secondItem="XSz-Y2-uLX" secondAttribute="leading" constant="16" id="7Pl-ud-zge"/>
+                                            <constraint firstAttribute="bottom" secondItem="DKf-VR-So8" secondAttribute="bottom" id="HTi-q2-dwQ"/>
+                                            <constraint firstItem="pco-LS-PZ2" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="tpk-ic-vqv" secondAttribute="trailing" constant="16" id="LlE-n4-7QT"/>
+                                            <constraint firstItem="tpk-ic-vqv" firstAttribute="leading" secondItem="XSz-Y2-uLX" secondAttribute="leading" constant="59" id="QxF-vM-y0c"/>
+                                            <constraint firstAttribute="bottom" secondItem="KxV-9Z-g1h" secondAttribute="bottom" constant="20" id="ZcY-gW-QZ7"/>
+                                            <constraint firstItem="gU0-Z3-Uyw" firstAttribute="height" secondItem="tpk-ic-vqv" secondAttribute="height" id="ecb-2o-9Ph"/>
+                                            <constraint firstAttribute="trailing" secondItem="KxV-9Z-g1h" secondAttribute="trailing" constant="16" id="h9q-Di-Gd2"/>
+                                            <constraint firstAttribute="height" constant="65" id="hnP-WX-uau"/>
+                                            <constraint firstItem="tpk-ic-vqv" firstAttribute="centerY" secondItem="pco-LS-PZ2" secondAttribute="centerY" id="hsP-tu-7Al"/>
+                                            <constraint firstItem="gU0-Z3-Uyw" firstAttribute="width" secondItem="tpk-ic-vqv" secondAttribute="width" id="kUc-VF-zcY"/>
+                                            <constraint firstItem="DKf-VR-So8" firstAttribute="leading" secondItem="XSz-Y2-uLX" secondAttribute="leading" id="lDB-9i-cSZ"/>
+                                            <constraint firstAttribute="trailing" secondItem="DKf-VR-So8" secondAttribute="trailing" id="oVr-mw-DXr"/>
+                                            <constraint firstItem="gU0-Z3-Uyw" firstAttribute="top" secondItem="tpk-ic-vqv" secondAttribute="top" id="uG1-5A-LzQ"/>
+                                            <constraint firstItem="gU0-Z3-Uyw" firstAttribute="bottom" secondItem="tpk-ic-vqv" secondAttribute="bottom" id="x1z-hp-vCT"/>
+                                            <constraint firstItem="KxV-9Z-g1h" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="pco-LS-PZ2" secondAttribute="trailing" constant="15" id="yWC-vN-YSd"/>
+                                            <constraint firstItem="pco-LS-PZ2" firstAttribute="centerY" secondItem="KxV-9Z-g1h" secondAttribute="centerY" id="zZK-iR-ZPn"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6FT-dP-acd">
+                                        <rect key="frame" x="0.0" y="109" width="414" height="787"/>
+                                        <color key="backgroundColor" name="VFGWhiteBackground"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" name="VFGWhiteBackground"/>
+                                <constraints>
+                                    <constraint firstItem="6FT-dP-acd" firstAttribute="leading" secondItem="mYo-if-ekZ" secondAttribute="leading" id="4dO-Gu-cdl"/>
+                                    <constraint firstAttribute="trailing" secondItem="6FT-dP-acd" secondAttribute="trailing" id="5Fx-ge-1lc"/>
+                                    <constraint firstAttribute="bottom" secondItem="hzb-3m-cST" secondAttribute="bottom" id="6z8-3c-W0k"/>
+                                    <constraint firstItem="XSz-Y2-uLX" firstAttribute="leading" secondItem="mYo-if-ekZ" secondAttribute="leading" id="BLN-fJ-PVV"/>
+                                    <constraint firstAttribute="trailing" secondItem="XSz-Y2-uLX" secondAttribute="trailing" id="Mxy-37-yvC"/>
+                                    <constraint firstItem="pco-LS-PZ2" firstAttribute="centerX" secondItem="mYo-if-ekZ" secondAttribute="centerX" id="NYO-Kj-HeK"/>
+                                    <constraint firstItem="hzb-3m-cST" firstAttribute="top" secondItem="mYo-if-ekZ" secondAttribute="top" id="NYd-E5-06Y"/>
+                                    <constraint firstAttribute="bottom" secondItem="6FT-dP-acd" secondAttribute="bottom" id="fnb-FD-cWg"/>
+                                    <constraint firstAttribute="trailing" secondItem="hzb-3m-cST" secondAttribute="trailing" id="iUO-SH-maB"/>
+                                    <constraint firstItem="hzb-3m-cST" firstAttribute="leading" secondItem="mYo-if-ekZ" secondAttribute="leading" id="ipc-gw-smx"/>
+                                    <constraint firstItem="6FT-dP-acd" firstAttribute="top" secondItem="XSz-Y2-uLX" secondAttribute="bottom" id="sCM-Bi-WUY"/>
+                                    <constraint firstItem="XSz-Y2-uLX" firstAttribute="top" secondItem="M8U-aa-jMg" secondAttribute="bottom" id="tHv-gi-Dz6"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="oY3-nI-yGL"/>
+                        <color key="backgroundColor" name="VFGWhiteBackground"/>
+                        <constraints>
+                            <constraint firstItem="M8U-aa-jMg" firstAttribute="top" secondItem="mYo-if-ekZ" secondAttribute="top" id="6aw-b0-c0G"/>
+                            <constraint firstItem="M8U-aa-jMg" firstAttribute="leading" secondItem="mYo-if-ekZ" secondAttribute="leading" id="A8u-eh-ojp"/>
+                            <constraint firstAttribute="trailing" secondItem="mYo-if-ekZ" secondAttribute="trailing" id="ArO-A7-hZw"/>
+                            <constraint firstItem="oY3-nI-yGL" firstAttribute="top" secondItem="M8U-aa-jMg" secondAttribute="bottom" id="HSc-RS-kLz"/>
+                            <constraint firstItem="mYo-if-ekZ" firstAttribute="trailing" secondItem="M8U-aa-jMg" secondAttribute="trailing" id="Mgz-9z-Uh7"/>
+                            <constraint firstAttribute="bottom" secondItem="mYo-if-ekZ" secondAttribute="bottom" id="bGD-N1-Cs9"/>
+                            <constraint firstItem="mYo-if-ekZ" firstAttribute="leading" secondItem="vEA-kF-Ep4" secondAttribute="leading" id="hpE-Vd-W81"/>
+                            <constraint firstItem="mYo-if-ekZ" firstAttribute="top" secondItem="vEA-kF-Ep4" secondAttribute="top" id="uzN-C3-bxb"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="backButton" destination="gU0-Z3-Uyw" id="yDW-UA-eBn"/>
+                        <outlet property="leadingConstraintRefreshButton" destination="QxF-vM-y0c" id="OEh-S0-c6C"/>
+                        <outlet property="pageHeaderLabel" destination="pco-LS-PZ2" id="ob7-6s-yoo"/>
+                        <outlet property="progressView" destination="DKf-VR-So8" id="Cuy-iv-1G1"/>
+                        <outlet property="refreshButton" destination="tpk-ic-vqv" id="zHd-TE-dIf"/>
+                        <outlet property="topBarView" destination="XSz-Y2-uLX" id="5VP-mp-81b"/>
+                        <outlet property="topBarViewHeightConstraint" destination="hnP-WX-uau" id="O5P-Tj-eDP"/>
+                        <outlet property="webViewContainer" destination="6FT-dP-acd" id="R3j-td-EUa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vbj-yg-Vii" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="113.83928571428571"/>
+        </scene>
+    </scenes>
+    <designables>
+        <designable name="KxV-9Z-g1h">
+            <size key="intrinsicContentSize" width="24" height="24"/>
+        </designable>
+        <designable name="gU0-Z3-Uyw">
+            <size key="intrinsicContentSize" width="24" height="24"/>
+        </designable>
+        <designable name="pco-LS-PZ2"/>
+        <designable name="tpk-ic-vqv">
+            <size key="intrinsicContentSize" width="24" height="24"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="icArrowLeft" width="24" height="24"/>
+        <image name="icClose" width="24" height="24"/>
+        <image name="icRefresh" width="24" height="24"/>
+        <namedColor name="VFGPrimaryText">
+            <color red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="VFGWhiteBackground">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

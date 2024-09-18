@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19529"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="BalanceHistorySectionHeaderShimmer" customModule="VFGMVA10Framework" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Krs-Rc-Tip">
+                    <rect key="frame" x="16" y="59" width="382" height="1"/>
+                    <color key="backgroundColor" name="VFGGreyDividerFour"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="382" id="RQO-h1-GbO"/>
+                        <constraint firstAttribute="height" constant="1" id="lmR-eZ-VRn"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xXr-ji-EgL" customClass="VFGShimmerView" customModule="VFGMVA10Foundation">
+                    <rect key="frame" x="17" y="24" width="68" height="12"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="68" id="o61-Rp-Z5p"/>
+                        <constraint firstAttribute="height" constant="12" id="sml-ls-gEl"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="xXr-ji-EgL" firstAttribute="top" relation="greaterThanOrEqual" secondItem="iN0-l3-epB" secondAttribute="top" constant="16" id="J9y-xT-gfL"/>
+                <constraint firstAttribute="trailing" secondItem="Krs-Rc-Tip" secondAttribute="trailing" constant="16" id="L61-gJ-lZL"/>
+                <constraint firstItem="Krs-Rc-Tip" firstAttribute="bottom" secondItem="iN0-l3-epB" secondAttribute="bottom" id="Lte-ba-Fp9"/>
+                <constraint firstItem="xXr-ji-EgL" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="17" id="d1W-59-73B"/>
+                <constraint firstItem="Krs-Rc-Tip" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="eP6-iN-fbo"/>
+                <constraint firstAttribute="bottom" secondItem="xXr-ji-EgL" secondAttribute="bottom" constant="24" id="gV6-nk-9Uf"/>
+                <constraint firstItem="Krs-Rc-Tip" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="bottom" constant="-1" id="omb-re-qQY"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="shimmerdView" destination="xXr-ji-EgL" id="eHR-ah-IEp"/>
+            </connections>
+            <point key="canvasLocation" x="-370" y="76"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="VFGGreyDividerFour">
+            <color red="0.92156862745098034" green="0.92156862745098034" blue="0.92156862745098034" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

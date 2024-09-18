@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="vodafone-bold.ttf">
+            <string>VodafoneRg-Bold</string>
+        </array>
+        <array key="vodafone-regular.ttf">
+            <string>VodafoneRg-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="VFGSuccessOverlayViewController" customModule="VFGMVA10Framework" customModuleProvider="target">
+            <connections>
+                <outlet property="animationView" destination="vgs-mJ-mCH" id="qjQ-5N-bcw"/>
+                <outlet property="descriptionLabel" destination="edh-AB-wsL" id="jz6-Bb-Cqe"/>
+                <outlet property="manageButton" destination="P37-Jy-Pqv" id="JnI-FV-ZlC"/>
+                <outlet property="returnButton" destination="qVd-Kv-khR" id="JAh-Hu-yCE"/>
+                <outlet property="titleLabel" destination="Gle-ne-2mo" id="wnv-Pb-rEX"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ywp-0e-Wi6">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Congratulations!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gle-ne-2mo" customClass="VFGLabel" customModule="VFGMVA10Framework" customModuleProvider="target">
+                            <rect key="frame" x="8" y="434.5" width="398" height="27"/>
+                            <fontDescription key="fontDescription" name="VodafoneRg-Bold" family="Vodafone Rg" pointSize="24"/>
+                            <color key="textColor" name="VFGPrimaryText"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your privacy settings have been successfully updated. You can change it in Privacy Settings at any time." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="edh-AB-wsL" customClass="VFGLabel" customModule="VFGMVA10Framework" customModuleProvider="target">
+                            <rect key="frame" x="32" y="477.5" width="350" height="36"/>
+                            <fontDescription key="fontDescription" name="VodafoneRg-Regular" family="Vodafone Rg" pointSize="16"/>
+                            <color key="textColor" name="VFGPrimaryText"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P37-Jy-Pqv" customClass="VFGButton">
+                            <rect key="frame" x="16" y="822" width="382" height="42"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="42" id="WGC-ib-bKi"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="VodafoneRg-Regular" family="Vodafone Rg" pointSize="18"/>
+                            <state key="normal" title="Manage privacy settings">
+                                <color key="titleColor" name="VFGPrimaryButtonTextRedBG"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="7"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                    <color key="value" name="VFGGreyWhiteBorder"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                    <real key="value" value="2"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="managePrivacyDidPressed:" destination="-1" eventType="touchUpInside" id="2cm-Kj-SjZ"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qVd-Kv-khR" customClass="VFGButton">
+                            <rect key="frame" x="16" y="764" width="382" height="42"/>
+                            <color key="backgroundColor" name="VFGRedDefaultBackground"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="42" id="D8i-eh-g4l"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="VodafoneRg-Regular" family="Vodafone Rg" pointSize="18"/>
+                            <state key="normal" title="Return to dashboard">
+                                <color key="titleColor" name="VFGWhiteText"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="7"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                    <real key="value" value="0.0"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="returnToDashboardDidPressed:" destination="-1" eventType="touchUpInside" id="WXO-FK-Tif"/>
+                            </connections>
+                        </button>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vgs-mJ-mCH" customClass="AnimationView" customModule="Lottie">
+                            <rect key="frame" x="157" y="302.5" width="100" height="100"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <accessibility key="accessibilityConfiguration" identifier="TPmainIcon">
+                                <bool key="isElement" value="YES"/>
+                            </accessibility>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="100" id="9Lg-Rr-HMU"/>
+                                <constraint firstAttribute="height" constant="100" id="R6e-lb-4C0"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" name="VFGLightGreyBackground"/>
+                    <constraints>
+                        <constraint firstItem="edh-AB-wsL" firstAttribute="leading" secondItem="Ywp-0e-Wi6" secondAttribute="leading" constant="32" id="3io-ZY-320"/>
+                        <constraint firstItem="Gle-ne-2mo" firstAttribute="centerY" secondItem="Ywp-0e-Wi6" secondAttribute="centerY" id="51A-Do-wvP"/>
+                        <constraint firstItem="Gle-ne-2mo" firstAttribute="leading" secondItem="Ywp-0e-Wi6" secondAttribute="leading" constant="8" id="5CB-Ch-itj"/>
+                        <constraint firstItem="edh-AB-wsL" firstAttribute="top" secondItem="Gle-ne-2mo" secondAttribute="bottom" constant="16" id="YF5-Jo-eNN"/>
+                        <constraint firstAttribute="trailing" secondItem="edh-AB-wsL" secondAttribute="trailing" constant="32" id="ZxR-0h-2X6"/>
+                        <constraint firstAttribute="bottom" secondItem="P37-Jy-Pqv" secondAttribute="bottom" constant="32" id="dSZ-iE-FUM"/>
+                        <constraint firstAttribute="trailing" secondItem="P37-Jy-Pqv" secondAttribute="trailing" constant="16" id="eot-6M-SiB"/>
+                        <constraint firstItem="Gle-ne-2mo" firstAttribute="top" secondItem="vgs-mJ-mCH" secondAttribute="bottom" constant="32" id="mrv-KS-tHI"/>
+                        <constraint firstAttribute="trailing" secondItem="qVd-Kv-khR" secondAttribute="trailing" constant="16" id="muL-c8-QLz"/>
+                        <constraint firstItem="qVd-Kv-khR" firstAttribute="leading" secondItem="Ywp-0e-Wi6" secondAttribute="leading" constant="16" id="rSd-zj-3ce"/>
+                        <constraint firstItem="P37-Jy-Pqv" firstAttribute="top" secondItem="qVd-Kv-khR" secondAttribute="bottom" constant="16" id="snS-18-tZL"/>
+                        <constraint firstItem="P37-Jy-Pqv" firstAttribute="leading" secondItem="Ywp-0e-Wi6" secondAttribute="leading" constant="16" id="thK-xh-eT0"/>
+                        <constraint firstAttribute="trailing" secondItem="Gle-ne-2mo" secondAttribute="trailing" constant="8" id="tjE-o1-7wg"/>
+                        <constraint firstItem="vgs-mJ-mCH" firstAttribute="centerX" secondItem="Ywp-0e-Wi6" secondAttribute="centerX" id="u8R-QV-y2e"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="Ywp-0e-Wi6" secondAttribute="bottom" id="Bkc-9I-PND"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Ywp-0e-Wi6" secondAttribute="trailing" id="EwN-wn-ZKz"/>
+                <constraint firstItem="Ywp-0e-Wi6" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="qyr-1V-WBQ"/>
+                <constraint firstItem="Ywp-0e-Wi6" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="vrt-qd-TE1"/>
+            </constraints>
+            <point key="canvasLocation" x="139" y="102"/>
+        </view>
+    </objects>
+    <designables>
+        <designable name="Gle-ne-2mo">
+            <size key="intrinsicContentSize" width="169.5" height="27"/>
+        </designable>
+        <designable name="P37-Jy-Pqv">
+            <size key="intrinsicContentSize" width="169" height="33"/>
+        </designable>
+        <designable name="edh-AB-wsL">
+            <size key="intrinsicContentSize" width="637" height="18"/>
+        </designable>
+        <designable name="qVd-Kv-khR">
+            <size key="intrinsicContentSize" width="143" height="33"/>
+        </designable>
+    </designables>
+    <resources>
+        <namedColor name="VFGGreyWhiteBorder">
+            <color red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="VFGLightGreyBackground">
+            <color red="0.95686274509803926" green="0.95686274509803926" blue="0.95686274509803926" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="VFGPrimaryButtonTextRedBG">
+            <color red="0.20000000298023224" green="0.20000000298023224" blue="0.20000000298023224" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="VFGPrimaryText">
+            <color red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="VFGRedDefaultBackground">
+            <color red="0.90196078431372551" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="VFGWhiteText">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

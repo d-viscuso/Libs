@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HighlightShimmerCardView" customModule="VFGMVA10Framework" customModuleProvider="target">
+            <connections>
+                <outletCollection property="shimmerViews" destination="eHR-O6-yfr" collectionClass="NSMutableArray" id="liW-sp-Dro"/>
+                <outletCollection property="shimmerViews" destination="7JD-Co-xtU" collectionClass="NSMutableArray" id="wLo-9C-VRA"/>
+                <outletCollection property="shimmerViews" destination="FZz-nZ-ABs" collectionClass="NSMutableArray" id="W6S-C5-Kxr"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="160" height="122"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eHR-O6-yfr" customClass="VFGShimmerView" customModule="VFGMVA10Foundation">
+                    <rect key="frame" x="16" y="24" width="32" height="32"/>
+                    <color key="backgroundColor" name="VFGShimmerViewCenterMVA12"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="32" id="0y1-gt-Pal"/>
+                        <constraint firstAttribute="width" constant="32" id="5Wc-md-Tz8"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="themeName" value="mva12"/>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="16"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7JD-Co-xtU" customClass="VFGShimmerView" customModule="VFGMVA10Foundation">
+                    <rect key="frame" x="62" y="28" width="82" height="24"/>
+                    <color key="backgroundColor" name="VFGShimmerViewCenterMVA12"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="24" id="w9L-Lb-6Ue"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="themeName" value="mva12"/>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FZz-nZ-ABs" customClass="VFGShimmerView" customModule="VFGMVA10Foundation">
+                    <rect key="frame" x="16" y="73" width="128" height="24"/>
+                    <color key="backgroundColor" name="VFGShimmerViewCenterMVA12"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="24" id="a1E-Gj-Yka"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="themeName" value="mva12"/>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="FZz-nZ-ABs" secondAttribute="bottom" constant="25" id="KbH-Gj-SUD"/>
+                <constraint firstAttribute="trailing" secondItem="FZz-nZ-ABs" secondAttribute="trailing" constant="16" id="REO-3z-5Yp"/>
+                <constraint firstItem="eHR-O6-yfr" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="SpQ-7o-MQ6"/>
+                <constraint firstItem="7JD-Co-xtU" firstAttribute="centerY" secondItem="eHR-O6-yfr" secondAttribute="centerY" id="aha-MT-AD4"/>
+                <constraint firstItem="eHR-O6-yfr" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="24" id="nhC-Na-FU6"/>
+                <constraint firstItem="7JD-Co-xtU" firstAttribute="leading" secondItem="eHR-O6-yfr" secondAttribute="trailing" constant="14" id="qjK-0R-92h"/>
+                <constraint firstItem="FZz-nZ-ABs" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="rfK-8g-ypc"/>
+                <constraint firstAttribute="trailing" secondItem="7JD-Co-xtU" secondAttribute="trailing" constant="16" id="scB-jA-P06"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="134.78260869565219" y="99.776785714285708"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="VFGShimmerViewCenterMVA12">
+            <color red="0.74509803921568629" green="0.74509803921568629" blue="0.74509803921568629" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

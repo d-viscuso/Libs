@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Multi Tabs View Controller-->
+        <scene sceneID="8YG-9c-THE">
+            <objects>
+                <viewController storyboardIdentifier="VFGMultiTabsViewController" id="rul-KY-YGz" customClass="VFGMultiTabsViewController" customModule="VFGMVA10Foundation" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Gba-Cd-4p9">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8KU-fm-T71">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lgK-fd-Yn4">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="707"/>
+                                        <subviews>
+                                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" insetsLayoutMarginsFromSafeArea="NO" directionalLockEnabled="YES" bounces="NO" scrollEnabled="NO" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="2pC-bU-6ml">
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="707"/>
+                                                <color key="backgroundColor" name="VFGDarkGreyBackground"/>
+                                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="6K1-e1-64E">
+                                                    <size key="itemSize" width="50" height="50"/>
+                                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                </collectionViewFlowLayout>
+                                                <cells/>
+                                            </collectionView>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tOY-E9-BWf" userLabel="Header View">
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="126"/>
+                                                <color key="backgroundColor" name="VFGLightBackground"/>
+                                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="126" id="SVr-oj-jJ8"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="viewBackgroundColor" value="VFGLightBackground"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vnw-B7-d2f" userLabel="stackViewBackGround">
+                                                <rect key="frame" x="0.0" y="126" width="375" height="50"/>
+                                                <color key="backgroundColor" name="VFGLightBackground"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="viewBackgroundColor" value="VFGLightBackground"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Ndu-xC-o8i" userLabel="Tabs Stack View">
+                                                <rect key="frame" x="0.0" y="126" width="375" height="50"/>
+                                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="sIz-Jw-UiI"/>
+                                                </constraints>
+                                            </stackView>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uEl-DO-3ox" userLabel="Sliding Bar View">
+                                                <rect key="frame" x="0.0" y="172" width="125" height="4"/>
+                                                <color key="backgroundColor" name="VFGTabsRedDefaultUnderline"/>
+                                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="125" id="PH3-T4-Pb9"/>
+                                                    <constraint firstAttribute="height" constant="4" id="mY3-qB-h0X"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="viewBackgroundColor" value="VFGTabsRedDefaultUnderline"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vfh-4q-dqn" userLabel="Seperator">
+                                                <rect key="frame" x="0.0" y="176" width="375" height="1"/>
+                                                <color key="backgroundColor" name="VFGGreyDividerSix"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="1" id="NnY-Kn-fbc"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="2pC-bU-6ml" firstAttribute="leading" secondItem="lgK-fd-Yn4" secondAttribute="leading" id="06U-Rm-dhu"/>
+                                            <constraint firstItem="Ndu-xC-o8i" firstAttribute="top" secondItem="tOY-E9-BWf" secondAttribute="bottom" id="2ld-N2-Jbm"/>
+                                            <constraint firstAttribute="trailing" secondItem="Vnw-B7-d2f" secondAttribute="trailing" id="9Gu-zY-5n8"/>
+                                            <constraint firstItem="vfh-4q-dqn" firstAttribute="top" secondItem="uEl-DO-3ox" secondAttribute="bottom" id="BrM-0a-ksR"/>
+                                            <constraint firstItem="vfh-4q-dqn" firstAttribute="width" secondItem="tOY-E9-BWf" secondAttribute="width" id="C6Q-Qf-gSC"/>
+                                            <constraint firstItem="uEl-DO-3ox" firstAttribute="top" secondItem="Ndu-xC-o8i" secondAttribute="bottom" constant="-4" id="FWY-wg-Uf2"/>
+                                            <constraint firstAttribute="trailing" secondItem="Ndu-xC-o8i" secondAttribute="trailing" id="IS0-BA-5hi"/>
+                                            <constraint firstItem="tOY-E9-BWf" firstAttribute="top" secondItem="lgK-fd-Yn4" secondAttribute="top" id="K2k-HR-Q5v"/>
+                                            <constraint firstAttribute="bottom" secondItem="2pC-bU-6ml" secondAttribute="bottom" id="MqQ-sr-ntM"/>
+                                            <constraint firstItem="vfh-4q-dqn" firstAttribute="centerX" secondItem="Ndu-xC-o8i" secondAttribute="centerX" id="P74-Yx-Tcq"/>
+                                            <constraint firstItem="Ndu-xC-o8i" firstAttribute="leading" secondItem="lgK-fd-Yn4" secondAttribute="leading" id="VmC-0D-cqt"/>
+                                            <constraint firstItem="Vnw-B7-d2f" firstAttribute="leading" secondItem="lgK-fd-Yn4" secondAttribute="leading" id="Wrf-2H-MLl"/>
+                                            <constraint firstAttribute="trailing" secondItem="2pC-bU-6ml" secondAttribute="trailing" id="aSH-eR-Ls9"/>
+                                            <constraint firstItem="uEl-DO-3ox" firstAttribute="leading" secondItem="Ndu-xC-o8i" secondAttribute="leading" id="ewW-gh-GV1"/>
+                                            <constraint firstItem="Vnw-B7-d2f" firstAttribute="top" secondItem="Ndu-xC-o8i" secondAttribute="top" id="hJl-3g-iH9"/>
+                                            <constraint firstAttribute="trailing" secondItem="tOY-E9-BWf" secondAttribute="trailing" id="keI-Yl-VG6"/>
+                                            <constraint firstItem="tOY-E9-BWf" firstAttribute="leading" secondItem="lgK-fd-Yn4" secondAttribute="leading" id="lzx-hZ-t3w"/>
+                                            <constraint firstItem="Ndu-xC-o8i" firstAttribute="bottom" secondItem="Vnw-B7-d2f" secondAttribute="bottom" id="vZm-m3-mwM"/>
+                                            <constraint firstItem="2pC-bU-6ml" firstAttribute="top" secondItem="lgK-fd-Yn4" secondAttribute="top" id="xOL-uN-idc"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" name="VFGDarkGreyBackground"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="lgK-fd-Yn4" firstAttribute="leading" secondItem="8KU-fm-T71" secondAttribute="leading" id="F5z-ge-lwK"/>
+                                    <constraint firstAttribute="trailing" secondItem="lgK-fd-Yn4" secondAttribute="trailing" id="Vnr-Xj-K3J"/>
+                                    <constraint firstItem="lgK-fd-Yn4" firstAttribute="width" secondItem="8KU-fm-T71" secondAttribute="width" id="Zlf-cw-2ih"/>
+                                    <constraint firstItem="lgK-fd-Yn4" firstAttribute="centerY" secondItem="8KU-fm-T71" secondAttribute="centerY" id="eWQ-fG-DWN"/>
+                                    <constraint firstItem="lgK-fd-Yn4" firstAttribute="bottom" secondItem="8KU-fm-T71" secondAttribute="bottom" id="fUU-tQ-m3p"/>
+                                    <constraint firstItem="lgK-fd-Yn4" firstAttribute="top" secondItem="8KU-fm-T71" secondAttribute="top" id="omR-os-baj"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="eWQ-fG-DWN"/>
+                                    </mask>
+                                </variation>
+                            </scrollView>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="C3V-gC-lP2">
+                                <rect key="frame" x="0.0" y="20" width="375" height="126"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="126" id="9K9-7b-GZ6"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="x82-6m-P8z"/>
+                        <color key="backgroundColor" name="VFGDarkGreyBackground"/>
+                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="x82-6m-P8z" firstAttribute="trailing" secondItem="C3V-gC-lP2" secondAttribute="trailing" id="3Pm-Dh-kfk"/>
+                            <constraint firstItem="2pC-bU-6ml" firstAttribute="height" secondItem="Gba-Cd-4p9" secondAttribute="height" constant="40" id="Ex7-Ul-rbN"/>
+                            <constraint firstItem="x82-6m-P8z" firstAttribute="trailing" secondItem="8KU-fm-T71" secondAttribute="trailing" id="HaY-yk-cIT"/>
+                            <constraint firstItem="8KU-fm-T71" firstAttribute="leading" secondItem="x82-6m-P8z" secondAttribute="leading" id="Msn-uQ-p0m"/>
+                            <constraint firstAttribute="bottom" secondItem="8KU-fm-T71" secondAttribute="bottom" id="SBG-Ht-CTu"/>
+                            <constraint firstItem="C3V-gC-lP2" firstAttribute="top" secondItem="x82-6m-P8z" secondAttribute="top" id="bwh-GF-pir"/>
+                            <constraint firstItem="C3V-gC-lP2" firstAttribute="leading" secondItem="x82-6m-P8z" secondAttribute="leading" id="ew5-j3-5pT"/>
+                            <constraint firstItem="8KU-fm-T71" firstAttribute="top" secondItem="x82-6m-P8z" secondAttribute="top" id="wi0-EI-msC"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="fixedHeaderView" destination="C3V-gC-lP2" id="gt3-il-e8o"/>
+                        <outlet property="fixedHeaderViewHeight" destination="9K9-7b-GZ6" id="FcY-q9-KPO"/>
+                        <outlet property="headerView" destination="tOY-E9-BWf" id="raT-zn-vHm"/>
+                        <outlet property="headerViewHeight" destination="SVr-oj-jJ8" id="Wg5-Xf-VjP"/>
+                        <outlet property="scrollView" destination="8KU-fm-T71" id="8iL-sl-Wqb"/>
+                        <outlet property="slidingBarWidthConstraint" destination="PH3-T4-Pb9" id="pRe-kR-ajb"/>
+                        <outlet property="slidingView" destination="uEl-DO-3ox" id="deR-ZU-oLv"/>
+                        <outlet property="slidingViewLeading" destination="ewW-gh-GV1" id="7sc-F3-TfF"/>
+                        <outlet property="stackViewButtons" destination="Ndu-xC-o8i" id="rtK-lr-dlt"/>
+                        <outlet property="tabsCollectionView" destination="2pC-bU-6ml" id="qHO-OW-jPA"/>
+                        <outlet property="tabsStackViewHeight" destination="sIz-Jw-UiI" id="S5H-om-cPj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6UX-Om-TkC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="131.78410794602701"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="VFGDarkGreyBackground">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.94901960784313721" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="VFGGreyDividerSix">
+            <color red="0.74509803921568629" green="0.74509803921568629" blue="0.74509803921568629" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="VFGLightBackground">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="VFGTabsRedDefaultUnderline">
+            <color red="0.90200001001358032" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

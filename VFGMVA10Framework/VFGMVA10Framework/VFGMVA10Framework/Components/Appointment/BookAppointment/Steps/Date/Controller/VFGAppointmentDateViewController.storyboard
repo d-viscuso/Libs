@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="vodafone-bold.ttf">
+            <string>VodafoneRg-Bold</string>
+        </array>
+        <array key="vodafone-lite.ttf">
+            <string>VodafoneLt-Regular</string>
+        </array>
+        <array key="vodafone-regular.ttf">
+            <string>VodafoneRg-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Appointment Date View Controller-->
+        <scene sceneID="Of9-zZ-ETy">
+            <objects>
+                <viewController storyboardIdentifier="DateView" id="qmh-o9-ofz" customClass="VFGAppointmentDateViewController" customModule="VFGMVA10Framework" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Hi7-zk-ksp">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please choose a suitable time slot" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SPB-uP-TP7" customClass="VFGLabel" customModule="VFGMVA10Foundation">
+                                <rect key="frame" x="20" y="76" width="374" height="28"/>
+                                <fontDescription key="fontDescription" name="VodafoneLt-Regular" family="Vodafone Lt" pointSize="25"/>
+                                <color key="textColor" name="VFGPrimaryText"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lbT-ic-juM" userLabel="DatePicker + CTA View">
+                                <rect key="frame" x="20" y="134" width="374" height="630"/>
+                                <subviews>
+                                    <datePicker contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" translatesAutoresizingMaskIntoConstraints="NO" id="DOS-Ay-L6q">
+                                        <rect key="frame" x="15" y="25" width="344" height="321.5"/>
+                                    </datePicker>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Pm-Mv-6X0" userLabel="Date Picker View" customClass="VFGDatePicker" customModule="VFGMVA10Foundation">
+                                        <rect key="frame" x="15" y="33" width="344" height="300"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="300" id="IPp-rc-jtJ"/>
+                                        </constraints>
+                                    </view>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="OmV-qe-snG" userLabel="Time Slots Titles">
+                                        <rect key="frame" x="85.5" y="362" width="203.5" height="61.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="750" text="Available Slots" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SN5-4T-FA3" customClass="VFGLabel" customModule="VFGMVA10Foundation">
+                                                <rect key="frame" x="48.5" y="0.0" width="106.5" height="21.5"/>
+                                                <fontDescription key="fontDescription" name="VodafoneRg-Regular" family="Vodafone Rg" pointSize="19"/>
+                                                <color key="textColor" name="VFGPrimaryText"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wednesday 15th of March" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MKY-aa-tqL" customClass="VFGLabel" customModule="VFGMVA10Foundation">
+                                                <rect key="frame" x="0.0" y="23.5" width="203.5" height="38"/>
+                                                <fontDescription key="fontDescription" name="VodafoneRg-Bold" family="Vodafone Rg" pointSize="19"/>
+                                                <color key="textColor" name="VFGPrimaryText"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="vNA-8V-swq" userLabel="Time Collection View">
+                                        <rect key="frame" x="15" y="448.5" width="344" height="80"/>
+                                        <color key="backgroundColor" name="VFGWhiteBackground"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="80" id="gqH-du-RFS"/>
+                                        </constraints>
+                                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="14" minimumInteritemSpacing="5" id="1Cx-4y-Utp">
+                                            <size key="itemSize" width="98" height="30"/>
+                                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                            <inset key="sectionInset" minX="0.0" minY="3" maxX="0.0" maxY="0.0"/>
+                                        </collectionViewFlowLayout>
+                                        <cells>
+                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="TimeSlotCell" id="9wa-Vv-2iK">
+                                                <rect key="frame" x="0.0" y="3" width="98" height="30"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                                <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="DTC-mG-RAV">
+                                                    <rect key="frame" x="0.0" y="0.0" width="98" height="30"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="9am - 10 am" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oer-dJ-j4y" customClass="VFGLabel" customModule="VFGMVA10Foundation">
+                                                            <rect key="frame" x="12.5" y="6.5" width="73" height="17"/>
+                                                            <fontDescription key="fontDescription" name="VodafoneRg-Regular" family="Vodafone Rg" pointSize="15"/>
+                                                            <color key="textColor" name="VFGPrimaryText"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <constraints>
+                                                        <constraint firstItem="Oer-dJ-j4y" firstAttribute="centerY" secondItem="DTC-mG-RAV" secondAttribute="centerY" id="Vcr-ir-Xja"/>
+                                                        <constraint firstItem="Oer-dJ-j4y" firstAttribute="centerX" secondItem="DTC-mG-RAV" secondAttribute="centerX" id="jew-df-BOW"/>
+                                                    </constraints>
+                                                </collectionViewCellContentView>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" name="VFGTimelineSeparator"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="6.2000000000000002"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </collectionViewCell>
+                                        </cells>
+                                        <connections>
+                                            <outlet property="dataSource" destination="qmh-o9-ofz" id="DUe-cr-anu"/>
+                                            <outlet property="delegate" destination="qmh-o9-ofz" id="fMm-Sa-fx4"/>
+                                        </connections>
+                                    </collectionView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c1c-8H-KSd" userLabel="Seperator View">
+                                        <rect key="frame" x="15" y="544.5" width="344" height="1"/>
+                                        <color key="backgroundColor" name="VFGGreyDividerOne"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1" id="Ibd-Tl-KcK"/>
+                                        </constraints>
+                                    </view>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="naG-DG-CR3" customClass="VFGButton" customModule="VFGMVA10Foundation">
+                                        <rect key="frame" x="15" y="562.5" width="344" height="46"/>
+                                        <color key="backgroundColor" name="VFGDisabledButtonRedBG"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="46" id="vah-pf-DMk"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="VodafoneRg-Regular" family="Vodafone Rg" pointSize="19"/>
+                                        <state key="normal" title="Select date and time">
+                                            <color key="titleColor" name="VFGPrimaryButtonActiveText"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="6.2000000000000002"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="buttonStyle">
+                                                <integer key="value" value="0"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="setDateTimeButtonDidPress" destination="qmh-o9-ofz" eventType="touchUpInside" id="EZx-Qc-Vkn"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" name="VFGWhiteBackground"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="630" id="0jM-X1-q9n"/>
+                                    <constraint firstItem="c1c-8H-KSd" firstAttribute="leading" secondItem="DOS-Ay-L6q" secondAttribute="leading" id="1VB-uf-Bqm"/>
+                                    <constraint firstItem="vNA-8V-swq" firstAttribute="leading" secondItem="9Pm-Mv-6X0" secondAttribute="leading" id="1f6-fV-8i1"/>
+                                    <constraint firstAttribute="trailing" secondItem="9Pm-Mv-6X0" secondAttribute="trailing" constant="15" id="1hZ-RC-VwX"/>
+                                    <constraint firstAttribute="bottom" secondItem="naG-DG-CR3" secondAttribute="bottom" constant="21.5" id="26r-HQ-GF8"/>
+                                    <constraint firstItem="naG-DG-CR3" firstAttribute="trailing" secondItem="DOS-Ay-L6q" secondAttribute="trailing" id="45R-Ch-c0S"/>
+                                    <constraint firstAttribute="trailing" secondItem="DOS-Ay-L6q" secondAttribute="trailing" constant="15" id="57g-8h-TqS"/>
+                                    <constraint firstItem="vNA-8V-swq" firstAttribute="top" secondItem="OmV-qe-snG" secondAttribute="bottom" constant="25" id="7TL-nb-SfI"/>
+                                    <constraint firstItem="OmV-qe-snG" firstAttribute="top" secondItem="9Pm-Mv-6X0" secondAttribute="bottom" constant="29" id="8nD-8w-5xv"/>
+                                    <constraint firstItem="DOS-Ay-L6q" firstAttribute="top" secondItem="lbT-ic-juM" secondAttribute="top" constant="25" id="P8j-3j-CSR"/>
+                                    <constraint firstItem="9Pm-Mv-6X0" firstAttribute="leading" secondItem="lbT-ic-juM" secondAttribute="leading" constant="15" id="RVj-SJ-PuJ"/>
+                                    <constraint firstItem="9Pm-Mv-6X0" firstAttribute="top" secondItem="lbT-ic-juM" secondAttribute="top" constant="33" id="SIV-ce-6u3"/>
+                                    <constraint firstItem="naG-DG-CR3" firstAttribute="leading" secondItem="9Pm-Mv-6X0" secondAttribute="leading" id="TDu-qg-CDT"/>
+                                    <constraint firstItem="naG-DG-CR3" firstAttribute="leading" secondItem="DOS-Ay-L6q" secondAttribute="leading" id="VgS-FZ-hlG"/>
+                                    <constraint firstItem="DOS-Ay-L6q" firstAttribute="leading" secondItem="lbT-ic-juM" secondAttribute="leading" constant="15" id="XZ1-MT-oUG"/>
+                                    <constraint firstItem="c1c-8H-KSd" firstAttribute="leading" secondItem="9Pm-Mv-6X0" secondAttribute="leading" id="XdY-fV-fqN"/>
+                                    <constraint firstItem="vNA-8V-swq" firstAttribute="centerX" secondItem="OmV-qe-snG" secondAttribute="centerX" id="bTh-fB-gl4"/>
+                                    <constraint firstItem="naG-DG-CR3" firstAttribute="top" secondItem="c1c-8H-KSd" secondAttribute="bottom" constant="17" id="e8B-vi-v2Y"/>
+                                    <constraint firstItem="9Pm-Mv-6X0" firstAttribute="centerX" secondItem="OmV-qe-snG" secondAttribute="centerX" id="h5G-Pl-ip2"/>
+                                    <constraint firstItem="c1c-8H-KSd" firstAttribute="trailing" secondItem="9Pm-Mv-6X0" secondAttribute="trailing" id="jBb-Pl-ozS"/>
+                                    <constraint firstItem="OmV-qe-snG" firstAttribute="top" secondItem="DOS-Ay-L6q" secondAttribute="bottom" id="lIY-Mb-Nz4"/>
+                                    <constraint firstItem="c1c-8H-KSd" firstAttribute="top" secondItem="vNA-8V-swq" secondAttribute="bottom" constant="16" id="lNm-NP-auW"/>
+                                    <constraint firstItem="c1c-8H-KSd" firstAttribute="width" secondItem="DOS-Ay-L6q" secondAttribute="width" id="oj5-9a-ZJ8"/>
+                                    <constraint firstItem="vNA-8V-swq" firstAttribute="leading" secondItem="DOS-Ay-L6q" secondAttribute="leading" id="pws-8f-Pqf"/>
+                                    <constraint firstItem="naG-DG-CR3" firstAttribute="trailing" secondItem="9Pm-Mv-6X0" secondAttribute="trailing" id="tn0-57-Cps"/>
+                                    <constraint firstItem="OmV-qe-snG" firstAttribute="centerX" secondItem="DOS-Ay-L6q" secondAttribute="centerX" id="x3u-li-Bsq"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="6.2000000000000002"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <variation key="default">
+                                    <mask key="subviews">
+                                        <exclude reference="DOS-Ay-L6q"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="iKa-xb-pJI"/>
+                        <color key="backgroundColor" name="VFGLightGreyBackground"/>
+                        <constraints>
+                            <constraint firstItem="SPB-uP-TP7" firstAttribute="top" secondItem="iKa-xb-pJI" secondAttribute="top" constant="32" id="0Zy-v6-9aw"/>
+                            <constraint firstItem="SPB-uP-TP7" firstAttribute="leading" secondItem="iKa-xb-pJI" secondAttribute="leading" constant="20" id="8IH-NE-P1e"/>
+                            <constraint firstAttribute="trailing" secondItem="lbT-ic-juM" secondAttribute="trailing" constant="20" id="BIb-De-F4f"/>
+                            <constraint firstItem="iKa-xb-pJI" firstAttribute="trailing" secondItem="SPB-uP-TP7" secondAttribute="trailing" constant="20" id="Cwj-id-1Ms"/>
+                            <constraint firstItem="lbT-ic-juM" firstAttribute="leading" secondItem="Hi7-zk-ksp" secondAttribute="leading" constant="20" id="gZw-Ig-57P"/>
+                            <constraint firstItem="lbT-ic-juM" firstAttribute="top" secondItem="SPB-uP-TP7" secondAttribute="bottom" constant="30" id="qiJ-C8-tPX"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="CTAButton" destination="naG-DG-CR3" id="J5S-zg-gos"/>
+                        <outlet property="availableSlotLabel" destination="SN5-4T-FA3" id="GE0-if-M7g"/>
+                        <outlet property="contentView" destination="lbT-ic-juM" id="nPM-YF-GT5"/>
+                        <outlet property="datePicker" destination="9Pm-Mv-6X0" id="z6b-N0-i2W"/>
+                        <outlet property="selectedDateLabel" destination="MKY-aa-tqL" id="WTy-a7-s9H"/>
+                        <outlet property="subtitleLabel" destination="SPB-uP-TP7" id="msD-2c-h6f"/>
+                        <outlet property="timeSlotsCollectionView" destination="vNA-8V-swq" id="oTE-KM-Ur7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8f0-Mh-8nt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1004.3478260869566" y="-280.58035714285711"/>
+        </scene>
+    </scenes>
+    <designables>
+        <designable name="MKY-aa-tqL">
+            <size key="intrinsicContentSize" width="203.5" height="21.5"/>
+        </designable>
+        <designable name="Oer-dJ-j4y">
+            <size key="intrinsicContentSize" width="73" height="17"/>
+        </designable>
+        <designable name="SN5-4T-FA3">
+            <size key="intrinsicContentSize" width="106.5" height="21.5"/>
+        </designable>
+        <designable name="SPB-uP-TP7">
+            <size key="intrinsicContentSize" width="318" height="28"/>
+        </designable>
+        <designable name="naG-DG-CR3">
+            <size key="intrinsicContentSize" width="153" height="34"/>
+        </designable>
+    </designables>
+    <resources>
+        <namedColor name="VFGDisabledButtonRedBG">
+            <color red="0.80000001192092896" green="0.80000001192092896" blue="0.80000001192092896" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="VFGGreyDividerOne">
+            <color red="0.92156862745098034" green="0.92156862745098034" blue="0.92156862745098034" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="VFGLightGreyBackground">
+            <color red="0.95686274509803926" green="0.95686274509803926" blue="0.95686274509803926" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="VFGPrimaryButtonActiveText">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="VFGPrimaryText">
+            <color red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="VFGTimelineSeparator">
+            <color red="0.80000001192092896" green="0.80000001192092896" blue="0.80000001192092896" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="VFGWhiteBackground">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

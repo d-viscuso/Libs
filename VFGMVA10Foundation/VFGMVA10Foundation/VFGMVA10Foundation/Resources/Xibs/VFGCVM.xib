@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="vodafone-bold.ttf">
+            <string>VodafoneRg-Bold</string>
+        </array>
+        <array key="vodafone-regular.ttf">
+            <string>VodafoneRg-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="VFGCVM" customModule="VFGMVA10Foundation" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="460" height="180"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="myT-gx-yRH" userLabel="Cvm Banner View">
+                    <rect key="frame" x="0.0" y="0.0" width="460" height="180"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SgZ-pm-Pig" userLabel="BackgroundView">
+                            <rect key="frame" x="0.0" y="0.0" width="460" height="180"/>
+                            <color key="backgroundColor" name="VFGWhiteBackground"/>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WtT-TT-YyL" userLabel="Title Label" customClass="VFGLabel" customModule="VFGMVA10Foundation" customModuleProvider="target">
+                            <rect key="frame" x="49" y="19.5" width="353" height="20"/>
+                            <fontDescription key="fontDescription" name="VodafoneRg-Bold" family="Vodafone Rg" pointSize="17"/>
+                            <color key="textColor" name="VFGWhiteText"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icAutoBill" translatesAutoresizingMaskIntoConstraints="NO" id="u9C-hR-D8T" userLabel="Cvm Banner Icon" customClass="VFGImageView" customModule="VFGMVA10Foundation" customModuleProvider="target">
+                            <rect key="frame" x="17" y="17" width="25" height="25"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="25" id="hCC-Ww-Ett"/>
+                                <constraint firstAttribute="height" constant="25" id="qEB-bL-lil"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="imageName" value="icAutoBill"/>
+                            </userDefinedRuntimeAttributes>
+                        </imageView>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="greenCircle" translatesAutoresizingMaskIntoConstraints="NO" id="O6B-mN-6sK" userLabel="Auto top-up active circle" customClass="VFGImageView" customModule="VFGMVA10Foundation">
+                            <rect key="frame" x="19.5" y="19.5" width="20" height="20"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="20" id="LWy-Oq-aeu"/>
+                                <constraint firstAttribute="width" constant="20" id="nHl-Up-tGn"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="imageName" value="greenCircle"/>
+                            </userDefinedRuntimeAttributes>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3RB-Gk-0eR" userLabel="Close Button" customClass="VFGButton" customModule="VFGMVA10Foundation" customModuleProvider="target">
+                            <rect key="frame" x="419" y="20" width="25" height="25"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="25" id="HQX-QY-mTb"/>
+                                <constraint firstAttribute="width" constant="25" id="IGj-CR-Pcv"/>
+                            </constraints>
+                            <state key="normal" backgroundImage="icCloseWhite"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="imageName" value="icCloseWhite"/>
+                                <userDefinedRuntimeAttribute type="number" keyPath="buttonStyle">
+                                    <integer key="value" value="5"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="closeDidPress:" destination="iN0-l3-epB" eventType="touchUpInside" id="3Lv-X3-GnX"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="6Sh-7r-TQh" userLabel="Description Label" customClass="VFGLabel" customModule="VFGMVA10Foundation" customModuleProvider="target">
+                            <rect key="frame" x="17" y="51.5" width="423" height="66.5"/>
+                            <fontDescription key="fontDescription" name="VodafoneRg-Regular" family="Vodafone Rg" pointSize="17"/>
+                            <color key="textColor" name="VFGWhiteText"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g27-W5-Nxr" userLabel="Setup Button" customClass="VFGButton" customModule="VFGMVA10Foundation" customModuleProvider="target">
+                            <rect key="frame" x="16" y="134" width="428" height="30"/>
+                            <color key="backgroundColor" name="VFGPrimaryButtonActiveText"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="um7-DM-d2c"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="VodafoneRg-Bold" family="Vodafone Rg" pointSize="17"/>
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <state key="normal" title="Setup">
+                                <color key="titleColor" name="VFGSecondaryButtonText"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="buttonStyle">
+                                    <integer key="value" value="0"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="titleColor">
+                                    <color key="value" name="VFGSecondaryButtonText"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="backgroundStyle">
+                                    <integer key="value" value="1"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="setupDidPress:" destination="iN0-l3-epB" eventType="touchUpInside" id="QNZ-qA-m9i"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2c3-tZ-BhD" userLabel="Edit Button" customClass="VFGButton" customModule="VFGMVA10Foundation" customModuleProvider="target">
+                            <rect key="frame" x="16" y="134" width="428" height="30"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="ESg-ZV-aDK"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="VodafoneRg-Bold" family="Vodafone Rg" pointSize="17"/>
+                            <state key="normal" title="Edit">
+                                <color key="titleColor" name="VFGSecondaryButtonText"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="buttonStyle">
+                                    <integer key="value" value="2"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="titleColor">
+                                    <color key="value" name="VFGSecondaryButtonText"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="backgroundStyle">
+                                    <integer key="value" value="0"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="editDidPress:" destination="iN0-l3-epB" eventType="touchUpInside" id="pjt-br-tXn"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cfp-lg-LXy" userLabel="Toggle Button" customClass="VFGButton" customModule="VFGMVA10Foundation">
+                            <rect key="frame" x="402" y="14" width="40" height="32"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="32" id="N5M-F5-4xi"/>
+                                <constraint firstAttribute="width" constant="40" id="n9p-Ie-6p4"/>
+                            </constraints>
+                            <state key="normal" image="toggleSmallActive"/>
+                            <connections>
+                                <action selector="toggleDidPress:" destination="iN0-l3-epB" eventType="touchUpInside" id="uQo-lr-mJW"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="SgZ-pm-Pig" secondAttribute="bottom" id="29B-fv-XdU"/>
+                        <constraint firstItem="O6B-mN-6sK" firstAttribute="leading" secondItem="myT-gx-yRH" secondAttribute="leading" constant="19.5" id="3MO-6c-cpx"/>
+                        <constraint firstItem="2c3-tZ-BhD" firstAttribute="leading" secondItem="myT-gx-yRH" secondAttribute="leading" constant="16" id="AhZ-kV-uKp"/>
+                        <constraint firstAttribute="trailing" secondItem="g27-W5-Nxr" secondAttribute="trailing" constant="16" id="Bmf-Cd-0Lx"/>
+                        <constraint firstItem="WtT-TT-YyL" firstAttribute="centerY" secondItem="u9C-hR-D8T" secondAttribute="centerY" id="E1u-EM-VLU"/>
+                        <constraint firstAttribute="bottom" secondItem="2c3-tZ-BhD" secondAttribute="bottom" constant="16" id="GbK-cd-4jB"/>
+                        <constraint firstItem="SgZ-pm-Pig" firstAttribute="leading" secondItem="myT-gx-yRH" secondAttribute="leading" id="Hho-Co-T1V"/>
+                        <constraint firstAttribute="trailing" secondItem="Cfp-lg-LXy" secondAttribute="trailing" constant="18" id="InZ-iZ-mvo"/>
+                        <constraint firstItem="6Sh-7r-TQh" firstAttribute="top" secondItem="WtT-TT-YyL" secondAttribute="bottom" constant="12" id="Jsg-p9-T1h"/>
+                        <constraint firstAttribute="trailing" secondItem="6Sh-7r-TQh" secondAttribute="trailing" constant="20" id="N0B-bZ-vjL"/>
+                        <constraint firstItem="u9C-hR-D8T" firstAttribute="leading" secondItem="myT-gx-yRH" secondAttribute="leading" constant="17" id="Nln-cp-hI0"/>
+                        <constraint firstItem="g27-W5-Nxr" firstAttribute="top" secondItem="6Sh-7r-TQh" secondAttribute="bottom" constant="16" id="PAj-CP-GlQ"/>
+                        <constraint firstAttribute="bottom" secondItem="g27-W5-Nxr" secondAttribute="bottom" constant="16" id="Pf8-HE-lNE"/>
+                        <constraint firstAttribute="trailing" secondItem="2c3-tZ-BhD" secondAttribute="trailing" constant="16" id="ZgE-fS-ISV"/>
+                        <constraint firstItem="3RB-Gk-0eR" firstAttribute="leading" secondItem="WtT-TT-YyL" secondAttribute="trailing" constant="17" id="awP-n6-4Ia"/>
+                        <constraint firstItem="u9C-hR-D8T" firstAttribute="top" secondItem="myT-gx-yRH" secondAttribute="top" constant="17" id="bO1-HL-smH"/>
+                        <constraint firstItem="WtT-TT-YyL" firstAttribute="leading" secondItem="u9C-hR-D8T" secondAttribute="trailing" constant="7" id="bij-Rg-zc4"/>
+                        <constraint firstItem="SgZ-pm-Pig" firstAttribute="top" secondItem="myT-gx-yRH" secondAttribute="top" id="cWh-Qi-314"/>
+                        <constraint firstItem="g27-W5-Nxr" firstAttribute="leading" secondItem="myT-gx-yRH" secondAttribute="leading" constant="16" id="eZr-6m-Zuo"/>
+                        <constraint firstItem="6Sh-7r-TQh" firstAttribute="leading" secondItem="u9C-hR-D8T" secondAttribute="leading" id="f7I-Hu-6vW"/>
+                        <constraint firstAttribute="trailing" secondItem="3RB-Gk-0eR" secondAttribute="trailing" constant="16" id="fMi-cj-apD"/>
+                        <constraint firstItem="3RB-Gk-0eR" firstAttribute="top" secondItem="myT-gx-yRH" secondAttribute="top" constant="20" id="iKg-RP-X31"/>
+                        <constraint firstAttribute="trailing" secondItem="SgZ-pm-Pig" secondAttribute="trailing" id="oT9-5r-YEc"/>
+                        <constraint firstItem="Cfp-lg-LXy" firstAttribute="top" secondItem="myT-gx-yRH" secondAttribute="top" constant="14" id="q0u-Cx-FW6"/>
+                        <constraint firstItem="O6B-mN-6sK" firstAttribute="top" secondItem="myT-gx-yRH" secondAttribute="top" constant="19.5" id="tjg-Fc-4UB"/>
+                        <constraint firstItem="2c3-tZ-BhD" firstAttribute="top" secondItem="6Sh-7r-TQh" secondAttribute="bottom" constant="16" id="yMe-Qg-7lX"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <constraints>
+                <constraint firstItem="myT-gx-yRH" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="10K-l5-48S"/>
+                <constraint firstItem="myT-gx-yRH" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="EBD-MK-Q6T"/>
+                <constraint firstAttribute="trailing" secondItem="myT-gx-yRH" secondAttribute="trailing" id="PFj-L7-neb"/>
+                <constraint firstItem="myT-gx-yRH" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="UwF-x5-iIR"/>
+                <constraint firstAttribute="bottom" secondItem="myT-gx-yRH" secondAttribute="bottom" id="ZBz-jH-XB7"/>
+                <constraint firstItem="myT-gx-yRH" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="nj8-dN-0aN"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="autoTopUpActiveCircle" destination="O6B-mN-6sK" id="grB-Qi-FJI"/>
+                <outlet property="closeButton" destination="3RB-Gk-0eR" id="eQF-7v-Wlc"/>
+                <outlet property="cvmBackgroundView" destination="SgZ-pm-Pig" id="tha-fY-bWB"/>
+                <outlet property="cvmBannerIcon" destination="u9C-hR-D8T" id="yxe-Ce-TNF"/>
+                <outlet property="cvmBannerView" destination="myT-gx-yRH" id="cMu-dX-x8w"/>
+                <outlet property="descriptionLabel" destination="6Sh-7r-TQh" id="Qfi-dQ-0gL"/>
+                <outlet property="editButton" destination="2c3-tZ-BhD" id="l4w-8e-Nod"/>
+                <outlet property="setupButton" destination="g27-W5-Nxr" id="Up3-Xb-0oM"/>
+                <outlet property="titleLabel" destination="WtT-TT-YyL" id="2FQ-s7-WLr"/>
+                <outlet property="toggleButton" destination="Cfp-lg-LXy" id="UHJ-0g-Rq3"/>
+            </connections>
+            <point key="canvasLocation" x="71.014492753623188" y="108.48214285714285"/>
+        </view>
+    </objects>
+    <designables>
+        <designable name="2c3-tZ-BhD">
+            <size key="intrinsicContentSize" width="30" height="32"/>
+        </designable>
+        <designable name="3RB-Gk-0eR">
+            <size key="intrinsicContentSize" width="26" height="26"/>
+        </designable>
+        <designable name="6Sh-7r-TQh">
+            <size key="intrinsicContentSize" width="76" height="19.5"/>
+        </designable>
+        <designable name="Cfp-lg-LXy">
+            <size key="intrinsicContentSize" width="28" height="22"/>
+        </designable>
+        <designable name="O6B-mN-6sK">
+            <size key="intrinsicContentSize" width="16" height="16"/>
+        </designable>
+        <designable name="WtT-TT-YyL">
+            <size key="intrinsicContentSize" width="40" height="19.5"/>
+        </designable>
+        <designable name="g27-W5-Nxr">
+            <size key="intrinsicContentSize" width="42" height="32"/>
+        </designable>
+        <designable name="u9C-hR-D8T">
+            <size key="intrinsicContentSize" width="26" height="26"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="greenCircle" width="16" height="16"/>
+        <image name="icAutoBill" width="26" height="26"/>
+        <image name="icCloseWhite" width="26" height="26"/>
+        <image name="toggleSmallActive" width="28" height="22"/>
+        <namedColor name="VFGPrimaryButtonActiveText">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="VFGSecondaryButtonText">
+            <color red="0.20000000298023224" green="0.20000000298023224" blue="0.20000000298023224" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="VFGWhiteBackground">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="VFGWhiteText">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

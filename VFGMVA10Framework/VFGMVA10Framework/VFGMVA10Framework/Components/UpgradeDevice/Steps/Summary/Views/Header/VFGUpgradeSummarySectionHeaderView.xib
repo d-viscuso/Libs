@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="vodafone-bold.ttf">
+            <string>VodafoneRg-Bold</string>
+        </array>
+        <array key="vodafone-regular.ttf">
+            <string>VodafoneRg-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="iN0-l3-epB" customClass="VFGUpgradeSummarySectionHeaderView" customModule="VFGMVA10Framework" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="126"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="Q9M-9q-IDa">
+                    <rect key="frame" x="16" y="34" width="382" height="76"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="U2R-wW-a2Z" userLabel="Title Stack View">
+                            <rect key="frame" x="0.0" y="0.0" width="382" height="44.5"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My upgrade selection" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yfa-eS-LM5" userLabel="Title Label" customClass="VFGLabel" customModule="VFGMVA10Foundation">
+                                    <rect key="frame" x="0.0" y="0.0" width="241.5" height="44.5"/>
+                                    <fontDescription key="fontDescription" name="VodafoneRg-Bold" family="Vodafone Rg" pointSize="25"/>
+                                    <color key="textColor" name="VFGActiveSelectionText"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2tQ-Or-h5I" userLabel="Edit Button View">
+                                    <rect key="frame" x="320" y="0.0" width="62" height="44.5"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="8Dx-V3-jyP" userLabel="Edit Button Stack View">
+                                            <rect key="frame" x="0.0" y="0.0" width="62" height="44.5"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Edit" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EM8-SB-V4m" userLabel="Edit" customClass="VFGLabel" customModule="VFGMVA10Framework" customModuleProvider="target">
+                                                    <rect key="frame" x="0.0" y="0.0" width="30" height="44.5"/>
+                                                    <fontDescription key="fontDescription" name="VodafoneRg-Regular" family="Vodafone Rg" pointSize="17"/>
+                                                    <color key="textColor" name="VFGRedOrangeText"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icEdit" translatesAutoresizingMaskIntoConstraints="NO" id="Ysu-Ir-dwt" customClass="VFGImageView" customModule="VFGMVA10Foundation">
+                                                    <rect key="frame" x="38" y="0.0" width="24" height="44.5"/>
+                                                </imageView>
+                                            </subviews>
+                                        </stackView>
+                                        <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="UDSummaryHeaderEditButtonID" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z9g-hq-yl8" userLabel="Edit Button" customClass="VFGButton" customModule="VFGMVA10Foundation">
+                                            <rect key="frame" x="0.0" y="0.0" width="62" height="44.5"/>
+                                            <accessibility key="accessibilityConfiguration" identifier="UDSummaryHeaderEditButtonID"/>
+                                            <connections>
+                                                <action selector="editButtonDidPress:" destination="iN0-l3-epB" eventType="touchUpInside" id="dh5-rc-rB0"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="8Dx-V3-jyP" firstAttribute="top" secondItem="2tQ-Or-h5I" secondAttribute="top" id="90O-XH-es3"/>
+                                        <constraint firstAttribute="bottom" secondItem="8Dx-V3-jyP" secondAttribute="bottom" id="Fl6-Zs-9Rm"/>
+                                        <constraint firstAttribute="trailing" secondItem="8Dx-V3-jyP" secondAttribute="trailing" id="JcU-Gc-IU2"/>
+                                        <constraint firstItem="Z9g-hq-yl8" firstAttribute="leading" secondItem="2tQ-Or-h5I" secondAttribute="leading" id="gy9-uE-XVs"/>
+                                        <constraint firstItem="Z9g-hq-yl8" firstAttribute="top" secondItem="2tQ-Or-h5I" secondAttribute="top" id="htX-HH-hk0"/>
+                                        <constraint firstAttribute="bottom" secondItem="Z9g-hq-yl8" secondAttribute="bottom" id="lfb-4N-uOo"/>
+                                        <constraint firstItem="8Dx-V3-jyP" firstAttribute="leading" secondItem="2tQ-Or-h5I" secondAttribute="leading" id="oRM-VJ-1fV"/>
+                                        <constraint firstAttribute="trailing" secondItem="Z9g-hq-yl8" secondAttribute="trailing" id="tTg-pN-hcR"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                        </stackView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My new device" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cvE-9d-Cek" userLabel="Subtitle Label" customClass="VFGLabel" customModule="VFGMVA10Foundation">
+                            <rect key="frame" x="0.0" y="60.5" width="382" height="15.5"/>
+                            <fontDescription key="fontDescription" name="VodafoneRg-Regular" family="Vodafone Rg" pointSize="16"/>
+                            <color key="textColor" name="VFGSecondaryText"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" name="VFGVeryLightGreyLightBackground"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="Q9M-9q-IDa" secondAttribute="bottom" constant="16" id="Tlj-4d-WO9"/>
+                <constraint firstAttribute="trailing" secondItem="Q9M-9q-IDa" secondAttribute="trailing" constant="16" id="l4i-6Z-qw8"/>
+                <constraint firstItem="Q9M-9q-IDa" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="34" id="tOS-Hl-egv"/>
+                <constraint firstItem="Q9M-9q-IDa" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="zHG-ix-dlD"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="editButtonTitleLabel" destination="EM8-SB-V4m" id="Cw7-hp-TU2"/>
+                <outlet property="editButtonView" destination="2tQ-Or-h5I" id="zGl-BB-U8E"/>
+                <outlet property="stackViewBottomConstraint" destination="Tlj-4d-WO9" id="eaQ-wT-y45"/>
+                <outlet property="stackViewTopConstraint" destination="tOS-Hl-egv" id="DfM-Vi-0Cp"/>
+                <outlet property="subtitleLabel" destination="cvE-9d-Cek" id="XDz-ID-qdH"/>
+                <outlet property="titleLabel" destination="yfa-eS-LM5" id="7fM-8r-oOA"/>
+                <outlet property="titleStackView" destination="U2R-wW-a2Z" id="x8d-R0-Err"/>
+            </connections>
+            <point key="canvasLocation" x="-97.101449275362327" y="-162.05357142857142"/>
+        </view>
+    </objects>
+    <designables>
+        <designable name="EM8-SB-V4m">
+            <size key="intrinsicContentSize" width="30" height="20"/>
+        </designable>
+        <designable name="Ysu-Ir-dwt">
+            <size key="intrinsicContentSize" width="24" height="24"/>
+        </designable>
+        <designable name="Z9g-hq-yl8">
+            <size key="intrinsicContentSize" width="30" height="30"/>
+        </designable>
+        <designable name="cvE-9d-Cek">
+            <size key="intrinsicContentSize" width="107.5" height="19"/>
+        </designable>
+        <designable name="yfa-eS-LM5">
+            <size key="intrinsicContentSize" width="241.5" height="29.5"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="icEdit" width="24" height="24"/>
+        <namedColor name="VFGActiveSelectionText">
+            <color red="0.20000000298023224" green="0.20000000298023224" blue="0.20000000298023224" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="VFGRedOrangeText">
+            <color red="0.90200001001358032" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="VFGSecondaryText">
+            <color red="0.29019607843137257" green="0.30196078431372547" blue="0.30588235294117649" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="VFGVeryLightGreyLightBackground">
+            <color red="0.92156862745098034" green="0.92156862745098034" blue="0.92156862745098034" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

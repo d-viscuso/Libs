@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="vodafone-regular.ttf">
+            <string>VodafoneRg-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="VFGRadioCell" rowHeight="65" id="uaM-yO-wLo" customClass="VFGRadioCell" customModule="VFGMVA10Foundation" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="394" height="65"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="uaM-yO-wLo" id="fsm-LY-gm4">
+                <rect key="frame" x="0.0" y="0.0" width="394" height="65"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="m4z-N2-l2S" customClass="CardViewShadow" customModule="VFGMVA10Foundation" customModuleProvider="target">
+                        <rect key="frame" x="16" y="0.0" width="362" height="65"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZN4-9z-imq">
+                        <rect key="frame" x="16" y="0.0" width="362" height="65"/>
+                        <subviews>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ba8-Ee-FHR" userLabel="Cropped Seperator top">
+                                <rect key="frame" x="17" y="0.0" width="328" height="1"/>
+                                <color key="backgroundColor" name="VFGGreyDividerSix"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="C6H-On-1jF"/>
+                                </constraints>
+                            </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icFlagUK" translatesAutoresizingMaskIntoConstraints="NO" id="7sg-Uo-h56" customClass="VFGImageView" customModule="VFGMVA10Foundation">
+                                <rect key="frame" x="16" y="16.5" width="32" height="32"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <bool key="isElement" value="YES"/>
+                                </accessibility>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="32" id="3zP-D0-UsF"/>
+                                    <constraint firstAttribute="width" constant="32" id="IvZ-gt-QzL"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AQ7-oc-ozl" customClass="VFGLabel" customModule="VFGMVA10Foundation">
+                                <rect key="frame" x="64" y="22.5" width="240" height="20.5"/>
+                                <fontDescription key="fontDescription" name="VodafoneRg-Regular" family="Vodafone Rg" pointSize="18"/>
+                                <color key="textColor" name="VFGPrimaryText"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uIX-EP-WXC" userLabel="Radio Button" customClass="VFGRadioButton" customModule="VFGMVA10Foundation">
+                                <rect key="frame" x="323" y="22.5" width="20" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="20" id="OQz-YJ-l95"/>
+                                    <constraint firstAttribute="height" constant="20" id="iHp-YB-faT"/>
+                                </constraints>
+                                <state key="normal" image="definition_radio_button_off"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="imageName" value="definition_radio_button_off"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="radioButtonDidPress" destination="uaM-yO-wLo" eventType="touchUpInside" id="He9-bz-X7i"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" name="VFGWhiteBackground"/>
+                        <constraints>
+                            <constraint firstItem="uIX-EP-WXC" firstAttribute="leading" secondItem="AQ7-oc-ozl" secondAttribute="trailing" constant="19" id="EBo-r3-wzX"/>
+                            <constraint firstAttribute="trailing" secondItem="Ba8-Ee-FHR" secondAttribute="trailing" constant="17" id="YpX-ae-fjg"/>
+                            <constraint firstItem="uIX-EP-WXC" firstAttribute="centerY" secondItem="7sg-Uo-h56" secondAttribute="centerY" id="ab9-lb-GIe"/>
+                            <constraint firstItem="Ba8-Ee-FHR" firstAttribute="top" secondItem="ZN4-9z-imq" secondAttribute="top" id="cCr-b4-uLT"/>
+                            <constraint firstItem="AQ7-oc-ozl" firstAttribute="centerY" secondItem="7sg-Uo-h56" secondAttribute="centerY" id="eTU-3w-mzZ"/>
+                            <constraint firstItem="Ba8-Ee-FHR" firstAttribute="leading" secondItem="ZN4-9z-imq" secondAttribute="leading" constant="17" id="eYe-Ad-dql"/>
+                            <constraint firstAttribute="trailing" secondItem="uIX-EP-WXC" secondAttribute="trailing" constant="19" id="iCM-jb-fc4"/>
+                            <constraint firstItem="7sg-Uo-h56" firstAttribute="leading" secondItem="ZN4-9z-imq" secondAttribute="leading" constant="16" id="iMw-di-10N"/>
+                            <constraint firstItem="7sg-Uo-h56" firstAttribute="centerY" secondItem="ZN4-9z-imq" secondAttribute="centerY" id="pzV-oy-5fd"/>
+                            <constraint firstItem="AQ7-oc-ozl" firstAttribute="leading" secondItem="7sg-Uo-h56" secondAttribute="trailing" constant="16" id="tiw-eH-Xz6"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="m4z-N2-l2S" firstAttribute="top" secondItem="ZN4-9z-imq" secondAttribute="top" id="1jw-Bk-leR"/>
+                    <constraint firstAttribute="bottom" secondItem="ZN4-9z-imq" secondAttribute="bottom" id="60U-Tf-9n5"/>
+                    <constraint firstItem="ZN4-9z-imq" firstAttribute="leading" secondItem="fsm-LY-gm4" secondAttribute="leading" constant="16" id="N4k-ty-1yP"/>
+                    <constraint firstItem="ZN4-9z-imq" firstAttribute="trailing" secondItem="m4z-N2-l2S" secondAttribute="trailing" id="SOT-un-awd"/>
+                    <constraint firstItem="ZN4-9z-imq" firstAttribute="top" secondItem="fsm-LY-gm4" secondAttribute="top" id="U1b-RB-fvz"/>
+                    <constraint firstItem="m4z-N2-l2S" firstAttribute="leading" secondItem="ZN4-9z-imq" secondAttribute="leading" id="dHA-QW-N07"/>
+                    <constraint firstAttribute="trailing" secondItem="ZN4-9z-imq" secondAttribute="trailing" constant="16" id="gEj-x7-rxy"/>
+                    <constraint firstItem="m4z-N2-l2S" firstAttribute="bottom" secondItem="ZN4-9z-imq" secondAttribute="bottom" id="tr3-Ie-Mnk"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" name="VFGDarkGreyBackground"/>
+            <connections>
+                <outlet property="bottomConstraint" destination="60U-Tf-9n5" id="6WK-63-aUx"/>
+                <outlet property="cardView" destination="ZN4-9z-imq" id="nWN-XH-47b"/>
+                <outlet property="croppedTopSeparator" destination="Ba8-Ee-FHR" id="DvZ-EH-Xu9"/>
+                <outlet property="iconImageView" destination="7sg-Uo-h56" id="EC7-5B-JPE"/>
+                <outlet property="radioButton" destination="uIX-EP-WXC" id="Dt9-lY-w0a"/>
+                <outlet property="shadowView" destination="m4z-N2-l2S" id="iQq-SK-YSP"/>
+                <outlet property="titleLabel" destination="AQ7-oc-ozl" id="khD-06-gMP"/>
+                <outlet property="topConstraint" destination="U1b-RB-fvz" id="chf-1y-aFv"/>
+            </connections>
+            <point key="canvasLocation" x="-552.17391304347825" y="164.73214285714286"/>
+        </tableViewCell>
+    </objects>
+    <designables>
+        <designable name="7sg-Uo-h56">
+            <size key="intrinsicContentSize" width="34" height="35"/>
+        </designable>
+        <designable name="AQ7-oc-ozl">
+            <size key="intrinsicContentSize" width="31" height="20.5"/>
+        </designable>
+        <designable name="uIX-EP-WXC">
+            <size key="intrinsicContentSize" width="20" height="22"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="definition_radio_button_off" width="20" height="20"/>
+        <image name="icFlagUK" width="34" height="35"/>
+        <namedColor name="VFGDarkGreyBackground">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.94901960784313721" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="VFGGreyDividerSix">
+            <color red="0.74509803921568629" green="0.74509803921568629" blue="0.74509803921568629" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="VFGPrimaryText">
+            <color red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="VFGWhiteBackground">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

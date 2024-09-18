@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="vodafone-bold.ttf">
+            <string>VodafoneRg-Bold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Choose Device View Controller-->
+        <scene sceneID="H7G-zX-xtE">
+            <objects>
+                <viewController storyboardIdentifier="VFGChooseDeviceViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Z2C-NC-d2o" customClass="VFGChooseDeviceViewController" customModule="VFGMVA10Framework" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qro-ZP-K3V">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose a device" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="cG9-Am-fVw" customClass="VFGLabel" customModule="VFGMVA10Foundation">
+                                <rect key="frame" x="22" y="32" width="372" height="29.5"/>
+                                <fontDescription key="fontDescription" name="VodafoneRg-Bold" family="Vodafone Rg" pointSize="25"/>
+                                <color key="textColor" name="VFGPrimaryText"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="uPq-3X-djr">
+                                <rect key="frame" x="0.0" y="61.5" width="414" height="550"/>
+                                <color key="backgroundColor" name="VFGLightGreyBackground"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="550" id="j3J-Ow-5FY"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="K8v-Ga-8d9">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ZwD-33-kZV"/>
+                        <color key="backgroundColor" name="VFGLightGreyBackground"/>
+                        <constraints>
+                            <constraint firstItem="uPq-3X-djr" firstAttribute="top" secondItem="cG9-Am-fVw" secondAttribute="bottom" id="HBU-FU-HgY"/>
+                            <constraint firstAttribute="trailing" secondItem="cG9-Am-fVw" secondAttribute="trailing" constant="20" id="KwO-fu-RJK"/>
+                            <constraint firstItem="cG9-Am-fVw" firstAttribute="leading" secondItem="ZwD-33-kZV" secondAttribute="leading" constant="22" id="UP7-9K-OEL"/>
+                            <constraint firstItem="cG9-Am-fVw" firstAttribute="top" secondItem="qro-ZP-K3V" secondAttribute="top" constant="32" id="Ui2-bk-h1Q"/>
+                            <constraint firstItem="uPq-3X-djr" firstAttribute="leading" secondItem="ZwD-33-kZV" secondAttribute="leading" id="gvh-UY-gbn"/>
+                            <constraint firstAttribute="trailing" secondItem="uPq-3X-djr" secondAttribute="trailing" id="lmW-aH-8Fj"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="collectionView" destination="uPq-3X-djr" id="4tq-Xj-jVb"/>
+                        <outlet property="subtitleLabel" destination="cG9-Am-fVw" id="Ot8-Uv-VC4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cmh-Ci-hfa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-942" y="-428"/>
+        </scene>
+    </scenes>
+    <designables>
+        <designable name="cG9-Am-fVw">
+            <size key="intrinsicContentSize" width="168.5" height="29.5"/>
+        </designable>
+    </designables>
+    <resources>
+        <namedColor name="VFGLightGreyBackground">
+            <color red="0.95686274509803926" green="0.95686274509803926" blue="0.95686274509803926" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="VFGPrimaryText">
+            <color red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

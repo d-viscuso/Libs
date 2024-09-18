@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="vodafone-bold.ttf">
+            <string>VodafoneRg-Bold</string>
+        </array>
+        <array key="vodafone-regular.ttf">
+            <string>VodafoneRg-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ProductSwitcherDetailedUsageView" customModule="VFGMVA10Framework" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="566" height="106"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="mIq-us-RC8" customClass="VFGImageView" customModule="VFGMVA10Foundation">
+                    <rect key="frame" x="16" y="8" width="20" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="FQz-5i-6lD"/>
+                        <constraint firstAttribute="width" constant="20" id="cqZ-Bt-ou5"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nic-p0-ZDu" customClass="VFGLabel" customModule="VFGMVA10Foundation">
+                    <rect key="frame" x="44" y="9" width="506" height="18"/>
+                    <fontDescription key="fontDescription" name="VodafoneRg-Bold" family="Vodafone Rg" pointSize="16"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iix-g5-mZA" customClass="VFGLabel" customModule="VFGMVA10Foundation">
+                    <rect key="frame" x="16" y="35" width="534" height="57"/>
+                    <fontDescription key="fontDescription" name="VodafoneRg-Regular" family="Vodafone Rg" pointSize="16"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lHs-oD-97m">
+                    <rect key="frame" x="16" y="96" width="534" height="6"/>
+                    <color key="backgroundColor" name="VFGAluminiumProgressBar"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="6" id="EJJ-zi-Rfj"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="iix-g5-mZA" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="24G-a6-Gcr"/>
+                <constraint firstItem="Nic-p0-ZDu" firstAttribute="centerY" secondItem="mIq-us-RC8" secondAttribute="centerY" id="IZ5-9k-nei"/>
+                <constraint firstItem="mIq-us-RC8" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="Kpv-Xc-p9f"/>
+                <constraint firstItem="Nic-p0-ZDu" firstAttribute="leading" secondItem="mIq-us-RC8" secondAttribute="trailing" constant="8" id="g6Z-12-Gkz"/>
+                <constraint firstItem="lHs-oD-97m" firstAttribute="top" secondItem="iix-g5-mZA" secondAttribute="bottom" constant="4" id="gUK-ib-kkV"/>
+                <constraint firstAttribute="trailing" secondItem="Nic-p0-ZDu" secondAttribute="trailing" constant="16" id="mrO-SR-hhE"/>
+                <constraint firstItem="iix-g5-mZA" firstAttribute="top" secondItem="mIq-us-RC8" secondAttribute="bottom" constant="7" id="mvO-72-HSD"/>
+                <constraint firstAttribute="bottom" secondItem="lHs-oD-97m" secondAttribute="bottom" constant="4" id="npi-tE-XGb"/>
+                <constraint firstItem="mIq-us-RC8" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="riw-kZ-wpn"/>
+                <constraint firstAttribute="trailing" secondItem="iix-g5-mZA" secondAttribute="trailing" constant="16" id="wEQ-SG-zHL"/>
+                <constraint firstAttribute="trailing" secondItem="lHs-oD-97m" secondAttribute="trailing" constant="16" id="ydu-Hx-IVl"/>
+                <constraint firstItem="lHs-oD-97m" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="ypR-9y-3p8"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="descLabel" destination="iix-g5-mZA" id="Yrw-bS-LuA"/>
+                <outlet property="iconImageView" destination="mIq-us-RC8" id="Omp-Ej-NMU"/>
+                <outlet property="remainingRatioProgressBar" destination="lHs-oD-97m" id="3iB-a1-jpk"/>
+                <outlet property="titleLabel" destination="Nic-p0-ZDu" id="k0n-Ra-uxB"/>
+            </connections>
+            <point key="canvasLocation" x="247.82608695652175" y="277.23214285714283"/>
+        </view>
+    </objects>
+    <designables>
+        <designable name="Nic-p0-ZDu">
+            <size key="intrinsicContentSize" width="38" height="18"/>
+        </designable>
+        <designable name="iix-g5-mZA">
+            <size key="intrinsicContentSize" width="34.5" height="18"/>
+        </designable>
+    </designables>
+    <resources>
+        <namedColor name="VFGAluminiumProgressBar">
+            <color red="0.74509803921568629" green="0.74509803921568629" blue="0.74509803921568629" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

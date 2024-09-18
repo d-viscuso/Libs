@@ -1,0 +1,40 @@
+{
+  "stores": [
+    {
+      "name": "Vodafone London Covent Garden",
+      "address": "51 Long Acre, Covent Garden, London WC2E 9JR",
+      "email": "covent-garden@vodafone.com",
+      "phoneNumber": "+44 7785 123456",
+      "details": "Step free access to the store",
+      "openingTime": "9am - 5pm",
+      "coordinate": {"latitude": 51.5134065, "longitude": -0.1258869}
+    },
+    {
+      "name": "Vodafone London Oxford Street",
+      "address": "127a Oxford St, Soho, London W1D 2HT",
+      "email": "covent-garden@vodafone.com",
+      "phoneNumber": "+44 7785 123456",
+      "details": "Mask required",
+      "openingTime": "9am - 5pm",
+      "coordinate": {"latitude": 51.515798, "longitude": -0.1381619}
+    },
+    {
+      "name": "Vodafone London Piccadilly 168",
+      "address": "168 Piccadilly, St. James’s, London W1J 9EQ",
+      "email": "covent-garden@vodafone.com",
+      "phoneNumber": "+44 7785 123456",
+      "details": "Step free access to the store",
+      "openingTime": "9am - 5pm",
+      "coordinate": {"latitude": 51.5079095, "longitude": -0.1419433}
+    },
+    {
+      "name": "Vodafone London Oxford St Experience",
+      "address": "341-349 Oxford St, Mayfair, London W1C 2JE",
+      "email": "covent-garden@vodafone.com",
+      "phoneNumber": "+44 7785 123456",
+      "details": "Mask required",
+      "openingTime": "9am - 5pm",
+      "coordinate": {"latitude": 51.5144241, "longitude": -0.149487}
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="VFGDeviceColorSelectionView" customModule="VFGMVA10Framework" customModuleProvider="target">
+            <connections>
+                <outlet property="collectionView" destination="9kY-uN-JKa" id="eVk-uV-qdt"/>
+                <outlet property="contentView" destination="i5M-Pr-FkT" id="eCu-42-S8q"/>
+                <outlet property="titleLabel" destination="qYI-A2-aep" id="5de-Ky-7Zi"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="167"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select colour" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qYI-A2-aep" customClass="VFGLabel">
+                    <rect key="frame" x="16.5" y="34" width="381" height="41"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="18.700000762939453"/>
+                    <color key="textColor" name="VFGPrimaryText"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <collectionView multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="9kY-uN-JKa">
+                    <rect key="frame" x="0.0" y="91" width="414" height="76"/>
+                    <color key="backgroundColor" name="VFGLightGreyBackground"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="76" id="K0S-M1-L5y"/>
+                    </constraints>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="dOQ-yc-TXJ">
+                        <size key="itemSize" width="128" height="128"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="W70-By-q0w"/>
+                        <outlet property="delegate" destination="-1" id="LkK-HO-Csx"/>
+                    </connections>
+                </collectionView>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="9kY-uN-JKa" secondAttribute="bottom" id="0RG-7k-ujD"/>
+                <constraint firstAttribute="trailing" secondItem="9kY-uN-JKa" secondAttribute="trailing" id="7yL-Lv-kdN"/>
+                <constraint firstItem="qYI-A2-aep" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="33.799999999999997" id="dnc-Wh-CLy"/>
+                <constraint firstItem="9kY-uN-JKa" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="e0F-Xh-EGh"/>
+                <constraint firstItem="qYI-A2-aep" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="16.600000000000001" id="ggO-vR-gI0"/>
+                <constraint firstAttribute="trailing" secondItem="qYI-A2-aep" secondAttribute="trailing" constant="16.600000000000001" id="uT1-ry-9Th"/>
+                <constraint firstItem="9kY-uN-JKa" firstAttribute="top" secondItem="qYI-A2-aep" secondAttribute="bottom" constant="16" id="z02-E0-drz"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-26.086956521739133" y="-106.80803571428571"/>
+        </view>
+    </objects>
+    <designables>
+        <designable name="qYI-A2-aep">
+            <size key="intrinsicContentSize" width="109.5" height="22.5"/>
+        </designable>
+    </designables>
+    <resources>
+        <namedColor name="VFGLightGreyBackground">
+            <color red="0.95686274509803926" green="0.95686274509803926" blue="0.95686274509803926" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="VFGPrimaryText">
+            <color red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="vodafone-bold.ttf">
+            <string>VodafoneRg-Bold</string>
+        </array>
+        <array key="vodafone-regular.ttf">
+            <string>VodafoneRg-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="VFGSelectionViewCell" customModule="VFGMVA10Framework" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="259" height="99"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="259" height="99"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KRH-32-G0G">
+                        <rect key="frame" x="0.0" y="0.0" width="259" height="99"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="ond-hL-lb5">
+                                <rect key="frame" x="7" y="12" width="245" height="41.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rhl-vP-D4I" customClass="VFGLabel">
+                                        <rect key="frame" x="100.5" y="0.0" width="44" height="21"/>
+                                        <fontDescription key="fontDescription" name="VodafoneRg-Bold" family="Vodafone Rg" pointSize="18.700000762939453"/>
+                                        <color key="textColor" name="VFGPrimaryText"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oko-wc-Pc8" customClass="VFGLabel">
+                                        <rect key="frame" x="107" y="25" width="31.5" height="16.5"/>
+                                        <fontDescription key="fontDescription" name="VodafoneRg-Regular" family="Vodafone Rg" pointSize="14.600000381469727"/>
+                                        <color key="textColor" name="VFGSecondaryText"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" name="VFGWhiteBackground"/>
+                        <constraints>
+                            <constraint firstItem="ond-hL-lb5" firstAttribute="top" secondItem="KRH-32-G0G" secondAttribute="top" constant="12" id="6Gd-Lj-n5k"/>
+                            <constraint firstAttribute="trailing" secondItem="ond-hL-lb5" secondAttribute="trailing" constant="7" id="AJG-1E-tTl"/>
+                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="ond-hL-lb5" secondAttribute="bottom" constant="12" id="Yxt-OK-syk"/>
+                            <constraint firstItem="ond-hL-lb5" firstAttribute="leading" secondItem="KRH-32-G0G" secondAttribute="leading" constant="7" id="gIr-lT-Fde"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="6.2000000000000002"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="KRH-32-G0G" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="6cu-pY-oXu"/>
+                <constraint firstAttribute="trailing" secondItem="KRH-32-G0G" secondAttribute="trailing" id="KWC-xT-ORp"/>
+                <constraint firstAttribute="bottom" secondItem="KRH-32-G0G" secondAttribute="bottom" id="Q8z-58-JO6"/>
+                <constraint firstItem="KRH-32-G0G" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="pZC-jh-siP"/>
+            </constraints>
+            <size key="customSize" width="259" height="99"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                    <real key="value" value="6.2000000000000002"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <connections>
+                <outlet property="containerView" destination="KRH-32-G0G" id="6Ld-Ak-YDR"/>
+                <outlet property="subTitleLabel" destination="oko-wc-Pc8" id="Z4t-nU-tKz"/>
+                <outlet property="titleLabel" destination="rhl-vP-D4I" id="NZD-7v-q95"/>
+            </connections>
+            <point key="canvasLocation" x="125.36231884057972" y="96.763392857142847"/>
+        </collectionViewCell>
+    </objects>
+    <designables>
+        <designable name="oko-wc-Pc8">
+            <size key="intrinsicContentSize" width="31.5" height="16.5"/>
+        </designable>
+        <designable name="rhl-vP-D4I">
+            <size key="intrinsicContentSize" width="44" height="21"/>
+        </designable>
+    </designables>
+    <resources>
+        <namedColor name="VFGPrimaryText">
+            <color red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="VFGSecondaryText">
+            <color red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="VFGWhiteBackground">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

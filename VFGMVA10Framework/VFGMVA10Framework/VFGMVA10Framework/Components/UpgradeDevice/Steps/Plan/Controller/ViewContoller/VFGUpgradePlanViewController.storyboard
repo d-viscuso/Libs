@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="vodafone-bold.ttf">
+            <string>VodafoneRg-Bold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Upgrade Plan View Controller-->
+        <scene sceneID="kaX-DU-Pdc">
+            <objects>
+                <viewController storyboardIdentifier="UpgradePlan" id="00i-yn-Qv6" customClass="VFGUpgradePlanViewController" customModule="VFGMVA10Framework" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8MN-KC-SEU">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" dataMode="prototypes" style="grouped" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="Yrd-1A-UMD">
+                                <rect key="frame" x="0.0" y="48" width="414" height="848"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <view key="tableFooterView" contentMode="scaleToFill" id="t4L-J8-16P" userLabel="Footer">
+                                    <rect key="frame" x="0.0" y="35" width="414" height="44"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </view>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="xZo-3c-tNT"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="xZo-3c-tNT" firstAttribute="leading" secondItem="Yrd-1A-UMD" secondAttribute="leading" id="Rz2-Du-jdy"/>
+                            <constraint firstItem="Yrd-1A-UMD" firstAttribute="top" secondItem="xZo-3c-tNT" secondAttribute="top" id="ofB-YJ-u0t"/>
+                            <constraint firstItem="xZo-3c-tNT" firstAttribute="trailing" secondItem="Yrd-1A-UMD" secondAttribute="trailing" id="pSC-wv-Nqn"/>
+                            <constraint firstAttribute="bottom" secondItem="Yrd-1A-UMD" secondAttribute="bottom" id="v43-Of-2Xc"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="headerTitleLabel" destination="9tL-zI-jXd" id="Pds-AZ-8bj"/>
+                        <outlet property="plansTableView" destination="Yrd-1A-UMD" id="lJr-AF-LTt"/>
+                        <outlet property="plansTableViewHeaderView" destination="50D-CI-WaH" id="Gkg-zO-HZ8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zH1-aW-5oO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <view contentMode="scaleToFill" id="50D-CI-WaH">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="79"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose a plan" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9tL-zI-jXd" customClass="VFGLabel" customModule="VFGMVA10Foundation">
+                            <rect key="frame" x="16" y="32" width="141.5" height="47"/>
+                            <fontDescription key="fontDescription" name="VodafoneRg-Bold" family="Vodafone Rg" pointSize="24"/>
+                            <color key="textColor" name="VFGPrimaryText"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <viewLayoutGuide key="safeArea" id="mfo-o0-Hpv"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="9tL-zI-jXd" firstAttribute="top" secondItem="50D-CI-WaH" secondAttribute="top" constant="32" id="FLO-6K-7Bk"/>
+                        <constraint firstAttribute="bottom" secondItem="9tL-zI-jXd" secondAttribute="bottom" id="QAE-rm-gq5"/>
+                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="9tL-zI-jXd" secondAttribute="trailing" id="aJF-Rv-Kdt"/>
+                        <constraint firstItem="9tL-zI-jXd" firstAttribute="leading" secondItem="50D-CI-WaH" secondAttribute="leading" constant="16" id="bzB-ba-Nik"/>
+                    </constraints>
+                </view>
+            </objects>
+            <point key="canvasLocation" x="-6210.144927536232" y="-689.0625"/>
+        </scene>
+    </scenes>
+    <designables>
+        <designable name="9tL-zI-jXd">
+            <size key="intrinsicContentSize" width="141.5" height="27"/>
+        </designable>
+    </designables>
+    <resources>
+        <namedColor name="VFGPrimaryText">
+            <color red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

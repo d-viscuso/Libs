@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18122"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="VFGSubTrayExpandedRowView" customModule="VFGMVA10Framework" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="566" height="70"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oFX-eF-xF8" userLabel="Container View">
+                    <rect key="frame" x="0.0" y="0.0" width="566" height="70"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dgX-LZ-6Cs" customClass="VFGSubTrayExpandedItemView" customModule="VFGMVA10Framework" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="277" height="70"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="50j-97-iFH" customClass="VFGSubTrayExpandedItemView" customModule="VFGMVA10Framework" customModuleProvider="target">
+                            <rect key="frame" x="289" y="0.0" width="277" height="70"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="50j-97-iFH" firstAttribute="leading" secondItem="oFX-eF-xF8" secondAttribute="centerX" constant="6" id="1Qz-H7-gAD"/>
+                        <constraint firstItem="dgX-LZ-6Cs" firstAttribute="leading" secondItem="oFX-eF-xF8" secondAttribute="leading" id="4zP-Zs-57T"/>
+                        <constraint firstAttribute="bottom" secondItem="50j-97-iFH" secondAttribute="bottom" id="BCK-hZ-74y"/>
+                        <constraint firstAttribute="bottom" secondItem="dgX-LZ-6Cs" secondAttribute="bottom" id="N77-vD-c1M"/>
+                        <constraint firstAttribute="trailing" secondItem="50j-97-iFH" secondAttribute="trailing" id="hVr-cV-Jdf"/>
+                        <constraint firstItem="50j-97-iFH" firstAttribute="top" secondItem="oFX-eF-xF8" secondAttribute="top" id="iRz-nO-Nt6"/>
+                        <constraint firstItem="dgX-LZ-6Cs" firstAttribute="top" secondItem="oFX-eF-xF8" secondAttribute="top" id="wY2-wD-4Wg"/>
+                        <constraint firstItem="dgX-LZ-6Cs" firstAttribute="trailing" secondItem="oFX-eF-xF8" secondAttribute="centerX" constant="-6" id="zJ9-Ek-OEj"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="oFX-eF-xF8" secondAttribute="bottom" id="5qz-dh-hwl"/>
+                <constraint firstItem="oFX-eF-xF8" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="CxA-vs-Uwt"/>
+                <constraint firstItem="oFX-eF-xF8" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Srg-yk-NWH"/>
+                <constraint firstAttribute="trailing" secondItem="oFX-eF-xF8" secondAttribute="trailing" id="TaN-wj-Sjp"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="leftItemView" destination="dgX-LZ-6Cs" id="BZ2-Zm-f4q"/>
+                <outlet property="rightItemView" destination="50j-97-iFH" id="wj1-X9-JIl"/>
+            </connections>
+            <point key="canvasLocation" x="31.884057971014496" y="-207.58928571428569"/>
+        </view>
+    </objects>
+</document>

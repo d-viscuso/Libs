@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="vodafone-lite.ttf">
+            <string>VodafoneLt-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="VFGBreakdownViewCell" rowHeight="200" id="90o-jC-yC7" customClass="VFGBreakdownViewCell" customModule="VFGMVA10Framework" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="200"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="90o-jC-yC7" id="rXr-JD-v7m">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="200"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your upgrade selection" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fNg-ZE-Ydc" customClass="VFGLabel">
+                        <rect key="frame" x="17" y="10" width="216.5" height="61.5"/>
+                        <fontDescription key="fontDescription" name="VodafoneLt-Regular" family="Vodafone Lt" pointSize="25"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fTC-2i-IOL" userLabel="Product header + details">
+                        <rect key="frame" x="0.0" y="88.5" width="414" height="111.5"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vWj-wO-U2v" userLabel="Product Header" customClass="VFGProductHeaderStackView" customModule="VFGMVA10Framework" customModuleProvider="target">
+                                <rect key="frame" x="17" y="13" width="380" height="63.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="63.5" id="WJv-Qf-Jtn"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="DE2-9k-0TS" userLabel="Details">
+                                <rect key="frame" x="67" y="89.5" width="330" height="0.0"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" identifier="detailsStackViewHeight" id="r6C-5x-E4p"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" name="VFGVeryLightGreyBackground"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="DE2-9k-0TS" secondAttribute="trailing" constant="17" id="8Jg-gk-Yec"/>
+                            <constraint firstAttribute="trailing" secondItem="vWj-wO-U2v" secondAttribute="trailing" constant="17" id="HCA-Cd-779"/>
+                            <constraint firstItem="DE2-9k-0TS" firstAttribute="top" secondItem="vWj-wO-U2v" secondAttribute="bottom" constant="13" id="UXl-o5-5Ky"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="DE2-9k-0TS" secondAttribute="bottom" constant="14" id="fOh-7I-0Qb"/>
+                            <constraint firstItem="vWj-wO-U2v" firstAttribute="leading" secondItem="fTC-2i-IOL" secondAttribute="leading" constant="17" id="hwf-Bv-pAx"/>
+                            <constraint firstItem="DE2-9k-0TS" firstAttribute="leading" secondItem="fTC-2i-IOL" secondAttribute="leading" constant="67" id="myF-kT-COD"/>
+                            <constraint firstItem="vWj-wO-U2v" firstAttribute="top" secondItem="fTC-2i-IOL" secondAttribute="top" constant="13" id="uBv-Ea-omh"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="fTC-2i-IOL" secondAttribute="trailing" id="3bK-po-Enm"/>
+                    <constraint firstItem="fNg-ZE-Ydc" firstAttribute="top" secondItem="rXr-JD-v7m" secondAttribute="top" constant="10" id="Abj-wr-8hZ"/>
+                    <constraint firstItem="fTC-2i-IOL" firstAttribute="top" secondItem="fNg-ZE-Ydc" secondAttribute="bottom" constant="17" id="HsD-MF-fgM"/>
+                    <constraint firstItem="fTC-2i-IOL" firstAttribute="leading" secondItem="rXr-JD-v7m" secondAttribute="leading" id="Q1x-Ok-cny"/>
+                    <constraint firstItem="fNg-ZE-Ydc" firstAttribute="leading" secondItem="rXr-JD-v7m" secondAttribute="leading" constant="17" id="ioU-E3-2PB"/>
+                    <constraint firstAttribute="bottom" secondItem="fTC-2i-IOL" secondAttribute="bottom" id="wGj-5y-LqH"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="detailsStackView" destination="DE2-9k-0TS" id="XAR-Tz-8nm"/>
+                <outlet property="detailsStackViewHeightConstraint" destination="r6C-5x-E4p" id="bjX-Db-T6V"/>
+                <outlet property="headerStackView" destination="vWj-wO-U2v" id="dyT-V4-ofl"/>
+                <outlet property="titleLabel" destination="fNg-ZE-Ydc" id="PqO-VL-pdP"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="107.14285714285714"/>
+        </tableViewCell>
+    </objects>
+    <designables>
+        <designable name="fNg-ZE-Ydc">
+            <size key="intrinsicContentSize" width="216.5" height="28"/>
+        </designable>
+    </designables>
+    <resources>
+        <namedColor name="VFGVeryLightGreyBackground">
+            <color red="0.92156862745098034" green="0.92156862745098034" blue="0.92156862745098034" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

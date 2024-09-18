@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="vodafone-bold.ttf">
+            <string>VodafoneRg-Bold</string>
+        </array>
+        <array key="vodafone-regular.ttf">
+            <string>VodafoneRg-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="OrderDetailStepView" customModule="VFGMVA10Framework" customModuleProvider="target">
+            <connections>
+                <outlet property="buttonsStack" destination="kXA-sH-0it" id="E5X-wf-23Q"/>
+                <outlet property="buttonsView" destination="Aoe-dC-GT1" id="eST-OT-DOd"/>
+                <outlet property="contentView" destination="iN0-l3-epB" id="lDn-Np-FnB"/>
+                <outlet property="footerStackView" destination="wEw-kY-Aah" id="XTi-pP-kaU"/>
+                <outlet property="primaryButton" destination="3ty-hp-m26" id="G30-Q7-2p9"/>
+                <outlet property="secondaryButton" destination="efX-hM-ap1" id="WOq-5s-HHX"/>
+                <outlet property="stepImageView" destination="GKJ-0x-g9g" id="U2E-Hk-hk4"/>
+                <outlet property="updateTimeLabel" destination="c9E-QE-H4f" id="u3A-x2-Aut"/>
+                <outlet property="updateTimeTitle" destination="Ax9-0G-q2X" id="GSj-gs-cZ7"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="340" height="190"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lrF-6R-8zk" userLabel="container view">
+                    <rect key="frame" x="0.0" y="10" width="340" height="155"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="device" translatesAutoresizingMaskIntoConstraints="NO" id="GKJ-0x-g9g" customClass="VFGImageView" customModule="VFGMVA10Foundation">
+                            <rect key="frame" x="16.5" y="12.5" width="75" height="75"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="75" id="ULy-vx-JPg"/>
+                                <constraint firstAttribute="height" constant="75" id="UrT-3y-NkR"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="update time:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ax9-0G-q2X" customClass="VFGLabel" customModule="VFGMVA10Framework" customModuleProvider="target">
+                            <rect key="frame" x="107.5" y="25" width="82.5" height="19"/>
+                            <fontDescription key="fontDescription" name="VodafoneRg-Regular" family="Vodafone Rg" pointSize="16.700000762939453"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="18th September, 16:32" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c9E-QE-H4f" customClass="VFGLabel" customModule="VFGMVA10Framework" customModuleProvider="target">
+                            <rect key="frame" x="107.5" y="48" width="156.5" height="19"/>
+                            <fontDescription key="fontDescription" name="VodafoneRg-Bold" family="Vodafone Rg" pointSize="16.700000762939453"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="wEw-kY-Aah" userLabel="Outer Stack View">
+                            <rect key="frame" x="16" y="95.5" width="308" height="55.5"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ll0-G7-PW5">
+                                    <rect key="frame" x="0.0" y="0.0" width="308" height="55.5"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Aoe-dC-GT1">
+                                            <rect key="frame" x="0.0" y="0.0" width="308" height="1"/>
+                                            <color key="backgroundColor" name="VFGGreyDividerOne"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="1" id="KIW-gq-w5U"/>
+                                            </constraints>
+                                        </view>
+                                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="kXA-sH-0it">
+                                            <rect key="frame" x="0.0" y="12.5" width="308" height="30"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3ty-hp-m26" userLabel="Primary Button" customClass="VFGButton" customModule="VFGMVA10Foundation">
+                                                    <rect key="frame" x="0.0" y="0.0" width="148" height="30"/>
+                                                    <fontDescription key="fontDescription" name="VodafoneRg-Bold" family="Vodafone Rg" pointSize="16.700000762939453"/>
+                                                    <state key="normal" title="Primary"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="buttonStyle">
+                                                            <integer key="value" value="2"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                    <connections>
+                                                        <action selector="primaryButtonDidPress:" destination="-1" eventType="touchUpInside" id="Hoq-EK-FZ9"/>
+                                                    </connections>
+                                                </button>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="efX-hM-ap1" userLabel="Secondary Button" customClass="VFGButton" customModule="VFGMVA10Foundation">
+                                                    <rect key="frame" x="160" y="0.0" width="148" height="30"/>
+                                                    <fontDescription key="fontDescription" name="VodafoneRg-Bold" family="Vodafone Rg" pointSize="16.700000762939453"/>
+                                                    <state key="normal" title="Secondary"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="buttonStyle">
+                                                            <integer key="value" value="2"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                    <connections>
+                                                        <action selector="secondaryButtonDidPress:" destination="-1" eventType="touchUpInside" id="6wg-Nb-BsV"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="30" id="1sw-ba-OEp"/>
+                                            </constraints>
+                                        </stackView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="Aoe-dC-GT1" firstAttribute="leading" secondItem="ll0-G7-PW5" secondAttribute="leading" id="RLt-cH-idn"/>
+                                        <constraint firstAttribute="height" constant="55.5" id="SOf-Vx-JTU"/>
+                                        <constraint firstAttribute="trailing" secondItem="kXA-sH-0it" secondAttribute="trailing" id="YbK-aT-jwh"/>
+                                        <constraint firstAttribute="trailing" secondItem="Aoe-dC-GT1" secondAttribute="trailing" id="aFL-Mg-da3"/>
+                                        <constraint firstItem="kXA-sH-0it" firstAttribute="leading" secondItem="ll0-G7-PW5" secondAttribute="leading" id="kDn-uL-SuD"/>
+                                        <constraint firstItem="kXA-sH-0it" firstAttribute="top" secondItem="Aoe-dC-GT1" secondAttribute="bottom" constant="11.5" id="xM5-ed-DZN"/>
+                                        <constraint firstItem="Aoe-dC-GT1" firstAttribute="top" secondItem="ll0-G7-PW5" secondAttribute="top" id="zz5-bJ-Pay"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="ll0-G7-PW5" secondAttribute="trailing" id="QuI-et-AF8"/>
+                                <constraint firstItem="ll0-G7-PW5" firstAttribute="leading" secondItem="wEw-kY-Aah" secondAttribute="leading" id="frC-Hb-X9Y"/>
+                                <constraint firstItem="ll0-G7-PW5" firstAttribute="top" secondItem="wEw-kY-Aah" secondAttribute="top" id="qTk-OA-Dwf"/>
+                                <constraint firstAttribute="height" relation="greaterThanOrEqual" id="w9D-RP-jS6"/>
+                                <constraint firstAttribute="bottom" secondItem="ll0-G7-PW5" secondAttribute="bottom" id="yBr-ww-7xw"/>
+                            </constraints>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" name="VFGWhiteBackground"/>
+                    <constraints>
+                        <constraint firstItem="c9E-QE-H4f" firstAttribute="top" secondItem="Ax9-0G-q2X" secondAttribute="bottom" constant="4" id="01D-Bw-brI"/>
+                        <constraint firstItem="wEw-kY-Aah" firstAttribute="top" secondItem="GKJ-0x-g9g" secondAttribute="bottom" constant="8" id="AHY-qX-zYH"/>
+                        <constraint firstItem="c9E-QE-H4f" firstAttribute="leading" secondItem="GKJ-0x-g9g" secondAttribute="trailing" constant="16" id="AI2-jI-Uj7"/>
+                        <constraint firstItem="wEw-kY-Aah" firstAttribute="leading" secondItem="lrF-6R-8zk" secondAttribute="leading" constant="16" id="Cn7-nF-oNV"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="100" id="EYX-Wp-8bx"/>
+                        <constraint firstAttribute="trailing" secondItem="wEw-kY-Aah" secondAttribute="trailing" constant="16" id="TRG-Ew-4Gk"/>
+                        <constraint firstItem="GKJ-0x-g9g" firstAttribute="leading" secondItem="lrF-6R-8zk" secondAttribute="leading" constant="16.699999999999999" id="gqA-vn-pJe"/>
+                        <constraint firstItem="Ax9-0G-q2X" firstAttribute="top" secondItem="lrF-6R-8zk" secondAttribute="top" constant="25" id="j2A-WT-hmo"/>
+                        <constraint firstItem="Ax9-0G-q2X" firstAttribute="leading" secondItem="GKJ-0x-g9g" secondAttribute="trailing" constant="16" id="wHZ-5g-JDd"/>
+                        <constraint firstAttribute="bottom" secondItem="wEw-kY-Aah" secondAttribute="bottom" constant="4" id="yI9-Tr-gAG"/>
+                        <constraint firstItem="GKJ-0x-g9g" firstAttribute="top" secondItem="lrF-6R-8zk" secondAttribute="top" constant="12.5" id="yxZ-zi-0tA"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="6"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="lrF-6R-8zk" secondAttribute="trailing" id="1eJ-CO-EIT"/>
+                <constraint firstItem="lrF-6R-8zk" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="642-5e-w9h"/>
+                <constraint firstAttribute="bottom" secondItem="lrF-6R-8zk" secondAttribute="bottom" constant="25" id="GYk-Aw-mXg"/>
+                <constraint firstItem="lrF-6R-8zk" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="YkS-u1-3OY"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                    <real key="value" value="6"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <point key="canvasLocation" x="31.884057971014496" y="-86.049107142857139"/>
+        </view>
+    </objects>
+    <designables>
+        <designable name="3ty-hp-m26">
+            <size key="intrinsicContentSize" width="56" height="31"/>
+        </designable>
+        <designable name="Ax9-0G-q2X">
+            <size key="intrinsicContentSize" width="82.5" height="19"/>
+        </designable>
+        <designable name="GKJ-0x-g9g">
+            <size key="intrinsicContentSize" width="342" height="342"/>
+        </designable>
+        <designable name="c9E-QE-H4f">
+            <size key="intrinsicContentSize" width="156.5" height="19"/>
+        </designable>
+        <designable name="efX-hM-ap1">
+            <size key="intrinsicContentSize" width="75" height="31"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="device" width="342" height="342"/>
+        <namedColor name="VFGGreyDividerOne">
+            <color red="0.92156862745098034" green="0.92156862745098034" blue="0.92156862745098034" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="VFGWhiteBackground">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

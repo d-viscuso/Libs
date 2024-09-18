@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="vodafone-regular.ttf">
+            <string>VodafoneRg-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="StoryCardCell" id="gTV-IL-0wX" customClass="StoryCardCell" customModule="VFGMVA10Framework" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="93" height="134"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="93" height="134"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2zA-TF-nFl">
+                        <rect key="frame" x="4" y="4" width="85" height="126"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="0YB-Rk-rMP" customClass="VFGImageView" customModule="VFGMVA10Foundation">
+                                <rect key="frame" x="0.0" y="0.0" width="85" height="126"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <bool key="isElement" value="YES"/>
+                                </accessibility>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="XFO-Vy-jDQ">
+                                <rect key="frame" x="10" y="10" width="65" height="20"/>
+                                <subviews>
+                                    <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="PWe-jE-dWR" customClass="VFGImageView" customModule="VFGMVA10Foundation">
+                                        <rect key="frame" x="0.0" y="-0.5" width="24" height="24"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="24" id="XsR-fi-tXC"/>
+                                            <constraint firstAttribute="width" constant="24" id="zty-if-roH"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="12"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </imageView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pv6-QR-dwE">
+                                        <rect key="frame" x="0.0" y="0.0" width="65" height="20"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xGy-cA-lDz" customClass="VFGLabel" customModule="VFGMVA10Foundation">
+                                                <rect key="frame" x="12" y="2" width="41" height="16"/>
+                                                <fontDescription key="fontDescription" name="VodafoneRg-Regular" family="Vodafone Rg" pointSize="14"/>
+                                                <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="0.0"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20" id="0gL-ud-A2r"/>
+                                            <constraint firstAttribute="trailing" secondItem="xGy-cA-lDz" secondAttribute="trailing" constant="12" id="FSx-90-N0D"/>
+                                            <constraint firstItem="xGy-cA-lDz" firstAttribute="top" secondItem="pv6-QR-dwE" secondAttribute="top" constant="2" id="av3-8E-3mA"/>
+                                            <constraint firstAttribute="bottom" secondItem="xGy-cA-lDz" secondAttribute="bottom" constant="2" id="sGC-ng-NTb"/>
+                                            <constraint firstItem="xGy-cA-lDz" firstAttribute="leading" secondItem="pv6-QR-dwE" secondAttribute="leading" constant="12" id="zJQ-Ga-cjs"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hH7-D0-RzS" customClass="VFGLabel" customModule="VFGMVA10Foundation">
+                                <rect key="frame" x="10" y="99.5" width="65" height="16.5"/>
+                                <fontDescription key="fontDescription" name="VodafoneRg-Regular" family="Vodafone Rg" pointSize="14"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="0YB-Rk-rMP" secondAttribute="bottom" id="20W-sn-a8h"/>
+                            <constraint firstItem="XFO-Vy-jDQ" firstAttribute="leading" secondItem="2zA-TF-nFl" secondAttribute="leading" constant="10" id="9h5-fx-XL2"/>
+                            <constraint firstItem="XFO-Vy-jDQ" firstAttribute="top" secondItem="2zA-TF-nFl" secondAttribute="top" constant="10" id="Fis-yf-jGK"/>
+                            <constraint firstItem="hH7-D0-RzS" firstAttribute="leading" secondItem="2zA-TF-nFl" secondAttribute="leading" constant="10" id="GHT-H5-448"/>
+                            <constraint firstItem="0YB-Rk-rMP" firstAttribute="leading" secondItem="2zA-TF-nFl" secondAttribute="leading" id="NNw-XA-DfV"/>
+                            <constraint firstAttribute="trailing" secondItem="hH7-D0-RzS" secondAttribute="trailing" constant="10" id="ROs-Ic-mlB"/>
+                            <constraint firstItem="0YB-Rk-rMP" firstAttribute="top" secondItem="2zA-TF-nFl" secondAttribute="top" id="Xxz-6o-i4u"/>
+                            <constraint firstAttribute="bottom" secondItem="hH7-D0-RzS" secondAttribute="bottom" constant="10" id="jQo-0P-gr2"/>
+                            <constraint firstAttribute="trailing" secondItem="0YB-Rk-rMP" secondAttribute="trailing" id="uEq-mJ-Rwv"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="6"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="2zA-TF-nFl" secondAttribute="trailing" constant="4" id="Ks7-e0-mnB"/>
+                <constraint firstItem="2zA-TF-nFl" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="4" id="PPd-7O-klV"/>
+                <constraint firstItem="2zA-TF-nFl" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="4" id="inn-Cp-esE"/>
+                <constraint firstAttribute="bottom" secondItem="2zA-TF-nFl" secondAttribute="bottom" constant="4" id="riz-bv-Gkw"/>
+            </constraints>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                    <real key="value" value="6"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <connections>
+                <outlet property="countdownLabel" destination="xGy-cA-lDz" id="OiY-wc-DhI"/>
+                <outlet property="countdownView" destination="pv6-QR-dwE" id="ixQ-o6-1be"/>
+                <outlet property="featuredImageView" destination="PWe-jE-dWR" id="TU6-sq-Jka"/>
+                <outlet property="storyImageView" destination="0YB-Rk-rMP" id="5ES-BX-NvT"/>
+                <outlet property="titleLabel" destination="hH7-D0-RzS" id="tvV-zV-4lu"/>
+            </connections>
+            <point key="canvasLocation" x="20" y="104"/>
+        </collectionViewCell>
+    </objects>
+    <designables>
+        <designable name="PWe-jE-dWR">
+            <size key="intrinsicContentSize" width="22" height="20"/>
+        </designable>
+        <designable name="hH7-D0-RzS">
+            <size key="intrinsicContentSize" width="34.5" height="16.5"/>
+        </designable>
+        <designable name="xGy-cA-lDz">
+            <size key="intrinsicContentSize" width="34.5" height="16.5"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="star" catalog="system" width="128" height="116"/>
+    </resources>
+</document>

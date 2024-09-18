@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="VFGDeviceSpecificationView" customModule="VFGMVA10Framework" customModuleProvider="target">
+            <connections>
+                <outlet property="collectionView" destination="Kbh-pZ-MBV" id="fhj-GV-lCP"/>
+                <outlet property="collectionViewHeightConstraint" destination="Lyu-jh-417" id="DMD-s8-Ym6"/>
+                <outlet property="contentView" destination="i5M-Pr-FkT" id="jp8-1Z-nLf"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="365"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bJi-95-bdc">
+                    <rect key="frame" x="16.5" y="364" width="381" height="1"/>
+                    <color key="backgroundColor" name="VFGGreyDividerFour"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="Kar-X0-syU"/>
+                    </constraints>
+                </view>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" contentInsetAdjustmentBehavior="always" bouncesZoom="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="Kbh-pZ-MBV" customClass="VFGDeviceSpecificationCollectionView" customModule="VFGMVA10Framework" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="30" width="414" height="302"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="302" id="Lyu-jh-417"/>
+                    </constraints>
+                    <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="bAD-CP-cpk">
+                        <size key="itemSize" width="128" height="128"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="xtP-SO-R3d"/>
+                        <outlet property="delegate" destination="-1" id="w26-PW-ly0"/>
+                    </connections>
+                </collectionView>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="Kbh-pZ-MBV" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="30" id="8B7-hb-C50"/>
+                <constraint firstItem="bJi-95-bdc" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="16.600000000000001" id="C0Q-nf-OM0"/>
+                <constraint firstItem="bJi-95-bdc" firstAttribute="top" secondItem="Kbh-pZ-MBV" secondAttribute="bottom" constant="32" id="Fuh-8e-r6U"/>
+                <constraint firstAttribute="trailing" secondItem="Kbh-pZ-MBV" secondAttribute="trailing" id="OYi-jk-1me"/>
+                <constraint firstAttribute="trailing" secondItem="bJi-95-bdc" secondAttribute="trailing" constant="16.600000000000001" id="W2c-wI-e7t"/>
+                <constraint firstAttribute="bottom" secondItem="bJi-95-bdc" secondAttribute="bottom" id="aR7-A6-bC1"/>
+                <constraint firstItem="Kbh-pZ-MBV" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="xs5-pQ-feg"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-60.869565217391312" y="65.290178571428569"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="VFGGreyDividerFour">
+            <color red="0.92156862745098034" green="0.92156862745098034" blue="0.92156862745098034" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

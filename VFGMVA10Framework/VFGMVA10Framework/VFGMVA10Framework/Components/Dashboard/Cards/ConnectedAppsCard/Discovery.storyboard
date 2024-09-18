@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="vodafone-regular.ttf">
+            <string>VodafoneRg-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Related Apps View Controller-->
+        <scene sceneID="J9Y-Pe-elL">
+            <objects>
+                <viewController storyboardIdentifier="VFGRelatedAppsViewController" modalPresentationStyle="fullScreen" id="L7l-Bp-nAX" customClass="VFGRelatedAppsViewController" customModule="VFGMVA10Framework" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="aBf-rO-2Ga">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="58" estimatedRowHeight="-1" sectionHeaderHeight="1" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="NWG-VF-MOo">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" name="VFGWhiteBackground"/>
+                                <color key="separatorColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="VFRelatedAppTableViewCellID" rowHeight="58" id="lR2-N6-4SE" customClass="VFGRelatedAppTableViewCell" customModule="VFGMVA10Framework" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="44.5" width="375" height="58"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="lR2-N6-4SE" id="Td9-10-xD3">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="58"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h82-xx-Hdd" customClass="VFGButton" customModule="VFGMVA10Foundation">
+                                                    <rect key="frame" x="266" y="13" width="89" height="32"/>
+                                                    <accessibility key="accessibilityConfiguration" identifier="DBotherAppButton"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="89" id="43y-TT-cGy"/>
+                                                        <constraint firstAttribute="height" constant="32" id="xwk-tp-L1x"/>
+                                                    </constraints>
+                                                    <state key="normal" title="Button"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                            <real key="value" value="6"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="buttonStyle">
+                                                            <integer key="value" value="0"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="backgroundStyle">
+                                                            <integer key="value" value="0"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                    <connections>
+                                                        <action selector="linkToApp:" destination="lR2-N6-4SE" eventType="touchUpInside" id="r2K-9G-ede"/>
+                                                    </connections>
+                                                </button>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jaD-5p-1VF" customClass="VFGImageView" customModule="VFGMVA10Foundation">
+                                                    <rect key="frame" x="16" y="11" width="36" height="36"/>
+                                                    <accessibility key="accessibilityConfiguration" identifier="DBotherAppIcon">
+                                                        <bool key="isElement" value="YES"/>
+                                                    </accessibility>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="36" id="Fyb-yg-EOB"/>
+                                                        <constraint firstAttribute="width" constant="36" id="ZBF-LG-8Z4"/>
+                                                    </constraints>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                            <real key="value" value="6"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e66-Gb-BPp" customClass="VFGLabel" customModule="VFGMVA10Foundation">
+                                                    <rect key="frame" x="69" y="18.5" width="195" height="21"/>
+                                                    <accessibility key="accessibilityConfiguration" identifier="DBotherAppTitle"/>
+                                                    <fontDescription key="fontDescription" name="VodafoneRg-Regular" family="Vodafone Rg" pointSize="18"/>
+                                                    <color key="textColor" name="VFGPrimaryText"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="A6t-Ex-zYO">
+                                                    <rect key="frame" x="16" y="56" width="343" height="1"/>
+                                                    <color key="backgroundColor" name="VFGGreyDividerSeven"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="1" id="wap-q5-N7v"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="jaD-5p-1VF" firstAttribute="leading" secondItem="Td9-10-xD3" secondAttribute="leading" constant="16" id="35E-sL-kNS"/>
+                                                <constraint firstItem="h82-xx-Hdd" firstAttribute="leading" secondItem="e66-Gb-BPp" secondAttribute="trailing" constant="2" id="Oxc-Sz-y9e"/>
+                                                <constraint firstItem="e66-Gb-BPp" firstAttribute="leading" secondItem="jaD-5p-1VF" secondAttribute="trailing" constant="17" id="RSM-6w-Zch"/>
+                                                <constraint firstAttribute="bottom" secondItem="A6t-Ex-zYO" secondAttribute="bottom" constant="1" id="ZNt-i4-aUA"/>
+                                                <constraint firstAttribute="trailing" secondItem="A6t-Ex-zYO" secondAttribute="trailing" constant="16" id="acU-8k-rxD"/>
+                                                <constraint firstItem="A6t-Ex-zYO" firstAttribute="leading" secondItem="Td9-10-xD3" secondAttribute="leading" constant="16" id="flo-wh-pa1"/>
+                                                <constraint firstItem="h82-xx-Hdd" firstAttribute="centerY" secondItem="Td9-10-xD3" secondAttribute="centerY" id="iP9-le-CaQ"/>
+                                                <constraint firstItem="jaD-5p-1VF" firstAttribute="centerY" secondItem="Td9-10-xD3" secondAttribute="centerY" id="sUj-Y4-ufD"/>
+                                                <constraint firstAttribute="trailing" secondItem="h82-xx-Hdd" secondAttribute="trailing" constant="20" id="vjv-77-Hth"/>
+                                                <constraint firstItem="e66-Gb-BPp" firstAttribute="centerY" secondItem="jaD-5p-1VF" secondAttribute="centerY" id="zJU-SZ-v5n"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <outlet property="appIconImageView" destination="jaD-5p-1VF" id="g3u-W9-CBi"/>
+                                            <outlet property="appNameLabel" destination="e66-Gb-BPp" id="bl4-DG-W3a"/>
+                                            <outlet property="appStateButton" destination="h82-xx-Hdd" id="fd2-mX-KzX"/>
+                                            <outlet property="separatorView" destination="A6t-Ex-zYO" id="uAg-qJ-tmN"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <outlet property="dataSource" destination="L7l-Bp-nAX" id="5v8-8m-dve"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="oYE-Pw-nxg"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <accessibility key="accessibilityConfiguration" identifier="DBotherSection"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="NWG-VF-MOo" secondAttribute="trailing" id="2BX-Hs-49u"/>
+                            <constraint firstItem="NWG-VF-MOo" firstAttribute="top" secondItem="aBf-rO-2Ga" secondAttribute="top" id="FcI-5p-Z3z"/>
+                            <constraint firstAttribute="bottom" secondItem="NWG-VF-MOo" secondAttribute="bottom" id="fM0-i8-HN2"/>
+                            <constraint firstItem="NWG-VF-MOo" firstAttribute="leading" secondItem="aBf-rO-2Ga" secondAttribute="leading" id="fPQ-5F-oC6"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="relatedAppsTableView" destination="NWG-VF-MOo" id="zs4-SL-zlm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="i9m-5l-s23" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="912.79999999999995" y="74.212893553223395"/>
+        </scene>
+    </scenes>
+    <designables>
+        <designable name="e66-Gb-BPp">
+            <size key="intrinsicContentSize" width="39" height="20.5"/>
+        </designable>
+        <designable name="h82-xx-Hdd">
+            <size key="intrinsicContentSize" width="54" height="34"/>
+        </designable>
+    </designables>
+    <resources>
+        <namedColor name="VFGGreyDividerSeven">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.94901960784313721" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="VFGPrimaryText">
+            <color red="0.050980392156862744" green="0.050980392156862744" blue="0.050980392156862744" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="VFGWhiteBackground">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

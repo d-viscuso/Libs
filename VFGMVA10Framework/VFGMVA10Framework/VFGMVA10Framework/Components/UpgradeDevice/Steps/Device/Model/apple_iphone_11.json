@@ -1,0 +1,1247 @@
+{
+  "devices": [
+    {
+      "id": "apple_iphone_11_white_64",
+      "brand": "Apple",
+      "title": "iPhone 11",
+      "imageUrl": "device",
+      "price": {
+        "upfrontPrice": 120,
+        "recurringPrice": 24,
+        "totalPrice": 150,
+        "recurrencePeriod": "month",
+        "contractPeriod": 24,
+        "currency": "€"
+      },
+      "color": {
+        "colorHex": "#cccccc",
+        "colorName": "White"
+      },
+      "capacity": {
+        "size": 64,
+        "sizeUnit": "GB"
+      },
+      "specifications": {
+        "quickSpecs": [
+            {
+              "title": "Battery life",
+              "subtitle": "3190 mAh"
+            },
+            {
+              "title": "Display size",
+              "subtitle": "5.8 inch"
+            },
+            {
+              "title": "Camera",
+              "subtitle": "13MP",
+              "details": "12MP wide angle\n10MP zoom 5X"
+            },
+            {
+              "title": "Selfie camera",
+              "subtitle": "8MP",
+              "details": "Holepunch"
+            },
+            {
+              "title": "Size",
+              "subtitle": "5x6 cm\n900g"
+            },
+            {
+              "title": "CPU processor",
+              "subtitle": "iOS 13",
+            }
+        ],
+        "boxDetails": [
+          "1m USB-C cable",
+          "Charger (UK plug)"
+        ],
+        "fullSpecs": [
+          {
+            "title": "More Information",
+            "items": [
+              "Non removable",
+              "Fast battery charging",
+              "Qi wireless charging"
+            ]
+          },
+          {
+            "title": "Body",
+            "items": [
+                "Front/back glass, stainless steel frame",
+                "Dual SIM (nano-SIM and eSIM)",
+                "Splash, water and dust resistant (IP68)"
+            ]
+          },
+          {
+            "title": "Camera details",
+            "items": [
+                "12MP (f/1.8) + 12MP (f/2.4) + 12MP (f/2.0)",
+                "12MP (f/2.2)",
+                "Auto image stabilisation",
+                "Burst mode",
+                "LED flash (Brighter True Tone flash with slow sync)",
+                "Night mode",
+                "OIS (Optical Image Stabilization)",
+                "Optical zoom in (2x), optical zoom out (2x)",
+                "Panorama",
+                "Portrait mode with advanced bokeh and Depth Control",
+                "Portrait Lighting with six effects",
+                "Smart HDR"
+            ]
+          },
+          {
+            "title": "Capacity",
+            "items": [
+                "64GB"
+            ]
+          },
+          {
+            "title": "Colour",
+            "items": [
+                "White"
+            ]
+          },
+          {
+            "title": "Connectivity",
+            "items": [
+                "2G / 3G / 4G",
+                "Wi-Fi 802.11 a/b/g/n/ac/ax, dual-band, hotspot",
+                "Bluetooth 5.0",
+                "GPS with A-GPS, GLONASS, Galileo and QZSS",
+                "NFC",
+                "USB 2.0, proprietary reversible connector"
+            ]
+          },
+          {
+            "title": "Display details",
+            "items": [
+                "OLED capacitive touchscreen",
+                "2436 x 1125 pixels",
+                "Fingerprint-resistant oleophobic coating",
+                "Haptic Touch",
+                "HDR display",
+                "True Tone display",
+                "Wide colour display (P3)"
+            ]
+          },
+          {
+            "title": "Features",
+            "items": [
+                "Accelerometer",
+                "Apple Pay",
+                "Barometer",
+                "Digital compass",
+                "Face ID",
+                "Gyroscope",
+                "iCloud cloud service",
+                "Proximity sensor",
+                "Siri natural language commands and dictation",
+                "HEVC/MP4/H.264 player",
+                "MP3/WAV/AAX+/AIFF/Apple Lossless player"
+            ]
+          },
+          {
+            "title": "Memory",
+            "items": [
+                "64GB",
+                "6GB RAM"
+            ]
+          },
+          {
+            "title": "Platform",
+            "items": [
+                "iOS 13",
+                "Apple A13 Bionic",
+                "Hexa-core",
+                "Apple GPU"
+            ]
+          },
+          {
+            "title": "Video",
+            "items": [
+                "2160p (4K) video recording at 24fps, 30fps or 60fps",
+                "1080p (FHD) video recording at 30fps or 60fps",
+                "720p (HD) video recording at 30fps",
+                "Slow motion video support for 1080p at 120fps or 240fps",
+                "Audio zoom",
+                "Cinematic video stabilisation (4K, 1080p and 720p)",
+                "Continuous Autofocus video",
+                "Extended dynamic range for video up to 30 fps",
+                "OIS (Optical Image Stabilization)",
+                "Optical zoom in (2x), optical zoom out (2x)",
+                "Take 8MP still photos while recording 4K video",
+                "Time‑lapse video with stabilisation"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "apple_iphone_11_white_256",
+      "brand": "Apple",
+      "title": "iPhone 11",
+      "imageUrl": "device",
+      "price": {
+        "upfrontPrice": 120,
+        "recurringPrice": 24,
+        "totalPrice": 150,
+        "recurrencePeriod": "month",
+        "contractPeriod": 24,
+        "currency": "€"
+      },
+      "color": {
+        "colorHex": "#cccccc",
+        "colorName": "White"
+      },
+      "capacity": {
+        "size": 256,
+        "sizeUnit": "GB"
+      },
+      "specifications": {
+        "quickSpecs": [
+            {
+              "title": "Battery life",
+              "subtitle": "3190 mAh"
+            },
+            {
+              "title": "Display size",
+              "subtitle": "5.8 inch"
+            },
+            {
+              "title": "Camera",
+              "subtitle": "13MP",
+              "details": "12MP wide angle\n10MP zoom 5X"
+            },
+            {
+              "title": "Selfie camera",
+              "subtitle": "8MP",
+              "details": "Holepunch"
+            },
+            {
+              "title": "Size",
+              "subtitle": "5x6 cm\n900g"
+            },
+            {
+              "title": "CPU processor",
+              "subtitle": "iOS 13",
+            }
+        ],
+        "boxDetails": [
+          "1m USB-C cable",
+          "Charger (UK plug)"
+        ],
+        "fullSpecs": [
+          {
+            "title": "More Information",
+            "items": [
+              "Non removable",
+              "Fast battery charging",
+              "Qi wireless charging"
+            ]
+          },
+          {
+            "title": "Body",
+            "items": [
+                "Front/back glass, stainless steel frame",
+                "Dual SIM (nano-SIM and eSIM)",
+                "Splash, water and dust resistant (IP68)"
+            ]
+          },
+          {
+            "title": "Camera details",
+            "items": [
+                "12MP (f/1.8) + 12MP (f/2.4) + 12MP (f/2.0)",
+                "12MP (f/2.2)",
+                "Auto image stabilisation",
+                "Burst mode",
+                "LED flash (Brighter True Tone flash with slow sync)",
+                "Night mode",
+                "OIS (Optical Image Stabilization)",
+                "Optical zoom in (2x), optical zoom out (2x)",
+                "Panorama",
+                "Portrait mode with advanced bokeh and Depth Control",
+                "Portrait Lighting with six effects",
+                "Smart HDR"
+            ]
+          },
+          {
+            "title": "Capacity",
+            "items": [
+                "256GB"
+            ]
+          },
+          {
+            "title": "Colour",
+            "items": [
+                "White"
+            ]
+          },
+          {
+            "title": "Connectivity",
+            "items": [
+                "2G / 3G / 4G",
+                "Wi-Fi 802.11 a/b/g/n/ac/ax, dual-band, hotspot",
+                "Bluetooth 5.0",
+                "GPS with A-GPS, GLONASS, Galileo and QZSS",
+                "NFC",
+                "USB 2.0, proprietary reversible connector"
+            ]
+          },
+          {
+            "title": "Display details",
+            "items": [
+                "OLED capacitive touchscreen",
+                "2436 x 1125 pixels",
+                "Fingerprint-resistant oleophobic coating",
+                "Haptic Touch",
+                "HDR display",
+                "True Tone display",
+                "Wide colour display (P3)"
+            ]
+          },
+          {
+            "title": "Features",
+            "items": [
+                "Accelerometer",
+                "Apple Pay",
+                "Barometer",
+                "Digital compass",
+                "Face ID",
+                "Gyroscope",
+                "iCloud cloud service",
+                "Proximity sensor",
+                "Siri natural language commands and dictation",
+                "HEVC/MP4/H.264 player",
+                "MP3/WAV/AAX+/AIFF/Apple Lossless player"
+            ]
+          },
+          {
+            "title": "Memory",
+            "items": [
+                "256GB",
+                "6GB RAM"
+            ]
+          },
+          {
+            "title": "Platform",
+            "items": [
+                "iOS 13",
+                "Apple A13 Bionic",
+                "Hexa-core",
+                "Apple GPU"
+            ]
+          },
+          {
+            "title": "Video",
+            "items": [
+                "2160p (4K) video recording at 24fps, 30fps or 60fps",
+                "1080p (FHD) video recording at 30fps or 60fps",
+                "720p (HD) video recording at 30fps",
+                "Slow motion video support for 1080p at 120fps or 240fps",
+                "Audio zoom",
+                "Cinematic video stabilisation (4K, 1080p and 720p)",
+                "Continuous Autofocus video",
+                "Extended dynamic range for video up to 30 fps",
+                "OIS (Optical Image Stabilization)",
+                "Optical zoom in (2x), optical zoom out (2x)",
+                "Take 8MP still photos while recording 4K video",
+                "Time‑lapse video with stabilisation"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "apple_iphone_11_green_512",
+      "brand": "Apple",
+      "title": "iPhone 11",
+      "imageUrl": "device",
+      "price": {
+        "upfrontPrice": 120,
+        "recurringPrice": 24,
+        "totalPrice": 150,
+        "recurrencePeriod": "month",
+        "contractPeriod": 24,
+        "currency": "€"
+      },
+      "color": {
+        "colorHex": "#727c72",
+        "colorName": "Green"
+      },
+      "capacity": {
+        "size": 512,
+        "sizeUnit": "GB"
+      },
+      "specifications": {
+        "quickSpecs": [
+            {
+              "title": "Battery life",
+              "subtitle": "3190 mAh"
+            },
+            {
+              "title": "Display size",
+              "subtitle": "5.8 inch"
+            },
+            {
+              "title": "Camera",
+              "subtitle": "13MP",
+              "details": "12MP wide angle\n10MP zoom 5X"
+            },
+            {
+              "title": "Selfie camera",
+              "subtitle": "8MP",
+              "details": "Holepunch"
+            },
+            {
+              "title": "Size",
+              "subtitle": "5x6 cm\n900g"
+            },
+            {
+              "title": "CPU processor",
+              "subtitle": "iOS 13",
+            }
+        ],
+        "boxDetails": [
+          "1m USB-C cable",
+          "Charger (UK plug)"
+        ],
+        "fullSpecs": [
+          {
+            "title": "More Information",
+            "items": [
+              "Non removable",
+              "Fast battery charging",
+              "Qi wireless charging"
+            ]
+          },
+          {
+            "title": "Body",
+            "items": [
+                "Front/back glass, stainless steel frame",
+                "Dual SIM (nano-SIM and eSIM)",
+                "Splash, water and dust resistant (IP68)"
+            ]
+          },
+          {
+            "title": "Camera details",
+            "items": [
+                "12MP (f/1.8) + 12MP (f/2.4) + 12MP (f/2.0)",
+                "12MP (f/2.2)",
+                "Auto image stabilisation",
+                "Burst mode",
+                "LED flash (Brighter True Tone flash with slow sync)",
+                "Night mode",
+                "OIS (Optical Image Stabilization)",
+                "Optical zoom in (2x), optical zoom out (2x)",
+                "Panorama",
+                "Portrait mode with advanced bokeh and Depth Control",
+                "Portrait Lighting with six effects",
+                "Smart HDR"
+            ]
+          },
+          {
+            "title": "Capacity",
+            "items": [
+                "512GB"
+            ]
+          },
+          {
+            "title": "Colour",
+            "items": [
+                "Green"
+            ]
+          },
+          {
+            "title": "Connectivity",
+            "items": [
+                "2G / 3G / 4G",
+                "Wi-Fi 802.11 a/b/g/n/ac/ax, dual-band, hotspot",
+                "Bluetooth 5.0",
+                "GPS with A-GPS, GLONASS, Galileo and QZSS",
+                "NFC",
+                "USB 2.0, proprietary reversible connector"
+            ]
+          },
+          {
+            "title": "Display details",
+            "items": [
+                "OLED capacitive touchscreen",
+                "2436 x 1125 pixels",
+                "Fingerprint-resistant oleophobic coating",
+                "Haptic Touch",
+                "HDR display",
+                "True Tone display",
+                "Wide colour display (P3)"
+            ]
+          },
+          {
+            "title": "Features",
+            "items": [
+                "Accelerometer",
+                "Apple Pay",
+                "Barometer",
+                "Digital compass",
+                "Face ID",
+                "Gyroscope",
+                "iCloud cloud service",
+                "Proximity sensor",
+                "Siri natural language commands and dictation",
+                "HEVC/MP4/H.264 player",
+                "MP3/WAV/AAX+/AIFF/Apple Lossless player"
+            ]
+          },
+          {
+            "title": "Memory",
+            "items": [
+                "512GB",
+                "6GB RAM"
+            ]
+          },
+          {
+            "title": "Platform",
+            "items": [
+                "iOS 13",
+                "Apple A13 Bionic",
+                "Hexa-core",
+                "Apple GPU"
+            ]
+          },
+          {
+            "title": "Video",
+            "items": [
+                "2160p (4K) video recording at 24fps, 30fps or 60fps",
+                "1080p (FHD) video recording at 30fps or 60fps",
+                "720p (HD) video recording at 30fps",
+                "Slow motion video support for 1080p at 120fps or 240fps",
+                "Audio zoom",
+                "Cinematic video stabilisation (4K, 1080p and 720p)",
+                "Continuous Autofocus video",
+                "Extended dynamic range for video up to 30 fps",
+                "OIS (Optical Image Stabilization)",
+                "Optical zoom in (2x), optical zoom out (2x)",
+                "Take 8MP still photos while recording 4K video",
+                "Time‑lapse video with stabilisation"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "apple_iphone_11_green_64",
+      "brand": "Apple",
+      "title": "iPhone 11",
+      "imageUrl": "device",
+      "price": {
+        "upfrontPrice": 50,
+        "recurringPrice": 24,
+        "totalPrice": 150,
+        "recurrencePeriod": "month",
+        "contractPeriod": 24,
+        "currency": "€"
+      },
+      "color": {
+        "colorHex": "#727c72",
+        "colorName": "Green"
+      },
+      "capacity": {
+        "size": 64,
+        "sizeUnit": "GB"
+      },
+      "specifications": {
+        "quickSpecs": [
+            {
+              "title": "Battery life",
+              "subtitle": "3190 mAh"
+            },
+            {
+              "title": "Display size",
+              "subtitle": "5.8 inch"
+            },
+            {
+              "title": "Camera",
+              "subtitle": "13MP",
+              "details": "12MP wide angle\n10MP zoom 5X"
+            },
+            {
+              "title": "Selfie camera",
+              "subtitle": "8MP",
+              "details": "Holepunch"
+            },
+            {
+              "title": "Size",
+              "subtitle": "5x6 cm\n900g"
+            },
+            {
+              "title": "CPU processor",
+              "subtitle": "iOS 13",
+            }
+        ],
+        "boxDetails": [
+          "1m USB-C cable",
+          "Charger (UK plug)"
+        ],
+        "fullSpecs": [
+          {
+            "title": "More Information",
+            "items": [
+              "Non removable",
+              "Fast battery charging",
+              "Qi wireless charging"
+            ]
+          },
+          {
+            "title": "Body",
+            "items": [
+                "Front/back glass, stainless steel frame",
+                "Dual SIM (nano-SIM and eSIM)",
+                "Splash, water and dust resistant (IP68)"
+            ]
+          },
+          {
+            "title": "Camera details",
+            "items": [
+                "12MP (f/1.8) + 12MP (f/2.4) + 12MP (f/2.0)",
+                "12MP (f/2.2)",
+                "Auto image stabilisation",
+                "Burst mode",
+                "LED flash (Brighter True Tone flash with slow sync)",
+                "Night mode",
+                "OIS (Optical Image Stabilization)",
+                "Optical zoom in (2x), optical zoom out (2x)",
+                "Panorama",
+                "Portrait mode with advanced bokeh and Depth Control",
+                "Portrait Lighting with six effects",
+                "Smart HDR"
+            ]
+          },
+          {
+            "title": "Capacity",
+            "items": [
+                "64GB"
+            ]
+          },
+          {
+            "title": "Colour",
+            "items": [
+                "Green"
+            ]
+          },
+          {
+            "title": "Connectivity",
+            "items": [
+                "2G / 3G / 4G",
+                "Wi-Fi 802.11 a/b/g/n/ac/ax, dual-band, hotspot",
+                "Bluetooth 5.0",
+                "GPS with A-GPS, GLONASS, Galileo and QZSS",
+                "NFC",
+                "USB 2.0, proprietary reversible connector"
+            ]
+          },
+          {
+            "title": "Display details",
+            "items": [
+                "OLED capacitive touchscreen",
+                "2436 x 1125 pixels",
+                "Fingerprint-resistant oleophobic coating",
+                "Haptic Touch",
+                "HDR display",
+                "True Tone display",
+                "Wide colour display (P3)"
+            ]
+          },
+          {
+            "title": "Features",
+            "items": [
+                "Accelerometer",
+                "Apple Pay",
+                "Barometer",
+                "Digital compass",
+                "Face ID",
+                "Gyroscope",
+                "iCloud cloud service",
+                "Proximity sensor",
+                "Siri natural language commands and dictation",
+                "HEVC/MP4/H.264 player",
+                "MP3/WAV/AAX+/AIFF/Apple Lossless player"
+            ]
+          },
+          {
+            "title": "Memory",
+            "items": [
+                "64GB",
+                "6GB RAM"
+            ]
+          },
+          {
+            "title": "Platform",
+            "items": [
+                "iOS 13",
+                "Apple A13 Bionic",
+                "Hexa-core",
+                "Apple GPU"
+            ]
+          },
+          {
+            "title": "Video",
+            "items": [
+                "2160p (4K) video recording at 24fps, 30fps or 60fps",
+                "1080p (FHD) video recording at 30fps or 60fps",
+                "720p (HD) video recording at 30fps",
+                "Slow motion video support for 1080p at 120fps or 240fps",
+                "Audio zoom",
+                "Cinematic video stabilisation (4K, 1080p and 720p)",
+                "Continuous Autofocus video",
+                "Extended dynamic range for video up to 30 fps",
+                "OIS (Optical Image Stabilization)",
+                "Optical zoom in (2x), optical zoom out (2x)",
+                "Take 8MP still photos while recording 4K video",
+                "Time‑lapse video with stabilisation"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "apple_iphone_11_green_256",
+      "brand": "Apple",
+      "title": "iPhone 11",
+      "imageUrl": "device",
+      "price": {
+        "upfrontPrice": 160,
+        "recurringPrice": 36,
+        "totalPrice": 2000,
+        "recurrencePeriod": "month",
+        "contractPeriod": 24,
+        "currency": "€"
+      },
+      "color": {
+        "colorHex": "#727c72",
+        "colorName": "Green"
+      },
+      "capacity": {
+        "size": 256,
+        "sizeUnit": "GB"
+      },
+      "specifications": {
+        "quickSpecs": [
+            {
+              "title": "Battery life",
+              "subtitle": "3190 mAh"
+            },
+            {
+              "title": "Display size",
+              "subtitle": "5.8 inch"
+            },
+            {
+              "title": "Camera",
+              "subtitle": "13MP",
+              "details": "12MP wide angle\n10MP zoom 5X"
+            },
+            {
+              "title": "Selfie camera",
+              "subtitle": "8MP",
+              "details": "Holepunch"
+            },
+            {
+              "title": "Size",
+              "subtitle": "5x6 cm\n900g"
+            },
+            {
+              "title": "CPU processor",
+              "subtitle": "iOS 13",
+            }
+        ],
+        "boxDetails": [
+          "1m USB-C cable",
+          "Charger (UK plug)"
+        ],
+        "fullSpecs": [
+          {
+            "title": "More Information",
+            "items": [
+              "Non removable",
+              "Fast battery charging",
+              "Qi wireless charging"
+            ]
+          },
+          {
+            "title": "Body",
+            "items": [
+                "Front/back glass, stainless steel frame",
+                "Dual SIM (nano-SIM and eSIM)",
+                "Splash, water and dust resistant (IP68)"
+            ]
+          },
+          {
+            "title": "Camera details",
+            "items": [
+                "12MP (f/1.8) + 12MP (f/2.4) + 12MP (f/2.0)",
+                "12MP (f/2.2)",
+                "Auto image stabilisation",
+                "Burst mode",
+                "LED flash (Brighter True Tone flash with slow sync)",
+                "Night mode",
+                "OIS (Optical Image Stabilization)",
+                "Optical zoom in (2x), optical zoom out (2x)",
+                "Panorama",
+                "Portrait mode with advanced bokeh and Depth Control",
+                "Portrait Lighting with six effects",
+                "Smart HDR"
+            ]
+          },
+          {
+            "title": "Capacity",
+            "items": [
+                "256GB"
+            ]
+          },
+          {
+            "title": "Colour",
+            "items": [
+                "Green"
+            ]
+          },
+          {
+            "title": "Connectivity",
+            "items": [
+                "2G / 3G / 4G",
+                "Wi-Fi 802.11 a/b/g/n/ac/ax, dual-band, hotspot",
+                "Bluetooth 5.0",
+                "GPS with A-GPS, GLONASS, Galileo and QZSS",
+                "NFC",
+                "USB 2.0, proprietary reversible connector"
+            ]
+          },
+          {
+            "title": "Display details",
+            "items": [
+                "OLED capacitive touchscreen",
+                "2436 x 1125 pixels",
+                "Fingerprint-resistant oleophobic coating",
+                "Haptic Touch",
+                "HDR display",
+                "True Tone display",
+                "Wide colour display (P3)"
+            ]
+          },
+          {
+            "title": "Features",
+            "items": [
+                "Accelerometer",
+                "Apple Pay",
+                "Barometer",
+                "Digital compass",
+                "Face ID",
+                "Gyroscope",
+                "iCloud cloud service",
+                "Proximity sensor",
+                "Siri natural language commands and dictation",
+                "HEVC/MP4/H.264 player",
+                "MP3/WAV/AAX+/AIFF/Apple Lossless player"
+            ]
+          },
+          {
+            "title": "Memory",
+            "items": [
+                "256GB",
+                "6GB RAM"
+            ]
+          },
+          {
+            "title": "Platform",
+            "items": [
+                "iOS 13",
+                "Apple A13 Bionic",
+                "Hexa-core",
+                "Apple GPU"
+            ]
+          },
+          {
+            "title": "Video",
+            "items": [
+                "2160p (4K) video recording at 24fps, 30fps or 60fps",
+                "1080p (FHD) video recording at 30fps or 60fps",
+                "720p (HD) video recording at 30fps",
+                "Slow motion video support for 1080p at 120fps or 240fps",
+                "Audio zoom",
+                "Cinematic video stabilisation (4K, 1080p and 720p)",
+                "Continuous Autofocus video",
+                "Extended dynamic range for video up to 30 fps",
+                "OIS (Optical Image Stabilization)",
+                "Optical zoom in (2x), optical zoom out (2x)",
+                "Take 8MP still photos while recording 4K video",
+                "Time‑lapse video with stabilisation"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "apple_iphone_11_space_grey_64",
+      "brand": "Apple",
+      "title": "iPhone 11",
+      "imageUrl": "device",
+      "price": {
+        "upfrontPrice": 160,
+        "recurringPrice": 36,
+        "totalPrice": 2000,
+        "recurrencePeriod": "month",
+        "contractPeriod": 24,
+        "currency": "€"
+      },
+      "color": {
+        "colorHex": "#333333",
+        "colorName": "Space grey"
+      },
+      "capacity": {
+        "size": 64,
+        "sizeUnit": "GB"
+      },
+      "specifications": {
+        "quickSpecs": [
+            {
+              "title": "Battery life",
+              "subtitle": "3190 mAh"
+            },
+            {
+              "title": "Display size",
+              "subtitle": "5.8 inch"
+            },
+            {
+              "title": "Camera",
+              "subtitle": "13MP",
+              "details": "12MP wide angle\n10MP zoom 5X"
+            },
+            {
+              "title": "Selfie camera",
+              "subtitle": "8MP",
+              "details": "Holepunch"
+            },
+            {
+              "title": "Size",
+              "subtitle": "5x6 cm\n900g"
+            },
+            {
+              "title": "CPU processor",
+              "subtitle": "iOS 13",
+            }
+        ],
+        "boxDetails": [
+          "1m USB-C cable",
+          "Charger (UK plug)"
+        ],
+        "fullSpecs": [
+          {
+            "title": "More Information",
+            "items": [
+              "Non removable",
+              "Fast battery charging",
+              "Qi wireless charging"
+            ]
+          },
+          {
+            "title": "Body",
+            "items": [
+                "Front/back glass, stainless steel frame",
+                "Dual SIM (nano-SIM and eSIM)",
+                "Splash, water and dust resistant (IP68)"
+            ]
+          },
+          {
+            "title": "Camera details",
+            "items": [
+                "12MP (f/1.8) + 12MP (f/2.4) + 12MP (f/2.0)",
+                "12MP (f/2.2)",
+                "Auto image stabilisation",
+                "Burst mode",
+                "LED flash (Brighter True Tone flash with slow sync)",
+                "Night mode",
+                "OIS (Optical Image Stabilization)",
+                "Optical zoom in (2x), optical zoom out (2x)",
+                "Panorama",
+                "Portrait mode with advanced bokeh and Depth Control",
+                "Portrait Lighting with six effects",
+                "Smart HDR"
+            ]
+          },
+          {
+            "title": "Capacity",
+            "items": [
+                "64GB"
+            ]
+          },
+          {
+            "title": "Colour",
+            "items": [
+                "Green"
+            ]
+          },
+          {
+            "title": "Connectivity",
+            "items": [
+                "2G / 3G / 4G",
+                "Wi-Fi 802.11 a/b/g/n/ac/ax, dual-band, hotspot",
+                "Bluetooth 5.0",
+                "GPS with A-GPS, GLONASS, Galileo and QZSS",
+                "NFC",
+                "USB 2.0, proprietary reversible connector"
+            ]
+          },
+          {
+            "title": "Display details",
+            "items": [
+                "OLED capacitive touchscreen",
+                "2436 x 1125 pixels",
+                "Fingerprint-resistant oleophobic coating",
+                "Haptic Touch",
+                "HDR display",
+                "True Tone display",
+                "Wide colour display (P3)"
+            ]
+          },
+          {
+            "title": "Features",
+            "items": [
+                "Accelerometer",
+                "Apple Pay",
+                "Barometer",
+                "Digital compass",
+                "Face ID",
+                "Gyroscope",
+                "iCloud cloud service",
+                "Proximity sensor",
+                "Siri natural language commands and dictation",
+                "HEVC/MP4/H.264 player",
+                "MP3/WAV/AAX+/AIFF/Apple Lossless player"
+            ]
+          },
+          {
+            "title": "Memory",
+            "items": [
+                "64GB",
+                "6GB RAM"
+            ]
+          },
+          {
+            "title": "Platform",
+            "items": [
+                "iOS 13",
+                "Apple A13 Bionic",
+                "Hexa-core",
+                "Apple GPU"
+            ]
+          },
+          {
+            "title": "Video",
+            "items": [
+                "2160p (4K) video recording at 24fps, 30fps or 60fps",
+                "1080p (FHD) video recording at 30fps or 60fps",
+                "720p (HD) video recording at 30fps",
+                "Slow motion video support for 1080p at 120fps or 240fps",
+                "Audio zoom",
+                "Cinematic video stabilisation (4K, 1080p and 720p)",
+                "Continuous Autofocus video",
+                "Extended dynamic range for video up to 30 fps",
+                "OIS (Optical Image Stabilization)",
+                "Optical zoom in (2x), optical zoom out (2x)",
+                "Take 8MP still photos while recording 4K video",
+                "Time‑lapse video with stabilisation"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "apple_iphone_11_space_grey_512",
+      "brand": "Apple",
+      "title": "iPhone 11",
+      "imageUrl": "device",
+      "price": {
+        "upfrontPrice": 160,
+        "recurringPrice": 36,
+        "totalPrice": 2000,
+        "recurrencePeriod": "month",
+        "contractPeriod": 24,
+        "currency": "€"
+      },
+      "color": {
+        "colorHex": "#333333",
+        "colorName": "Space grey"
+      },
+      "capacity": {
+        "size": 512,
+        "sizeUnit": "GB"
+      },
+      "specifications": {
+        "quickSpecs": [
+            {
+              "title": "Battery life",
+              "subtitle": "3190 mAh"
+            },
+            {
+              "title": "Display size",
+              "subtitle": "5.8 inch"
+            },
+            {
+              "title": "Camera",
+              "subtitle": "13MP",
+              "details": "12MP wide angle\n10MP zoom 5X"
+            },
+            {
+              "title": "Selfie camera",
+              "subtitle": "8MP",
+              "details": "Holepunch"
+            },
+            {
+              "title": "Size",
+              "subtitle": "5x6 cm\n900g"
+            },
+            {
+              "title": "CPU processor",
+              "subtitle": "iOS 13",
+            }
+        ],
+        "boxDetails": [
+          "1m USB-C cable",
+          "Charger (UK plug)"
+        ],
+        "fullSpecs": [
+          {
+            "title": "More Information",
+            "items": [
+              "Non removable",
+              "Fast battery charging",
+              "Qi wireless charging"
+            ]
+          },
+          {
+            "title": "Body",
+            "items": [
+                "Front/back glass, stainless steel frame",
+                "Dual SIM (nano-SIM and eSIM)",
+                "Splash, water and dust resistant (IP68)"
+            ]
+          },
+          {
+            "title": "Camera details",
+            "items": [
+                "12MP (f/1.8) + 12MP (f/2.4) + 12MP (f/2.0)",
+                "12MP (f/2.2)",
+                "Auto image stabilisation",
+                "Burst mode",
+                "LED flash (Brighter True Tone flash with slow sync)",
+                "Night mode",
+                "OIS (Optical Image Stabilization)",
+                "Optical zoom in (2x), optical zoom out (2x)",
+                "Panorama",
+                "Portrait mode with advanced bokeh and Depth Control",
+                "Portrait Lighting with six effects",
+                "Smart HDR"
+            ]
+          },
+          {
+            "title": "Capacity",
+            "items": [
+                "512GB"
+            ]
+          },
+          {
+            "title": "Colour",
+            "items": [
+                "Grey"
+            ]
+          },
+          {
+            "title": "Connectivity",
+            "items": [
+                "2G / 3G / 4G",
+                "Wi-Fi 802.11 a/b/g/n/ac/ax, dual-band, hotspot",
+                "Bluetooth 5.0",
+                "GPS with A-GPS, GLONASS, Galileo and QZSS",
+                "NFC",
+                "USB 2.0, proprietary reversible connector"
+            ]
+          },
+          {
+            "title": "Display details",
+            "items": [
+                "OLED capacitive touchscreen",
+                "2436 x 1125 pixels",
+                "Fingerprint-resistant oleophobic coating",
+                "Haptic Touch",
+                "HDR display",
+                "True Tone display",
+                "Wide colour display (P3)"
+            ]
+          },
+          {
+            "title": "Features",
+            "items": [
+                "Accelerometer",
+                "Apple Pay",
+                "Barometer",
+                "Digital compass",
+                "Face ID",
+                "Gyroscope",
+                "iCloud cloud service",
+                "Proximity sensor",
+                "Siri natural language commands and dictation",
+                "HEVC/MP4/H.264 player",
+                "MP3/WAV/AAX+/AIFF/Apple Lossless player"
+            ]
+          },
+          {
+            "title": "Memory",
+            "items": [
+                "512GB",
+                "6GB RAM"
+            ]
+          },
+          {
+            "title": "Platform",
+            "items": [
+                "iOS 13",
+                "Apple A13 Bionic",
+                "Hexa-core",
+                "Apple GPU"
+            ]
+          },
+          {
+            "title": "Video",
+            "items": [
+                "2160p (4K) video recording at 24fps, 30fps or 60fps",
+                "1080p (FHD) video recording at 30fps or 60fps",
+                "720p (HD) video recording at 30fps",
+                "Slow motion video support for 1080p at 120fps or 240fps",
+                "Audio zoom",
+                "Cinematic video stabilisation (4K, 1080p and 720p)",
+                "Continuous Autofocus video",
+                "Extended dynamic range for video up to 30 fps",
+                "OIS (Optical Image Stabilization)",
+                "Optical zoom in (2x), optical zoom out (2x)",
+                "Take 8MP still photos while recording 4K video",
+                "Time‑lapse video with stabilisation"
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "collectionAndDelivery": [
+    {
+      "id": "home_delivery",
+      "imageUrl": "collectionAndDeliveryHomeDelivery",
+      "title": "Home delivery",
+      "duration": "3-5 days",
+      "price": 4,
+      "currency": "£"
+    },
+    {
+      "id": "pick_up_in_store",
+      "imageUrl": "collectionAndDeliveryStore",
+      "title": "Pick up in store",
+      "duration": "1-2 days",
+      "price": 2,
+      "currency": "£"
+    }
+  ]
+}

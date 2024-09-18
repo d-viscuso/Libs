@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="vodafone-regular.ttf">
+            <string>VodafoneRg-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="1Bq-ZB-1lc" customClass="PayBillLoadingView" customModule="VFGMVA10Framework" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="500"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9oH-1i-buo" customClass="AnimationView" customModule="Lottie">
+                    <rect key="frame" x="125.5" y="108.5" width="163" height="163"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <accessibility key="accessibilityConfiguration">
+                        <bool key="isElement" value="YES"/>
+                    </accessibility>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="163" id="e9L-gB-fJH"/>
+                        <constraint firstAttribute="width" constant="163" id="mtZ-RU-sZ4"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vah-eE-Nzd" customClass="VFGLabel" customModule="VFGMVA10Foundation">
+                    <rect key="frame" x="207" y="283.5" width="0.0" height="96.5"/>
+                    <fontDescription key="fontDescription" name="VodafoneRg-Regular" family="Vodafone Rg" pointSize="17"/>
+                    <color key="textColor" name="VFGRedWhiteText"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fti-jI-H74"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="fti-jI-H74" firstAttribute="bottom" secondItem="vah-eE-Nzd" secondAttribute="bottom" constant="120" id="62d-au-8fH"/>
+                <constraint firstItem="vah-eE-Nzd" firstAttribute="top" secondItem="9oH-1i-buo" secondAttribute="bottom" constant="12" id="cyj-aU-YqA"/>
+                <constraint firstItem="vah-eE-Nzd" firstAttribute="centerX" secondItem="9oH-1i-buo" secondAttribute="centerX" id="dUw-Nt-y4M"/>
+                <constraint firstItem="9oH-1i-buo" firstAttribute="centerX" secondItem="1Bq-ZB-1lc" secondAttribute="centerX" id="f28-t2-5g7"/>
+                <constraint firstItem="9oH-1i-buo" firstAttribute="centerY" secondItem="1Bq-ZB-1lc" secondAttribute="centerY" constant="-60" id="lkA-vA-FM6"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="animationView" destination="9oH-1i-buo" id="qJo-RO-RJf"/>
+                <outlet property="loadingLabel" destination="vah-eE-Nzd" id="oCy-aI-7VM"/>
+            </connections>
+            <point key="canvasLocation" x="137.59999999999999" y="152.92353823088456"/>
+        </view>
+    </objects>
+    <designables>
+        <designable name="vah-eE-Nzd"/>
+    </designables>
+    <resources>
+        <namedColor name="VFGRedWhiteText">
+            <color red="0.90196078431372551" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

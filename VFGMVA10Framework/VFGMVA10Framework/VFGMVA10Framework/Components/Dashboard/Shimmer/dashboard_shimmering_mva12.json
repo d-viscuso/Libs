@@ -1,0 +1,80 @@
+{
+    "sections": [
+        {
+            "type": "scrollableCard",
+            "title": "",
+            "items": [
+                {
+                    "componentId": "load-component-scrollable-card",
+                    "metaData": {
+                        "layout": "large"
+                    }
+                }
+            ]
+        },
+        {
+            "type": "discover",
+            "title": "",
+            "items": [
+                {
+                    "componentId": "load-component-stories-card",
+                    "metaData": {
+                        "category": [
+                            {
+                                "id": "1",
+                                "href": "test",
+                                "name": "test",
+                                "version": "1.0"
+                            }
+                        ],
+                        "channel": [
+                            {
+                                "id": "1",
+                                "href": "test",
+                                "name": "test"
+                            }
+                        ],
+                        "recommendationType": "story"
+                    }
+                }
+            ]
+        },
+        {
+            "type": "highlights",
+            "title":"Highlights",
+            "items": [
+                {
+                    "componentId": "load-component-highlight-card"
+                },
+                {
+                    "componentId": "load-component-highlight-card"
+                },
+                {
+                    "componentId": "load-component-highlight-card"
+                },
+                {
+                    "componentId": "load-component-highlight-card"
+                }
+            ]
+        },
+        {
+            "type": "discover",
+            "title":"Popular categories",
+            "items": [
+                {
+                    "componentId": "load-component-category-card"
+                }
+            ]
+        },
+        {
+            "type": "discover",
+            "title":"Discover",
+            "items": [
+                {
+                    "componentId": "load-component-horizontal-discover-card"
+                }
+            ]
+        }
+    ]
+}
+

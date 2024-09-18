@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="vodafone-regular.ttf">
+            <string>VodafoneRg-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="VFGSetPrivacyPermissionsViewController" customModule="VFGMVA10Framework">
+            <connections>
+                <outlet property="backButton" destination="Diq-RY-2cN" id="H78-vH-kkC"/>
+                <outlet property="closeButton" destination="h5c-FW-kET" id="hi4-pI-t8G"/>
+                <outlet property="happyButton" destination="7fB-Ef-MN8" id="9ec-1C-Tvi"/>
+                <outlet property="permissionTableHeaderView" destination="eXC-6e-qGo" id="ztc-ZO-M9j"/>
+                <outlet property="permissionsTableView" destination="A9H-15-M8k" id="3CS-dh-4bP"/>
+                <outlet property="permissionsTableViewFooter" destination="YJC-Y1-M8c" id="8sa-CU-QrT"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="oC8-wa-aAr"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" style="grouped" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" estimatedSectionHeaderHeight="-1" sectionFooterHeight="18" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="A9H-15-M8k">
+                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <color key="sectionIndexBackgroundColor" name="VFGLightGreyBackground"/>
+                </tableView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" name="VFGLightGreyBackground"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="A9H-15-M8k" secondAttribute="trailing" id="23o-jq-asS"/>
+                <constraint firstItem="A9H-15-M8k" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="7HR-cA-wou"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="A9H-15-M8k" secondAttribute="bottom" id="BD8-Z9-99m"/>
+                <constraint firstItem="A9H-15-M8k" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="yud-1G-MyN"/>
+            </constraints>
+            <point key="canvasLocation" x="139" y="98"/>
+        </view>
+        <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="eXC-6e-qGo" userLabel="Header View">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="59"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ycK-Be-oWO">
+                    <rect key="frame" x="0.0" y="16" width="414" height="43"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Diq-RY-2cN" customClass="VFGButton">
+                            <rect key="frame" x="16" y="0.0" width="24" height="43"/>
+                            <state key="normal" image="icArrowLeft">
+                                <color key="titleColor" name="VFGPrimaryText"/>
+                            </state>
+                            <connections>
+                                <action selector="backButtonDidPressed:" destination="-1" eventType="touchUpInside" id="XK4-8O-Su4"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h5c-FW-kET" customClass="VFGButton">
+                            <rect key="frame" x="355" y="0.0" width="43" height="43"/>
+                            <inset key="contentEdgeInsets" minX="19" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <state key="normal" image="icClose">
+                                <color key="titleColor" name="VFGPrimaryText"/>
+                            </state>
+                            <connections>
+                                <action selector="closeButtonDidPressed:" destination="-1" eventType="touchUpInside" id="OMY-PU-brg"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" name="VFGLightGreyBackground"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="43" id="3Yu-7O-6Qg"/>
+                        <constraint firstItem="Diq-RY-2cN" firstAttribute="top" secondItem="ycK-Be-oWO" secondAttribute="top" id="8c0-Jh-inV"/>
+                        <constraint firstAttribute="bottom" secondItem="h5c-FW-kET" secondAttribute="bottom" id="QJJ-v0-D9p"/>
+                        <constraint firstItem="h5c-FW-kET" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Diq-RY-2cN" secondAttribute="trailing" id="X2G-km-PjX"/>
+                        <constraint firstAttribute="bottom" secondItem="Diq-RY-2cN" secondAttribute="bottom" id="nHG-Am-9CJ"/>
+                        <constraint firstAttribute="trailing" secondItem="h5c-FW-kET" secondAttribute="trailing" constant="16" id="nhv-3g-ml4"/>
+                        <constraint firstItem="h5c-FW-kET" firstAttribute="top" secondItem="ycK-Be-oWO" secondAttribute="top" id="vnE-Dp-QQW"/>
+                        <constraint firstItem="Diq-RY-2cN" firstAttribute="leading" secondItem="ycK-Be-oWO" secondAttribute="leading" constant="16" id="yMr-Ur-mfw"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" name="VFGLightGreyBackground"/>
+            <constraints>
+                <constraint firstItem="ycK-Be-oWO" firstAttribute="leading" secondItem="eXC-6e-qGo" secondAttribute="leading" id="A0A-jF-L8n"/>
+                <constraint firstItem="ycK-Be-oWO" firstAttribute="top" secondItem="eXC-6e-qGo" secondAttribute="top" constant="16" id="TJC-2I-dN5"/>
+                <constraint firstItem="ycK-Be-oWO" firstAttribute="bottom" secondItem="eXC-6e-qGo" secondAttribute="bottom" id="cEh-ly-uJ7"/>
+                <constraint firstAttribute="trailing" secondItem="ycK-Be-oWO" secondAttribute="trailing" id="zb8-ko-yWk"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="137.68115942028987" y="-279.57589285714283"/>
+        </view>
+        <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="YJC-Y1-M8c" userLabel="Footer View">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="106"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yxs-Jj-bJF">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="106"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7fB-Ef-MN8" customClass="VFGButton" customModule="VFGMVA10Foundation">
+                            <rect key="frame" x="16" y="32" width="382" height="42"/>
+                            <color key="backgroundColor" name="VFGPrimaryButton"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="42" id="ot2-31-zpG"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="VodafoneRg-Regular" family="Vodafone Rg" pointSize="18.700000762939453"/>
+                            <state key="normal" title="I'm happy with this ">
+                                <color key="titleColor" name="VFGPrimaryButtonActiveText"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="6.2000000000000002"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="buttonStyle">
+                                    <integer key="value" value="0"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="backgroundStyle">
+                                    <integer key="value" value="0"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="happyButtonDidPressed:" destination="-1" eventType="touchUpInside" id="nX4-hF-B6G"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" name="VFGLightGreyBackground"/>
+                    <constraints>
+                        <constraint firstItem="7fB-Ef-MN8" firstAttribute="top" secondItem="yxs-Jj-bJF" secondAttribute="top" constant="32" id="6dN-bF-8j8"/>
+                        <constraint firstItem="7fB-Ef-MN8" firstAttribute="leading" secondItem="yxs-Jj-bJF" secondAttribute="leading" constant="16" id="EDs-hw-Uas"/>
+                        <constraint firstAttribute="trailing" secondItem="7fB-Ef-MN8" secondAttribute="trailing" constant="16" id="g9K-HT-hUb"/>
+                        <constraint firstAttribute="bottom" secondItem="7fB-Ef-MN8" secondAttribute="bottom" constant="32" id="r6X-6R-wUB"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="yxs-Jj-bJF" firstAttribute="top" secondItem="YJC-Y1-M8c" secondAttribute="top" id="fJW-Rh-LDW"/>
+                <constraint firstAttribute="trailing" secondItem="yxs-Jj-bJF" secondAttribute="trailing" id="ize-yA-2zX"/>
+                <constraint firstAttribute="bottom" secondItem="yxs-Jj-bJF" secondAttribute="bottom" id="poC-mp-WIb"/>
+                <constraint firstItem="yxs-Jj-bJF" firstAttribute="leading" secondItem="YJC-Y1-M8c" secondAttribute="leading" id="yjo-nm-Qhl"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="139" y="477"/>
+        </view>
+    </objects>
+    <designables>
+        <designable name="7fB-Ef-MN8">
+            <size key="intrinsicContentSize" width="139" height="33"/>
+        </designable>
+        <designable name="Diq-RY-2cN">
+            <size key="intrinsicContentSize" width="24" height="24"/>
+        </designable>
+        <designable name="h5c-FW-kET">
+            <size key="intrinsicContentSize" width="43" height="24"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="icArrowLeft" width="24" height="24"/>
+        <image name="icClose" width="24" height="24"/>
+        <namedColor name="VFGLightGreyBackground">
+            <color red="0.95686274509803926" green="0.95686274509803926" blue="0.95686274509803926" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="VFGPrimaryButton">
+            <color red="0.90200001001358032" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="VFGPrimaryButtonActiveText">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="VFGPrimaryText">
+            <color red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

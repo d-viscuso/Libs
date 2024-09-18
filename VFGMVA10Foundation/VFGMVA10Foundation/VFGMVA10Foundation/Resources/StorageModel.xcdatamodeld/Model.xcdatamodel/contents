@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="17511" systemVersion="20C69" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="VFGStoredItem" representedClassName=".VFGStoredItem" syncable="YES">
+        <attribute name="key" optional="YES" attributeType="String"/>
+        <attribute name="lifetime" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="priority" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="shouldExtendTimeIfAccessed" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="timer" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <relationship name="storedItemData" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="VFGStoredItemData" inverseName="storedItem" inverseEntity="VFGStoredItemData"/>
+    </entity>
+    <entity name="VFGStoredItemData" representedClassName=".VFGStoredItemData" syncable="YES">
+        <attribute name="data" optional="YES" attributeType="Binary"/>
+        <relationship name="storedItem" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="VFGStoredItem" inverseName="storedItemData" inverseEntity="VFGStoredItem"/>
+    </entity>
+    <elements>
+        <element name="VFGStoredItem" positionX="-1382.201904296875" positionY="-1495.692565917969" width="177.7535400390625" height="119"/>
+        <element name="VFGStoredItemData" positionX="-1130.378662109375" positionY="-1478.720916748047" width="128" height="73"/>
+    </elements>
+</model>

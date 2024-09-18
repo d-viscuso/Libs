@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="vodafone-bold.ttf">
+            <string>VodafoneRg-Bold</string>
+        </array>
+        <array key="vodafone-regular.ttf">
+            <string>VodafoneRg-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Confirm View Controller-->
+        <scene sceneID="DBK-CT-5Bl">
+            <objects>
+                <viewController storyboardIdentifier="ConfirmView" id="FnF-w0-g88" customClass="VFGConfirmViewController" customModule="VFGMVA10Framework" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pKb-sp-Klg">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="9qr-93-aZn" userLabel="Tick + Title">
+                                <rect key="frame" x="91" y="272.5" width="232.5" height="191"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Y56-as-2z0" customClass="AnimationView" customModule="Lottie">
+                                        <rect key="frame" x="53.5" y="0.0" width="126" height="126"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <accessibility key="accessibilityConfiguration">
+                                            <bool key="isElement" value="YES"/>
+                                        </accessibility>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="126" id="ZTK-Ag-24B"/>
+                                            <constraint firstAttribute="width" constant="126" id="yBx-pp-nLP"/>
+                                        </constraints>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Congratulation, Phil" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="vOo-nO-D59" customClass="VFGLabel" customModule="VFGMVA10Foundation">
+                                        <rect key="frame" x="0.0" y="156" width="232.5" height="35"/>
+                                        <fontDescription key="fontDescription" name="VodafoneRg-Bold" family="Vodafone Rg" pointSize="30"/>
+                                        <color key="textColor" name="VFGPrimaryText"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleAspectFit" axis="vertical" distribution="equalCentering" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="RPV-WS-CtJ" userLabel="Subtitles">
+                                <rect key="frame" x="17" y="493.5" width="380" height="98"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You have upgrade your plan to Max Unlimited and your new iPhone 11 Pro will be delivered today!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="brJ-BA-8DU" customClass="VFGLabel" customModule="VFGMVA10Foundation">
+                                        <rect key="frame" x="2" y="0.0" width="376" height="39"/>
+                                        <fontDescription key="fontDescription" name="VodafoneRg-Regular" family="Vodafone Rg" pointSize="16.600000381469727"/>
+                                        <color key="textColor" name="VFGPrimaryText"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Keep an eye on your dashboard to track your delivery." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="cau-VP-cOT" customClass="VFGLabel" customModule="VFGMVA10Foundation">
+                                        <rect key="frame" x="38.5" y="59" width="303" height="39"/>
+                                        <fontDescription key="fontDescription" name="VodafoneRg-Regular" family="Vodafone Rg" pointSize="16.600000381469727"/>
+                                        <color key="textColor" name="VFGPrimaryText"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="Ws3-ro-f8D" userLabel="CTAs">
+                                <rect key="frame" x="17" y="815" width="380" height="46"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2qu-VF-tZw" customClass="VFGButton" customModule="VFGMVA10Foundation">
+                                        <rect key="frame" x="0.0" y="0.0" width="380" height="46"/>
+                                        <color key="backgroundColor" name="VFGRedDefaultBackground"/>
+                                        <accessibility key="accessibilityConfiguration" identifier="APyourAppointmentsButton"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="46" id="r2N-29-j8y"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="VodafoneRg-Regular" family="Vodafone Rg" pointSize="19"/>
+                                        <state key="normal" title="Back to dashboard">
+                                            <color key="titleColor" name="VFGPrimaryButtonActiveText"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="6.2000000000000002"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="closeButtonDidPress" destination="FnF-w0-g88" eventType="touchUpInside" id="Nul-pQ-W7d"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="dy3-Np-dKO"/>
+                        <color key="backgroundColor" name="VFGWhiteBackground"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="Ws3-ro-f8D" secondAttribute="bottom" constant="35" id="5pJ-I6-Hj5"/>
+                            <constraint firstItem="RPV-WS-CtJ" firstAttribute="top" secondItem="9qr-93-aZn" secondAttribute="bottom" constant="30" id="7WJ-vO-RkY"/>
+                            <constraint firstItem="Ws3-ro-f8D" firstAttribute="leading" secondItem="dy3-Np-dKO" secondAttribute="leading" constant="17" id="J5V-h0-SLR"/>
+                            <constraint firstItem="9qr-93-aZn" firstAttribute="leading" secondItem="dy3-Np-dKO" secondAttribute="leading" constant="91" id="LEh-Vn-XZv"/>
+                            <constraint firstItem="dy3-Np-dKO" firstAttribute="trailing" secondItem="9qr-93-aZn" secondAttribute="trailing" constant="90.5" id="Mlg-Rx-A0a"/>
+                            <constraint firstItem="dy3-Np-dKO" firstAttribute="trailing" secondItem="RPV-WS-CtJ" secondAttribute="trailing" constant="17" id="X1p-d2-jXX"/>
+                            <constraint firstItem="9qr-93-aZn" firstAttribute="centerY" secondItem="pKb-sp-Klg" secondAttribute="centerY" constant="-80" id="hfn-du-6Rx"/>
+                            <constraint firstItem="dy3-Np-dKO" firstAttribute="trailing" secondItem="Ws3-ro-f8D" secondAttribute="trailing" constant="17" id="pE3-w2-GjD"/>
+                            <constraint firstItem="RPV-WS-CtJ" firstAttribute="leading" secondItem="dy3-Np-dKO" secondAttribute="leading" constant="17" id="xcm-FT-c6d"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="dashboardButton" destination="2qu-VF-tZw" id="5Vu-cF-0hp"/>
+                        <outlet property="detailsLabel" destination="brJ-BA-8DU" id="9Dc-aa-17B"/>
+                        <outlet property="subtitleLabel" destination="cau-VP-cOT" id="FF7-H9-Qs9"/>
+                        <outlet property="tickAnimationView" destination="Y56-as-2z0" id="pGJ-Sq-RDN"/>
+                        <outlet property="titleLabel" destination="vOo-nO-D59" id="Ev2-qa-1uX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fUF-g3-WzS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-112" y="-281"/>
+        </scene>
+    </scenes>
+    <designables>
+        <designable name="2qu-VF-tZw">
+            <size key="intrinsicContentSize" width="162" height="35"/>
+        </designable>
+        <designable name="Y56-as-2z0"/>
+        <designable name="brJ-BA-8DU">
+            <size key="intrinsicContentSize" width="727.5" height="19.5"/>
+        </designable>
+        <designable name="cau-VP-cOT">
+            <size key="intrinsicContentSize" width="401" height="19.5"/>
+        </designable>
+        <designable name="vOo-nO-D59">
+            <size key="intrinsicContentSize" width="264" height="35"/>
+        </designable>
+    </designables>
+    <resources>
+        <namedColor name="VFGPrimaryButtonActiveText">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="VFGPrimaryText">
+            <color red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="VFGRedDefaultBackground">
+            <color red="0.90196078431372551" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="VFGWhiteBackground">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

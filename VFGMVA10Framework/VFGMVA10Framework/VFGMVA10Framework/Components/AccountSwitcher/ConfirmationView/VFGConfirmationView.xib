@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="vodafone-bold.ttf">
+            <string>VodafoneRg-Bold</string>
+        </array>
+        <array key="vodafone-regular.ttf">
+            <string>VodafoneRg-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Fap-CJ-pHI" customClass="VFGConfirmationView" customModule="VFGMVA10Framework" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="300"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cHn-B7-Hfb" customClass="VFGButton" customModule="VFGMVA10Foundation">
+                    <rect key="frame" x="359" y="24" width="18" height="18"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="18" id="cc5-dX-HJf"/>
+                        <constraint firstAttribute="height" constant="18" id="veT-EK-Fpt"/>
+                    </constraints>
+                    <inset key="contentEdgeInsets" minX="5" minY="5" maxX="5" maxY="5"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" image="ic_close"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="buttonStyle">
+                            <integer key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="string" keyPath="imageName" value="ic_close"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="closeButtonDidPressed:" destination="Fap-CJ-pHI" eventType="touchUpInside" id="T1v-cC-ZgY"/>
+                    </connections>
+                </button>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="3tL-Xv-j2G">
+                    <rect key="frame" x="16" y="42" width="361" height="226"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Log out" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pt8-hK-mWn" customClass="VFGLabel" customModule="VFGMVA10Framework" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="361" height="27"/>
+                            <fontDescription key="fontDescription" name="VodafoneRg-Bold" family="Vodafone Rg" pointSize="24"/>
+                            <color key="textColor" name="VFGPrimaryText"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Are you sure you want to log out from all your accounts?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wrs-jZ-gPR" customClass="VFGLabel" customModule="VFGMVA10Framework" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="43" width="361" height="47"/>
+                            <fontDescription key="fontDescription" name="VodafoneRg-Regular" family="Vodafone Rg" pointSize="16"/>
+                            <color key="textColor" name="VFGPrimaryText"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dcz-Dg-vV8" userLabel="Spacing View">
+                            <rect key="frame" x="0.0" y="106" width="361" height="0.0"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="height" id="VPC-YT-Vvx"/>
+                            </constraints>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W4O-ax-ACC" customClass="VFGButton" customModule="VFGMVA10Foundation">
+                            <rect key="frame" x="0.0" y="122" width="361" height="44"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="44" id="Jll-Q1-nQW"/>
+                            </constraints>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" title="Confirm"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="buttonStyle">
+                                    <integer key="value" value="0"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="primaryButtonDidPressed:" destination="Fap-CJ-pHI" eventType="touchUpInside" id="RVl-hq-nfH"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rz1-Gj-ppa" customClass="VFGButton" customModule="VFGMVA10Foundation">
+                            <rect key="frame" x="0.0" y="182" width="361" height="44"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="44" id="sL6-U4-1lw"/>
+                            </constraints>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" title="Back"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="buttonStyle">
+                                    <integer key="value" value="2"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="secondaryButtonDidPressed:" destination="Fap-CJ-pHI" eventType="touchUpInside" id="Eul-50-1kD"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="3tL-Xv-j2G" secondAttribute="trailing" constant="16" id="8za-9w-Da2"/>
+                <constraint firstItem="3tL-Xv-j2G" firstAttribute="top" secondItem="cHn-B7-Hfb" secondAttribute="bottom" id="JFQ-pB-ask"/>
+                <constraint firstAttribute="bottom" secondItem="3tL-Xv-j2G" secondAttribute="bottom" constant="32" id="Jht-IC-Kzj"/>
+                <constraint firstItem="cHn-B7-Hfb" firstAttribute="top" secondItem="Fap-CJ-pHI" secondAttribute="top" constant="24" id="RVn-ee-oUo"/>
+                <constraint firstItem="3tL-Xv-j2G" firstAttribute="leading" secondItem="Fap-CJ-pHI" secondAttribute="leading" constant="16" id="Toq-CG-jef"/>
+                <constraint firstAttribute="trailing" secondItem="cHn-B7-Hfb" secondAttribute="trailing" constant="16" id="jFO-tb-OR5"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="descriptionLabel" destination="wrs-jZ-gPR" id="3KE-k3-XaQ"/>
+                <outlet property="primaryButton" destination="W4O-ax-ACC" id="6Pk-RR-D3a"/>
+                <outlet property="secondaryButton" destination="Rz1-Gj-ppa" id="Fdp-NG-YPb"/>
+                <outlet property="titleLabel" destination="pt8-hK-mWn" id="2yP-Fg-pfe"/>
+            </connections>
+            <point key="canvasLocation" x="-35.877862595419849" y="-357.74647887323948"/>
+        </view>
+    </objects>
+    <designables>
+        <designable name="Rz1-Gj-ppa">
+            <size key="intrinsicContentSize" width="61.666666666666664" height="34.333333333333336"/>
+        </designable>
+        <designable name="W4O-ax-ACC">
+            <size key="intrinsicContentSize" width="85" height="34.333333333333336"/>
+        </designable>
+        <designable name="cHn-B7-Hfb">
+            <size key="intrinsicContentSize" width="22" height="32"/>
+        </designable>
+        <designable name="pt8-hK-mWn">
+            <size key="intrinsicContentSize" width="76.666666666666671" height="27"/>
+        </designable>
+        <designable name="wrs-jZ-gPR">
+            <size key="intrinsicContentSize" width="348" height="18"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="ic_close" width="12" height="12"/>
+        <namedColor name="VFGPrimaryText">
+            <color red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

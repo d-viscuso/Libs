@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ly7-6l-xuX">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Animated Splash View Controller-->
+        <scene sceneID="Ebn-Hh-Edv">
+            <objects>
+                <viewController storyboardIdentifier="VFGAnimatedSplashViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="ly7-6l-xuX" customClass="VFGAnimatedSplashViewController" customModule="VFGMVA10Foundation" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="HBb-UL-BPb">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="K5J-CF-59A">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MIc-fU-3q1" userLabel="CircleMask">
+                                <rect key="frame" x="52.5" y="198.5" width="270" height="270"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="MIc-fU-3q1" secondAttribute="height" multiplier="1:1" id="5qL-DW-URs"/>
+                                    <constraint firstAttribute="width" constant="270" id="Fl2-4x-iGE"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Oq4-Qx-Hm9" userLabel="ContentView">
+                                <rect key="frame" x="69.5" y="215.5" width="236" height="236"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="splashVodafoneLogo" translatesAutoresizingMaskIntoConstraints="NO" id="FlI-97-NL5" userLabel="SplashLogo">
+                                        <rect key="frame" x="0.0" y="0.0" width="236" height="236"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="FlI-97-NL5" firstAttribute="leading" secondItem="Oq4-Qx-Hm9" secondAttribute="leading" id="298-gN-LfP"/>
+                                    <constraint firstAttribute="trailing" secondItem="FlI-97-NL5" secondAttribute="trailing" id="Ha5-m2-tIa"/>
+                                    <constraint firstItem="FlI-97-NL5" firstAttribute="top" secondItem="Oq4-Qx-Hm9" secondAttribute="top" id="WiY-cO-o3Y"/>
+                                    <constraint firstAttribute="bottom" secondItem="FlI-97-NL5" secondAttribute="bottom" id="klf-t3-n6K"/>
+                                    <constraint firstAttribute="width" secondItem="Oq4-Qx-Hm9" secondAttribute="height" multiplier="1:1" id="pgz-X1-c0Q"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="9Vn-R4-Ufm"/>
+                        <color key="backgroundColor" name="VFGRedDefaultBackground"/>
+                        <accessibility key="accessibilityConfiguration" label="Splash screen with vodafone logo">
+                            <bool key="isElement" value="YES"/>
+                        </accessibility>
+                        <constraints>
+                            <constraint firstItem="K5J-CF-59A" firstAttribute="leading" secondItem="9Vn-R4-Ufm" secondAttribute="leading" id="1aq-ue-t4z"/>
+                            <constraint firstItem="9Vn-R4-Ufm" firstAttribute="trailing" secondItem="K5J-CF-59A" secondAttribute="trailing" id="6Gh-pi-yoT"/>
+                            <constraint firstItem="K5J-CF-59A" firstAttribute="top" secondItem="HBb-UL-BPb" secondAttribute="top" id="8HD-Oi-B0I"/>
+                            <constraint firstItem="MIc-fU-3q1" firstAttribute="centerX" secondItem="HBb-UL-BPb" secondAttribute="centerX" id="AB4-Pt-zVh"/>
+                            <constraint firstItem="Oq4-Qx-Hm9" firstAttribute="centerX" secondItem="9Vn-R4-Ufm" secondAttribute="centerX" id="acv-bO-QKS"/>
+                            <constraint firstItem="Oq4-Qx-Hm9" firstAttribute="width" secondItem="HBb-UL-BPb" secondAttribute="width" multiplier="0.63:1" id="ruk-GN-mIX"/>
+                            <constraint firstItem="Oq4-Qx-Hm9" firstAttribute="centerY" secondItem="9Vn-R4-Ufm" secondAttribute="centerY" id="vQV-uv-IRQ"/>
+                            <constraint firstItem="MIc-fU-3q1" firstAttribute="centerY" secondItem="HBb-UL-BPb" secondAttribute="centerY" id="wt7-8d-T7V"/>
+                            <constraint firstAttribute="bottom" secondItem="K5J-CF-59A" secondAttribute="bottom" id="yWC-ea-RFr"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="backgroundView" destination="K5J-CF-59A" id="Sx4-Kr-T9g"/>
+                        <outlet property="circleMask" destination="MIc-fU-3q1" id="wKk-n0-rae"/>
+                        <outlet property="contentView" destination="Oq4-Qx-Hm9" id="EGt-tR-Pa2"/>
+                        <outlet property="splashLogo" destination="FlI-97-NL5" id="8A8-RF-ita"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2yK-gZ-GsH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="385" y="20"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="splashVodafoneLogo" width="237" height="237"/>
+        <namedColor name="VFGRedDefaultBackground">
+            <color red="0.90196078431372551" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

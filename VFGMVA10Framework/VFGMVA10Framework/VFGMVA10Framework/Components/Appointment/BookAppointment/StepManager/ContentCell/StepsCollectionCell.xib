@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="StepsCollectionCell" id="XAg-ED-S5R" customClass="StepsCollectionCell" customModule="VFGMVA10Framework" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="346" height="520"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Y98-ZJ-w1Z">
+                <rect key="frame" x="0.0" y="0.0" width="346" height="520"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" placeholderIntrinsicWidth="350" placeholderIntrinsicHeight="656" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Smk-MW-ij8">
+                        <rect key="frame" x="0.0" y="0.0" width="346" height="520"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" placeholderIntrinsicWidth="350" placeholderIntrinsicHeight="656" translatesAutoresizingMaskIntoConstraints="NO" id="pbo-3M-xL1">
+                                <rect key="frame" x="0.0" y="0.0" width="346" height="520"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="pbo-3M-xL1" secondAttribute="bottom" id="2oc-8b-VId"/>
+                            <constraint firstItem="pbo-3M-xL1" firstAttribute="leading" secondItem="Smk-MW-ij8" secondAttribute="leading" id="AL9-PF-0ix"/>
+                            <constraint firstAttribute="trailing" secondItem="pbo-3M-xL1" secondAttribute="trailing" id="vs2-QP-S07"/>
+                            <constraint firstItem="pbo-3M-xL1" firstAttribute="top" secondItem="Smk-MW-ij8" secondAttribute="top" id="zh6-M2-Iho"/>
+                        </constraints>
+                        <viewLayoutGuide key="contentLayoutGuide" id="mKP-p5-VgA"/>
+                        <viewLayoutGuide key="frameLayoutGuide" id="1id-eX-ZMx"/>
+                    </scrollView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="pbo-3M-xL1" firstAttribute="width" secondItem="Y98-ZJ-w1Z" secondAttribute="width" id="1LR-Zq-k9m"/>
+                    <constraint firstItem="Smk-MW-ij8" firstAttribute="top" secondItem="Y98-ZJ-w1Z" secondAttribute="top" id="A7D-vY-mqq"/>
+                    <constraint firstAttribute="trailing" secondItem="Smk-MW-ij8" secondAttribute="trailing" id="DU6-46-HSw"/>
+                    <constraint firstItem="pbo-3M-xL1" firstAttribute="height" secondItem="Y98-ZJ-w1Z" secondAttribute="height" id="OtN-sb-w7I"/>
+                    <constraint firstItem="Smk-MW-ij8" firstAttribute="leading" secondItem="Y98-ZJ-w1Z" secondAttribute="leading" id="TDo-al-V5U"/>
+                    <constraint firstAttribute="bottom" secondItem="Smk-MW-ij8" secondAttribute="bottom" id="Y5f-Fz-xaI"/>
+                </constraints>
+            </collectionViewCellContentView>
+            <size key="customSize" width="467" height="520"/>
+            <connections>
+                <outlet property="containerView" destination="pbo-3M-xL1" id="vLb-1N-mev"/>
+                <outlet property="heightDifferenceToContentView" destination="OtN-sb-w7I" id="EUE-eV-nPA"/>
+                <outlet property="scrollView" destination="Smk-MW-ij8" id="MSL-Du-Rwv"/>
+            </connections>
+            <point key="canvasLocation" x="-413.04347826086962" y="328.125"/>
+        </collectionViewCell>
+    </objects>
+</document>

@@ -1,0 +1,555 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AddPlanShimmerView" customModule="VFGMVA10Framework" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="iN0-l3-epB" id="WT0-ea-JuS"/>
+                <outletCollection property="shimmeredViews" destination="faS-7z-gdx" collectionClass="NSMutableArray" id="cre-Rr-tXM"/>
+                <outletCollection property="shimmeredViews" destination="bBp-Et-oXS" collectionClass="NSMutableArray" id="9KJ-Ki-ofY"/>
+                <outletCollection property="shimmeredViews" destination="dKL-nf-XBx" collectionClass="NSMutableArray" id="rEk-oq-53N"/>
+                <outletCollection property="shimmeredViews" destination="v7e-K3-IXj" collectionClass="NSMutableArray" id="2ig-j4-zvd"/>
+                <outletCollection property="shimmeredViews" destination="f7n-YM-Idp" collectionClass="NSMutableArray" id="Gn2-hF-RCb"/>
+                <outletCollection property="shimmeredViews" destination="3GC-Tg-BdI" collectionClass="NSMutableArray" id="msY-Gw-Qak"/>
+                <outletCollection property="shimmeredViews" destination="MJv-bB-Dyb" collectionClass="NSMutableArray" id="MhF-O8-OwO"/>
+                <outletCollection property="shimmeredViews" destination="5tA-C5-BAv" collectionClass="NSMutableArray" id="9Bo-ym-zvG"/>
+                <outletCollection property="shimmeredViews" destination="zOo-Hg-cVY" collectionClass="NSMutableArray" id="5pb-Uu-3tQ"/>
+                <outletCollection property="shimmeredViews" destination="J22-mz-5nO" collectionClass="NSMutableArray" id="a38-Yv-Jf4"/>
+                <outletCollection property="shimmeredViews" destination="PsB-up-2oT" collectionClass="NSMutableArray" id="bxY-HQ-zNo"/>
+                <outletCollection property="shimmeredViews" destination="zBT-72-uzC" collectionClass="NSMutableArray" id="70l-Ru-aWY"/>
+                <outletCollection property="shimmeredViews" destination="PsB-up-2oT" collectionClass="NSMutableArray" id="Evo-jA-cWI"/>
+                <outletCollection property="shimmeredViews" destination="rJ1-75-8mV" collectionClass="NSMutableArray" id="gnD-rR-Z0I"/>
+                <outletCollection property="shimmeredViews" destination="HB2-w4-45n" collectionClass="NSMutableArray" id="jhI-5q-OFP"/>
+                <outletCollection property="shimmeredViews" destination="d2V-rI-RAY" collectionClass="NSMutableArray" id="AF5-d9-d4Z"/>
+                <outletCollection property="shimmeredViews" destination="ND7-eX-H2v" collectionClass="NSMutableArray" id="BWF-9k-DJ9"/>
+                <outletCollection property="shimmeredViews" destination="CEl-sT-uQL" collectionClass="NSMutableArray" id="QWa-mL-HAa"/>
+                <outletCollection property="shimmeredViews" destination="zrp-cu-Pph" collectionClass="NSMutableArray" id="Xnu-bJ-q0w"/>
+                <outletCollection property="shimmeredViews" destination="3lQ-yS-7qj" collectionClass="NSMutableArray" id="MHA-2u-lxK"/>
+                <outletCollection property="shimmeredViews" destination="VVz-gJ-TgM" collectionClass="NSMutableArray" id="Dnr-Ub-3AU"/>
+                <outletCollection property="shimmeredViews" destination="TSo-87-im8" collectionClass="NSMutableArray" id="Cdk-AZ-dcx"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="374" height="700"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="faS-7z-gdx" customClass="VFGShimmerView" customModule="VFGMVA10Foundation">
+                    <rect key="frame" x="18.5" y="15" width="170" height="12"/>
+                    <color key="backgroundColor" name="VFGShimmerViewCenter"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="170" id="Kie-Xe-SNN"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zES-NO-mqP" customClass="VFGShimmerView" customModule="VFGMVA10Foundation">
+                    <rect key="frame" x="16" y="51.5" width="161" height="49"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="blB-Ts-VHg">
+                            <rect key="frame" x="1" y="1" width="159" height="47"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bBp-Et-oXS" customClass="VFGShimmerView" customModule="VFGMVA10Foundation">
+                                    <rect key="frame" x="46" y="17.5" width="67" height="12"/>
+                                    <color key="backgroundColor" name="VFGShimmerViewCenter"/>
+                                </view>
+                            </subviews>
+                            <color key="backgroundColor" name="VFGWhiteBackground"/>
+                            <constraints>
+                                <constraint firstItem="bBp-Et-oXS" firstAttribute="centerX" secondItem="blB-Ts-VHg" secondAttribute="centerX" id="WbT-j3-WFt"/>
+                                <constraint firstItem="bBp-Et-oXS" firstAttribute="centerY" secondItem="blB-Ts-VHg" secondAttribute="centerY" id="frc-Tt-zG3"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="6"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" name="VFGShimmerViewCenter"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="blB-Ts-VHg" secondAttribute="trailing" constant="1" id="oK6-r0-JPm"/>
+                        <constraint firstItem="blB-Ts-VHg" firstAttribute="leading" secondItem="zES-NO-mqP" secondAttribute="leading" constant="1" id="opR-sz-nO8"/>
+                        <constraint firstItem="blB-Ts-VHg" firstAttribute="top" secondItem="zES-NO-mqP" secondAttribute="top" constant="1" id="sOu-PR-hpG"/>
+                        <constraint firstAttribute="bottom" secondItem="blB-Ts-VHg" secondAttribute="bottom" constant="1" id="t0D-cp-MqC"/>
+                        <constraint firstItem="bBp-Et-oXS" firstAttribute="width" secondItem="zES-NO-mqP" secondAttribute="width" multiplier="0.416149" id="upj-cE-eQR"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="6"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hIB-lL-ZY1" customClass="VFGShimmerView" customModule="VFGMVA10Foundation">
+                    <rect key="frame" x="194" y="51.5" width="164.5" height="49"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hjz-nP-ian">
+                            <rect key="frame" x="1" y="1" width="162.5" height="47"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dKL-nf-XBx" customClass="VFGShimmerView" customModule="VFGMVA10Foundation">
+                                    <rect key="frame" x="47" y="17.5" width="68.5" height="12"/>
+                                    <color key="backgroundColor" name="VFGShimmerViewCenter"/>
+                                </view>
+                            </subviews>
+                            <color key="backgroundColor" name="VFGWhiteBackground"/>
+                            <constraints>
+                                <constraint firstItem="dKL-nf-XBx" firstAttribute="width" secondItem="hjz-nP-ian" secondAttribute="width" multiplier="0.418462" id="Dw9-uc-JIy"/>
+                                <constraint firstItem="dKL-nf-XBx" firstAttribute="centerX" secondItem="hjz-nP-ian" secondAttribute="centerX" id="fwB-gL-1DB"/>
+                                <constraint firstItem="dKL-nf-XBx" firstAttribute="centerY" secondItem="hjz-nP-ian" secondAttribute="centerY" id="yJn-Yy-QFf"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="6"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" name="VFGShimmerViewCenter"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="hjz-nP-ian" secondAttribute="bottom" constant="1" id="Djv-Ha-tku"/>
+                        <constraint firstItem="hjz-nP-ian" firstAttribute="top" secondItem="hIB-lL-ZY1" secondAttribute="top" constant="1" id="P7A-Vf-EIz"/>
+                        <constraint firstItem="hjz-nP-ian" firstAttribute="leading" secondItem="hIB-lL-ZY1" secondAttribute="leading" constant="1" id="ROx-Uu-Ppv"/>
+                        <constraint firstAttribute="trailing" secondItem="hjz-nP-ian" secondAttribute="trailing" constant="1" id="bCy-li-Ic2"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="6"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="v7e-K3-IXj" customClass="VFGShimmerView" customModule="VFGMVA10Foundation">
+                    <rect key="frame" x="18.5" y="148.5" width="170" height="11.5"/>
+                    <color key="backgroundColor" name="VFGShimmerViewCenter"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="170" id="gpp-vo-vcA"/>
+                    </constraints>
+                </view>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="ure-SW-Dj2">
+                    <rect key="frame" x="16.5" y="184.5" width="341" height="63.5"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XaJ-4R-MVv" customClass="VFGShimmerView" customModule="VFGMVA10Foundation">
+                            <rect key="frame" x="0.0" y="0.0" width="108.5" height="63.5"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gnP-mj-aoX">
+                                    <rect key="frame" x="1" y="1" width="106.5" height="61.5"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="center" spacing="9" translatesAutoresizingMaskIntoConstraints="NO" id="lzj-gK-obQ">
+                                            <rect key="frame" x="19.5" y="15.5" width="67" height="31"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ND7-eX-H2v" customClass="VFGShimmerView" customModule="VFGMVA10Foundation">
+                                                    <rect key="frame" x="0.0" y="0.0" width="67" height="11"/>
+                                                    <color key="backgroundColor" name="VFGShimmerViewCenter"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="11" id="CXe-j8-9n1"/>
+                                                    </constraints>
+                                                </view>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CEl-sT-uQL" customClass="VFGShimmerView" customModule="VFGMVA10Foundation">
+                                                    <rect key="frame" x="7" y="20" width="53" height="11"/>
+                                                    <color key="backgroundColor" name="VFGShimmerViewCenter"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="11" id="eXv-0U-dto"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                        </stackView>
+                                    </subviews>
+                                    <color key="backgroundColor" name="VFGWhiteBackground"/>
+                                    <constraints>
+                                        <constraint firstItem="CEl-sT-uQL" firstAttribute="width" secondItem="gnP-mj-aoX" secondAttribute="width" multiplier="0.5" id="7BW-x3-Pmc"/>
+                                        <constraint firstItem="ND7-eX-H2v" firstAttribute="width" secondItem="gnP-mj-aoX" secondAttribute="width" multiplier="0.63" id="X5g-5g-jDM"/>
+                                        <constraint firstItem="lzj-gK-obQ" firstAttribute="centerY" secondItem="gnP-mj-aoX" secondAttribute="centerY" id="axa-cc-drV"/>
+                                        <constraint firstItem="lzj-gK-obQ" firstAttribute="centerX" secondItem="gnP-mj-aoX" secondAttribute="centerX" id="chV-52-x55"/>
+                                    </constraints>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                            <real key="value" value="6"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </view>
+                            </subviews>
+                            <color key="backgroundColor" name="VFGShimmerViewCenter"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="gnP-mj-aoX" secondAttribute="trailing" constant="1" id="8Iw-wa-KJ8"/>
+                                <constraint firstAttribute="bottom" secondItem="gnP-mj-aoX" secondAttribute="bottom" constant="1" id="Cqg-fC-wJn"/>
+                                <constraint firstItem="gnP-mj-aoX" firstAttribute="top" secondItem="XaJ-4R-MVv" secondAttribute="top" constant="1" id="FFS-bR-NGD"/>
+                                <constraint firstItem="gnP-mj-aoX" firstAttribute="leading" secondItem="XaJ-4R-MVv" secondAttribute="leading" constant="1" id="iT6-az-qc9"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="6"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yeR-vF-C38" customClass="VFGShimmerView" customModule="VFGMVA10Foundation">
+                            <rect key="frame" x="116.5" y="0.0" width="108" height="63.5"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="G5G-OA-LNJ">
+                                    <rect key="frame" x="1" y="1" width="106" height="61.5"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="center" spacing="9" translatesAutoresizingMaskIntoConstraints="NO" id="mBt-K9-6o3">
+                                            <rect key="frame" x="19.5" y="15.5" width="67" height="31"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zrp-cu-Pph" customClass="VFGShimmerView" customModule="VFGMVA10Foundation">
+                                                    <rect key="frame" x="0.0" y="0.0" width="67" height="11"/>
+                                                    <color key="backgroundColor" name="VFGShimmerViewCenter"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="11" id="1X9-ND-wsL"/>
+                                                    </constraints>
+                                                </view>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3lQ-yS-7qj" customClass="VFGShimmerView" customModule="VFGMVA10Foundation">
+                                                    <rect key="frame" x="7" y="20" width="53" height="11"/>
+                                                    <color key="backgroundColor" name="VFGShimmerViewCenter"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="11" id="8Nu-b0-tfU"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                        </stackView>
+                                    </subviews>
+                                    <color key="backgroundColor" name="VFGWhiteBackground"/>
+                                    <constraints>
+                                        <constraint firstItem="3lQ-yS-7qj" firstAttribute="width" secondItem="G5G-OA-LNJ" secondAttribute="width" multiplier="0.5" id="7Hb-bN-7WA"/>
+                                        <constraint firstItem="mBt-K9-6o3" firstAttribute="centerX" secondItem="G5G-OA-LNJ" secondAttribute="centerX" id="GFP-ka-6Ju"/>
+                                        <constraint firstItem="zrp-cu-Pph" firstAttribute="width" secondItem="G5G-OA-LNJ" secondAttribute="width" multiplier="0.632075" id="Ukk-cf-p8A"/>
+                                        <constraint firstItem="mBt-K9-6o3" firstAttribute="centerY" secondItem="G5G-OA-LNJ" secondAttribute="centerY" id="lmx-MW-6Td"/>
+                                    </constraints>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                            <real key="value" value="6"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </view>
+                            </subviews>
+                            <color key="backgroundColor" name="VFGShimmerViewCenter"/>
+                            <constraints>
+                                <constraint firstItem="G5G-OA-LNJ" firstAttribute="leading" secondItem="yeR-vF-C38" secondAttribute="leading" constant="1" id="3Vb-6R-h2G"/>
+                                <constraint firstAttribute="bottom" secondItem="G5G-OA-LNJ" secondAttribute="bottom" constant="1" id="3tP-GF-cfW"/>
+                                <constraint firstItem="G5G-OA-LNJ" firstAttribute="top" secondItem="yeR-vF-C38" secondAttribute="top" constant="1" id="JY9-6b-GF7"/>
+                                <constraint firstAttribute="trailing" secondItem="G5G-OA-LNJ" secondAttribute="trailing" constant="1" id="tdS-yh-NHW"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="6"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EN0-ru-rRT" customClass="VFGShimmerView" customModule="VFGMVA10Foundation">
+                            <rect key="frame" x="232.5" y="0.0" width="108.5" height="63.5"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MQG-qL-f0c">
+                                    <rect key="frame" x="1" y="1" width="106.5" height="61.5"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="center" spacing="9" translatesAutoresizingMaskIntoConstraints="NO" id="kRa-qV-hnt">
+                                            <rect key="frame" x="20" y="15.5" width="67" height="31"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VVz-gJ-TgM" customClass="VFGShimmerView" customModule="VFGMVA10Foundation">
+                                                    <rect key="frame" x="0.0" y="0.0" width="67" height="11"/>
+                                                    <color key="backgroundColor" name="VFGShimmerViewCenter"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="11" id="npS-3T-iXq"/>
+                                                    </constraints>
+                                                </view>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TSo-87-im8" customClass="VFGShimmerView" customModule="VFGMVA10Foundation">
+                                                    <rect key="frame" x="7" y="20" width="53" height="11"/>
+                                                    <color key="backgroundColor" name="VFGShimmerViewCenter"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="11" id="gia-gl-2at"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </stackView>
+                                    </subviews>
+                                    <color key="backgroundColor" name="VFGWhiteBackground"/>
+                                    <constraints>
+                                        <constraint firstItem="VVz-gJ-TgM" firstAttribute="width" secondItem="MQG-qL-f0c" secondAttribute="width" multiplier="0.629108" id="CHR-dI-Zjq"/>
+                                        <constraint firstItem="kRa-qV-hnt" firstAttribute="centerX" secondItem="MQG-qL-f0c" secondAttribute="centerX" id="cEJ-R2-iLT"/>
+                                        <constraint firstItem="TSo-87-im8" firstAttribute="width" secondItem="MQG-qL-f0c" secondAttribute="width" multiplier="0.497653" id="dU2-bX-tKy"/>
+                                        <constraint firstItem="kRa-qV-hnt" firstAttribute="centerY" secondItem="MQG-qL-f0c" secondAttribute="centerY" id="x7T-Zq-YSr"/>
+                                    </constraints>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                            <real key="value" value="6"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </view>
+                            </subviews>
+                            <color key="backgroundColor" name="VFGShimmerViewCenter"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="MQG-qL-f0c" secondAttribute="trailing" constant="1" id="T8v-eR-ci7"/>
+                                <constraint firstItem="MQG-qL-f0c" firstAttribute="top" secondItem="EN0-ru-rRT" secondAttribute="top" constant="1" id="rFq-Ts-N6c"/>
+                                <constraint firstItem="MQG-qL-f0c" firstAttribute="leading" secondItem="EN0-ru-rRT" secondAttribute="leading" constant="1" id="sAo-LG-y07"/>
+                                <constraint firstAttribute="bottom" secondItem="MQG-qL-f0c" secondAttribute="bottom" constant="1" id="vEY-wZ-Oot"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="6"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                    </subviews>
+                </stackView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="f7n-YM-Idp" customClass="VFGShimmerView" customModule="VFGMVA10Foundation">
+                    <rect key="frame" x="18.5" y="296" width="170" height="11.5"/>
+                    <color key="backgroundColor" name="VFGShimmerViewCenter"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="170" id="Ze6-mq-sQu"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3GC-Tg-BdI" customClass="VFGShimmerView" customModule="VFGMVA10Foundation">
+                    <rect key="frame" x="303.5" y="296" width="54" height="11.5"/>
+                    <color key="backgroundColor" name="VFGShimmerViewCenter"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="54" id="hR0-Oh-crO"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="u4e-V8-iUU" customClass="VFGShimmerView" customModule="VFGMVA10Foundation">
+                    <rect key="frame" x="16.5" y="426.5" width="341" height="1"/>
+                    <color key="backgroundColor" name="VFGShimmerViewCenter"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="mqA-Uo-u9R"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MJv-bB-Dyb" customClass="VFGShimmerView" customModule="VFGMVA10Foundation">
+                    <rect key="frame" x="16.5" y="457.5" width="341" height="12"/>
+                    <color key="backgroundColor" name="VFGShimmerViewCenter"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RaQ-yx-N50" customClass="VFGShimmerView" customModule="VFGMVA10Foundation">
+                    <rect key="frame" x="16.5" y="333" width="341" height="68.5"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZBb-7g-HUI">
+                            <rect key="frame" x="2" y="2" width="337" height="64.5"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5tA-C5-BAv" customClass="VFGShimmerView" customModule="VFGMVA10Foundation">
+                                    <rect key="frame" x="16" y="16" width="51" height="32"/>
+                                    <color key="backgroundColor" name="VFGShimmerViewCenter"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" secondItem="5tA-C5-BAv" secondAttribute="height" multiplier="8:5" id="pEp-mL-KrU"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zOo-Hg-cVY" customClass="VFGShimmerView" customModule="VFGMVA10Foundation">
+                                    <rect key="frame" x="84" y="16" width="166.5" height="12"/>
+                                    <color key="backgroundColor" name="VFGShimmerViewCenter"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="12" id="y2h-M3-n1A"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="J22-mz-5nO" customClass="VFGShimmerView" customModule="VFGMVA10Foundation">
+                                    <rect key="frame" x="84" y="36" width="58" height="12"/>
+                                    <color key="backgroundColor" name="VFGShimmerViewCenter"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="12" id="NU0-1f-p3Y"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PsB-up-2oT" customClass="VFGShimmerView" customModule="VFGMVA10Foundation">
+                                    <rect key="frame" x="267.5" y="36" width="46.5" height="12"/>
+                                    <color key="backgroundColor" name="VFGShimmerViewCenter"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="12" id="cbx-NK-Whm"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                            <color key="backgroundColor" name="VFGWhiteBackground"/>
+                            <constraints>
+                                <constraint firstItem="5tA-C5-BAv" firstAttribute="bottom" secondItem="J22-mz-5nO" secondAttribute="bottom" id="BAp-mr-YJa"/>
+                                <constraint firstItem="zOo-Hg-cVY" firstAttribute="leading" secondItem="5tA-C5-BAv" secondAttribute="trailing" constant="17" id="NJz-6P-DPX"/>
+                                <constraint firstItem="J22-mz-5nO" firstAttribute="leading" secondItem="zOo-Hg-cVY" secondAttribute="leading" id="Ozx-6H-hoc"/>
+                                <constraint firstAttribute="trailing" secondItem="PsB-up-2oT" secondAttribute="trailing" constant="23" id="iBa-Fj-png"/>
+                                <constraint firstItem="5tA-C5-BAv" firstAttribute="leading" secondItem="ZBb-7g-HUI" secondAttribute="leading" constant="16" id="iSp-bu-rXo"/>
+                                <constraint firstItem="5tA-C5-BAv" firstAttribute="centerY" secondItem="ZBb-7g-HUI" secondAttribute="centerY" id="qWe-rI-M0t"/>
+                                <constraint firstItem="zOo-Hg-cVY" firstAttribute="top" secondItem="5tA-C5-BAv" secondAttribute="top" id="qjD-M5-b7J"/>
+                                <constraint firstItem="PsB-up-2oT" firstAttribute="centerY" secondItem="J22-mz-5nO" secondAttribute="centerY" id="teu-Rp-8Fi"/>
+                                <constraint firstItem="J22-mz-5nO" firstAttribute="top" secondItem="zOo-Hg-cVY" secondAttribute="bottom" constant="8" id="ujs-nf-CKf"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="6"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" name="VFGShimmerViewCenter"/>
+                    <constraints>
+                        <constraint firstItem="J22-mz-5nO" firstAttribute="width" secondItem="RaQ-yx-N50" secondAttribute="width" multiplier="0.170157" id="FUu-eB-aD6"/>
+                        <constraint firstAttribute="bottom" secondItem="ZBb-7g-HUI" secondAttribute="bottom" constant="2" id="LdA-Wj-P9k"/>
+                        <constraint firstItem="PsB-up-2oT" firstAttribute="width" secondItem="RaQ-yx-N50" secondAttribute="width" multiplier="0.136126" id="Z7n-hb-iMj"/>
+                        <constraint firstItem="ZBb-7g-HUI" firstAttribute="leading" secondItem="RaQ-yx-N50" secondAttribute="leading" constant="2" id="aCg-k4-GPD"/>
+                        <constraint firstAttribute="trailing" secondItem="ZBb-7g-HUI" secondAttribute="trailing" constant="2" id="cmk-85-8vL"/>
+                        <constraint firstItem="ZBb-7g-HUI" firstAttribute="top" secondItem="RaQ-yx-N50" secondAttribute="top" constant="2" id="oXL-27-yMJ"/>
+                        <constraint firstItem="zOo-Hg-cVY" firstAttribute="width" secondItem="RaQ-yx-N50" secondAttribute="width" multiplier="0.48822" id="w4w-mB-7fF"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="6"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zBT-72-uzC" customClass="VFGShimmerView" customModule="VFGMVA10Foundation">
+                    <rect key="frame" x="16.5" y="477.5" width="341" height="12"/>
+                    <color key="backgroundColor" name="VFGShimmerViewCenter"/>
+                </view>
+                <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="d2V-rI-RAY" customClass="VFGShimmerView" customModule="VFGMVA10Foundation">
+                    <rect key="frame" x="16.5" y="497.5" width="280" height="11"/>
+                    <color key="backgroundColor" name="VFGShimmerViewCenter"/>
+                </view>
+                <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HB2-w4-45n" customClass="VFGShimmerView" customModule="VFGMVA10Foundation">
+                    <rect key="frame" x="16.5" y="534.5" width="341" height="28"/>
+                    <color key="backgroundColor" name="VFGShimmerViewCenter"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="28" id="WKC-N0-zP2"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rJ1-75-8mV" customClass="VFGShimmerView" customModule="VFGMVA10Foundation">
+                    <rect key="frame" x="16.5" y="592" width="341" height="28"/>
+                    <color key="backgroundColor" name="VFGShimmerViewCenter"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="28" id="iuy-em-kgH"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4ht-S5-vCe" userLabel="constrainView2">
+                    <rect key="frame" x="137" y="100.5" width="100" height="48"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="100" id="FIF-xG-WXD"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1PK-6w-2on" userLabel="constrainView1">
+                    <rect key="frame" x="102" y="27" width="170" height="24.5"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="170" id="vbe-gG-eg3"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uUJ-DF-mhB" userLabel="constrainView3">
+                    <rect key="frame" x="102" y="160" width="170" height="24.5"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="170" id="AZK-qL-H4n"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iDd-nB-QZl" userLabel="constrainView4">
+                    <rect key="frame" x="137" y="248" width="100" height="48"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="100" id="JMl-S1-pbr"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yas-Du-vae" userLabel="constrainView5">
+                    <rect key="frame" x="102" y="307.5" width="170" height="25.5"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="170" id="IRP-Bm-VOn"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iZ0-cT-wbG" userLabel="constrainView7">
+                    <rect key="frame" x="102" y="562.5" width="170" height="29.5"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="170" id="j1g-Ye-aT1"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XUq-IZ-R7W" userLabel="constrainView6">
+                    <rect key="frame" x="102" y="508.5" width="170" height="26"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="170" id="Szv-cs-OAS"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" name="VFGWhiteBackground"/>
+            <constraints>
+                <constraint firstItem="uUJ-DF-mhB" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" multiplier="0.035" id="179-eV-ppo"/>
+                <constraint firstItem="zBT-72-uzC" firstAttribute="top" secondItem="MJv-bB-Dyb" secondAttribute="bottom" constant="8" id="1fn-45-3Ef"/>
+                <constraint firstItem="dKL-nf-XBx" firstAttribute="height" secondItem="faS-7z-gdx" secondAttribute="height" id="259-P1-4Wj"/>
+                <constraint firstItem="iDd-nB-QZl" firstAttribute="top" secondItem="ure-SW-Dj2" secondAttribute="bottom" id="3df-uw-Vfi"/>
+                <constraint firstItem="iDd-nB-QZl" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" multiplier="0.0683995" id="3xj-Qg-d8N"/>
+                <constraint firstItem="uUJ-DF-mhB" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="41J-5A-Cyc"/>
+                <constraint firstItem="RaQ-yx-N50" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16.5" id="60B-Yg-tAp"/>
+                <constraint firstItem="zES-NO-mqP" firstAttribute="top" secondItem="1PK-6w-2on" secondAttribute="bottom" id="62q-b4-159"/>
+                <constraint firstItem="XUq-IZ-R7W" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="6vA-R9-nat"/>
+                <constraint firstItem="yas-Du-vae" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" multiplier="0.036" id="8HM-nd-fYc"/>
+                <constraint firstItem="faS-7z-gdx" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" multiplier="0.017" id="9z1-NY-Gye"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="rJ1-75-8mV" secondAttribute="bottom" constant="30" id="AOE-Xb-tSV"/>
+                <constraint firstItem="hIB-lL-ZY1" firstAttribute="bottom" secondItem="zES-NO-mqP" secondAttribute="bottom" id="Aok-Mh-56j"/>
+                <constraint firstItem="rJ1-75-8mV" firstAttribute="top" secondItem="iZ0-cT-wbG" secondAttribute="bottom" id="GTw-54-Q2O"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="MJv-bB-Dyb" secondAttribute="trailing" constant="16.5" id="GuU-rT-0JP"/>
+                <constraint firstItem="HB2-w4-45n" firstAttribute="leading" secondItem="zBT-72-uzC" secondAttribute="leading" id="Gxj-kd-FRr"/>
+                <constraint firstItem="XUq-IZ-R7W" firstAttribute="top" secondItem="d2V-rI-RAY" secondAttribute="bottom" id="HDS-m9-4ao"/>
+                <constraint firstItem="yas-Du-vae" firstAttribute="top" secondItem="f7n-YM-Idp" secondAttribute="bottom" id="HIt-6T-12v"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="u4e-V8-iUU" secondAttribute="trailing" constant="16.5" id="I2g-J3-nVy"/>
+                <constraint firstItem="zBT-72-uzC" firstAttribute="leading" secondItem="MJv-bB-Dyb" secondAttribute="leading" id="ImO-uS-DQV"/>
+                <constraint firstItem="iZ0-cT-wbG" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="JUu-rL-NUA"/>
+                <constraint firstItem="zBT-72-uzC" firstAttribute="height" secondItem="MJv-bB-Dyb" secondAttribute="height" id="LXW-R3-eHv"/>
+                <constraint firstItem="ure-SW-Dj2" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16.399999999999999" id="Lfp-to-n5L"/>
+                <constraint firstItem="ure-SW-Dj2" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" multiplier="0.0902873" id="MV9-fh-CWQ"/>
+                <constraint firstItem="zES-NO-mqP" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" multiplier="0.07" id="NIe-YZ-dP9"/>
+                <constraint firstItem="rJ1-75-8mV" firstAttribute="leading" secondItem="HB2-w4-45n" secondAttribute="leading" id="NvR-NU-On2"/>
+                <constraint firstItem="v7e-K3-IXj" firstAttribute="top" secondItem="4ht-S5-vCe" secondAttribute="bottom" id="P9a-0X-M2M"/>
+                <constraint firstItem="d2V-rI-RAY" firstAttribute="height" secondItem="zBT-72-uzC" secondAttribute="height" multiplier="0.96" id="PBv-47-kFI"/>
+                <constraint firstItem="zBT-72-uzC" firstAttribute="trailing" secondItem="MJv-bB-Dyb" secondAttribute="trailing" id="QFj-RH-CPI"/>
+                <constraint firstItem="u4e-V8-iUU" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16.5" id="RhG-gk-JI3"/>
+                <constraint firstItem="1PK-6w-2on" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" multiplier="0.035" id="Rnb-9i-sb5"/>
+                <constraint firstItem="iDd-nB-QZl" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="SJb-5e-SMN"/>
+                <constraint firstItem="XUq-IZ-R7W" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" multiplier="0.0369357" id="TWf-hE-NR0"/>
+                <constraint firstItem="hIB-lL-ZY1" firstAttribute="height" secondItem="zES-NO-mqP" secondAttribute="height" id="U0B-bP-GFG"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="ure-SW-Dj2" secondAttribute="trailing" constant="16.399999999999999" id="UU1-nA-ebU"/>
+                <constraint firstItem="3GC-Tg-BdI" firstAttribute="centerY" secondItem="f7n-YM-Idp" secondAttribute="centerY" id="UoK-EB-KUB"/>
+                <constraint firstItem="f7n-YM-Idp" firstAttribute="trailing" secondItem="v7e-K3-IXj" secondAttribute="trailing" id="VRo-1l-AcF"/>
+                <constraint firstItem="RaQ-yx-N50" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" multiplier="0.098" id="Vbd-fG-ssg"/>
+                <constraint firstItem="uUJ-DF-mhB" firstAttribute="top" secondItem="v7e-K3-IXj" secondAttribute="bottom" id="WBE-Yn-6W7"/>
+                <constraint firstItem="f7n-YM-Idp" firstAttribute="height" secondItem="v7e-K3-IXj" secondAttribute="height" id="WLh-N6-WiT"/>
+                <constraint firstItem="faS-7z-gdx" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="15" id="WNY-H0-hZK"/>
+                <constraint firstItem="v7e-K3-IXj" firstAttribute="leading" secondItem="faS-7z-gdx" secondAttribute="leading" id="WjD-Py-OxP"/>
+                <constraint firstItem="3GC-Tg-BdI" firstAttribute="height" secondItem="f7n-YM-Idp" secondAttribute="height" id="YHK-I3-mr3"/>
+                <constraint firstItem="HB2-w4-45n" firstAttribute="top" secondItem="XUq-IZ-R7W" secondAttribute="bottom" id="YVj-IC-fgA"/>
+                <constraint firstItem="MJv-bB-Dyb" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16.5" id="YgN-u4-ikY"/>
+                <constraint firstItem="d2V-rI-RAY" firstAttribute="leading" secondItem="zBT-72-uzC" secondAttribute="leading" id="ZIw-Wb-gt1"/>
+                <constraint firstItem="faS-7z-gdx" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="18.600000000000001" id="auT-Me-ytg"/>
+                <constraint firstItem="MJv-bB-Dyb" firstAttribute="top" secondItem="u4e-V8-iUU" secondAttribute="bottom" constant="30" id="azW-rC-ODF"/>
+                <constraint firstItem="HB2-w4-45n" firstAttribute="trailing" secondItem="zBT-72-uzC" secondAttribute="trailing" id="bcP-cb-raV"/>
+                <constraint firstItem="f7n-YM-Idp" firstAttribute="top" secondItem="iDd-nB-QZl" secondAttribute="bottom" id="cU4-D0-A8E"/>
+                <constraint firstItem="hIB-lL-ZY1" firstAttribute="top" secondItem="zES-NO-mqP" secondAttribute="top" id="d3Y-Gq-7VG"/>
+                <constraint firstItem="ure-SW-Dj2" firstAttribute="top" secondItem="uUJ-DF-mhB" secondAttribute="bottom" id="dY8-PJ-PDt"/>
+                <constraint firstItem="u4e-V8-iUU" firstAttribute="top" secondItem="RaQ-yx-N50" secondAttribute="bottom" constant="25" id="eOl-gZ-36g"/>
+                <constraint firstItem="hIB-lL-ZY1" firstAttribute="leading" secondItem="zES-NO-mqP" secondAttribute="trailing" constant="17" id="eeB-vk-GSS"/>
+                <constraint firstItem="4ht-S5-vCe" firstAttribute="top" secondItem="zES-NO-mqP" secondAttribute="bottom" id="gZ2-7N-fzd"/>
+                <constraint firstItem="zES-NO-mqP" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="goC-b6-XWp"/>
+                <constraint firstItem="f7n-YM-Idp" firstAttribute="leading" secondItem="v7e-K3-IXj" secondAttribute="leading" id="i7i-1f-Slz"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="3GC-Tg-BdI" secondAttribute="trailing" constant="16.399999999999999" id="kOe-y0-Fic"/>
+                <constraint firstItem="1PK-6w-2on" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="knt-gr-xHU"/>
+                <constraint firstItem="rJ1-75-8mV" firstAttribute="trailing" secondItem="HB2-w4-45n" secondAttribute="trailing" id="lov-pv-8e2"/>
+                <constraint firstItem="bBp-Et-oXS" firstAttribute="height" secondItem="faS-7z-gdx" secondAttribute="height" id="lyI-PF-PiK"/>
+                <constraint firstItem="zES-NO-mqP" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="0.43" id="mcK-0X-kQ8"/>
+                <constraint firstItem="iZ0-cT-wbG" firstAttribute="top" secondItem="HB2-w4-45n" secondAttribute="bottom" id="oWw-QD-y0Y"/>
+                <constraint firstAttribute="trailing" secondItem="RaQ-yx-N50" secondAttribute="trailing" constant="16.5" id="pE5-MD-3Vj"/>
+                <constraint firstItem="v7e-K3-IXj" firstAttribute="height" secondItem="faS-7z-gdx" secondAttribute="height" id="pJd-FD-eL8"/>
+                <constraint firstItem="d2V-rI-RAY" firstAttribute="width" secondItem="zBT-72-uzC" secondAttribute="width" multiplier="0.821114" id="qlG-JX-uAP"/>
+                <constraint firstItem="4ht-S5-vCe" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" multiplier="0.0683995" id="rDP-za-xpI"/>
+                <constraint firstItem="hIB-lL-ZY1" firstAttribute="width" secondItem="zES-NO-mqP" secondAttribute="width" multiplier="1.02532" id="sku-i5-Ewq"/>
+                <constraint firstItem="1PK-6w-2on" firstAttribute="top" secondItem="faS-7z-gdx" secondAttribute="bottom" id="spT-8D-aqK"/>
+                <constraint firstItem="MJv-bB-Dyb" firstAttribute="height" secondItem="f7n-YM-Idp" secondAttribute="height" id="u7e-Oe-qMM"/>
+                <constraint firstItem="yas-Du-vae" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="uaK-fq-wEF"/>
+                <constraint firstItem="RaQ-yx-N50" firstAttribute="top" secondItem="yas-Du-vae" secondAttribute="bottom" id="w4A-wN-xka"/>
+                <constraint firstItem="4ht-S5-vCe" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="wbq-Ku-pZI"/>
+                <constraint firstItem="v7e-K3-IXj" firstAttribute="trailing" secondItem="faS-7z-gdx" secondAttribute="trailing" id="wih-KN-CDe"/>
+                <constraint firstItem="iZ0-cT-wbG" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" multiplier="0.0424077" id="xjg-pE-27L"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-1.4492753623188408" y="-73.995535714285708"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="VFGShimmerViewCenter">
+            <color red="0.875" green="0.875" blue="0.875" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="VFGWhiteBackground">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="VFGSubTrayExpandedItemView" customModule="VFGMVA10Framework" customModuleProvider="target">
+            <connections>
+                <outlet property="descriptionLabel" destination="1aN-Cj-yzD" id="K4P-mg-9uo"/>
+                <outlet property="titleLabel" destination="viT-KS-RbM" id="Utm-sj-0Fb"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="318" height="143"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="teq-kB-TUr" userLabel="Container View">
+                    <rect key="frame" x="0.0" y="0.0" width="318" height="143"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="viT-KS-RbM" userLabel="Title Label" customClass="VFGLabel" customModule="VFGMVA10Framework" customModuleProvider="target">
+                            <rect key="frame" x="138.5" y="12.5" width="41.5" height="99"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" name="VFGPrimaryText"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1aN-Cj-yzD" userLabel="Description Label" customClass="VFGLabel" customModule="VFGMVA10Framework" customModuleProvider="target">
+                            <rect key="frame" x="138.5" y="111.5" width="41.5" height="18.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" name="VFGSecondaryText"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LKw-qW-A2n" customClass="VFGButton" customModule="VFGMVA10Foundation">
+                            <rect key="frame" x="0.0" y="0.0" width="318" height="143"/>
+                            <connections>
+                                <action selector="itemDidPress:" destination="-1" eventType="touchUpInside" id="8UL-G1-ILz"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="1aN-Cj-yzD" firstAttribute="centerX" secondItem="teq-kB-TUr" secondAttribute="centerX" id="DA1-Nx-BEw"/>
+                        <constraint firstItem="1aN-Cj-yzD" firstAttribute="top" secondItem="viT-KS-RbM" secondAttribute="bottom" id="DdR-FV-4pU"/>
+                        <constraint firstItem="viT-KS-RbM" firstAttribute="top" secondItem="teq-kB-TUr" secondAttribute="top" constant="12.5" id="L4u-zV-UMO"/>
+                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="1aN-Cj-yzD" secondAttribute="trailing" constant="18" id="Utm-Ff-fpe"/>
+                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="viT-KS-RbM" secondAttribute="trailing" constant="18" id="VHB-fO-bnN"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="70" id="W5k-V7-dIh"/>
+                        <constraint firstAttribute="bottom" secondItem="1aN-Cj-yzD" secondAttribute="bottom" constant="13" id="YdQ-Sr-vAL"/>
+                        <constraint firstItem="viT-KS-RbM" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="teq-kB-TUr" secondAttribute="leading" constant="17" id="aWI-V8-r2G"/>
+                        <constraint firstItem="viT-KS-RbM" firstAttribute="centerX" secondItem="teq-kB-TUr" secondAttribute="centerX" id="ahN-hv-qBw"/>
+                        <constraint firstItem="1aN-Cj-yzD" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="teq-kB-TUr" secondAttribute="leading" constant="17" id="eVE-ZP-ifS"/>
+                        <constraint firstAttribute="bottom" secondItem="LKw-qW-A2n" secondAttribute="bottom" id="hkd-l6-JLq"/>
+                        <constraint firstAttribute="trailing" secondItem="LKw-qW-A2n" secondAttribute="trailing" id="jJe-i6-9lf"/>
+                        <constraint firstItem="LKw-qW-A2n" firstAttribute="leading" secondItem="teq-kB-TUr" secondAttribute="leading" id="k0P-01-C8j"/>
+                        <constraint firstItem="LKw-qW-A2n" firstAttribute="top" secondItem="teq-kB-TUr" secondAttribute="top" id="khH-AV-sTO"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="teq-kB-TUr" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="HZ4-mf-DfI"/>
+                <constraint firstAttribute="trailing" secondItem="teq-kB-TUr" secondAttribute="trailing" id="KqO-fW-ZBJ"/>
+                <constraint firstItem="teq-kB-TUr" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Lfg-dg-25e"/>
+                <constraint firstAttribute="bottom" secondItem="teq-kB-TUr" secondAttribute="bottom" id="k0P-1O-itk"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-147.82608695652175" y="-183.14732142857142"/>
+        </view>
+    </objects>
+    <designables>
+        <designable name="1aN-Cj-yzD">
+            <size key="intrinsicContentSize" width="41.5" height="20.5"/>
+        </designable>
+        <designable name="LKw-qW-A2n">
+            <size key="intrinsicContentSize" width="30" height="30"/>
+        </designable>
+        <designable name="viT-KS-RbM">
+            <size key="intrinsicContentSize" width="41.5" height="20.5"/>
+        </designable>
+    </designables>
+    <resources>
+        <namedColor name="VFGPrimaryText">
+            <color red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="VFGSecondaryText">
+            <color red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="vodafone-lite.ttf">
+            <string>VodafoneLt-Regular</string>
+        </array>
+        <array key="vodafone-regular.ttf">
+            <string>VodafoneRg-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="VFGLoadingLogoView" customModule="VFGMVA10Foundation" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="mrQ-Im-X01">
+                    <rect key="frame" x="16" y="299.5" width="382" height="237.5"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SJx-AL-PY8" customClass="AnimationView" customModule="Lottie">
+                            <rect key="frame" x="113" y="0.0" width="156" height="156"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <accessibility key="accessibilityConfiguration" identifier="loadingIcon">
+                                <bool key="isElement" value="YES"/>
+                            </accessibility>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="156" id="FlN-L7-ghf"/>
+                                <constraint firstAttribute="width" secondItem="SJx-AL-PY8" secondAttribute="height" multiplier="1:1" id="bwR-qe-8NO"/>
+                            </constraints>
+                        </view>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="MXY-Zl-5Hl">
+                            <rect key="frame" x="0.0" y="168" width="382" height="69.5"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O4Y-vi-Rio" userLabel="Title Label" customClass="VFGLabel" customModule="VFGMVA10Foundation" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="382" height="34"/>
+                                    <accessibility key="accessibilityConfiguration" identifier="LLtitleLabel"/>
+                                    <fontDescription key="fontDescription" name="VodafoneLt-Regular" family="Vodafone Lt" pointSize="30"/>
+                                    <color key="textColor" name="VFGRedWhiteText"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Subtitle Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZFE-EA-pFw" userLabel="Subtitle Label" customClass="VFGLabel" customModule="VFGMVA10Foundation" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="50" width="382" height="19.5"/>
+                                    <accessibility key="accessibilityConfiguration" identifier="LLsubTitleLabel"/>
+                                    <fontDescription key="fontDescription" name="VodafoneRg-Regular" family="Vodafone Rg" pointSize="17"/>
+                                    <color key="textColor" name="VFGRedWhiteText"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="ZFE-EA-pFw" firstAttribute="trailing" secondItem="O4Y-vi-Rio" secondAttribute="trailing" id="gzZ-Ho-3Jf"/>
+                                <constraint firstItem="ZFE-EA-pFw" firstAttribute="leading" secondItem="O4Y-vi-Rio" secondAttribute="leading" id="myq-0R-vMn"/>
+                            </constraints>
+                        </stackView>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <accessibility key="accessibilityConfiguration" identifier="LLcontainerView"/>
+            <constraints>
+                <constraint firstItem="mrQ-Im-X01" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" constant="-30" id="5dQ-73-dgk"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="O4Y-vi-Rio" secondAttribute="trailing" constant="16" id="7pl-HD-YRx"/>
+                <constraint firstItem="O4Y-vi-Rio" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="DUt-Xs-Ii0"/>
+                <constraint firstItem="mrQ-Im-X01" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="irH-Al-EAV"/>
+            </constraints>
+            <connections>
+                <outlet property="animationView" destination="SJx-AL-PY8" id="Uya-Es-5st"/>
+                <outlet property="animationViewHeightConstraint" destination="FlN-L7-ghf" id="ICm-Yz-rCr"/>
+                <outlet property="labelsStackView" destination="MXY-Zl-5Hl" id="bq9-LW-wiW"/>
+                <outlet property="subtitleLabel" destination="ZFE-EA-pFw" id="kvE-yl-NZa"/>
+                <outlet property="titleLabel" destination="O4Y-vi-Rio" id="Hns-RY-FlR"/>
+            </connections>
+            <point key="canvasLocation" x="139" y="135"/>
+        </view>
+    </objects>
+    <designables>
+        <designable name="O4Y-vi-Rio">
+            <size key="intrinsicContentSize" width="116.5" height="34"/>
+        </designable>
+        <designable name="ZFE-EA-pFw">
+            <size key="intrinsicContentSize" width="91.5" height="19.5"/>
+        </designable>
+    </designables>
+    <resources>
+        <namedColor name="VFGRedWhiteText">
+            <color red="0.90196078431372551" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

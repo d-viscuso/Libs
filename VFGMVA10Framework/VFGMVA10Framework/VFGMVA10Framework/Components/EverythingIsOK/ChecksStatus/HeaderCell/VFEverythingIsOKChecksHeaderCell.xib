@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="vodafone-bold.ttf">
+            <string>VodafoneRg-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="checkHeaderCell" rowHeight="73" id="KGk-i7-Jjw" customClass="VFEverythingIsOKChecksHeaderCell" customModule="VFGMVA10Framework" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="73"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="73"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fa8-Mz-WGY" customClass="VFGButton" customModule="VFGMVA10Foundation">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="73"/>
+                        <state key="normal" title="Button">
+                            <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </state>
+                        <connections>
+                            <action selector="expand:" destination="-1" eventType="touchUpInside" id="AKo-6j-FJQ"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eXj-7G-c0p" customClass="VFGLabel" customModule="VFGMVA10Foundation">
+                        <rect key="frame" x="50" y="26.5" width="42.5" height="21"/>
+                        <accessibility key="accessibilityConfiguration" identifier="checkItemTitle"/>
+                        <fontDescription key="fontDescription" name="VodafoneRg-Bold" family="Vodafone Rg" pointSize="18"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icChevronDownRed" translatesAutoresizingMaskIntoConstraints="NO" id="Mni-vk-iyP" customClass="VFGImageView" customModule="VFGMVA10Foundation">
+                        <rect key="frame" x="284" y="21" width="32" height="32"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <accessibility key="accessibilityConfiguration" identifier="EIOdetailsArrow">
+                            <bool key="isElement" value="YES"/>
+                        </accessibility>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="32" id="Iuk-UK-Ib4"/>
+                            <constraint firstAttribute="width" constant="32" id="XKR-lK-Y9n"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="imageName" value="icChevronDownRed"/>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aul-cw-zwP">
+                        <rect key="frame" x="1" y="21" width="32" height="32"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bk9-pu-JWV" customClass="VFGImageView" customModule="VFGMVA10Foundation">
+                                <rect key="frame" x="0.0" y="0.0" width="32" height="32"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="bk9-pu-JWV" firstAttribute="top" secondItem="aul-cw-zwP" secondAttribute="top" id="3NQ-lQ-gkG"/>
+                            <constraint firstAttribute="width" constant="32" id="STs-MK-bDz"/>
+                            <constraint firstItem="bk9-pu-JWV" firstAttribute="leading" secondItem="aul-cw-zwP" secondAttribute="leading" id="ZyA-sY-sx7"/>
+                            <constraint firstAttribute="height" constant="32" id="bTa-VQ-p5j"/>
+                            <constraint firstAttribute="bottom" secondItem="bk9-pu-JWV" secondAttribute="bottom" id="lGp-ae-5e1"/>
+                            <constraint firstAttribute="trailing" secondItem="bk9-pu-JWV" secondAttribute="trailing" id="rp4-D8-Gvd"/>
+                        </constraints>
+                    </view>
+                    <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nKQ-0j-pem" userLabel="topSeparator">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="1"/>
+                        <color key="backgroundColor" name="VFGGreyDividerFour"/>
+                        <color key="tintColor" name="VFGGreyDividerFour"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="0AU-VY-XAf"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="Mni-vk-iyP" secondAttribute="trailing" constant="4" id="1GN-r4-jJ7"/>
+                    <constraint firstItem="fa8-Mz-WGY" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="33x-Qm-WgN"/>
+                    <constraint firstItem="aul-cw-zwP" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="1" id="6f3-O7-QjN"/>
+                    <constraint firstItem="eXj-7G-c0p" firstAttribute="centerY" secondItem="Mni-vk-iyP" secondAttribute="centerY" id="6g0-zH-r46"/>
+                    <constraint firstItem="fa8-Mz-WGY" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="EyT-Rt-NeB"/>
+                    <constraint firstItem="eXj-7G-c0p" firstAttribute="leading" secondItem="aul-cw-zwP" secondAttribute="trailing" constant="17" id="Fgv-qV-u3M"/>
+                    <constraint firstItem="aul-cw-zwP" firstAttribute="centerY" secondItem="eXj-7G-c0p" secondAttribute="centerY" id="FvE-Y3-or4"/>
+                    <constraint firstItem="nKQ-0j-pem" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="H9e-Mt-rQy"/>
+                    <constraint firstAttribute="trailing" secondItem="nKQ-0j-pem" secondAttribute="trailing" id="Hr9-j3-4MP"/>
+                    <constraint firstAttribute="trailing" secondItem="fa8-Mz-WGY" secondAttribute="trailing" id="Tmm-oF-kc3"/>
+                    <constraint firstItem="Mni-vk-iyP" firstAttribute="top" secondItem="nKQ-0j-pem" secondAttribute="bottom" constant="20" id="dsz-Bd-2tk"/>
+                    <constraint firstAttribute="bottom" secondItem="fa8-Mz-WGY" secondAttribute="bottom" id="fCh-Gw-O5j"/>
+                    <constraint firstItem="nKQ-0j-pem" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="hFw-gn-k6R"/>
+                    <constraint firstAttribute="bottom" secondItem="Mni-vk-iyP" secondAttribute="bottom" constant="20" id="qg5-Y5-5QC"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="headerIcon" destination="bk9-pu-JWV" id="day-FM-fEY"/>
+                <outlet property="headerIconContainer" destination="aul-cw-zwP" id="aDH-xc-PI7"/>
+                <outlet property="indicatorImageView" destination="Mni-vk-iyP" id="ytv-lr-oBt"/>
+                <outlet property="titleLabel" destination="eXj-7G-c0p" id="0Kj-oL-5N8"/>
+                <outlet property="topSeparator" destination="nKQ-0j-pem" id="YUw-d9-mPx"/>
+            </connections>
+            <point key="canvasLocation" x="137.59999999999999" y="160.56971514242881"/>
+        </tableViewCell>
+    </objects>
+    <designables>
+        <designable name="Mni-vk-iyP">
+            <size key="intrinsicContentSize" width="24" height="24"/>
+        </designable>
+        <designable name="eXj-7G-c0p">
+            <size key="intrinsicContentSize" width="42.5" height="20.5"/>
+        </designable>
+        <designable name="fa8-Mz-WGY">
+            <size key="intrinsicContentSize" width="46" height="30"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="icChevronDownRed" width="24" height="24"/>
+        <namedColor name="VFGGreyDividerFour">
+            <color red="0.92156862745098034" green="0.92156862745098034" blue="0.92156862745098034" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

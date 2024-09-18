@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="vodafone-regular.ttf">
+            <string>VodafoneRg-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="MrX-Oa-Pca" customClass="VFGRefreshFooterView" customModule="VFGMVA10Framework" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="27"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" text="" textAlignment="center" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vbx-8x-rus" customClass="VFGLabel" customModule="VFGMVA10Foundation">
+                    <rect key="frame" x="199" y="1" width="0.0" height="25"/>
+                    <accessibility key="accessibilityConfiguration" identifier="DBrefreshText"/>
+                    <fontDescription key="fontDescription" name="VodafoneRg-Regular" family="Vodafone Rg" pointSize="14.600000381469727"/>
+                    <color key="textColor" name="VFGSecondaryText"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5B5-Hh-GzB" customClass="VFGButton" customModule="VFGMVA10Foundation">
+                    <rect key="frame" x="205" y="1" width="25" height="25"/>
+                    <viewLayoutGuide key="safeArea" id="Bmw-2N-VW3"/>
+                    <accessibility key="accessibilityConfiguration" identifier="DBrefreshIcon"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="25" id="G8f-b6-MbN"/>
+                        <constraint firstAttribute="height" constant="25" id="wxz-9u-e7w"/>
+                    </constraints>
+                    <state key="normal" image="icRefresh"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="buttonStyle">
+                            <integer key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="backgroundStyle">
+                            <integer key="value" value="0"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="string" keyPath="imageName" value="icRefresh"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="refreshButtonDidPress:" destination="MrX-Oa-Pca" eventType="touchUpInside" id="XT3-ep-5DL"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="kKa-wt-90E"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="5B5-Hh-GzB" firstAttribute="top" secondItem="MrX-Oa-Pca" secondAttribute="top" constant="1" id="4TP-gk-g5v"/>
+                <constraint firstAttribute="bottom" secondItem="5B5-Hh-GzB" secondAttribute="bottom" constant="1" id="5Oh-Es-fXm"/>
+                <constraint firstItem="Vbx-8x-rus" firstAttribute="top" secondItem="MrX-Oa-Pca" secondAttribute="top" constant="1" id="KOw-6H-UmL"/>
+                <constraint firstAttribute="bottom" secondItem="Vbx-8x-rus" secondAttribute="bottom" constant="1" id="hm6-ge-Xo4"/>
+                <constraint firstItem="Vbx-8x-rus" firstAttribute="centerX" secondItem="kKa-wt-90E" secondAttribute="centerX" constant="-8" id="hoa-9u-IJm"/>
+                <constraint firstItem="5B5-Hh-GzB" firstAttribute="leading" secondItem="Vbx-8x-rus" secondAttribute="trailing" constant="6" id="lCT-8n-OkX"/>
+            </constraints>
+            <connections>
+                <outlet property="lastUpdatedLabel" destination="Vbx-8x-rus" id="f1e-qN-irQ"/>
+                <outlet property="refreshButton" destination="5B5-Hh-GzB" id="JzE-5N-8Hx"/>
+            </connections>
+            <point key="canvasLocation" x="179.71014492753625" y="-200.55803571428569"/>
+        </collectionReusableView>
+    </objects>
+    <designables>
+        <designable name="5B5-Hh-GzB">
+            <size key="intrinsicContentSize" width="24" height="24"/>
+        </designable>
+        <designable name="Vbx-8x-rus"/>
+    </designables>
+    <resources>
+        <image name="icRefresh" width="24" height="24"/>
+        <namedColor name="VFGSecondaryText">
+            <color red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

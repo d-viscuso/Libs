@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="vodafone-bold.ttf">
+            <string>VodafoneRg-Bold</string>
+        </array>
+        <array key="vodafone-lite.ttf">
+            <string>VodafoneLt-Regular</string>
+        </array>
+        <array key="vodafone-regular.ttf">
+            <string>VodafoneRg-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="VFGMultiTabsHeaderView" customModule="VFGMVA10Foundation" customModuleProvider="target">
+            <connections>
+                <outlet property="billingButton" destination="QA1-90-ySa" id="VuB-5z-z3u"/>
+                <outlet property="contentView" destination="iN0-l3-epB" id="3dW-AR-LvV"/>
+                <outlet property="lastUpdatedLabel" destination="fwf-HA-3Om" id="P2f-sm-C5V"/>
+                <outlet property="refreshButton" destination="Car-YS-z7F" id="H4y-Zd-sh2"/>
+                <outlet property="secondSubtitleText" destination="JY8-EP-o1S" id="Hcm-jQ-5ky"/>
+                <outlet property="subTitleContainer" destination="w0M-Dg-VuT" id="PVz-BY-67x"/>
+                <outlet property="subtitleBoldText" destination="MDs-Jh-yUa" id="7VM-GY-FwS"/>
+                <outlet property="subtitleRegText" destination="Q7g-9P-imV" id="DIE-ao-wND"/>
+                <outlet property="titleLabel" destination="JHd-xe-d0O" id="MSW-hP-iOw"/>
+                <outlet property="topUpButton" destination="en7-pi-0hW" id="MKg-P5-wuP"/>
+                <outlet property="topUpHeightConstraint" destination="VlD-Ai-JqG" id="oMt-ec-Gug"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="110"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VLY-KG-3dg" userLabel="Header View">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="110"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="U5a-JH-W8M">
+                            <rect key="frame" x="16" y="8" width="196" height="54"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cost per month" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JHd-xe-d0O" customClass="VFGLabel" customModule="VFGMVA10Foundation">
+                                    <rect key="frame" x="0.0" y="0.0" width="142" height="27"/>
+                                    <fontDescription key="fontDescription" name="VodafoneLt-Regular" family="Vodafone Lt" pointSize="24"/>
+                                    <color key="textColor" name="VFGPrimaryText"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <stackView opaque="NO" contentMode="scaleToFill" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="w0M-Dg-VuT">
+                                    <rect key="frame" x="0.0" y="27" width="196" height="27"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="24.50€" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MDs-Jh-yUa" customClass="VFGLabel" customModule="VFGMVA10Foundation">
+                                            <rect key="frame" x="0.0" y="0.0" width="67" height="27"/>
+                                            <fontDescription key="fontDescription" name="VodafoneRg-Bold" family="Vodafone Rg" pointSize="24"/>
+                                            <color key="textColor" name="VFGPrimaryText"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="249" text="added to your bill" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q7g-9P-imV" customClass="VFGLabel" customModule="VFGMVA10Foundation">
+                                            <rect key="frame" x="74" y="0.0" width="122" height="27"/>
+                                            <fontDescription key="fontDescription" name="VodafoneRg-Regular" family="Vodafone Rg" pointSize="18"/>
+                                            <color key="textColor" name="VFGPrimaryText"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </stackView>
+                            </subviews>
+                        </stackView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+44 (0) 780994621" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JY8-EP-o1S" customClass="VFGLabel" customModule="VFGMVA10Foundation">
+                            <rect key="frame" x="16" y="76" width="122" height="18"/>
+                            <fontDescription key="fontDescription" name="VodafoneRg-Regular" family="Vodafone Rg" pointSize="16"/>
+                            <color key="textColor" name="VFGSecondaryText"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Updated 2min ago" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fwf-HA-3Om" customClass="VFGLabel" customModule="VFGMVA10Foundation">
+                            <rect key="frame" x="272" y="76" width="101" height="16"/>
+                            <fontDescription key="fontDescription" name="VodafoneRg-Regular" family="Vodafone Rg" pointSize="14"/>
+                            <color key="textColor" name="VFGPrimaryText"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Car-YS-z7F" customClass="VFGButton" customModule="VFGMVA10Foundation" customModuleProvider="target">
+                            <rect key="frame" x="382" y="76" width="16" height="16"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="16" id="Fan-o0-xgi"/>
+                                <constraint firstAttribute="width" constant="16" id="mia-mF-7qd"/>
+                            </constraints>
+                            <state key="normal" image="refresh"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="buttonStyle">
+                                    <integer key="value" value="5"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="backgroundStyle">
+                                    <integer key="value" value="0"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="string" keyPath="imageName" value="refresh"/>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="refreshButtonPressed:" destination="-1" eventType="touchUpInside" id="snV-Fn-fXl"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="en7-pi-0hW" customClass="VFGButton" customModule="VFGMVA10Foundation" customModuleProvider="target">
+                            <rect key="frame" x="310" y="26" width="82" height="32"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="82" id="AQ7-gq-7kb"/>
+                                <constraint firstAttribute="height" constant="32" id="VlD-Ai-JqG"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="VodafoneRg-Bold" family="Vodafone Rg" pointSize="16.600000381469727"/>
+                            <state key="normal" title="Button"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="buttonStyle">
+                                    <integer key="value" value="0"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="backgroundStyle">
+                                    <integer key="value" value="0"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="6"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="topUpButtonPressed:" destination="-1" eventType="touchUpInside" id="I9z-Vv-qnw"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QA1-90-ySa" customClass="VFGButton" customModule="VFGMVA10Foundation" customModuleProvider="target">
+                            <rect key="frame" x="298" y="29" width="94" height="32"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="94" id="JtO-xo-ooI"/>
+                                <constraint firstAttribute="height" constant="32" id="wGe-FR-cdZ"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="VodafoneRg-Bold" family="Vodafone Rg" pointSize="16.600000381469727"/>
+                            <state key="normal">
+                                <color key="titleColor" name="VFGSecondaryButtonActiveText"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="6"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                    <real key="value" value="1"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                    <color key="value" name="VFGGreyWhiteBorder"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </button>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fOa-vC-rRD" userLabel="Separator">
+                            <rect key="frame" x="0.0" y="107" width="414" height="1"/>
+                            <color key="backgroundColor" name="VFGFirstDivider"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="3Hc-m7-Wb5"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="QA1-90-ySa" secondAttribute="trailing" constant="22" id="04l-Dw-Uj6"/>
+                        <constraint firstItem="U5a-JH-W8M" firstAttribute="top" secondItem="VLY-KG-3dg" secondAttribute="top" constant="8" id="6fH-h2-kqJ"/>
+                        <constraint firstItem="Car-YS-z7F" firstAttribute="centerY" secondItem="fwf-HA-3Om" secondAttribute="centerY" id="8XN-JE-y70"/>
+                        <constraint firstAttribute="bottom" secondItem="fwf-HA-3Om" secondAttribute="bottom" constant="18" id="ACl-aR-ygV"/>
+                        <constraint firstAttribute="trailing" secondItem="Car-YS-z7F" secondAttribute="trailing" constant="16" id="G8a-A8-6XQ"/>
+                        <constraint firstItem="en7-pi-0hW" firstAttribute="top" secondItem="VLY-KG-3dg" secondAttribute="top" constant="26" id="GnZ-xH-b9q"/>
+                        <constraint firstAttribute="trailing" secondItem="fOa-vC-rRD" secondAttribute="trailing" id="H38-hF-EaD"/>
+                        <constraint firstItem="U5a-JH-W8M" firstAttribute="leading" secondItem="VLY-KG-3dg" secondAttribute="leading" constant="16" id="JcI-yE-lao"/>
+                        <constraint firstAttribute="bottom" secondItem="fOa-vC-rRD" secondAttribute="bottom" constant="2" id="Kp0-nM-xtq"/>
+                        <constraint firstItem="fOa-vC-rRD" firstAttribute="leading" secondItem="VLY-KG-3dg" secondAttribute="leading" id="VYJ-zz-TEy"/>
+                        <constraint firstItem="Car-YS-z7F" firstAttribute="leading" secondItem="fwf-HA-3Om" secondAttribute="trailing" constant="9" id="bqM-fK-CRh"/>
+                        <constraint firstItem="JY8-EP-o1S" firstAttribute="top" secondItem="U5a-JH-W8M" secondAttribute="bottom" constant="14" id="hhM-Jv-zJq"/>
+                        <constraint firstAttribute="bottom" secondItem="JY8-EP-o1S" secondAttribute="bottom" constant="16" id="ipA-IH-37Q"/>
+                        <constraint firstAttribute="trailing" secondItem="en7-pi-0hW" secondAttribute="trailing" constant="22" id="jQh-D6-xfe"/>
+                        <constraint firstItem="Car-YS-z7F" firstAttribute="top" secondItem="QA1-90-ySa" secondAttribute="bottom" constant="15" id="ouD-dO-tIu"/>
+                        <constraint firstItem="JY8-EP-o1S" firstAttribute="leading" secondItem="U5a-JH-W8M" secondAttribute="leading" id="sL3-oo-KBY"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" name="VFGLightBackground"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="VLY-KG-3dg" secondAttribute="bottom" id="6oc-w7-NRa"/>
+                <constraint firstAttribute="trailing" secondItem="VLY-KG-3dg" secondAttribute="trailing" id="XOn-1P-PgV"/>
+                <constraint firstItem="VLY-KG-3dg" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Xq1-sL-9xa"/>
+                <constraint firstItem="VLY-KG-3dg" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="dP7-Rn-mUs"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="string" keyPath="viewBackgroundColor" value="VFGLightBackground"/>
+            </userDefinedRuntimeAttributes>
+            <point key="canvasLocation" x="-4.3478260869565224" y="377.67857142857139"/>
+        </view>
+    </objects>
+    <designables>
+        <designable name="Car-YS-z7F">
+            <size key="intrinsicContentSize" width="16" height="22"/>
+        </designable>
+        <designable name="JHd-xe-d0O">
+            <size key="intrinsicContentSize" width="142" height="27"/>
+        </designable>
+        <designable name="JY8-EP-o1S">
+            <size key="intrinsicContentSize" width="122" height="18"/>
+        </designable>
+        <designable name="MDs-Jh-yUa">
+            <size key="intrinsicContentSize" width="67" height="27"/>
+        </designable>
+        <designable name="Q7g-9P-imV">
+            <size key="intrinsicContentSize" width="122" height="20.5"/>
+        </designable>
+        <designable name="QA1-90-ySa">
+            <size key="intrinsicContentSize" width="30" height="31"/>
+        </designable>
+        <designable name="en7-pi-0hW">
+            <size key="intrinsicContentSize" width="49" height="31"/>
+        </designable>
+        <designable name="fwf-HA-3Om">
+            <size key="intrinsicContentSize" width="101" height="16"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="refresh" width="16" height="16"/>
+        <namedColor name="VFGFirstDivider">
+            <color red="0.74500000476837158" green="0.74500000476837158" blue="0.74500000476837158" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="VFGGreyWhiteBorder">
+            <color red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="VFGLightBackground">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="VFGPrimaryText">
+            <color red="0.050980392156862744" green="0.050980392156862744" blue="0.050980392156862744" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="VFGSecondaryButtonActiveText">
+            <color red="0.20000000298023224" green="0.20000000298023224" blue="0.20000000298023224" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="VFGSecondaryText">
+            <color red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

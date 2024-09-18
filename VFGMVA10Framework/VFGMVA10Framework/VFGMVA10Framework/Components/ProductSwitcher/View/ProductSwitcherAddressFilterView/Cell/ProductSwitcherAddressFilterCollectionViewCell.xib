@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="vodafone-regular.ttf">
+            <string>VodafoneRg-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="ProductSwitcherAddressFilterCollectionViewCell" customModule="VFGMVA10Framework" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="114" height="110"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="114" height="110"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HLj-q7-Jk7">
+                        <rect key="frame" x="0.0" y="0.0" width="114" height="110"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="6"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="acR-H4-ez7" customClass="VFGLabel" customModule="VFGMVA10Foundation">
+                        <rect key="frame" x="12" y="12" width="90" height="86"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <fontDescription key="fontDescription" name="VodafoneRg-Regular" family="Vodafone Rg" pointSize="14"/>
+                        <color key="textColor" name="VFGSecondaryTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="acR-H4-ez7" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="12" id="51r-Ai-JDL"/>
+                <constraint firstAttribute="bottom" secondItem="HLj-q7-Jk7" secondAttribute="bottom" id="KWi-TR-Twu"/>
+                <constraint firstAttribute="trailing" secondItem="HLj-q7-Jk7" secondAttribute="trailing" id="P3Z-N5-vde"/>
+                <constraint firstAttribute="bottom" secondItem="acR-H4-ez7" secondAttribute="bottom" constant="12" id="VIm-dU-VeH"/>
+                <constraint firstItem="HLj-q7-Jk7" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Wvx-CG-hOg"/>
+                <constraint firstItem="acR-H4-ez7" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="12" id="g1o-kC-lpM"/>
+                <constraint firstItem="HLj-q7-Jk7" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="vkz-tB-thw"/>
+                <constraint firstAttribute="trailing" secondItem="acR-H4-ez7" secondAttribute="trailing" constant="12" id="wOs-OY-dME"/>
+            </constraints>
+            <size key="customSize" width="114" height="110"/>
+            <connections>
+                <outlet property="addressLabel" destination="acR-H4-ez7" id="eHk-C1-mkj"/>
+                <outlet property="borderView" destination="HLj-q7-Jk7" id="WUy-Gr-Iii"/>
+            </connections>
+            <point key="canvasLocation" x="189.23076923076923" y="41.943127962085306"/>
+        </collectionViewCell>
+    </objects>
+    <designables>
+        <designable name="acR-H4-ez7"/>
+    </designables>
+    <resources>
+        <namedColor name="VFGSecondaryTextColor">
+            <color red="0.14900000393390656" green="0.14900000393390656" blue="0.14900000393390656" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

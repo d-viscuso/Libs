@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="vodafone-bold.ttf">
+            <string>VodafoneRg-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="Lgj-pl-JMJ" customClass="VFDiscoverHeader" customModule="VFGMVA10Framework" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="bottomLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xmq-tC-jYO" customClass="VFGLabel" customModule="VFGMVA10Foundation">
+                    <rect key="frame" x="8" y="52" width="287" height="28"/>
+                    <fontDescription key="fontDescription" name="VodafoneRg-Bold" family="Vodafone Rg" pointSize="24"/>
+                    <color key="textColor" name="VFGPrimaryText"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="252" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tnj-nv-Fyv" customClass="VFGButton" customModule="VFGMVA10Framework" customModuleProvider="target">
+                    <rect key="frame" x="303" y="49.5" width="72" height="33"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="See all">
+                        <fontDescription key="titleFontDescription" name="VodafoneRg-Regular" family="Vodafone Rg" pointSize="16"/>
+                    </buttonConfiguration>
+                    <connections>
+                        <action selector="seeAllButtonDidPressedWithSender:" destination="Lgj-pl-JMJ" eventType="touchUpInside" id="QLd-tJ-Z2q"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="u3K-mq-3M7"/>
+            <constraints>
+                <constraint firstItem="u3K-mq-3M7" firstAttribute="trailing" secondItem="Tnj-nv-Fyv" secondAttribute="trailing" id="86n-e6-eMi"/>
+                <constraint firstItem="Tnj-nv-Fyv" firstAttribute="leading" secondItem="Xmq-tC-jYO" secondAttribute="trailing" constant="8" id="Iqs-QT-cF0"/>
+                <constraint firstItem="Tnj-nv-Fyv" firstAttribute="centerY" secondItem="Xmq-tC-jYO" secondAttribute="centerY" id="IrJ-f6-axJ"/>
+                <constraint firstItem="Xmq-tC-jYO" firstAttribute="leading" secondItem="u3K-mq-3M7" secondAttribute="leading" constant="8" id="Li6-Dp-dyV"/>
+                <constraint firstAttribute="bottom" secondItem="Xmq-tC-jYO" secondAttribute="bottom" id="jY0-56-A3D"/>
+            </constraints>
+            <connections>
+                <outlet property="seeAllButton" destination="Tnj-nv-Fyv" id="vcp-Le-6V0"/>
+                <outlet property="titleLabel" destination="Xmq-tC-jYO" id="uUp-ca-2bK"/>
+            </connections>
+            <point key="canvasLocation" x="-140" y="-272"/>
+        </collectionReusableView>
+    </objects>
+    <designables>
+        <designable name="Tnj-nv-Fyv">
+            <size key="intrinsicContentSize" width="72" height="33"/>
+        </designable>
+        <designable name="Xmq-tC-jYO">
+            <size key="intrinsicContentSize" width="59" height="28"/>
+        </designable>
+    </designables>
+    <resources>
+        <namedColor name="VFGPrimaryText">
+            <color red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

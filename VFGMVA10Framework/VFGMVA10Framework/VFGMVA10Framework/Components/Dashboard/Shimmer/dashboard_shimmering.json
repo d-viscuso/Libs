@@ -1,0 +1,52 @@
+{
+    "sections": [
+        {
+            "type": "dashboard",
+            "title": "",
+            "items": [
+                {
+                    "name": "Usage",
+                    "componentId": "load-component-usage-card",
+                    "bucket": [
+                        {
+                            "usageType":"data",
+                            "bucketBalance":[
+                                {
+                                    "remainingValue":{
+                                        "amount":20.5,
+                                        "units":"GB"
+                                    },
+                                    "remainingValueName":"30.5GB"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Second",
+                    "componentId": "load-component-second-card"
+                },
+                {
+                    "name": "My Offer",
+                    "componentId": "load-component-my-offer-card"
+                },
+                {
+                    "name": "Top Up",
+                    "componentId": "load-component-top-up-card"
+                }
+            ]
+        },         {
+            "type": "discover",
+            "title": "dashboard_discovery_label",
+            "items": [
+                {
+                    "componentId": "load_upgrade_component",
+                    "metaData": {
+                        "title": "dashboard_upgrade_component_title"
+                    }
+                },
+            ]
+        }
+    ]
+}
+

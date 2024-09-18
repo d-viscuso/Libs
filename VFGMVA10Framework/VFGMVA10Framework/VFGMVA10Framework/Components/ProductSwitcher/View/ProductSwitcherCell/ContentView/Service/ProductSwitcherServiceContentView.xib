@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="vodafone-bold.ttf">
+            <string>VodafoneRg-Bold</string>
+        </array>
+        <array key="vodafone-regular.ttf">
+            <string>VodafoneRg-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ProductSwitcherServiceContentView" customModule="VFGMVA10Framework" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="464" height="217"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="IM2-fa-xbX" customClass="VFGImageView" customModule="VFGMVA10Foundation">
+                    <rect key="frame" x="16" y="8" width="20" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="46x-Mk-XBz"/>
+                        <constraint firstAttribute="width" constant="20" id="rw3-9V-6bu"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tqe-w0-rCi" customClass="VFGLabel" customModule="VFGMVA10Foundation">
+                    <rect key="frame" x="44" y="9" width="404" height="18"/>
+                    <fontDescription key="fontDescription" name="VodafoneRg-Bold" family="Vodafone Rg" pointSize="16"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="boh-Iq-LoU" customClass="VFGLabel" customModule="VFGMVA10Foundation">
+                    <rect key="frame" x="16" y="36" width="432" height="18"/>
+                    <fontDescription key="fontDescription" name="VodafoneRg-Regular" family="Vodafone Rg" pointSize="16"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="Tqe-w0-rCi" firstAttribute="leading" secondItem="IM2-fa-xbX" secondAttribute="trailing" constant="8" id="8xi-38-Lme"/>
+                <constraint firstItem="boh-Iq-LoU" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="Tdx-OL-mAJ"/>
+                <constraint firstItem="IM2-fa-xbX" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="Tjt-PW-gwX"/>
+                <constraint firstItem="IM2-fa-xbX" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="Wq4-nu-GvX"/>
+                <constraint firstAttribute="trailing" secondItem="boh-Iq-LoU" secondAttribute="trailing" constant="16" id="j8D-ta-fcd"/>
+                <constraint firstItem="Tqe-w0-rCi" firstAttribute="centerY" secondItem="IM2-fa-xbX" secondAttribute="centerY" id="kkN-dK-e2b"/>
+                <constraint firstItem="boh-Iq-LoU" firstAttribute="top" secondItem="IM2-fa-xbX" secondAttribute="bottom" constant="8" id="w2U-g3-DgB"/>
+                <constraint firstAttribute="trailing" secondItem="Tqe-w0-rCi" secondAttribute="trailing" constant="16" id="ydL-fK-wEb"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="descLabel" destination="boh-Iq-LoU" id="dhI-F7-wEL"/>
+                <outlet property="iconImageView" destination="IM2-fa-xbX" id="KQj-0s-TVb"/>
+                <outlet property="titleLabel" destination="Tqe-w0-rCi" id="GRT-KH-CsM"/>
+            </connections>
+            <point key="canvasLocation" x="173.91304347826087" y="343.86160714285711"/>
+        </view>
+    </objects>
+    <designables>
+        <designable name="Tqe-w0-rCi">
+            <size key="intrinsicContentSize" width="38" height="18"/>
+        </designable>
+        <designable name="boh-Iq-LoU">
+            <size key="intrinsicContentSize" width="34.5" height="18"/>
+        </designable>
+    </designables>
+</document>

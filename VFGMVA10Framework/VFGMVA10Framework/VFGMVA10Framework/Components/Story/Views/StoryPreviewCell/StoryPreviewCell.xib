@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="vodafone-regular.ttf">
+            <string>VodafoneRg-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="StoryPreviewCell" customModule="VFGMVA10Framework" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="myS-h1-B0H">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zNa-Uy-5qc">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NEZ-O5-fXC" customClass="StoryVideoView" customModule="VFGMVA10Framework" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <accessibility key="accessibilityConfiguration">
+                                            <bool key="isElement" value="YES"/>
+                                        </accessibility>
+                                    </view>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="nee-yW-N3e" customClass="VFGImageView" customModule="VFGMVA10Foundation">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                        <accessibility key="accessibilityConfiguration">
+                                            <bool key="isElement" value="YES"/>
+                                        </accessibility>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="nee-yW-N3e" firstAttribute="leading" secondItem="zNa-Uy-5qc" secondAttribute="leading" id="1Li-Qs-jsJ"/>
+                                    <constraint firstAttribute="bottom" secondItem="NEZ-O5-fXC" secondAttribute="bottom" id="9X7-aZ-hH9"/>
+                                    <constraint firstItem="NEZ-O5-fXC" firstAttribute="leading" secondItem="zNa-Uy-5qc" secondAttribute="leading" id="BLk-5T-5Ry"/>
+                                    <constraint firstItem="nee-yW-N3e" firstAttribute="top" secondItem="zNa-Uy-5qc" secondAttribute="top" id="DjA-9h-Tez"/>
+                                    <constraint firstAttribute="trailing" secondItem="nee-yW-N3e" secondAttribute="trailing" id="HNh-Bg-fLf"/>
+                                    <constraint firstItem="NEZ-O5-fXC" firstAttribute="top" secondItem="zNa-Uy-5qc" secondAttribute="top" id="Xbm-I5-Tz5"/>
+                                    <constraint firstAttribute="bottom" secondItem="nee-yW-N3e" secondAttribute="bottom" id="c8i-ui-jHd"/>
+                                    <constraint firstAttribute="trailing" secondItem="NEZ-O5-fXC" secondAttribute="trailing" id="rjt-YG-Q8c"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mla-dL-GBY" userLabel="Gradient View">
+                                <rect key="frame" x="-20" y="0.0" width="454" height="114"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="114" id="QFN-9Q-uIz"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="efG-Nx-TNf">
+                                <rect key="frame" x="0.0" y="15" width="414" height="80"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="JHZ-Sd-HVc"/>
+                                </constraints>
+                            </view>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aaV-OK-CR3" customClass="StoryGridLayoutView" customModule="VFGMVA10Framework" customModuleProvider="target">
+                                <rect key="frame" x="31" y="145" width="352" height="557"/>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="kNu-yY-c6D">
+                                <rect key="frame" x="14" y="752" width="386" height="96"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a1i-OO-odf" customClass="VFGButton" customModule="VFGMVA10Foundation">
+                                        <rect key="frame" x="0.0" y="0.0" width="386" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="Y4e-kX-0av"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="VodafoneRg-Regular" family="Vodafone Rg" pointSize="18"/>
+                                        <state key="normal" title="Button">
+                                            <color key="titleColor" name="VFGPrimaryText"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="detailButtonDidPress:" destination="gTV-IL-0wX" eventType="touchUpInside" id="QPb-AD-PMa"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bfc-Ea-PoA" customClass="VFGButton" customModule="VFGMVA10Foundation">
+                                        <rect key="frame" x="0.0" y="56" width="386" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="Nel-oY-jeP"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="VodafoneRg-Regular" family="Vodafone Rg" pointSize="18"/>
+                                        <state key="normal" title="Button">
+                                            <color key="titleColor" name="VFGPrimaryText"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="detailButtonDidPress:" destination="gTV-IL-0wX" eventType="touchUpInside" id="ups-aW-MSU"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="zNa-Uy-5qc" secondAttribute="trailing" id="4qR-To-ieS"/>
+                            <constraint firstItem="aaV-OK-CR3" firstAttribute="top" secondItem="efG-Nx-TNf" secondAttribute="bottom" constant="50" id="6Nf-qn-l3V"/>
+                            <constraint firstItem="efG-Nx-TNf" firstAttribute="top" secondItem="myS-h1-B0H" secondAttribute="top" constant="15" id="7jK-og-16H"/>
+                            <constraint firstItem="aaV-OK-CR3" firstAttribute="leading" secondItem="myS-h1-B0H" secondAttribute="leading" constant="31" id="B7a-lM-KOh"/>
+                            <constraint firstAttribute="trailing" secondItem="efG-Nx-TNf" secondAttribute="trailing" id="G4x-fr-ajQ"/>
+                            <constraint firstAttribute="trailing" secondItem="kNu-yY-c6D" secondAttribute="trailing" constant="14" id="Nai-Jx-ckG"/>
+                            <constraint firstItem="zNa-Uy-5qc" firstAttribute="leading" secondItem="myS-h1-B0H" secondAttribute="leading" id="Npc-zC-beH"/>
+                            <constraint firstItem="efG-Nx-TNf" firstAttribute="leading" secondItem="myS-h1-B0H" secondAttribute="leading" id="TU9-5b-1Nf"/>
+                            <constraint firstAttribute="trailing" secondItem="aaV-OK-CR3" secondAttribute="trailing" constant="31" id="ZG5-hn-LrS"/>
+                            <constraint firstAttribute="bottom" secondItem="zNa-Uy-5qc" secondAttribute="bottom" id="bqw-7u-uK5"/>
+                            <constraint firstItem="zNa-Uy-5qc" firstAttribute="top" secondItem="myS-h1-B0H" secondAttribute="top" id="dBX-AW-t52"/>
+                            <constraint firstItem="kNu-yY-c6D" firstAttribute="top" secondItem="aaV-OK-CR3" secondAttribute="bottom" constant="50" id="fkV-nB-zRR"/>
+                            <constraint firstAttribute="trailing" secondItem="mla-dL-GBY" secondAttribute="trailing" constant="-20" id="q2X-9J-V4Z"/>
+                            <constraint firstItem="mla-dL-GBY" firstAttribute="top" secondItem="myS-h1-B0H" secondAttribute="top" id="qH3-Qs-voF"/>
+                            <constraint firstItem="kNu-yY-c6D" firstAttribute="leading" secondItem="myS-h1-B0H" secondAttribute="leading" constant="14" id="xDz-AP-y9l"/>
+                            <constraint firstAttribute="bottom" secondItem="kNu-yY-c6D" secondAttribute="bottom" constant="48" id="xeF-UK-vIs"/>
+                            <constraint firstItem="mla-dL-GBY" firstAttribute="leading" secondItem="myS-h1-B0H" secondAttribute="leading" constant="-20" id="xvX-ee-52o"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="myS-h1-B0H" secondAttribute="bottom" id="Hcf-c4-BVf"/>
+                <constraint firstItem="myS-h1-B0H" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="aYz-4F-4DM"/>
+                <constraint firstItem="myS-h1-B0H" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="mLp-Fi-Ioq"/>
+                <constraint firstAttribute="trailing" secondItem="myS-h1-B0H" secondAttribute="trailing" id="pkG-OS-APC"/>
+            </constraints>
+            <connections>
+                <outlet property="detailButton" destination="Bfc-Ea-PoA" id="dlB-Z6-bo9"/>
+                <outlet property="gradientView" destination="mla-dL-GBY" id="Hmy-EW-g8X"/>
+                <outlet property="gridLayoutView" destination="aaV-OK-CR3" id="t9M-D5-8GB"/>
+                <outlet property="headerViewContainer" destination="efG-Nx-TNf" id="TVQ-6k-3tC"/>
+                <outlet property="imageView" destination="nee-yW-N3e" id="QAP-MO-SEG"/>
+                <outlet property="mediaView" destination="zNa-Uy-5qc" id="N1l-Sa-S0a"/>
+                <outlet property="secondDetailButton" destination="a1i-OO-odf" id="1hX-Fq-4wS"/>
+                <outlet property="videoView" destination="NEZ-O5-fXC" id="ipq-1h-QDe"/>
+            </connections>
+            <point key="canvasLocation" x="140.57971014492756" y="138.61607142857142"/>
+        </collectionViewCell>
+    </objects>
+    <designables>
+        <designable name="Bfc-Ea-PoA">
+            <size key="intrinsicContentSize" width="49" height="33"/>
+        </designable>
+        <designable name="a1i-OO-odf">
+            <size key="intrinsicContentSize" width="49" height="33"/>
+        </designable>
+    </designables>
+    <resources>
+        <namedColor name="VFGPrimaryText">
+            <color red="0.050980392156862744" green="0.050980392156862744" blue="0.050980392156862744" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

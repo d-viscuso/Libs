@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="UsageShimmerdCard" customModule="VFGMVA10Framework" customModuleProvider="target">
+            <connections>
+                <outletCollection property="shimmerdViews" destination="zDd-oK-mej" collectionClass="NSMutableArray" id="yzm-ky-3Df"/>
+                <outletCollection property="shimmerdViews" destination="1vr-Ca-sw8" collectionClass="NSMutableArray" id="KBl-wW-Yo9"/>
+                <outletCollection property="shimmerdViews" destination="lR9-4E-DNV" collectionClass="NSMutableArray" id="PAS-1K-FXa"/>
+                <outletCollection property="shimmerdViews" destination="gz9-ZF-u0j" collectionClass="NSMutableArray" id="1pP-8B-S2A"/>
+                <outletCollection property="shimmerdViews" destination="bkl-K5-GS2" collectionClass="NSMutableArray" id="tmc-w5-NLn"/>
+                <outletCollection property="shimmerdViews" destination="GET-jP-bMn" collectionClass="NSMutableArray" id="ZD4-Ev-hoN"/>
+                <outletCollection property="shimmerdViews" destination="xzP-cQ-Ncu" collectionClass="NSMutableArray" id="3u7-3e-WMs"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="TQa-Aa-zuc">
+            <rect key="frame" x="0.0" y="0.0" width="345" height="141"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zDd-oK-mej" customClass="VFGShimmerView" customModule="VFGMVA10Foundation">
+                    <rect key="frame" x="10" y="10" width="20" height="20"/>
+                    <color key="backgroundColor" name="VFGShimmerViewCenter"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="20" id="EdT-Qf-c9g"/>
+                        <constraint firstAttribute="height" constant="20" id="bf1-jx-Akh"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="10"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1vr-Ca-sw8" customClass="VFGShimmerView" customModule="VFGMVA10Foundation">
+                    <rect key="frame" x="40" y="13.5" width="190" height="13"/>
+                    <color key="backgroundColor" name="VFGShimmerViewCenter"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="190" id="9aI-cP-9Yj"/>
+                        <constraint firstAttribute="height" constant="13" id="ldc-0u-Pku"/>
+                    </constraints>
+                </view>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="9" translatesAutoresizingMaskIntoConstraints="NO" id="E9j-3h-uDQ">
+                    <rect key="frame" x="10" y="45" width="325" height="57"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lR9-4E-DNV" customClass="VFGShimmerView" customModule="VFGMVA10Foundation">
+                            <rect key="frame" x="0.0" y="0.0" width="325" height="13"/>
+                            <color key="backgroundColor" name="VFGShimmerViewCenter"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="13" id="Rvd-5c-23i"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gz9-ZF-u0j" customClass="VFGShimmerView" customModule="VFGMVA10Foundation">
+                            <rect key="frame" x="0.0" y="22" width="325" height="13"/>
+                            <color key="backgroundColor" name="VFGShimmerViewCenter"/>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bkl-K5-GS2" customClass="VFGShimmerView" customModule="VFGMVA10Foundation">
+                            <rect key="frame" x="0.0" y="44" width="325" height="13"/>
+                            <color key="backgroundColor" name="VFGShimmerViewCenter"/>
+                        </view>
+                    </subviews>
+                </stackView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GET-jP-bMn" customClass="VFGShimmerView" customModule="VFGMVA10Foundation">
+                    <rect key="frame" x="10" y="117" width="190" height="13"/>
+                    <color key="backgroundColor" name="VFGShimmerViewCenter"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xzP-cQ-Ncu" customClass="VFGShimmerView" customModule="VFGMVA10Foundation">
+                    <rect key="frame" x="278" y="13.5" width="57" height="13"/>
+                    <color key="backgroundColor" name="VFGShimmerViewCenter"/>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="r21-oM-wYi"/>
+            <color key="backgroundColor" name="VFGWhiteBackground"/>
+            <constraints>
+                <constraint firstItem="E9j-3h-uDQ" firstAttribute="trailing" secondItem="xzP-cQ-Ncu" secondAttribute="trailing" id="CfQ-hj-hOv"/>
+                <constraint firstItem="xzP-cQ-Ncu" firstAttribute="width" secondItem="1vr-Ca-sw8" secondAttribute="width" multiplier="0.3" id="DBG-kC-qXr"/>
+                <constraint firstItem="1vr-Ca-sw8" firstAttribute="centerY" secondItem="zDd-oK-mej" secondAttribute="centerY" id="NQj-KE-wlX"/>
+                <constraint firstItem="zDd-oK-mej" firstAttribute="top" secondItem="TQa-Aa-zuc" secondAttribute="top" constant="10" id="V4t-0g-1pV"/>
+                <constraint firstItem="GET-jP-bMn" firstAttribute="top" secondItem="E9j-3h-uDQ" secondAttribute="bottom" constant="15" id="VCP-jy-BhU"/>
+                <constraint firstItem="zDd-oK-mej" firstAttribute="leading" secondItem="TQa-Aa-zuc" secondAttribute="leading" constant="10" id="ZJN-aS-GZi"/>
+                <constraint firstItem="E9j-3h-uDQ" firstAttribute="top" secondItem="zDd-oK-mej" secondAttribute="bottom" constant="15" id="ZO4-BF-VVW"/>
+                <constraint firstItem="E9j-3h-uDQ" firstAttribute="leading" secondItem="zDd-oK-mej" secondAttribute="leading" id="ZyU-Wv-NnO"/>
+                <constraint firstItem="xzP-cQ-Ncu" firstAttribute="top" secondItem="1vr-Ca-sw8" secondAttribute="top" id="agG-PU-1O9"/>
+                <constraint firstItem="GET-jP-bMn" firstAttribute="height" secondItem="1vr-Ca-sw8" secondAttribute="height" id="ebh-mZ-xOV"/>
+                <constraint firstItem="GET-jP-bMn" firstAttribute="width" secondItem="1vr-Ca-sw8" secondAttribute="width" id="fee-Cd-i9w"/>
+                <constraint firstItem="xzP-cQ-Ncu" firstAttribute="height" secondItem="1vr-Ca-sw8" secondAttribute="height" id="rlw-BQ-qbj"/>
+                <constraint firstItem="1vr-Ca-sw8" firstAttribute="leading" secondItem="zDd-oK-mej" secondAttribute="trailing" constant="10" id="sWU-3i-Auv"/>
+                <constraint firstItem="GET-jP-bMn" firstAttribute="leading" secondItem="zDd-oK-mej" secondAttribute="leading" id="tJI-di-eJc"/>
+                <constraint firstAttribute="trailing" secondItem="xzP-cQ-Ncu" secondAttribute="trailing" constant="10" id="z71-dE-utS"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-96.376811594202906" y="-416.18303571428572"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="VFGShimmerViewCenter">
+            <color red="0.875" green="0.875" blue="0.875" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="VFGWhiteBackground">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

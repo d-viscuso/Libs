@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="vodafone-bold.ttf">
+            <string>VodafoneRg-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="VerticalTopUpAmountPickerView" customModule="VFGMVA10Framework" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="406" height="240"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BgP-pk-6Tl">
+                    <rect key="frame" x="140.66666666666666" y="0.0" width="105" height="240"/>
+                    <accessibility key="accessibilityConfiguration">
+                        <bool key="isElement" value="YES"/>
+                    </accessibility>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="105" id="Mn5-cT-Unq" userLabel="Picker View Width Constraint"/>
+                        <constraint firstAttribute="height" constant="240" id="uqj-bd-bGv"/>
+                    </constraints>
+                </pickerView>
+                <label opaque="NO" userInteractionEnabled="NO" alpha="0.80000001192092896" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gQo-02-AQG" userLabel="Left Currency Label" customClass="VFGLabel" customModule="VFGMVA10Foundation">
+                    <rect key="frame" x="128.66666666666666" y="120" width="0.0" height="0.0"/>
+                    <accessibility key="accessibilityConfiguration" identifier="TPcurrencySymbol"/>
+                    <fontDescription key="fontDescription" name="VodafoneRg-Bold" family="Vodafone Rg" pointSize="50"/>
+                    <color key="textColor" name="VFGOceantext"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" alpha="0.80000001192092896" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zZu-Jp-gcp" userLabel="Currency Label" customClass="VFGLabel" customModule="VFGMVA10Foundation">
+                    <rect key="frame" x="257.66666666666669" y="120" width="0.0" height="0.0"/>
+                    <accessibility key="accessibilityConfiguration" identifier="TPcurrencySymbol"/>
+                    <fontDescription key="fontDescription" name="VodafoneRg-Bold" family="Vodafone Rg" pointSize="50"/>
+                    <color key="textColor" name="VFGOceantext"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="BgP-pk-6Tl" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" constant="-10" id="MjO-Lx-rRt"/>
+                <constraint firstItem="BgP-pk-6Tl" firstAttribute="leading" secondItem="gQo-02-AQG" secondAttribute="trailing" constant="12" id="SF1-zW-6yf"/>
+                <constraint firstAttribute="bottom" secondItem="BgP-pk-6Tl" secondAttribute="bottom" id="ftc-aQ-svk"/>
+                <constraint firstItem="zZu-Jp-gcp" firstAttribute="centerY" secondItem="BgP-pk-6Tl" secondAttribute="centerY" id="i35-lp-8q6"/>
+                <constraint firstItem="zZu-Jp-gcp" firstAttribute="leading" secondItem="BgP-pk-6Tl" secondAttribute="trailing" constant="12" id="mEs-tQ-sZ5"/>
+                <constraint firstItem="gQo-02-AQG" firstAttribute="centerY" secondItem="BgP-pk-6Tl" secondAttribute="centerY" id="mL3-gG-bh5"/>
+                <constraint firstItem="BgP-pk-6Tl" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="qPm-AM-Sai"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="currencyLabel" destination="zZu-Jp-gcp" id="orc-Lu-Jqa"/>
+                <outlet property="leftCurrencyLabel" destination="gQo-02-AQG" id="4Cz-t8-pSv"/>
+                <outlet property="pickerView" destination="BgP-pk-6Tl" id="WyG-oJ-2B9"/>
+                <outlet property="pickerViewCenterXConstraint" destination="MjO-Lx-rRt" id="Eba-Gy-Mkp"/>
+                <outlet property="pickerViewWidthConstraint" destination="Mn5-cT-Unq" id="IrF-IB-TQJ"/>
+                <outletCollection property="currencyLabelLeadingConstraints" destination="mEs-tQ-sZ5" collectionClass="NSMutableArray" id="P4Z-RG-poh"/>
+                <outletCollection property="currencyLabelLeadingConstraints" destination="SF1-zW-6yf" collectionClass="NSMutableArray" id="g9X-Xp-Z7b"/>
+            </connections>
+            <point key="canvasLocation" x="149.61832061068702" y="171.83098591549296"/>
+        </view>
+    </objects>
+    <designables>
+        <designable name="gQo-02-AQG"/>
+        <designable name="zZu-Jp-gcp"/>
+    </designables>
+    <resources>
+        <namedColor name="VFGOceantext">
+            <color red="0.0" green="0.48600000143051147" blue="0.57300001382827759" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

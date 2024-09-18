@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="MVA10NavigationView" customModule="VFGMVA10Foundation" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="578" height="143"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n99-Rg-Phv" customClass="VFGButton" customModule="VFGMVA10Foundation" customModuleProvider="target">
+                    <rect key="frame" x="16" y="102" width="24" height="24"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <accessibility key="accessibilityConfiguration" identifier="backBtn"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="24" id="FuJ-zh-dAC"/>
+                        <constraint firstAttribute="width" secondItem="n99-Rg-Phv" secondAttribute="height" multiplier="1:1" id="lQR-Ob-fP9"/>
+                    </constraints>
+                    <color key="tintColor" name="VFGLinksDark"/>
+                    <state key="normal" image="icArrowLeft"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="buttonStyle">
+                            <integer key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="string" keyPath="imageName" value="icArrowLeft"/>
+                    </userDefinedRuntimeAttributes>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eMX-pn-XkM" userLabel="Title Label" customClass="VFGLabel" customModule="VFGMVA10Foundation" customModuleProvider="target">
+                    <rect key="frame" x="289" y="114" width="0.0" height="0.0"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" name="VFGPrimaryTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gim-sR-PBo" customClass="VFGButton" customModule="VFGMVA10Foundation" customModuleProvider="target">
+                    <rect key="frame" x="538" y="102" width="24" height="24"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <accessibility key="accessibilityConfiguration" identifier="closeBtn"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="24" id="0j8-iW-2fc"/>
+                        <constraint firstAttribute="width" secondItem="Gim-sR-PBo" secondAttribute="height" multiplier="1:1" id="UXk-ja-Pzi"/>
+                    </constraints>
+                    <color key="tintColor" name="VFGLinksDark"/>
+                    <state key="normal" image="icClose"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="imageName" value="icClose"/>
+                        <userDefinedRuntimeAttribute type="number" keyPath="buttonStyle">
+                            <integer key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ayB-Qg-9k1">
+                    <rect key="frame" x="0.0" y="142" width="578" height="1"/>
+                    <color key="backgroundColor" name="VFGGreyDividerSix"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="NTI-Sw-tW8"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" name="VFGLightBackground"/>
+            <constraints>
+                <constraint firstItem="ayB-Qg-9k1" firstAttribute="top" secondItem="n99-Rg-Phv" secondAttribute="bottom" constant="16" id="0T0-LB-jDP"/>
+                <constraint firstItem="Gim-sR-PBo" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="eMX-pn-XkM" secondAttribute="trailing" constant="40" id="AN2-3Y-dN2"/>
+                <constraint firstAttribute="trailing" secondItem="Gim-sR-PBo" secondAttribute="trailing" constant="16" id="Bb6-cP-Zv1"/>
+                <constraint firstItem="n99-Rg-Phv" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="Dnv-b6-bwn"/>
+                <constraint firstItem="eMX-pn-XkM" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Fnn-sK-pRc"/>
+                <constraint firstItem="eMX-pn-XkM" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="n99-Rg-Phv" secondAttribute="trailing" constant="40" id="MKs-fP-6Ir"/>
+                <constraint firstAttribute="bottom" secondItem="ayB-Qg-9k1" secondAttribute="bottom" id="d2U-Zw-OFd"/>
+                <constraint firstItem="ayB-Qg-9k1" firstAttribute="top" secondItem="Gim-sR-PBo" secondAttribute="bottom" constant="16" id="i9z-jG-9wJ"/>
+                <constraint firstItem="eMX-pn-XkM" firstAttribute="centerY" secondItem="Gim-sR-PBo" secondAttribute="centerY" id="k6L-QD-maR"/>
+                <constraint firstItem="ayB-Qg-9k1" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="kqH-I5-KzI"/>
+                <constraint firstAttribute="trailing" secondItem="ayB-Qg-9k1" secondAttribute="trailing" id="oFZ-RJ-CZh"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="backButton" destination="n99-Rg-Phv" id="lvp-R0-hp0"/>
+                <outlet property="bottomDivider" destination="ayB-Qg-9k1" id="ShJ-Il-bF0"/>
+                <outlet property="closeButton" destination="Gim-sR-PBo" id="juA-Ps-4K6"/>
+                <outlet property="titleLabel" destination="eMX-pn-XkM" id="08I-qQ-a6L"/>
+            </connections>
+            <point key="canvasLocation" x="256.52173913043481" y="-119.53125"/>
+        </view>
+    </objects>
+    <designables>
+        <designable name="Gim-sR-PBo">
+            <size key="intrinsicContentSize" width="24" height="24"/>
+        </designable>
+        <designable name="eMX-pn-XkM"/>
+        <designable name="n99-Rg-Phv">
+            <size key="intrinsicContentSize" width="24" height="24"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="icArrowLeft" width="24" height="24"/>
+        <image name="icClose" width="24" height="24"/>
+        <namedColor name="VFGGreyDividerSix">
+            <color red="0.74509803921568629" green="0.74509803921568629" blue="0.74509803921568629" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="VFGLightBackground">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="VFGLinksDark">
+            <color red="0.050999999046325684" green="0.050999999046325684" blue="0.050999999046325684" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="VFGPrimaryTextColor">
+            <color red="0.050999999046325684" green="0.050999999046325684" blue="0.050999999046325684" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

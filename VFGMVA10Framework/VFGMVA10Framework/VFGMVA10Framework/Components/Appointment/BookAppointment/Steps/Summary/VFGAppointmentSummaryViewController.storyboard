@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="vodafone-bold.ttf">
+            <string>VodafoneRg-Bold</string>
+        </array>
+        <array key="vodafone-lite.ttf">
+            <string>VodafoneLt-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Appointment Summary View Controller-->
+        <scene sceneID="Of9-zZ-ETy">
+            <objects>
+                <viewController storyboardIdentifier="SummaryView" id="qmh-o9-ofz" customClass="VFGAppointmentSummaryViewController" customModule="VFGMVA10Framework" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Hi7-zk-ksp">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your booking summary" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SPB-uP-TP7" customClass="VFGLabel" customModule="VFGMVA10Foundation">
+                                <rect key="frame" x="20" y="32" width="335" height="28"/>
+                                <fontDescription key="fontDescription" name="VodafoneLt-Regular" family="Vodafone Lt" pointSize="25"/>
+                                <color key="textColor" name="VFGPrimaryText"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lbT-ic-juM" userLabel="Content View">
+                                <rect key="frame" x="20" y="90" width="335" height="508"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="kMD-06-DfI" userLabel="All Stack View">
+                                        <rect key="frame" x="0.0" y="25" width="335" height="462"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="L6u-wW-xRm">
+                                                <rect key="frame" x="42" y="0.0" width="251" height="129"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icScreenRepairHiLightTheme" translatesAutoresizingMaskIntoConstraints="NO" id="BXr-Ta-x0p" customClass="VFGImageView" customModule="VFGMVA10Foundation">
+                                                        <rect key="frame" x="75" y="0.0" width="101" height="101"/>
+                                                        <accessibility key="accessibilityConfiguration">
+                                                            <bool key="isElement" value="YES"/>
+                                                        </accessibility>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="101" id="ai0-MX-YWj"/>
+                                                            <constraint firstAttribute="height" constant="101" id="cAo-Wq-6ua"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hardware repair assistance" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="kii-fO-FR5" customClass="VFGLabel" customModule="VFGMVA10Foundation">
+                                                        <rect key="frame" x="0.0" y="101" width="251" height="28"/>
+                                                        <fontDescription key="fontDescription" name="VodafoneLt-Regular" family="Vodafone Lt" pointSize="25"/>
+                                                        <color key="textColor" name="VFGPrimaryText"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Wl-K2-zMu" customClass="VFGAddressView" customModule="VFGMVA10Framework" customModuleProvider="target">
+                                                <rect key="frame" x="16" y="149" width="303" height="104"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="104" id="gVb-a8-kQk"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="iconLeadingConstant">
+                                                        <real key="value" value="16"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="iconTrailingConstant">
+                                                        <real key="value" value="8"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wednesday, 15th of March 4pm - 5pm" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ufv-MS-dF6" customClass="VFGLabel" customModule="VFGMVA10Foundation">
+                                                <rect key="frame" x="25" y="273" width="285" height="19.5"/>
+                                                <fontDescription key="fontDescription" name="VodafoneRg-Bold" family="Vodafone Rg" pointSize="17"/>
+                                                <color key="textColor" name="VFGPrimaryText"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="F1a-qb-MxQ" userLabel="Confirm View" customClass="VFGConfirmView" customModule="VFGMVA10Framework" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="312.5" width="335" height="149.5"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </view>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="Ufv-MS-dF6" secondAttribute="trailing" constant="25" id="aUy-3z-beT"/>
+                                            <constraint firstItem="6Wl-K2-zMu" firstAttribute="leading" secondItem="kMD-06-DfI" secondAttribute="leading" constant="16" id="bPg-4b-QHd"/>
+                                            <constraint firstItem="Ufv-MS-dF6" firstAttribute="leading" secondItem="kMD-06-DfI" secondAttribute="leading" constant="25" id="gpd-N3-0ls"/>
+                                            <constraint firstAttribute="trailing" secondItem="6Wl-K2-zMu" secondAttribute="trailing" constant="16" id="vOk-ho-UXi"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" name="VFGWhiteBackground"/>
+                                <constraints>
+                                    <constraint firstItem="kMD-06-DfI" firstAttribute="top" secondItem="lbT-ic-juM" secondAttribute="top" constant="25" id="0Ez-QD-LUZ"/>
+                                    <constraint firstAttribute="trailing" secondItem="kMD-06-DfI" secondAttribute="trailing" id="GyV-Ix-g8a"/>
+                                    <constraint firstAttribute="bottom" secondItem="kMD-06-DfI" secondAttribute="bottom" constant="21" id="JlW-i8-Rt2"/>
+                                    <constraint firstItem="kMD-06-DfI" firstAttribute="leading" secondItem="lbT-ic-juM" secondAttribute="leading" id="Zxf-4I-vDK"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="6.2000000000000002"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="YEH-pw-2VP"/>
+                        <color key="backgroundColor" name="VFGLightGreyBackground"/>
+                        <constraints>
+                            <constraint firstItem="SPB-uP-TP7" firstAttribute="top" secondItem="YEH-pw-2VP" secondAttribute="top" constant="32" id="0Zy-v6-9aw"/>
+                            <constraint firstItem="SPB-uP-TP7" firstAttribute="leading" secondItem="Hi7-zk-ksp" secondAttribute="leading" constant="20" id="8IH-NE-P1e"/>
+                            <constraint firstAttribute="trailing" secondItem="lbT-ic-juM" secondAttribute="trailing" constant="20" id="BIb-De-F4f"/>
+                            <constraint firstAttribute="trailing" secondItem="SPB-uP-TP7" secondAttribute="trailing" constant="20" id="Cwj-id-1Ms"/>
+                            <constraint firstItem="lbT-ic-juM" firstAttribute="leading" secondItem="Hi7-zk-ksp" secondAttribute="leading" constant="20" id="gZw-Ig-57P"/>
+                            <constraint firstItem="lbT-ic-juM" firstAttribute="top" secondItem="SPB-uP-TP7" secondAttribute="bottom" constant="30" id="qiJ-C8-tPX"/>
+                        </constraints>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="addressView" destination="6Wl-K2-zMu" id="FmH-1V-sCd"/>
+                        <outlet property="confirmView" destination="F1a-qb-MxQ" id="vSb-uj-TNk"/>
+                        <outlet property="contentView" destination="lbT-ic-juM" id="1By-iO-6no"/>
+                        <outlet property="dateTimeLabel" destination="Ufv-MS-dF6" id="SHM-Bk-823"/>
+                        <outlet property="serviceIconImageView" destination="BXr-Ta-x0p" id="gaB-YV-SXx"/>
+                        <outlet property="serviceTitleLabel" destination="kii-fO-FR5" id="TR5-eN-PCG"/>
+                        <outlet property="subtitleLabel" destination="SPB-uP-TP7" id="msD-2c-h6f"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8f0-Mh-8nt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1004.3478260869566" y="-280.58035714285711"/>
+        </scene>
+    </scenes>
+    <designables>
+        <designable name="BXr-Ta-x0p">
+            <size key="intrinsicContentSize" width="101" height="101"/>
+        </designable>
+        <designable name="SPB-uP-TP7">
+            <size key="intrinsicContentSize" width="219.5" height="28"/>
+        </designable>
+        <designable name="Ufv-MS-dF6">
+            <size key="intrinsicContentSize" width="264" height="19.5"/>
+        </designable>
+        <designable name="kii-fO-FR5">
+            <size key="intrinsicContentSize" width="251" height="28"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="icScreenRepairHiLightTheme" width="101" height="101"/>
+        <namedColor name="VFGLightGreyBackground">
+            <color red="0.95686274509803926" green="0.95686274509803926" blue="0.95686274509803926" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="VFGPrimaryText">
+            <color red="0.050980392156862744" green="0.050980392156862744" blue="0.050980392156862744" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="VFGWhiteBackground">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

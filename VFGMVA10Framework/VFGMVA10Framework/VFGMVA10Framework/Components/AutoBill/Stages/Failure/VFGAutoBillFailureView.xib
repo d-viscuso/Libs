@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="vodafone-bold.ttf">
+            <string>VodafoneRg-Bold</string>
+        </array>
+        <array key="vodafone-regular.ttf">
+            <string>VodafoneRg-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="Etb-H7-QDY" customClass="VFGAutoBillFailureView" customModule="VFGMVA10Framework" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="395" height="454"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8ep-gP-6tX" customClass="VFGLabel" customModule="VFGMVA10Foundation">
+                    <rect key="frame" x="20" y="271.5" width="355" height="42.5"/>
+                    <fontDescription key="fontDescription" name="VodafoneRg-Regular" family="Vodafone Rg" pointSize="17"/>
+                    <color key="textColor" name="VFGPrimaryText"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" ambiguous="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dwh-aV-8zQ" customClass="VFGLabel" customModule="VFGMVA10Foundation">
+                    <rect key="frame" x="20" y="226" width="355" height="29.5"/>
+                    <fontDescription key="fontDescription" name="VodafoneRg-Bold" family="Vodafone Rg" pointSize="25"/>
+                    <color key="textColor" name="VFGPrimaryText"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icWarningHiLightTheme" translatesAutoresizingMaskIntoConstraints="NO" id="f2K-ZX-pXk" customClass="VFGImageView" customModule="VFGMVA10Foundation">
+                    <rect key="frame" x="135.5" y="70" width="124" height="124"/>
+                    <accessibility key="accessibilityConfiguration">
+                        <bool key="isElement" value="YES"/>
+                    </accessibility>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="124" id="3fx-48-KQD"/>
+                        <constraint firstAttribute="width" constant="124" id="KHa-d0-jKQ"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="imageName" value="icWarningHiLightTheme"/>
+                    </userDefinedRuntimeAttributes>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QnZ-P8-1CH" customClass="VFGButton" customModule="VFGMVA10Foundation">
+                    <rect key="frame" x="16" y="364" width="363" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="G4P-Cs-tvJ"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="VodafoneRg-Regular" family="Vodafone Rg" pointSize="19"/>
+                    <state key="normal" title="Button">
+                        <color key="titleColor" name="VFGPrimaryButtonText"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="buttonStyle">
+                            <integer key="value" value="0"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="tryAgainButtonDidPress:" destination="Etb-H7-QDY" eventType="touchUpInside" id="67K-8P-clF"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="5bO-Qd-Tch"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="5bO-Qd-Tch" firstAttribute="bottom" secondItem="QnZ-P8-1CH" secondAttribute="bottom" constant="46" id="0GK-JK-9Ke"/>
+                <constraint firstItem="5bO-Qd-Tch" firstAttribute="trailing" secondItem="dwh-aV-8zQ" secondAttribute="trailing" constant="20" id="2Cg-hw-TVQ"/>
+                <constraint firstItem="dwh-aV-8zQ" firstAttribute="top" secondItem="f2K-ZX-pXk" secondAttribute="bottom" constant="32" id="4CR-2t-GOg"/>
+                <constraint firstItem="QnZ-P8-1CH" firstAttribute="top" secondItem="8ep-gP-6tX" secondAttribute="bottom" constant="100" id="95Z-IQ-hln"/>
+                <constraint firstAttribute="trailing" secondItem="QnZ-P8-1CH" secondAttribute="trailing" constant="16" id="Dys-6w-zaN"/>
+                <constraint firstItem="f2K-ZX-pXk" firstAttribute="top" secondItem="Etb-H7-QDY" secondAttribute="top" constant="70" id="FG5-yZ-x9I"/>
+                <constraint firstItem="8ep-gP-6tX" firstAttribute="top" secondItem="dwh-aV-8zQ" secondAttribute="bottom" constant="16" id="LpE-c9-xm6"/>
+                <constraint firstItem="8ep-gP-6tX" firstAttribute="leading" secondItem="5bO-Qd-Tch" secondAttribute="leading" constant="20" id="Nm4-Ie-S1t"/>
+                <constraint firstItem="f2K-ZX-pXk" firstAttribute="centerX" secondItem="5bO-Qd-Tch" secondAttribute="centerX" id="YPD-ku-BxD"/>
+                <constraint firstItem="dwh-aV-8zQ" firstAttribute="leading" secondItem="5bO-Qd-Tch" secondAttribute="leading" constant="20" id="gxj-1h-Lr6"/>
+                <constraint firstItem="QnZ-P8-1CH" firstAttribute="leading" secondItem="Etb-H7-QDY" secondAttribute="leading" constant="16" id="haY-tz-JsW"/>
+                <constraint firstItem="5bO-Qd-Tch" firstAttribute="trailing" secondItem="8ep-gP-6tX" secondAttribute="trailing" constant="20" id="olY-FY-uJG"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="failureImageView" destination="f2K-ZX-pXk" id="mnS-hr-AfG"/>
+                <outlet property="failureMainTitle" destination="dwh-aV-8zQ" id="Xlh-2Z-9g2"/>
+                <outlet property="failureSubTitle" destination="8ep-gP-6tX" id="jIU-Xm-v7K"/>
+                <outlet property="tryAgainButton" destination="QnZ-P8-1CH" id="5I7-Y8-rXu"/>
+            </connections>
+            <point key="canvasLocation" x="138.40579710144928" y="109.15178571428571"/>
+        </view>
+    </objects>
+    <designables>
+        <designable name="8ep-gP-6tX">
+            <size key="intrinsicContentSize" width="42" height="20"/>
+        </designable>
+        <designable name="QnZ-P8-1CH">
+            <size key="intrinsicContentSize" width="58" height="35"/>
+        </designable>
+        <designable name="dwh-aV-8zQ">
+            <size key="intrinsicContentSize" width="61.5" height="29.5"/>
+        </designable>
+        <designable name="f2K-ZX-pXk">
+            <size key="intrinsicContentSize" width="125" height="125"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="icWarningHiLightTheme" width="125" height="125"/>
+        <namedColor name="VFGPrimaryButtonText">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="VFGPrimaryText">
+            <color red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

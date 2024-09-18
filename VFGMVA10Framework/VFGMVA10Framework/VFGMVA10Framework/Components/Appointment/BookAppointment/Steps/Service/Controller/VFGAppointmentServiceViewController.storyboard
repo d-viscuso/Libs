@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="vodafone-lite.ttf">
+            <string>VodafoneLt-Regular</string>
+        </array>
+        <array key="vodafone-regular.ttf">
+            <string>VodafoneRg-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Appointment Service View Controller-->
+        <scene sceneID="Of9-zZ-ETy">
+            <objects>
+                <viewController storyboardIdentifier="ServiceView" id="qmh-o9-ofz" customClass="VFGAppointmentServiceViewController" customModule="VFGMVA10Framework" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Hi7-zk-ksp">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="In which topic do you need service?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="SPB-uP-TP7" customClass="VFGLabel" customModule="VFGMVA10Foundation">
+                                <rect key="frame" x="20" y="79" width="350" height="28"/>
+                                <fontDescription key="fontDescription" name="VodafoneLt-Regular" family="Vodafone Lt" pointSize="25"/>
+                                <color key="textColor" name="VFGPrimaryText"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Wdu-RV-pQu">
+                                <rect key="frame" x="20" y="137" width="350" height="707"/>
+                                <color key="backgroundColor" name="VFGLightGreyBackground"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="20" minimumInteritemSpacing="10" id="JLz-MI-uK0">
+                                    <size key="itemSize" width="374" height="170"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="ServiceCell" id="JJw-ml-ShC" customClass="VFGAppointmentServiceCollectionCell" customModule="VFGMVA10Framework" customModuleProvider="target">
+                                        <rect key="frame" x="-12" y="0.0" width="374" height="170"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="v7y-DC-Rtp">
+                                            <rect key="frame" x="0.0" y="0.0" width="374" height="170"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" spacing="22" translatesAutoresizingMaskIntoConstraints="NO" id="kGP-jR-jHG" userLabel="Icon + Text + Cheveron">
+                                                    <rect key="frame" x="17" y="25" width="336" height="50"/>
+                                                    <subviews>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" spacing="23" translatesAutoresizingMaskIntoConstraints="NO" id="8mw-3n-8Mp" userLabel="Icon + Title + Desc">
+                                                            <rect key="frame" x="0.0" y="0.0" width="284" height="50"/>
+                                                            <subviews>
+                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icDiagnostics" translatesAutoresizingMaskIntoConstraints="NO" id="BMH-I8-bad" userLabel="Icon Image View" customClass="VFGImageView" customModule="VFGMVA10Foundation">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                                                    <accessibility key="accessibilityConfiguration">
+                                                                        <bool key="isElement" value="YES"/>
+                                                                    </accessibility>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="height" constant="50" id="pMf-ML-q6H"/>
+                                                                        <constraint firstAttribute="width" constant="50" id="zjn-uN-RyD"/>
+                                                                    </constraints>
+                                                                </imageView>
+                                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="ULY-Xk-RxF" userLabel="Title + Desc">
+                                                                    <rect key="frame" x="73" y="0.0" width="211" height="50"/>
+                                                                    <subviews>
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mobile health check" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7uD-iG-N7f" customClass="VFGLabel" customModule="VFGMVA10Foundation">
+                                                                            <rect key="frame" x="0.0" y="0.0" width="149.33333333333334" height="26"/>
+                                                                            <fontDescription key="fontDescription" name="VodafoneRg-Regular" family="Vodafone Rg" pointSize="19"/>
+                                                                            <color key="textColor" name="VFGPrimaryText"/>
+                                                                            <nil key="highlightedColor"/>
+                                                                        </label>
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Duration: %@" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ojW-WR-Gev" customClass="VFGLabel" customModule="VFGMVA10Foundation">
+                                                                            <rect key="frame" x="0.0" y="32" width="78" height="18"/>
+                                                                            <constraints>
+                                                                                <constraint firstAttribute="height" constant="18" id="Unp-rW-6u0"/>
+                                                                            </constraints>
+                                                                            <fontDescription key="fontDescription" name="VodafoneRg-Regular" family="Vodafone Rg" pointSize="15"/>
+                                                                            <color key="textColor" name="VFGSecondaryText"/>
+                                                                            <nil key="highlightedColor"/>
+                                                                        </label>
+                                                                    </subviews>
+                                                                </stackView>
+                                                            </subviews>
+                                                        </stackView>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icChevronRightRed" translatesAutoresizingMaskIntoConstraints="NO" id="4h2-Od-Kdq" userLabel="Cheveron Image View" customClass="VFGImageView" customModule="VFGMVA10Foundation">
+                                                            <rect key="frame" x="306" y="0.0" width="30" height="50"/>
+                                                            <accessibility key="accessibilityConfiguration">
+                                                                <bool key="isElement" value="YES"/>
+                                                            </accessibility>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="string" keyPath="imageName" value="icChevronRightRed"/>
+                                                            </userDefinedRuntimeAttributes>
+                                                        </imageView>
+                                                    </subviews>
+                                                </stackView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Book an appointment to your in-store assistant to investigate your mobile issue." lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DJE-Gw-LTv" customClass="VFGLabel" customModule="VFGMVA10Foundation">
+                                                    <rect key="frame" x="91" y="84" width="262" height="67"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="224.5" id="hbP-lO-6ma"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="VodafoneRg-Regular" family="Vodafone Rg" pointSize="17"/>
+                                                    <color key="textColor" name="VFGPrimaryText"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="DJE-Gw-LTv" firstAttribute="leading" secondItem="v7y-DC-Rtp" secondAttribute="leading" constant="91" id="VTS-Bf-N7i"/>
+                                                <constraint firstAttribute="trailing" secondItem="kGP-jR-jHG" secondAttribute="trailing" constant="21" id="b7o-JM-klm"/>
+                                                <constraint firstAttribute="bottom" secondItem="DJE-Gw-LTv" secondAttribute="bottom" constant="19" id="f0w-Rx-5RM"/>
+                                                <constraint firstItem="DJE-Gw-LTv" firstAttribute="top" secondItem="kGP-jR-jHG" secondAttribute="bottom" constant="9" id="g8S-vZ-coh"/>
+                                                <constraint firstItem="kGP-jR-jHG" firstAttribute="top" secondItem="v7y-DC-Rtp" secondAttribute="top" constant="25" id="iZv-6V-ref"/>
+                                                <constraint firstAttribute="trailing" secondItem="DJE-Gw-LTv" secondAttribute="trailing" constant="21" id="vjM-SJ-3DB"/>
+                                                <constraint firstItem="kGP-jR-jHG" firstAttribute="leading" secondItem="v7y-DC-Rtp" secondAttribute="leading" constant="17" id="wTe-wH-uxS"/>
+                                            </constraints>
+                                        </collectionViewCellContentView>
+                                        <color key="backgroundColor" name="VFGWhiteBackground"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="6.2000000000000002"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <outlet property="arrowImageView" destination="4h2-Od-Kdq" id="ADv-75-fGs"/>
+                                            <outlet property="detailsLabel" destination="DJE-Gw-LTv" id="1eR-mo-UvO"/>
+                                            <outlet property="durationLabel" destination="ojW-WR-Gev" id="Qop-Ba-K65"/>
+                                            <outlet property="iconImageView" destination="BMH-I8-bad" id="9GJ-Xs-HVj"/>
+                                            <outlet property="titleLabel" destination="7uD-iG-N7f" id="4cM-MN-SFE"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="ShimmerCell" id="Pd7-v3-Nam" customClass="VFGAppointmentServiceShimmerCell" customModule="VFGMVA10Framework" customModuleProvider="target">
+                                        <rect key="frame" x="-12" y="190" width="374" height="170"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Ehr-VX-0yO">
+                                            <rect key="frame" x="0.0" y="0.0" width="374" height="170"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oLh-Pv-3Bp" customClass="VFGShimmerView" customModule="VFGMVA10Foundation">
+                                                    <rect key="frame" x="24" y="24" width="29" height="29"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" name="VFGShimmerViewCenter"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                            <real key="value" value="14.5"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </view>
+                                                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wqk-yB-i3r" customClass="VFGShimmerView" customModule="VFGMVA10Foundation">
+                                                    <rect key="frame" x="88" y="27" width="172" height="12"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" name="VFGShimmerViewCenter"/>
+                                                </view>
+                                                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="68y-bW-kyG" customClass="VFGShimmerView" customModule="VFGMVA10Foundation">
+                                                    <rect key="frame" x="88" y="47" width="68" height="12"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" name="VFGShimmerViewCenter"/>
+                                                </view>
+                                                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4op-w8-TW1" customClass="VFGShimmerView" customModule="VFGMVA10Foundation">
+                                                    <rect key="frame" x="88" y="90" width="237" height="12"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" name="VFGShimmerViewCenter"/>
+                                                </view>
+                                                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PT5-ZK-E0e" customClass="VFGShimmerView" customModule="VFGMVA10Foundation">
+                                                    <rect key="frame" x="88" y="110" width="237" height="12"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" name="VFGShimmerViewCenter"/>
+                                                </view>
+                                                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IVb-a2-XBO" customClass="VFGShimmerView" customModule="VFGMVA10Foundation">
+                                                    <rect key="frame" x="88" y="130" width="237" height="12"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" name="VFGShimmerViewCenter"/>
+                                                </view>
+                                            </subviews>
+                                        </collectionViewCellContentView>
+                                        <color key="backgroundColor" name="VFGWhiteBackground"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="6.2000000000000002"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <outletCollection property="shimmerViews" destination="oLh-Pv-3Bp" collectionClass="NSMutableArray" id="jjK-UV-ZpN"/>
+                                            <outletCollection property="shimmerViews" destination="wqk-yB-i3r" collectionClass="NSMutableArray" id="ob4-pj-L1d"/>
+                                            <outletCollection property="shimmerViews" destination="68y-bW-kyG" collectionClass="NSMutableArray" id="O7e-bI-S5Y"/>
+                                            <outletCollection property="shimmerViews" destination="4op-w8-TW1" collectionClass="NSMutableArray" id="FWw-8T-dOh"/>
+                                            <outletCollection property="shimmerViews" destination="PT5-ZK-E0e" collectionClass="NSMutableArray" id="ib5-TU-0lT"/>
+                                            <outletCollection property="shimmerViews" destination="IVb-a2-XBO" collectionClass="NSMutableArray" id="sDd-8p-Ag7"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="qmh-o9-ofz" id="9Fh-GE-91g"/>
+                                    <outlet property="delegate" destination="qmh-o9-ofz" id="1F4-eJ-MCL"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="iKa-xb-pJI"/>
+                        <color key="backgroundColor" name="VFGLightGreyBackground"/>
+                        <constraints>
+                            <constraint firstItem="SPB-uP-TP7" firstAttribute="top" secondItem="iKa-xb-pJI" secondAttribute="top" constant="32" id="0Zy-v6-9aw"/>
+                            <constraint firstAttribute="bottom" secondItem="Wdu-RV-pQu" secondAttribute="bottom" id="0hd-pD-PML"/>
+                            <constraint firstItem="Wdu-RV-pQu" firstAttribute="leading" secondItem="iKa-xb-pJI" secondAttribute="leading" constant="20" id="BYQ-96-DLJ"/>
+                            <constraint firstItem="iKa-xb-pJI" firstAttribute="trailing" secondItem="SPB-uP-TP7" secondAttribute="trailing" constant="20" id="Cwj-id-1Ms"/>
+                            <constraint firstItem="SPB-uP-TP7" firstAttribute="leading" secondItem="Wdu-RV-pQu" secondAttribute="leading" id="MNY-HK-OUB"/>
+                            <constraint firstItem="Wdu-RV-pQu" firstAttribute="top" secondItem="SPB-uP-TP7" secondAttribute="bottom" constant="30" id="XNl-6m-fIr"/>
+                            <constraint firstItem="iKa-xb-pJI" firstAttribute="trailing" secondItem="Wdu-RV-pQu" secondAttribute="trailing" constant="20" id="i5k-kG-w3n"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="collectionView" destination="Wdu-RV-pQu" id="po0-Wz-KwH"/>
+                        <outlet property="subtitleLabel" destination="SPB-uP-TP7" id="msD-2c-h6f"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8f0-Mh-8nt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1004.3478260869566" y="-280.58035714285711"/>
+        </scene>
+    </scenes>
+    <designables>
+        <designable name="4h2-Od-Kdq">
+            <size key="intrinsicContentSize" width="30" height="30"/>
+        </designable>
+        <designable name="7uD-iG-N7f">
+            <size key="intrinsicContentSize" width="149.33333333333334" height="21.333333333333332"/>
+        </designable>
+        <designable name="BMH-I8-bad">
+            <size key="intrinsicContentSize" width="51" height="51"/>
+        </designable>
+        <designable name="DJE-Gw-LTv">
+            <size key="intrinsicContentSize" width="523.66666666666663" height="19.333333333333332"/>
+        </designable>
+        <designable name="SPB-uP-TP7">
+            <size key="intrinsicContentSize" width="335.33333333333331" height="28"/>
+        </designable>
+        <designable name="ojW-WR-Gev">
+            <size key="intrinsicContentSize" width="78" height="17"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="icChevronRightRed" width="30" height="30"/>
+        <image name="icDiagnostics" width="51" height="51"/>
+        <namedColor name="VFGLightGreyBackground">
+            <color red="0.95686274509803926" green="0.95686274509803926" blue="0.95686274509803926" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="VFGPrimaryText">
+            <color red="0.050980392156862744" green="0.050980392156862744" blue="0.050980392156862744" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="VFGSecondaryText">
+            <color red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="VFGShimmerViewCenter">
+            <color red="0.875" green="0.875" blue="0.875" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="VFGWhiteBackground">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

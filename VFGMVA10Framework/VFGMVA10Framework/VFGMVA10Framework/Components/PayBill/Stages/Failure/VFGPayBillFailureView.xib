@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="vodafone-bold.ttf">
+            <string>VodafoneRg-Bold</string>
+        </array>
+        <array key="vodafone-regular.ttf">
+            <string>VodafoneRg-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="9Si-35-dKa" customClass="VFGPayBillFailureView" customModule="VFGMVA10Framework" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="395" height="454"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F8N-nh-GND" customClass="VFGButton" customModule="VFGMVA10Foundation">
+                    <rect key="frame" x="16" y="364" width="363" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="PEL-GD-ep2"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="VodafoneRg-Regular" family="Vodafone Rg" pointSize="19"/>
+                    <state key="normal" title="Button">
+                        <color key="titleColor" name="VFGPrimaryText"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="buttonStyle">
+                            <integer key="value" value="2"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="cancelButtonDidPress:" destination="9Si-35-dKa" eventType="touchUpInside" id="zsc-H9-3q8"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k23-b5-5Yt" customClass="VFGLabel" customModule="VFGMVA10Foundation">
+                    <rect key="frame" x="20" y="224" width="355" height="30"/>
+                    <fontDescription key="fontDescription" name="VodafoneRg-Regular" family="Vodafone Rg" pointSize="17"/>
+                    <color key="textColor" name="VFGPrimaryText"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Mh-UB-n4D" customClass="VFGLabel" customModule="VFGMVA10Foundation">
+                    <rect key="frame" x="20" y="180" width="355" height="28"/>
+                    <fontDescription key="fontDescription" name="VodafoneRg-Bold" family="Vodafone Rg" pointSize="25"/>
+                    <color key="textColor" name="VFGPrimaryText"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icWarningHiLightTheme" translatesAutoresizingMaskIntoConstraints="NO" id="QRE-di-75D" customClass="VFGImageView" customModule="VFGMVA10Foundation">
+                    <rect key="frame" x="135.5" y="23" width="124" height="124"/>
+                    <accessibility key="accessibilityConfiguration">
+                        <bool key="isElement" value="YES"/>
+                    </accessibility>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="124" id="WNN-la-vPc"/>
+                        <constraint firstAttribute="width" constant="124" id="hTq-Jr-kr7"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="imageName" value="icWarningHiLightTheme"/>
+                    </userDefinedRuntimeAttributes>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DeR-vW-haK" customClass="VFGButton" customModule="VFGMVA10Foundation">
+                    <rect key="frame" x="16" y="304" width="363" height="44"/>
+                    <accessibility key="accessibilityConfiguration" identifier="PBtryAgainButton"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="W2c-JB-eJa"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="VodafoneRg-Regular" family="Vodafone Rg" pointSize="19"/>
+                    <state key="normal" title="Button">
+                        <color key="titleColor" name="VFGPrimaryButtonText"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="buttonStyle">
+                            <integer key="value" value="0"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="tryAgainButtonDidPress:" destination="9Si-35-dKa" eventType="touchUpInside" id="lfK-NC-gBQ"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="FQG-bH-kpw"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="FQG-bH-kpw" firstAttribute="trailing" secondItem="5Mh-UB-n4D" secondAttribute="trailing" constant="20" id="208-5V-5cw"/>
+                <constraint firstItem="F8N-nh-GND" firstAttribute="top" secondItem="DeR-vW-haK" secondAttribute="bottom" constant="16" id="3Du-jD-wB1"/>
+                <constraint firstItem="FQG-bH-kpw" firstAttribute="bottom" secondItem="F8N-nh-GND" secondAttribute="bottom" constant="46" id="7R5-Fq-Em3"/>
+                <constraint firstItem="5Mh-UB-n4D" firstAttribute="top" secondItem="QRE-di-75D" secondAttribute="bottom" constant="33" id="Bhm-8J-Ffx"/>
+                <constraint firstItem="k23-b5-5Yt" firstAttribute="top" secondItem="5Mh-UB-n4D" secondAttribute="bottom" constant="16" id="Bl1-xz-fbc"/>
+                <constraint firstItem="F8N-nh-GND" firstAttribute="leading" secondItem="DeR-vW-haK" secondAttribute="leading" id="DXr-C7-4DN"/>
+                <constraint firstItem="F8N-nh-GND" firstAttribute="trailing" secondItem="DeR-vW-haK" secondAttribute="trailing" id="DxE-Gp-fmZ"/>
+                <constraint firstItem="DeR-vW-haK" firstAttribute="leading" secondItem="9Si-35-dKa" secondAttribute="leading" constant="16" id="J5u-sK-l3M"/>
+                <constraint firstItem="QRE-di-75D" firstAttribute="centerX" secondItem="FQG-bH-kpw" secondAttribute="centerX" id="RzX-S9-aED"/>
+                <constraint firstItem="5Mh-UB-n4D" firstAttribute="leading" secondItem="FQG-bH-kpw" secondAttribute="leading" constant="20" id="UtC-X3-LXn"/>
+                <constraint firstAttribute="trailing" secondItem="DeR-vW-haK" secondAttribute="trailing" constant="16" id="Wm2-yh-aLO"/>
+                <constraint firstItem="FQG-bH-kpw" firstAttribute="trailing" secondItem="k23-b5-5Yt" secondAttribute="trailing" constant="20" id="abC-Z3-7ci"/>
+                <constraint firstItem="DeR-vW-haK" firstAttribute="top" secondItem="k23-b5-5Yt" secondAttribute="bottom" constant="50" id="d3R-fc-Hfg"/>
+                <constraint firstItem="QRE-di-75D" firstAttribute="top" secondItem="9Si-35-dKa" secondAttribute="top" constant="23" id="dBM-jg-cNw"/>
+                <constraint firstItem="k23-b5-5Yt" firstAttribute="leading" secondItem="FQG-bH-kpw" secondAttribute="leading" constant="20" id="oHh-KV-xf1"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="cancelButton" destination="F8N-nh-GND" id="VAJ-L0-NyH"/>
+                <outlet property="failureMainTitle" destination="5Mh-UB-n4D" id="Lzd-L2-7x7"/>
+                <outlet property="failureSubTitle" destination="k23-b5-5Yt" id="m8r-fF-zk8"/>
+                <outlet property="tryAgainButton" destination="DeR-vW-haK" id="cRY-Zo-zpM"/>
+                <outlet property="warningImageView" destination="QRE-di-75D" id="Ldk-iu-M3t"/>
+            </connections>
+            <point key="canvasLocation" x="138.40579710144928" y="109.15178571428571"/>
+        </view>
+    </objects>
+    <designables>
+        <designable name="5Mh-UB-n4D">
+            <size key="intrinsicContentSize" width="59" height="28"/>
+        </designable>
+        <designable name="DeR-vW-haK">
+            <size key="intrinsicContentSize" width="51" height="34"/>
+        </designable>
+        <designable name="F8N-nh-GND">
+            <size key="intrinsicContentSize" width="51" height="34"/>
+        </designable>
+        <designable name="QRE-di-75D">
+            <size key="intrinsicContentSize" width="125" height="125"/>
+        </designable>
+        <designable name="k23-b5-5Yt">
+            <size key="intrinsicContentSize" width="36.5" height="19.5"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="icWarningHiLightTheme" width="125" height="125"/>
+        <namedColor name="VFGPrimaryButtonText">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="VFGPrimaryText">
+            <color red="0.050980392156862744" green="0.050980392156862744" blue="0.050980392156862744" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

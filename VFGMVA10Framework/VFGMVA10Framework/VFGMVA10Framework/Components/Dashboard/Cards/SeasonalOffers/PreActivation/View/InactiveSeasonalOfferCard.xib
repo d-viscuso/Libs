@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="vodafone-bold.ttf">
+            <string>VodafoneRg-Bold</string>
+        </array>
+        <array key="vodafone-regular.ttf">
+            <string>VodafoneRg-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="D2e-98-8hg" customClass="InactiveSeasonalOfferCard" customModule="VFGMVA10Framework" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="328" height="144"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="QtG-ol-ICG" customClass="VFGImageView" customModule="VFGMVA10Foundation">
+                    <rect key="frame" x="16" y="16" width="113" height="28"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="28" id="mRM-Bi-HF0"/>
+                        <constraint firstAttribute="width" constant="113" id="mXg-JI-yZT"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Primary message here on double line " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gfY-Qy-0Xj" userLabel="Primary Text Label" customClass="VFGLabel" customModule="VFGMVA10Foundation">
+                    <rect key="frame" x="16" y="16" width="148" height="31.5"/>
+                    <fontDescription key="fontDescription" name="VodafoneRg-Bold" family="Vodafone Rg" pointSize="14"/>
+                    <color key="textColor" name="VFGWhiteText"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Primary message here on double line " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mec-RB-wUK" userLabel="Primary Text With Logo Label" customClass="VFGLabel" customModule="VFGMVA10Foundation">
+                    <rect key="frame" x="16" y="60" width="148" height="31.5"/>
+                    <fontDescription key="fontDescription" name="VodafoneRg-Bold" family="Vodafone Rg" pointSize="14"/>
+                    <color key="textColor" name="VFGWhiteText"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Secondary message" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rNT-Ts-euL" userLabel="Secondary text" customClass="VFGLabel" customModule="VFGMVA10Foundation">
+                    <rect key="frame" x="16" y="63.5" width="109.5" height="16"/>
+                    <fontDescription key="fontDescription" name="VodafoneRg-Regular" family="Vodafone Rg" pointSize="14"/>
+                    <color key="textColor" name="VFGWhiteText"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Link here" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WL1-mL-41L" customClass="VFGLabel" customModule="VFGMVA10Foundation">
+                    <rect key="frame" x="16" y="112" width="50.5" height="16"/>
+                    <fontDescription key="fontDescription" name="VodafoneRg-Regular" family="Vodafone Rg" pointSize="14"/>
+                    <color key="textColor" name="VFGWhiteText"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icChevronRightWhite" translatesAutoresizingMaskIntoConstraints="NO" id="zU8-MG-YrM" customClass="VFGImageView" customModule="VFGMVA10Foundation">
+                    <rect key="frame" x="70.5" y="109.5" width="21" height="21"/>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="21" id="3Zi-24-pRG"/>
+                        <constraint firstAttribute="width" secondItem="zU8-MG-YrM" secondAttribute="height" multiplier="1:1" id="XZg-2O-gm9"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="imageName" value="icChevronRightWhite"/>
+                    </userDefinedRuntimeAttributes>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Q4-Ck-vGh" customClass="VFGButton" customModule="VFGMVA10Foundation">
+                    <rect key="frame" x="0.0" y="0.0" width="328" height="144"/>
+                    <accessibility key="accessibilityConfiguration" identifier="DBtopupNow">
+                        <bool key="isElement" value="NO"/>
+                    </accessibility>
+                    <connections>
+                        <action selector="startSeasonalOfferActivation:" destination="D2e-98-8hg" eventType="touchUpInside" id="Avt-rD-qlc"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="VQY-JU-09f"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="6Q4-Ck-vGh" firstAttribute="width" secondItem="D2e-98-8hg" secondAttribute="width" id="ARm-1k-m2R"/>
+                <constraint firstAttribute="trailing" secondItem="gfY-Qy-0Xj" secondAttribute="trailing" constant="164" id="Afh-TE-6ce"/>
+                <constraint firstAttribute="top" secondItem="gfY-Qy-0Xj" secondAttribute="top" constant="-16" id="E7T-U2-4kc"/>
+                <constraint firstItem="rNT-Ts-euL" firstAttribute="top" secondItem="gfY-Qy-0Xj" secondAttribute="bottom" constant="16" id="G16-8n-UX0"/>
+                <constraint firstItem="zU8-MG-YrM" firstAttribute="centerY" secondItem="WL1-mL-41L" secondAttribute="centerY" id="IrV-ux-ayV"/>
+                <constraint firstItem="mec-RB-wUK" firstAttribute="leading" secondItem="QtG-ol-ICG" secondAttribute="leading" id="LRY-fl-S9x"/>
+                <constraint firstItem="gfY-Qy-0Xj" firstAttribute="leading" secondItem="QtG-ol-ICG" secondAttribute="leading" id="QAO-Ng-QGH"/>
+                <constraint firstItem="QtG-ol-ICG" firstAttribute="top" secondItem="D2e-98-8hg" secondAttribute="top" constant="16" id="TPx-Mw-Lg1"/>
+                <constraint firstItem="zU8-MG-YrM" firstAttribute="leading" secondItem="WL1-mL-41L" secondAttribute="trailing" constant="4" id="W7K-3p-UXG"/>
+                <constraint firstItem="rNT-Ts-euL" firstAttribute="leading" secondItem="gfY-Qy-0Xj" secondAttribute="leading" id="bVL-2v-JXe"/>
+                <constraint firstItem="6Q4-Ck-vGh" firstAttribute="centerY" secondItem="D2e-98-8hg" secondAttribute="centerY" id="c21-ZB-39X"/>
+                <constraint firstAttribute="bottom" secondItem="WL1-mL-41L" secondAttribute="bottom" constant="16" id="cSA-vD-XGG"/>
+                <constraint firstItem="6Q4-Ck-vGh" firstAttribute="centerX" secondItem="D2e-98-8hg" secondAttribute="centerX" id="d4b-Jv-GKY"/>
+                <constraint firstItem="QtG-ol-ICG" firstAttribute="leading" secondItem="D2e-98-8hg" secondAttribute="leading" constant="16" id="fQ4-aC-Kbb"/>
+                <constraint firstItem="zU8-MG-YrM" firstAttribute="width" secondItem="zU8-MG-YrM" secondAttribute="height" multiplier="1:1" id="hD7-9q-m2h"/>
+                <constraint firstItem="6Q4-Ck-vGh" firstAttribute="height" secondItem="D2e-98-8hg" secondAttribute="height" id="l2z-sr-ktr"/>
+                <constraint firstItem="mec-RB-wUK" firstAttribute="top" secondItem="QtG-ol-ICG" secondAttribute="bottom" constant="16" id="ldQ-qc-iX9"/>
+                <constraint firstItem="WL1-mL-41L" firstAttribute="leading" secondItem="D2e-98-8hg" secondAttribute="leading" constant="16" id="rdb-lg-mZY"/>
+                <constraint firstItem="VQY-JU-09f" firstAttribute="trailing" secondItem="mec-RB-wUK" secondAttribute="trailing" constant="164" id="z4Y-Y3-cWx"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                    <real key="value" value="8"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <connections>
+                <outlet property="logo" destination="QtG-ol-ICG" id="2Xk-2j-cGh"/>
+                <outlet property="primaryTextLabel" destination="gfY-Qy-0Xj" id="qu8-q9-266"/>
+                <outlet property="primaryTextWithLogoLabel" destination="mec-RB-wUK" id="P5V-dr-3lB"/>
+                <outlet property="secondaryTextLabel" destination="rNT-Ts-euL" id="dvn-Hd-O8a"/>
+            </connections>
+            <point key="canvasLocation" x="-6.5217391304347831" y="109.15178571428571"/>
+        </view>
+    </objects>
+    <designables>
+        <designable name="6Q4-Ck-vGh">
+            <size key="intrinsicContentSize" width="30" height="30"/>
+        </designable>
+        <designable name="WL1-mL-41L">
+            <size key="intrinsicContentSize" width="50.5" height="16"/>
+        </designable>
+        <designable name="gfY-Qy-0Xj">
+            <size key="intrinsicContentSize" width="221" height="16"/>
+        </designable>
+        <designable name="mec-RB-wUK">
+            <size key="intrinsicContentSize" width="221" height="16"/>
+        </designable>
+        <designable name="rNT-Ts-euL">
+            <size key="intrinsicContentSize" width="109.5" height="16"/>
+        </designable>
+        <designable name="zU8-MG-YrM">
+            <size key="intrinsicContentSize" width="22" height="22"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="icChevronRightWhite" width="22" height="22"/>
+        <namedColor name="VFGWhiteText">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

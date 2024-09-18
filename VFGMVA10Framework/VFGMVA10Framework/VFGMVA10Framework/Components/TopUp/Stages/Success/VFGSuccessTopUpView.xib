@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="vodafone-bold.ttf">
+            <string>VodafoneRg-Bold</string>
+        </array>
+        <array key="vodafone-regular.ttf">
+            <string>VodafoneRg-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iN0-l3-epB" customClass="VFGSuccessTopUpView" customModule="VFGMVA10Framework" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="395" height="500"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4DU-Dh-ysP" customClass="VFGButton" customModule="VFGMVA10Foundation">
+                    <rect key="frame" x="16" y="421" width="363" height="44"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="qIm-aA-9N1"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="VodafoneRg-Regular" family="Vodafone Rg" pointSize="19"/>
+                    <state key="normal" title="Button"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="6"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="buttonStyle">
+                            <integer key="value" value="0"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="backgroundStyle">
+                            <integer key="value" value="0"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="topupAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="gDK-tZ-kIy"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YXl-Ul-rdi" customClass="AnimationView" customModule="Lottie">
+                    <rect key="frame" x="147.5" y="65" width="100" height="100"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <accessibility key="accessibilityConfiguration" identifier="TPmainIcon">
+                        <bool key="isElement" value="YES"/>
+                    </accessibility>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="100" id="c26-57-MxF"/>
+                        <constraint firstAttribute="width" constant="100" id="iMf-Hq-92g"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OR5-KN-4df" customClass="VFGLabel" customModule="VFGMVA10Foundation">
+                    <rect key="frame" x="48" y="201" width="300" height="35"/>
+                    <accessibility key="accessibilityConfiguration" identifier="TPprimaryTitle"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="jcm-k3-lkA"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="VodafoneRg-Bold" family="Vodafone Rg" pointSize="29"/>
+                    <color key="textColor" name="VFGPrimaryText"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JZI-Lk-kwR" customClass="VFGLabel" customModule="VFGMVA10Foundation">
+                    <rect key="frame" x="16" y="253" width="363" height="60"/>
+                    <accessibility key="accessibilityConfiguration" identifier="TPsecondaryTitle"/>
+                    <fontDescription key="fontDescription" name="VodafoneRg-Regular" family="Vodafone Rg" pointSize="19"/>
+                    <color key="textColor" name="VFGPrimaryText"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="height" constant="500" id="Agu-Ch-25p"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="OR5-KN-4df" secondAttribute="trailing" constant="47" id="F0a-ko-MKm"/>
+                <constraint firstItem="JZI-Lk-kwR" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="Fqt-HY-FGd"/>
+                <constraint firstItem="4DU-Dh-ysP" firstAttribute="top" secondItem="JZI-Lk-kwR" secondAttribute="bottom" constant="108" id="QFL-BC-scE"/>
+                <constraint firstAttribute="bottom" secondItem="4DU-Dh-ysP" secondAttribute="bottom" constant="35" id="RLy-5M-1ln"/>
+                <constraint firstItem="4DU-Dh-ysP" firstAttribute="trailing" secondItem="iN0-l3-epB" secondAttribute="trailing" constant="-16" id="SU4-WR-UOH"/>
+                <constraint firstItem="OR5-KN-4df" firstAttribute="top" secondItem="YXl-Ul-rdi" secondAttribute="bottom" constant="36" id="W1s-Qs-fgu"/>
+                <constraint firstItem="YXl-Ul-rdi" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="65" id="YC8-ta-7Iv"/>
+                <constraint firstItem="JZI-Lk-kwR" firstAttribute="top" secondItem="OR5-KN-4df" secondAttribute="bottom" constant="17" id="Z5A-Rc-VFs"/>
+                <constraint firstItem="OR5-KN-4df" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="48" id="a41-G5-WQa"/>
+                <constraint firstItem="YXl-Ul-rdi" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="dL1-hm-Xgq"/>
+                <constraint firstItem="4DU-Dh-ysP" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="kfZ-uP-uTh"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="JZI-Lk-kwR" secondAttribute="trailing" constant="16" id="y3p-we-3OD"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="animationView" destination="YXl-Ul-rdi" id="cWc-CO-oaN"/>
+                <outlet property="topupAction" destination="4DU-Dh-ysP" id="kb4-Aw-2Bw"/>
+                <outlet property="topupBalanceLabel" destination="JZI-Lk-kwR" id="oy0-re-kti"/>
+                <outlet property="topupLabel" destination="OR5-KN-4df" id="JiA-ts-ux9"/>
+            </connections>
+            <point key="canvasLocation" x="68" y="-141.22938530734635"/>
+        </view>
+    </objects>
+    <designables>
+        <designable name="4DU-Dh-ysP">
+            <size key="intrinsicContentSize" width="51" height="34"/>
+        </designable>
+        <designable name="JZI-Lk-kwR">
+            <size key="intrinsicContentSize" width="41" height="21.5"/>
+        </designable>
+        <designable name="OR5-KN-4df">
+            <size key="intrinsicContentSize" width="68.5" height="32.5"/>
+        </designable>
+    </designables>
+    <resources>
+        <namedColor name="VFGPrimaryText">
+            <color red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

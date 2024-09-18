@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="vodafone-bold.ttf">
+            <string>VodafoneRg-Bold</string>
+        </array>
+        <array key="vodafone-regular.ttf">
+            <string>VodafoneRg-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="ProductSwitcherNoResultCell" customModule="VFGMVA10Framework" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="418" height="230"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="418" height="230"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_search_result" translatesAutoresizingMaskIntoConstraints="NO" id="IO4-Gd-5do" customClass="VFGImageView" customModule="VFGMVA10Foundation">
+                        <rect key="frame" x="185" y="0.0" width="48" height="48"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4FB-OD-wvV" customClass="VFGLabel" customModule="VFGMVA10Foundation">
+                        <rect key="frame" x="66" y="64" width="286" height="0.0"/>
+                        <fontDescription key="fontDescription" name="VodafoneRg-Bold" family="Vodafone Rg" pointSize="18"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ql8-2y-UpF" customClass="VFGLabel" customModule="VFGMVA10Foundation">
+                        <rect key="frame" x="48" y="80" width="322" height="0.0"/>
+                        <fontDescription key="fontDescription" name="VodafoneRg-Regular" family="Vodafone Rg" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="4FB-OD-wvV" firstAttribute="top" secondItem="IO4-Gd-5do" secondAttribute="bottom" constant="16" id="Ciw-a4-iO6"/>
+                <constraint firstItem="4FB-OD-wvV" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="66" id="Cov-PS-BdH"/>
+                <constraint firstItem="Ql8-2y-UpF" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="48" id="Uhl-AH-VeJ"/>
+                <constraint firstItem="Ql8-2y-UpF" firstAttribute="top" secondItem="4FB-OD-wvV" secondAttribute="bottom" constant="16" id="ZlE-yR-gaJ"/>
+                <constraint firstAttribute="trailing" secondItem="Ql8-2y-UpF" secondAttribute="trailing" constant="48" id="bz5-tc-6O5"/>
+                <constraint firstItem="IO4-Gd-5do" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="nQD-bH-e7V"/>
+                <constraint firstAttribute="trailing" secondItem="4FB-OD-wvV" secondAttribute="trailing" constant="66" id="tUe-1X-2ct"/>
+                <constraint firstItem="IO4-Gd-5do" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="vFj-et-5f3"/>
+            </constraints>
+            <size key="customSize" width="418" height="230"/>
+            <connections>
+                <outlet property="subtitleLabel" destination="Ql8-2y-UpF" id="lVd-Ko-XcM"/>
+                <outlet property="titleLabel" destination="4FB-OD-wvV" id="u9k-ha-TPE"/>
+            </connections>
+            <point key="canvasLocation" x="423.07692307692304" y="84.597156398104261"/>
+        </collectionViewCell>
+    </objects>
+    <designables>
+        <designable name="4FB-OD-wvV"/>
+        <designable name="IO4-Gd-5do">
+            <size key="intrinsicContentSize" width="48" height="48"/>
+        </designable>
+        <designable name="Ql8-2y-UpF"/>
+    </designables>
+    <resources>
+        <image name="ic_search_result" width="48" height="48"/>
+    </resources>
+</document>

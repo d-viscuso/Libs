@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="vodafone-bold.ttf">
+            <string>VodafoneRg-Bold</string>
+        </array>
+        <array key="vodafone-regular.ttf">
+            <string>VodafoneRg-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BalanceHistoryViewController" customModule="VFGMVA10Framework" customModuleProvider="target">
+            <connections>
+                <outlet property="autoTopupCVMView" destination="m5J-qA-7sm" id="wCg-ou-I9T"/>
+                <outlet property="balanceFilterHeightConstraint" destination="yHB-rv-KLt" id="xz9-lV-zAP"/>
+                <outlet property="balanceHistoryHeightConstraint" destination="oNZ-1p-g1n" id="yDN-9O-H9P"/>
+                <outlet property="balanceHistoryTableView" destination="mit-iv-wek" id="ywH-fd-K7l"/>
+                <outlet property="balanceHistoryTitleLabel" destination="jXG-Aq-usq" id="eAS-hN-ip5"/>
+                <outlet property="bannerHeightConstraint" destination="zPt-np-kLq" id="2t0-da-6Sx"/>
+                <outlet property="calendarImageView" destination="7kL-9K-TXK" id="tx5-tv-SIz"/>
+                <outlet property="clearButton" destination="pgs-cJ-AWw" id="Naz-6g-yfI"/>
+                <outlet property="datesLabel" destination="LVc-gi-C5E" id="lJs-Jo-qPl"/>
+                <outlet property="datesView" destination="wdP-Oe-plU" id="xZw-kM-z34"/>
+                <outlet property="filterView" destination="TN3-ow-Iyr" id="vSz-pf-3LS"/>
+                <outlet property="selectedDateLabel" destination="1Do-5O-sPJ" id="OIi-y7-mc6"/>
+                <outlet property="selectedDateStack" destination="tNH-Tz-zbE" id="Ws8-7w-3Fx"/>
+                <outlet property="selectedDateViewHeight" destination="G9y-YX-p4s" id="GVC-bm-EoA"/>
+                <outlet property="separatorView" destination="ce3-5g-8EF" id="ZlH-bg-T6b"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="260"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="m5J-qA-7sm" userLabel="Banner View">
+                    <rect key="frame" x="16" y="17" width="382" height="0.0"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" id="zPt-np-kLq"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Balance history" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jXG-Aq-usq" customClass="VFGLabel" customModule="VFGMVA10Foundation">
+                    <rect key="frame" x="16" y="34" width="157.5" height="32"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="32" id="ICi-Ah-TZU"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="VodafoneRg-Bold" family="Vodafone Rg" pointSize="24"/>
+                    <color key="textColor" name="VFGPrimaryText"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TN3-ow-Iyr" customClass="VFGFilterView" customModule="VFGMVA10Foundation">
+                    <rect key="frame" x="16" y="120" width="390" height="36"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="36" id="yHB-rv-KLt"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="mit-iv-wek">
+                    <rect key="frame" x="0.0" y="181" width="414" height="0.0"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" id="oNZ-1p-g1n"/>
+                    </constraints>
+                </tableView>
+                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wdP-Oe-plU">
+                    <rect key="frame" x="319" y="37" width="90" height="26"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dates" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LVc-gi-C5E" customClass="VFGLabel" customModule="VFGMVA10Framework" customModuleProvider="target">
+                            <rect key="frame" x="9" y="3" width="37" height="20"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="20" id="Pj4-w3-Dx3"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="VodafoneRg-Regular" family="Vodafone Rg" pointSize="16.600000381469727"/>
+                            <color key="textColor" name="VFGRedCoralText"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icCalendarRed" translatesAutoresizingMaskIntoConstraints="NO" id="7kL-9K-TXK" customClass="VFGImageView" customModule="VFGMVA10Foundation">
+                            <rect key="frame" x="55" y="0.5" width="25" height="25"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="25" id="Upi-3c-IiO"/>
+                                <constraint firstAttribute="width" secondItem="7kL-9K-TXK" secondAttribute="height" id="cd3-GD-P8a"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="imageName" value="icCalendarRed"/>
+                            </userDefinedRuntimeAttributes>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="7kL-9K-TXK" firstAttribute="centerY" secondItem="wdP-Oe-plU" secondAttribute="centerY" id="3cu-I6-A3w"/>
+                        <constraint firstAttribute="height" constant="26" id="Bc9-Vk-cvf"/>
+                        <constraint firstItem="7kL-9K-TXK" firstAttribute="leading" secondItem="LVc-gi-C5E" secondAttribute="trailing" constant="9" id="FaM-fl-8n8"/>
+                        <constraint firstAttribute="trailing" secondItem="7kL-9K-TXK" secondAttribute="trailing" constant="10" id="UQV-4E-GZp"/>
+                        <constraint firstItem="LVc-gi-C5E" firstAttribute="centerY" secondItem="7kL-9K-TXK" secondAttribute="centerY" id="ZWm-8U-1y0"/>
+                        <constraint firstAttribute="width" constant="90" id="bPQ-rB-Osa"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ce3-5g-8EF">
+                    <rect key="frame" x="16" y="180" width="382" height="1"/>
+                    <color key="backgroundColor" name="VFGGreyDivider"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="vz4-Jb-ucU"/>
+                    </constraints>
+                </view>
+                <stackView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="tNH-Tz-zbE">
+                    <rect key="frame" x="16" y="83" width="383" height="20"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="750" text="9-11 sep 2021" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Do-5O-sPJ" customClass="VFGLabel" customModule="VFGMVA10Framework" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="283" height="20"/>
+                            <fontDescription key="fontDescription" name="VodafoneRg-Regular" family="Vodafone Rg" pointSize="16.5"/>
+                            <color key="textColor" name="VFGSecondaryText"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="1000" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pgs-cJ-AWw" customClass="VFGButton" customModule="VFGMVA10Foundation">
+                            <rect key="frame" x="323" y="0.0" width="60" height="20"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="60" id="56a-9C-j11"/>
+                                <constraint firstAttribute="height" constant="20" id="UsW-Fp-BAv"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="VodafoneRg-Regular" family="Vodafone Rg" pointSize="16.600000381469727"/>
+                            <state key="normal" title="Clear">
+                                <color key="titleColor" name="VFGRedCoralText"/>
+                            </state>
+                            <connections>
+                                <action selector="clearSelectedDateButtonDidPress:" destination="-1" eventType="touchUpInside" id="osI-QN-Lkw"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="G9y-YX-p4s"/>
+                    </constraints>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="tNH-Tz-zbE" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="16" id="09b-9N-NaQ"/>
+                <constraint firstItem="TN3-ow-Iyr" firstAttribute="top" secondItem="tNH-Tz-zbE" secondAttribute="bottom" constant="17" id="1HJ-IX-5Nx"/>
+                <constraint firstAttribute="trailing" secondItem="m5J-qA-7sm" secondAttribute="trailing" constant="16" id="2d8-Lg-kwf"/>
+                <constraint firstItem="jXG-Aq-usq" firstAttribute="top" secondItem="m5J-qA-7sm" secondAttribute="bottom" constant="17" id="79g-Yo-aN4"/>
+                <constraint firstItem="ce3-5g-8EF" firstAttribute="top" secondItem="TN3-ow-Iyr" secondAttribute="bottom" constant="24" id="7XX-qe-DAb"/>
+                <constraint firstAttribute="trailing" secondItem="TN3-ow-Iyr" secondAttribute="trailing" constant="8" id="CHp-cA-0Ez"/>
+                <constraint firstItem="wdP-Oe-plU" firstAttribute="centerY" secondItem="jXG-Aq-usq" secondAttribute="centerY" id="EPk-dC-yQn"/>
+                <constraint firstItem="ce3-5g-8EF" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="16" id="LKk-ZF-ddw"/>
+                <constraint firstItem="mit-iv-wek" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="MQd-oD-4hr"/>
+                <constraint firstItem="tNH-Tz-zbE" firstAttribute="top" secondItem="jXG-Aq-usq" secondAttribute="bottom" constant="17" id="Pux-Pa-cVX"/>
+                <constraint firstItem="TN3-ow-Iyr" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="16" id="Twl-4J-IB1"/>
+                <constraint firstAttribute="trailing" secondItem="wdP-Oe-plU" secondAttribute="trailing" constant="5" id="UJB-E8-evX"/>
+                <constraint firstItem="pgs-cJ-AWw" firstAttribute="trailing" secondItem="7kL-9K-TXK" secondAttribute="trailing" id="Ua5-C6-qgp"/>
+                <constraint firstItem="jXG-Aq-usq" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="16" id="X5R-Se-Tgt"/>
+                <constraint firstItem="m5J-qA-7sm" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="16" id="ZRn-Aj-j4X"/>
+                <constraint firstAttribute="trailing" secondItem="ce3-5g-8EF" secondAttribute="trailing" constant="16" id="caE-PC-RrL"/>
+                <constraint firstItem="m5J-qA-7sm" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="17" id="ip8-Ld-EsR"/>
+                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="mit-iv-wek" secondAttribute="bottom" priority="750" id="kBY-ti-MP9"/>
+                <constraint firstAttribute="trailing" secondItem="mit-iv-wek" secondAttribute="trailing" id="kpg-BA-ahh"/>
+                <constraint firstItem="mit-iv-wek" firstAttribute="top" secondItem="ce3-5g-8EF" secondAttribute="bottom" id="qsJ-0g-L7F"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-304" y="-147"/>
+        </view>
+    </objects>
+    <designables>
+        <designable name="1Do-5O-sPJ">
+            <size key="intrinsicContentSize" width="93" height="18.5"/>
+        </designable>
+        <designable name="7kL-9K-TXK">
+            <size key="intrinsicContentSize" width="20" height="20"/>
+        </designable>
+        <designable name="LVc-gi-C5E">
+            <size key="intrinsicContentSize" width="37" height="19"/>
+        </designable>
+        <designable name="jXG-Aq-usq">
+            <size key="intrinsicContentSize" width="157.5" height="27"/>
+        </designable>
+        <designable name="pgs-cJ-AWw">
+            <size key="intrinsicContentSize" width="34" height="31"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="icCalendarRed" width="20" height="20"/>
+        <namedColor name="VFGGreyDivider">
+            <color red="0.74500000476837158" green="0.74500000476837158" blue="0.74500000476837158" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="VFGPrimaryText">
+            <color red="0.050980392156862744" green="0.050980392156862744" blue="0.050980392156862744" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="VFGRedCoralText">
+            <color red="0.90196078431372551" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="VFGSecondaryText">
+            <color red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

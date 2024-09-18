@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="F9X-jp-YGZ" customClass="ProductSwitcherCardView" customModule="VFGMVA10Framework" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="413" height="441"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="pW1-J0-s4I">
+                    <rect key="frame" x="0.0" y="0.0" width="413" height="167"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ESs-tg-edw">
+                            <rect key="frame" x="0.0" y="0.0" width="413" height="60"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="60" id="jhD-h0-BN7"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fGe-bR-Wkt">
+                            <rect key="frame" x="0.0" y="60" width="413" height="72"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="72" id="854-RC-P1V"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zy6-uP-4Be" customClass="VFGFilterView" customModule="VFGMVA10Foundation">
+                            <rect key="frame" x="0.0" y="132" width="413" height="35"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="35" id="UfU-1I-4Qh"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </stackView>
+                <collectionView contentMode="scaleToFill" bounces="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="Tkc-77-vPl">
+                    <rect key="frame" x="0.0" y="191" width="413" height="250"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="250" id="ORf-LO-4HB"/>
+                    </constraints>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="eWs-qG-EGr">
+                        <size key="itemSize" width="128" height="128"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="pW1-J0-s4I" firstAttribute="top" secondItem="F9X-jp-YGZ" secondAttribute="top" id="1yq-V4-6yt"/>
+                <constraint firstItem="Tkc-77-vPl" firstAttribute="top" secondItem="pW1-J0-s4I" secondAttribute="bottom" constant="24" id="64L-BI-naK"/>
+                <constraint firstItem="pW1-J0-s4I" firstAttribute="leading" secondItem="F9X-jp-YGZ" secondAttribute="leading" id="9lb-Jr-MV7"/>
+                <constraint firstAttribute="bottom" secondItem="Tkc-77-vPl" secondAttribute="bottom" id="CYo-dz-HaN"/>
+                <constraint firstItem="Tkc-77-vPl" firstAttribute="trailing" secondItem="F9X-jp-YGZ" secondAttribute="trailing" id="HgN-6A-m8z"/>
+                <constraint firstAttribute="trailing" secondItem="pW1-J0-s4I" secondAttribute="trailing" id="LEs-0c-YK1"/>
+                <constraint firstItem="Tkc-77-vPl" firstAttribute="leading" secondItem="F9X-jp-YGZ" secondAttribute="leading" id="fXN-l9-QYE"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="addressFilterHolderView" destination="ESs-tg-edw" id="I2A-Cr-w1t"/>
+                <outlet property="categoriesFilterView" destination="zy6-uP-4Be" id="O0d-0w-IC5"/>
+                <outlet property="filtersStackView" destination="pW1-J0-s4I" id="aVq-h7-Z4f"/>
+                <outlet property="productsCollectionView" destination="Tkc-77-vPl" id="DDc-Nt-Zxg"/>
+                <outlet property="searchHolderView" destination="fGe-bR-Wkt" id="vaE-xa-gOM"/>
+            </connections>
+            <point key="canvasLocation" x="119.56521739130436" y="126.89732142857142"/>
+        </view>
+    </objects>
+</document>

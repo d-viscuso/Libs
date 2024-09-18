@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="vodafone-bold.ttf">
+            <string>VodafoneRg-Bold</string>
+        </array>
+        <array key="vodafone-regular.ttf">
+            <string>VodafoneRg-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Shop Add Ons View Controller-->
+        <scene sceneID="X9z-LH-tsw">
+            <objects>
+                <viewController storyboardIdentifier="ShopAddOnsViewController" id="6o3-2c-pYz" customClass="ShopAddOnsViewController" customModule="VFGMVA10Framework" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xcq-nx-C8y">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yCJ-Mc-PiF">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Zhn-0g-gcE">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="890"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5KI-RU-6eC" userLabel="Header View">
+                                                <rect key="frame" x="0.0" y="33" width="414" height="126"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="shop add-ons" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4FD-Xp-T7L" customClass="VFGLabel" customModule="VFGMVA10Foundation">
+                                                        <rect key="frame" x="16" y="0.0" width="398" height="27"/>
+                                                        <fontDescription key="fontDescription" name="VodafoneRg-Bold" family="Vodafone Rg" pointSize="24"/>
+                                                        <color key="textColor" name="VFGPrimaryText"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Add more Add-ons to your mobile phone" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9i0-US-9bN" customClass="VFGLabel" customModule="VFGMVA10Foundation">
+                                                        <rect key="frame" x="16" y="43" width="252.5" height="18"/>
+                                                        <fontDescription key="fontDescription" name="VodafoneRg-Regular" family="Vodafone Rg" pointSize="16"/>
+                                                        <color key="textColor" name="VFGPrimaryText"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ciM-cX-Grp" customClass="VFGFilterView" customModule="VFGMVA10Foundation">
+                                                        <rect key="frame" x="15" y="77.5" width="391" height="34"/>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="34" id="47F-6L-h3b"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AkI-Za-rxh">
+                                                        <rect key="frame" x="0.0" y="126" width="414" height="0.0"/>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                    </view>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="AkI-Za-rxh" secondAttribute="trailing" id="62B-kh-lYf"/>
+                                                    <constraint firstItem="AkI-Za-rxh" firstAttribute="top" secondItem="ciM-cX-Grp" secondAttribute="bottom" id="IP8-sH-SRP"/>
+                                                    <constraint firstItem="9i0-US-9bN" firstAttribute="top" secondItem="4FD-Xp-T7L" secondAttribute="bottom" constant="16" id="Im5-2b-qnN"/>
+                                                    <constraint firstItem="ciM-cX-Grp" firstAttribute="top" secondItem="9i0-US-9bN" secondAttribute="bottom" constant="16.5" id="L2V-Sv-Aya"/>
+                                                    <constraint firstAttribute="trailing" secondItem="ciM-cX-Grp" secondAttribute="trailing" constant="8" id="Lza-DB-Hre"/>
+                                                    <constraint firstItem="4FD-Xp-T7L" firstAttribute="top" secondItem="5KI-RU-6eC" secondAttribute="top" id="add-3y-qtw"/>
+                                                    <constraint firstItem="AkI-Za-rxh" firstAttribute="leading" secondItem="5KI-RU-6eC" secondAttribute="leading" id="cX9-hk-dWp"/>
+                                                    <constraint firstItem="ciM-cX-Grp" firstAttribute="leading" secondItem="5KI-RU-6eC" secondAttribute="leading" constant="15" id="iLz-CJ-SYd"/>
+                                                    <constraint firstItem="4FD-Xp-T7L" firstAttribute="leading" secondItem="5KI-RU-6eC" secondAttribute="leading" constant="16" id="kE7-eJ-Dr2"/>
+                                                    <constraint firstAttribute="trailing" secondItem="4FD-Xp-T7L" secondAttribute="trailing" id="lap-WG-Nti"/>
+                                                    <constraint firstItem="9i0-US-9bN" firstAttribute="leading" secondItem="4FD-Xp-T7L" secondAttribute="leading" id="mUj-DX-c8e"/>
+                                                    <constraint firstAttribute="bottom" secondItem="AkI-Za-rxh" secondAttribute="bottom" id="qW2-Br-FSi"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pfY-Y6-mED">
+                                                <rect key="frame" x="16" y="177" width="382" height="1"/>
+                                                <color key="backgroundColor" name="VFGGreyDividerFour"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="1" id="NqI-AS-HRW"/>
+                                                </constraints>
+                                            </view>
+                                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" tag="2" contentMode="scaleToFill" ambiguous="YES" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Ouq-9P-iNn">
+                                                <rect key="frame" x="0.0" y="202" width="414" height="688"/>
+                                                <color key="backgroundColor" name="VFGLightGreyBackground"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="688" id="6hh-jh-PpR"/>
+                                                </constraints>
+                                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="vXu-8p-uEh">
+                                                    <size key="itemSize" width="50" height="50"/>
+                                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                </collectionViewFlowLayout>
+                                                <cells>
+                                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="AddOnsProductCell" id="lRk-pH-QJo" customClass="AddOnsProductCell" customModule="VFGMVA10Framework" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Yb8-1B-jOx">
+                                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                                            <autoresizingMask key="autoresizingMask"/>
+                                                        </collectionViewCellContentView>
+                                                    </collectionViewCell>
+                                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="AddOnsProductShimmerCell" id="xec-fo-UaU" customClass="AddOnsProductShimmerCell" customModule="VFGMVA10Framework" customModuleProvider="target">
+                                                        <rect key="frame" x="52" y="0.0" width="50" height="50"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="XOl-8C-biy">
+                                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                                            <autoresizingMask key="autoresizingMask"/>
+                                                        </collectionViewCellContentView>
+                                                    </collectionViewCell>
+                                                </cells>
+                                            </collectionView>
+                                        </subviews>
+                                        <color key="backgroundColor" name="VFGLightGreyBackground"/>
+                                        <constraints>
+                                            <constraint firstItem="Ouq-9P-iNn" firstAttribute="top" secondItem="pfY-Y6-mED" secondAttribute="bottom" constant="24" id="16D-Ev-PdI"/>
+                                            <constraint firstItem="pfY-Y6-mED" firstAttribute="top" secondItem="5KI-RU-6eC" secondAttribute="bottom" constant="18" id="4lr-em-qe6"/>
+                                            <constraint firstItem="pfY-Y6-mED" firstAttribute="leading" secondItem="Zhn-0g-gcE" secondAttribute="leading" constant="16" id="H3l-iF-oHj"/>
+                                            <constraint firstItem="5KI-RU-6eC" firstAttribute="top" secondItem="Zhn-0g-gcE" secondAttribute="top" constant="33" id="IgN-dT-vOz"/>
+                                            <constraint firstItem="Ouq-9P-iNn" firstAttribute="leading" secondItem="Zhn-0g-gcE" secondAttribute="leading" id="MbR-T1-kyT"/>
+                                            <constraint firstAttribute="bottom" secondItem="Ouq-9P-iNn" secondAttribute="bottom" id="P90-V1-4vA"/>
+                                            <constraint firstAttribute="trailing" secondItem="pfY-Y6-mED" secondAttribute="trailing" constant="16" id="Pb5-Uy-xZR"/>
+                                            <constraint firstItem="5KI-RU-6eC" firstAttribute="leading" secondItem="Zhn-0g-gcE" secondAttribute="leading" id="qQg-Fb-PF7"/>
+                                            <constraint firstAttribute="trailing" secondItem="Ouq-9P-iNn" secondAttribute="trailing" id="xL8-Dy-2pI"/>
+                                            <constraint firstAttribute="trailing" secondItem="5KI-RU-6eC" secondAttribute="trailing" id="ykI-dT-C6T"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" name="VFGLightGreyBackground"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="Zhn-0g-gcE" firstAttribute="leading" secondItem="yCJ-Mc-PiF" secondAttribute="leading" id="2o9-IR-gfF"/>
+                                    <constraint firstItem="Zhn-0g-gcE" firstAttribute="top" secondItem="yCJ-Mc-PiF" secondAttribute="top" id="UR8-kZ-TsB"/>
+                                    <constraint firstAttribute="bottom" secondItem="Zhn-0g-gcE" secondAttribute="bottom" id="ka1-8d-pEZ"/>
+                                    <constraint firstAttribute="trailing" secondItem="Zhn-0g-gcE" secondAttribute="trailing" id="tV6-Ce-Mzy"/>
+                                    <constraint firstItem="Zhn-0g-gcE" firstAttribute="width" secondItem="yCJ-Mc-PiF" secondAttribute="width" id="xjv-ri-k4G"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="pKQ-qL-vjC"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="gfZ-uf-CsA"/>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="iss-Xy-v2i"/>
+                        <color key="backgroundColor" name="VFGLightGreyBackground"/>
+                        <constraints>
+                            <constraint firstAttribute="leading" secondItem="yCJ-Mc-PiF" secondAttribute="leading" id="1Xk-ML-viy"/>
+                            <constraint firstItem="yCJ-Mc-PiF" firstAttribute="bottom" secondItem="xcq-nx-C8y" secondAttribute="bottom" id="8de-ur-Hh9"/>
+                            <constraint firstItem="yCJ-Mc-PiF" firstAttribute="trailing" secondItem="xcq-nx-C8y" secondAttribute="trailing" id="Wg5-c2-3v5"/>
+                            <constraint firstItem="yCJ-Mc-PiF" firstAttribute="top" secondItem="xcq-nx-C8y" secondAttribute="top" id="hTd-bU-M4f"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="collectionViewHeightConstraint" destination="6hh-jh-PpR" id="hfO-Q7-GwH"/>
+                        <outlet property="containerScrollView" destination="yCJ-Mc-PiF" id="DYM-67-7o7"/>
+                        <outlet property="customFilterView" destination="AkI-Za-rxh" id="j7m-xy-nSs"/>
+                        <outlet property="filterView" destination="ciM-cX-Grp" id="Iyf-gt-T6a"/>
+                        <outlet property="separator" destination="pfY-Y6-mED" id="dBP-j2-wdb"/>
+                        <outlet property="shopAddOnsCollectionView" destination="Ouq-9P-iNn" id="J4i-6P-5iB"/>
+                        <outlet property="subTitleLabel" destination="9i0-US-9bN" id="Opw-8o-cr2"/>
+                        <outlet property="titleLabel" destination="4FD-Xp-T7L" id="A0j-Gn-R7l"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IQB-L4-vXh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="743" y="99"/>
+        </scene>
+    </scenes>
+    <designables>
+        <designable name="4FD-Xp-T7L">
+            <size key="intrinsicContentSize" width="136" height="27"/>
+        </designable>
+        <designable name="9i0-US-9bN">
+            <size key="intrinsicContentSize" width="252.5" height="18"/>
+        </designable>
+    </designables>
+    <resources>
+        <namedColor name="VFGGreyDividerFour">
+            <color red="0.92156862745098034" green="0.92156862745098034" blue="0.92156862745098034" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="VFGLightGreyBackground">
+            <color red="0.95686274509803926" green="0.95686274509803926" blue="0.95686274509803926" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="VFGPrimaryText">
+            <color red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

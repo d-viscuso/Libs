@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="vodafone-bold.ttf">
+            <string>VodafoneRg-Bold</string>
+        </array>
+        <array key="vodafone-regular.ttf">
+            <string>VodafoneRg-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="VFGTooltipCardView" customModule="VFGMVA10Foundation" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="310" height="130"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Fqa-Zz-h3S" userLabel="Labels + Buttons">
+                    <rect key="frame" x="0.0" y="0.0" width="310" height="130"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="yCd-fI-cdh" userLabel="Title + Counter + Desc">
+                            <rect key="frame" x="0.0" y="0.0" width="310" height="89"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" distribution="equalCentering" translatesAutoresizingMaskIntoConstraints="NO" id="PCM-br-wJr" userLabel="Title + Counter">
+                                    <rect key="frame" x="0.0" y="0.0" width="310" height="19.5"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tooltip card" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sLO-7c-j6k" customClass="VFGLabel" customModule="VFGMVA10Foundation" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="0.0" width="84" height="19.5"/>
+                                            <fontDescription key="fontDescription" name="VodafoneRg-Bold" family="Vodafone Rg" pointSize="17"/>
+                                            <color key="textColor" name="VFGWhiteText"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1/3" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6ij-10-pWf" customClass="VFGLabel" customModule="VFGMVA10Foundation" customModuleProvider="target">
+                                            <rect key="frame" x="280" y="0.0" width="30" height="19.5"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="30" id="oNV-5E-Ec3"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="VodafoneRg-Regular" family="Vodafone Rg" pointSize="17"/>
+                                            <color key="textColor" name="VFGWhiteText"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </stackView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eoI-mu-rfV" customClass="VFGLabel" customModule="VFGMVA10Foundation" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="19.5" width="270.5" height="69.5"/>
+                                    <fontDescription key="fontDescription" name="VodafoneRg-Regular" family="Vodafone Rg" pointSize="17"/>
+                                    <color key="textColor" name="VFGWhiteText"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="PCM-br-wJr" secondAttribute="trailing" id="pW0-VK-9rZ"/>
+                            </constraints>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="xCp-2R-ng1">
+                            <rect key="frame" x="0.0" y="97" width="310" height="33"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dKw-bC-yd9" customClass="VFGButton" customModule="VFGMVA10Foundation" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="149" height="33"/>
+                                    <fontDescription key="fontDescription" name="VodafoneRg-Regular" family="Vodafone Rg" pointSize="16.700000762939453"/>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <state key="normal" title="Dismiss All">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                            <real key="value" value="2"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                            <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="dismissAllDidPress" destination="iN0-l3-epB" eventType="touchUpInside" id="JuW-p9-5xO"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DFI-Ls-s4r" customClass="VFGButton" customModule="VFGMVA10Foundation">
+                                    <rect key="frame" x="161" y="0.0" width="149" height="33"/>
+                                    <color key="backgroundColor" name="VFGWhiteBackground"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="33" id="HFc-P2-TnG"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="VodafoneRg-Regular" family="Vodafone Rg" pointSize="16.700000762939453"/>
+                                    <state key="normal" title="Next">
+                                        <color key="titleColor" name="VFGPrimaryText"/>
+                                    </state>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="buttonStyle">
+                                            <integer key="value" value="0"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="backgroundStyle">
+                                            <integer key="value" value="1"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="buttonDidPress" destination="iN0-l3-epB" eventType="touchUpInside" id="75J-FI-OXH"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" name="VFGTimelineCellActive"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Fqa-Zz-h3S" secondAttribute="trailing" id="7iH-52-wFL"/>
+                <constraint firstAttribute="bottom" secondItem="Fqa-Zz-h3S" secondAttribute="bottom" id="DAC-GQ-9yO"/>
+                <constraint firstItem="Fqa-Zz-h3S" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Ucj-yb-DQz"/>
+                <constraint firstItem="Fqa-Zz-h3S" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="ftk-jM-Wy7"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="button" destination="DFI-Ls-s4r" id="zoT-ca-KVd"/>
+                <outlet property="counterLabel" destination="6ij-10-pWf" id="M3C-ed-KbF"/>
+                <outlet property="descriptionLabel" destination="eoI-mu-rfV" id="9RL-Fc-LRW"/>
+                <outlet property="dismissAllButton" destination="dKw-bC-yd9" id="Ax0-12-iDH"/>
+                <outlet property="titleLabel" destination="sLO-7c-j6k" id="y46-xI-HU7"/>
+            </connections>
+            <point key="canvasLocation" x="8.6956521739130448" y="-42.1875"/>
+        </view>
+    </objects>
+    <designables>
+        <designable name="6ij-10-pWf">
+            <size key="intrinsicContentSize" width="25.5" height="19.5"/>
+        </designable>
+        <designable name="DFI-Ls-s4r">
+            <size key="intrinsicContentSize" width="30" height="31"/>
+        </designable>
+        <designable name="dKw-bC-yd9">
+            <size key="intrinsicContentSize" width="70" height="31"/>
+        </designable>
+        <designable name="eoI-mu-rfV">
+            <size key="intrinsicContentSize" width="527" height="19.5"/>
+        </designable>
+        <designable name="sLO-7c-j6k">
+            <size key="intrinsicContentSize" width="84" height="19.5"/>
+        </designable>
+    </designables>
+    <resources>
+        <namedColor name="VFGPrimaryText">
+            <color red="0.050980392156862744" green="0.050980392156862744" blue="0.050980392156862744" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="VFGTimelineCellActive">
+            <color red="0.0" green="0.48600000143051147" blue="0.57300001382827759" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="VFGWhiteBackground">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="VFGWhiteText">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

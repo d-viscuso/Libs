@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="vodafone-regular.ttf">
+            <string>VodafoneRg-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="Gt0-DG-1yh" customClass="VFGFloatingTobiWelcomeMessageView" customModule="VFGMVA10Foundation" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="290" height="68"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello, I’am Tobi, Vodafone’s virtual agent. How can I help you today?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="njF-Gh-8bp" customClass="VFGLabel" customModule="VFGMVA10Foundation" customModuleProvider="target">
+                    <rect key="frame" x="4" y="18.5" width="259" height="31.5"/>
+                    <fontDescription key="fontDescription" name="VodafoneRg-Regular" family="Vodafone Rg" pointSize="14"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="closeIcon" translatesAutoresizingMaskIntoConstraints="NO" id="FBE-xt-9Ue" customClass="VFGImageView" customModule="VFGMVA10Foundation" customModuleProvider="target">
+                    <rect key="frame" x="267" y="29" width="10" height="10"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="10" id="DZX-94-WlN"/>
+                        <constraint firstAttribute="height" constant="10" id="GqH-KJ-rCA"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="kn6-1b-ycv"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="FBE-xt-9Ue" secondAttribute="trailing" constant="13" id="C5j-gw-e1n"/>
+                <constraint firstItem="njF-Gh-8bp" firstAttribute="centerY" secondItem="Gt0-DG-1yh" secondAttribute="centerY" id="LUh-h7-EGr"/>
+                <constraint firstItem="FBE-xt-9Ue" firstAttribute="leading" secondItem="njF-Gh-8bp" secondAttribute="trailing" constant="4" id="dfX-9Y-IpL"/>
+                <constraint firstItem="njF-Gh-8bp" firstAttribute="leading" secondItem="Gt0-DG-1yh" secondAttribute="leading" constant="4" id="gx2-cq-2x2"/>
+                <constraint firstItem="FBE-xt-9Ue" firstAttribute="centerY" secondItem="Gt0-DG-1yh" secondAttribute="centerY" id="qLh-lU-ZjJ"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="closeIconImageView" destination="FBE-xt-9Ue" id="mnO-5d-Hef"/>
+                <outlet property="titleLabel" destination="njF-Gh-8bp" id="sfg-7V-YuY"/>
+            </connections>
+            <point key="canvasLocation" x="139" y="144"/>
+        </view>
+    </objects>
+    <designables>
+        <designable name="njF-Gh-8bp">
+            <size key="intrinsicContentSize" width="366" height="16"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="closeIcon" width="11" height="11"/>
+    </resources>
+</document>

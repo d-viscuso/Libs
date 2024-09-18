@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="vodafone-regular.ttf">
+            <string>VodafoneRg-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="7xY-Ga-QWi" customClass="VFGSwitchAccountTableViewFooter" customModule="VFGMVA10Framework" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="140"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5Ge-jm-tw1">
+                    <rect key="frame" x="16" y="16" width="382" height="130.5"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="NtJ-Fb-UKE">
+                            <rect key="frame" x="0.0" y="0.0" width="382" height="130.5"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="hfk-Yd-KFH">
+                                    <rect key="frame" x="0.0" y="0.0" width="382" height="54.5"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" spacing="9" translatesAutoresizingMaskIntoConstraints="NO" id="YHC-et-DSH">
+                                            <rect key="frame" x="0.0" y="0.0" width="382" height="18"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="manageAccount" translatesAutoresizingMaskIntoConstraints="NO" id="fFt-4k-baF" customClass="VFGImageView" customModule="VFGMVA10Foundation">
+                                                    <rect key="frame" x="0.0" y="0.0" width="16" height="18"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="16" id="BP6-rT-6ea"/>
+                                                        <constraint firstAttribute="height" constant="18" id="wYA-HJ-1f4"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add an account" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A2n-MO-EuO" customClass="VFGLabel" customModule="VFGMVA10Framework" customModuleProvider="target">
+                                                    <rect key="frame" x="25" y="0.0" width="357" height="18"/>
+                                                    <fontDescription key="fontDescription" name="VodafoneRg-Regular" family="Vodafone Rg" pointSize="14"/>
+                                                    <color key="textColor" red="0.74117647058823533" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="fFt-4k-baF" firstAttribute="centerY" secondItem="YHC-et-DSH" secondAttribute="centerY" id="kSP-ea-HCg"/>
+                                            </constraints>
+                                        </stackView>
+                                        <stackView opaque="NO" contentMode="scaleToFill" spacing="9" translatesAutoresizingMaskIntoConstraints="NO" id="Q0t-1i-Cwi">
+                                            <rect key="frame" x="0.0" y="28" width="382" height="26.5"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="redSetttings" translatesAutoresizingMaskIntoConstraints="NO" id="qqO-L8-VJ2" customClass="VFGImageView" customModule="VFGMVA10Foundation">
+                                                    <rect key="frame" x="0.0" y="0.0" width="16" height="26.5"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="16" id="Wqc-XJ-txv"/>
+                                                        <constraint firstAttribute="height" constant="18" id="skC-RV-qvJ"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Manage accounts on this device" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oIp-TJ-UkE" customClass="VFGLabel" customModule="VFGMVA10Framework" customModuleProvider="target">
+                                                    <rect key="frame" x="25" y="0.0" width="357" height="26.5"/>
+                                                    <fontDescription key="fontDescription" name="VodafoneRg-Regular" family="Vodafone Rg" pointSize="14"/>
+                                                    <color key="textColor" red="0.74117647060000003" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="qqO-L8-VJ2" firstAttribute="centerY" secondItem="Q0t-1i-Cwi" secondAttribute="centerY" id="ZeZ-SQ-Zil"/>
+                                            </constraints>
+                                        </stackView>
+                                    </subviews>
+                                </stackView>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dte-ve-w90" customClass="VFGButton" customModule="VFGMVA10Foundation">
+                                    <rect key="frame" x="0.0" y="86.5" width="382" height="44"/>
+                                    <color key="backgroundColor" name="VFGWhiteBackground"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="44" id="idt-of-nfC"/>
+                                    </constraints>
+                                    <state key="normal" title="Button"/>
+                                    <buttonConfiguration key="configuration" style="plain" title="Log Out">
+                                        <fontDescription key="titleFontDescription" name="VodafoneRg-Regular" family="Vodafone Rg" pointSize="16"/>
+                                        <color key="baseForegroundColor" name="VFGPrimaryText"/>
+                                    </buttonConfiguration>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                            <real key="value" value="2"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                            <real key="value" value="6"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                            <color key="value" name="VFGPrimaryText"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="titleColor">
+                                            <color key="value" name="VFGPrimaryText"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
+                                            <real key="value" value="16"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="logOutButtonAction:" destination="7xY-Ga-QWi" eventType="touchUpInside" id="XFe-VT-vQl"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </stackView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dK4-gh-QGG" customClass="VFGButton" customModule="VFGMVA10Foundation">
+                            <rect key="frame" x="0.0" y="0.0" width="382" height="18"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain"/>
+                            <connections>
+                                <action selector="addAccountButtonAction:" destination="7xY-Ga-QWi" eventType="touchUpInside" id="4F3-zO-ybJ"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OsD-4f-9ta" customClass="VFGButton" customModule="VFGMVA10Foundation">
+                            <rect key="frame" x="0.0" y="28" width="382" height="26.5"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain"/>
+                            <connections>
+                                <action selector="manageAccountButtonAction:" destination="7xY-Ga-QWi" eventType="touchUpInside" id="BLq-pe-Q7A"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="dK4-gh-QGG" firstAttribute="trailing" secondItem="YHC-et-DSH" secondAttribute="trailing" id="6Wa-oo-5sR"/>
+                        <constraint firstItem="NtJ-Fb-UKE" firstAttribute="leading" secondItem="5Ge-jm-tw1" secondAttribute="leading" id="Elc-lN-1m1"/>
+                        <constraint firstItem="OsD-4f-9ta" firstAttribute="top" secondItem="Q0t-1i-Cwi" secondAttribute="top" id="JYp-xn-Mom"/>
+                        <constraint firstItem="dK4-gh-QGG" firstAttribute="top" secondItem="YHC-et-DSH" secondAttribute="top" id="WdW-oj-A9f"/>
+                        <constraint firstAttribute="bottom" secondItem="NtJ-Fb-UKE" secondAttribute="bottom" id="XAX-aU-s8s"/>
+                        <constraint firstItem="OsD-4f-9ta" firstAttribute="leading" secondItem="Q0t-1i-Cwi" secondAttribute="leading" id="Z8M-xx-Khu"/>
+                        <constraint firstAttribute="trailing" secondItem="NtJ-Fb-UKE" secondAttribute="trailing" id="bKU-kG-Iuc"/>
+                        <constraint firstItem="dK4-gh-QGG" firstAttribute="leading" secondItem="YHC-et-DSH" secondAttribute="leading" id="e50-wC-ML9"/>
+                        <constraint firstItem="OsD-4f-9ta" firstAttribute="bottom" secondItem="Q0t-1i-Cwi" secondAttribute="bottom" id="f3B-DU-F1t"/>
+                        <constraint firstItem="OsD-4f-9ta" firstAttribute="trailing" secondItem="Q0t-1i-Cwi" secondAttribute="trailing" id="ocB-J1-F4Y"/>
+                        <constraint firstItem="NtJ-Fb-UKE" firstAttribute="top" secondItem="5Ge-jm-tw1" secondAttribute="top" id="uyD-FY-R93"/>
+                        <constraint firstItem="dK4-gh-QGG" firstAttribute="bottom" secondItem="YHC-et-DSH" secondAttribute="bottom" id="yIh-vX-XP4"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fYK-rW-vBz"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="5Ge-jm-tw1" firstAttribute="leading" secondItem="fYK-rW-vBz" secondAttribute="leading" constant="16" id="ETZ-iA-Nsg"/>
+                <constraint firstItem="5Ge-jm-tw1" firstAttribute="top" secondItem="7xY-Ga-QWi" secondAttribute="top" constant="16" id="Fh6-6u-Bmb"/>
+                <constraint firstItem="5Ge-jm-tw1" firstAttribute="trailing" secondItem="fYK-rW-vBz" secondAttribute="trailing" constant="-16" id="Ldt-3q-zMH"/>
+                <constraint firstItem="fYK-rW-vBz" firstAttribute="bottom" secondItem="5Ge-jm-tw1" secondAttribute="bottom" id="tlK-5i-soR"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="addAccountImageView" destination="fFt-4k-baF" id="c1b-0Y-D7h"/>
+                <outlet property="addAccountLabel" destination="A2n-MO-EuO" id="1Yd-uq-xmI"/>
+                <outlet property="logOutButton" destination="Dte-ve-w90" id="2iR-PW-Y7v"/>
+                <outlet property="manageAccountImageView" destination="qqO-L8-VJ2" id="Scv-Lu-lkK"/>
+                <outlet property="manageAccountLabel" destination="oIp-TJ-UkE" id="xnD-aJ-w2h"/>
+            </connections>
+            <point key="canvasLocation" x="8.6956521739130448" y="380.35714285714283"/>
+        </view>
+    </objects>
+    <designables>
+        <designable name="A2n-MO-EuO">
+            <size key="intrinsicContentSize" width="85" height="16"/>
+        </designable>
+        <designable name="Dte-ve-w90">
+            <size key="intrinsicContentSize" width="74" height="32"/>
+        </designable>
+        <designable name="OsD-4f-9ta">
+            <size key="intrinsicContentSize" width="24" height="14"/>
+        </designable>
+        <designable name="dK4-gh-QGG">
+            <size key="intrinsicContentSize" width="24" height="14"/>
+        </designable>
+        <designable name="fFt-4k-baF">
+            <size key="intrinsicContentSize" width="14" height="14"/>
+        </designable>
+        <designable name="oIp-TJ-UkE">
+            <size key="intrinsicContentSize" width="173.5" height="16"/>
+        </designable>
+        <designable name="qqO-L8-VJ2">
+            <size key="intrinsicContentSize" width="13" height="14"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="manageAccount" width="14" height="14"/>
+        <image name="redSetttings" width="13" height="14"/>
+        <namedColor name="VFGPrimaryText">
+            <color red="0.050980392156862744" green="0.050980392156862744" blue="0.050980392156862744" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="VFGWhiteBackground">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

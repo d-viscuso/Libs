@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="vodafone-bold.ttf">
+            <string>VodafoneRg-Bold</string>
+        </array>
+        <array key="vodafone-regular.ttf">
+            <string>VodafoneRg-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="StoryPreviewHeaderView" customModule="VFGMVA10Framework" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="90"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="IRG-pZ-XvL">
+                    <rect key="frame" x="16" y="32" width="382" height="58"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="MJe-yV-xc0">
+                            <rect key="frame" x="0.0" y="0.0" width="382" height="6"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="6" id="Whh-2d-RVy"/>
+                            </constraints>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="8Af-Fu-q4B">
+                            <rect key="frame" x="0.0" y="16" width="382" height="42"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="su3-uP-cRP">
+                                    <rect key="frame" x="0.0" y="0.0" width="42" height="42"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="qWf-hY-jaH" customClass="VFGImageView" customModule="VFGMVA10Foundation">
+                                            <rect key="frame" x="8" y="8" width="26" height="26"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <accessibility key="accessibilityConfiguration">
+                                                <bool key="isElement" value="YES"/>
+                                            </accessibility>
+                                        </imageView>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstItem="qWf-hY-jaH" firstAttribute="leading" secondItem="su3-uP-cRP" secondAttribute="leading" constant="8" id="7z6-yL-9q2"/>
+                                        <constraint firstItem="qWf-hY-jaH" firstAttribute="top" secondItem="su3-uP-cRP" secondAttribute="top" constant="8" id="DVY-s2-qTU"/>
+                                        <constraint firstAttribute="trailing" secondItem="qWf-hY-jaH" secondAttribute="trailing" constant="8" id="Rco-H4-09e"/>
+                                        <constraint firstAttribute="width" secondItem="su3-uP-cRP" secondAttribute="height" multiplier="1:1" id="cFz-3F-XUg"/>
+                                        <constraint firstAttribute="bottom" secondItem="qWf-hY-jaH" secondAttribute="bottom" constant="8" id="ctB-7i-GAg"/>
+                                    </constraints>
+                                </view>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="kHC-6F-TBn">
+                                    <rect key="frame" x="50" y="0.0" width="300" height="42"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PbS-N0-GAe" customClass="VFGLabel" customModule="VFGMVA10Foundation">
+                                            <rect key="frame" x="0.0" y="0.0" width="300" height="18"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="18" id="LaR-oC-DbX"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="VodafoneRg-Bold" family="Vodafone Rg" pointSize="14"/>
+                                            <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YPI-Lt-JPG">
+                                            <rect key="frame" x="0.0" y="24" width="300" height="18"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FvU-Dy-GAO" customClass="VFGLabel" customModule="VFGMVA10Foundation">
+                                                    <rect key="frame" x="0.0" y="0.0" width="300" height="18"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="18" id="VnB-fZ-Qc4"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="VodafoneRg-Regular" family="Vodafone Rg" pointSize="14"/>
+                                                    <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstItem="FvU-Dy-GAO" firstAttribute="leading" secondItem="YPI-Lt-JPG" secondAttribute="leading" id="JZV-jG-gm9"/>
+                                                <constraint firstAttribute="trailing" secondItem="FvU-Dy-GAO" secondAttribute="trailing" id="VzR-hN-2z2"/>
+                                                <constraint firstAttribute="height" constant="18" id="a0o-st-EC4"/>
+                                                <constraint firstItem="FvU-Dy-GAO" firstAttribute="top" secondItem="YPI-Lt-JPG" secondAttribute="top" id="spd-g9-8Fd"/>
+                                                <constraint firstAttribute="bottom" secondItem="FvU-Dy-GAO" secondAttribute="bottom" id="z1J-6N-JkF"/>
+                                            </constraints>
+                                        </view>
+                                    </subviews>
+                                </stackView>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lxc-ds-mtf">
+                                    <rect key="frame" x="358" y="0.0" width="24" height="42"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mtw-uS-wlk" customClass="VFGButton" customModule="VFGMVA10Foundation">
+                                            <rect key="frame" x="0.0" y="9" width="24" height="24"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="24" id="Lnj-TY-LJC"/>
+                                                <constraint firstAttribute="height" constant="24" id="Nvz-fi-AxT"/>
+                                            </constraints>
+                                            <state key="normal" image="icCloseWhite"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="imageName" value="icCloseWhite"/>
+                                            </userDefinedRuntimeAttributes>
+                                            <connections>
+                                                <action selector="closeButtonTapped:" destination="iN0-l3-epB" eventType="touchUpInside" id="1Dy-Y5-9kk"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstItem="Mtw-uS-wlk" firstAttribute="centerY" secondItem="lxc-ds-mtf" secondAttribute="centerY" id="5CR-Pk-NrX"/>
+                                        <constraint firstItem="Mtw-uS-wlk" firstAttribute="leading" secondItem="lxc-ds-mtf" secondAttribute="leading" id="BYq-SM-ePn"/>
+                                        <constraint firstAttribute="trailing" secondItem="Mtw-uS-wlk" secondAttribute="trailing" id="F4G-8f-IkB"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="IRG-pZ-XvL" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="32" id="DnY-Ro-ZLx"/>
+                <constraint firstItem="IRG-pZ-XvL" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="cE2-fV-LPM"/>
+                <constraint firstAttribute="trailing" secondItem="IRG-pZ-XvL" secondAttribute="trailing" constant="16" id="gy2-xY-8T6"/>
+                <constraint firstAttribute="bottom" secondItem="IRG-pZ-XvL" secondAttribute="bottom" id="lV4-Q5-hAg"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="closeButton" destination="Mtw-uS-wlk" id="N43-t5-Le5"/>
+                <outlet property="descriptionLabel" destination="FvU-Dy-GAO" id="phq-K4-tCU"/>
+                <outlet property="iconContainerView" destination="su3-uP-cRP" id="hv1-jo-B4a"/>
+                <outlet property="iconImageView" destination="qWf-hY-jaH" id="o4I-ow-9hF"/>
+                <outlet property="progressContainerView" destination="MJe-yV-xc0" id="sqB-Mo-UFV"/>
+                <outlet property="titleLabel" destination="PbS-N0-GAe" id="cF7-7R-CRm"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="107.14285714285714"/>
+        </view>
+    </objects>
+    <designables>
+        <designable name="FvU-Dy-GAO">
+            <size key="intrinsicContentSize" width="34.5" height="16.5"/>
+        </designable>
+        <designable name="Mtw-uS-wlk">
+            <size key="intrinsicContentSize" width="26" height="26"/>
+        </designable>
+        <designable name="PbS-N0-GAe">
+            <size key="intrinsicContentSize" width="34.5" height="16.5"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="icCloseWhite" width="26" height="26"/>
+    </resources>
+</document>

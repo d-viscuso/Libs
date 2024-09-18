@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" indentationWidth="10" reuseIdentifier="VFGDisplayOptionsCell" rowHeight="177" id="pOx-ps-5cG" customClass="VFGDisplayOptionsCell" customModule="VFGMVA10Framework" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="389" height="177"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="pOx-ps-5cG" id="Qor-iW-cXJ">
+                <rect key="frame" x="0.0" y="0.0" width="389" height="177"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="W9h-Fo-hfX">
+                        <rect key="frame" x="16" y="0.0" width="357" height="162"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="displayMode" translatesAutoresizingMaskIntoConstraints="NO" id="P4L-KW-Bal">
+                                <rect key="frame" x="16" y="16" width="32" height="32"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <bool key="isElement" value="YES"/>
+                                </accessibility>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="32" id="259-eN-MYJ"/>
+                                    <constraint firstAttribute="width" secondItem="P4L-KW-Bal" secondAttribute="height" multiplier="1:1" id="QAn-Gi-RB5"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E1C-p5-cfw" customClass="VFGLabel" customModule="VFGMVA10Framework" customModuleProvider="target">
+                                <rect key="frame" x="64" y="19" width="200" height="26"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="26" id="49Y-7C-jUe"/>
+                                    <constraint firstAttribute="width" constant="200" id="U66-Qq-wzz"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" name="VFGPrimaryText"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kvu-RF-WUX" customClass="VFGButton" customModule="VFGMVA10Foundation">
+                                <rect key="frame" x="64" y="58" width="81" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" priority="750" constant="81" id="QYH-xI-Kab"/>
+                                    <constraint firstAttribute="height" constant="44" id="Tgx-9W-t6V"/>
+                                </constraints>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" name="VFGPrimaryText"/>
+                                </state>
+                                <connections>
+                                    <action selector="autoModeOptionDidPress:" destination="pOx-ps-5cG" eventType="touchUpInside" id="OV4-Ol-SCW"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WPD-O8-qC6" customClass="VFGButton" customModule="VFGMVA10Foundation">
+                                <rect key="frame" x="162" y="58" width="81" height="44"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="5d2-dF-bUP"/>
+                                </constraints>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" name="VFGPrimaryText"/>
+                                </state>
+                                <connections>
+                                    <action selector="lightModeOptionDidPress:" destination="pOx-ps-5cG" eventType="touchUpInside" id="OZT-ZF-bmW"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m1C-Iu-SHb" customClass="VFGLabel" customModule="VFGMVA10Framework" customModuleProvider="target">
+                                <rect key="frame" x="64" y="120" width="277" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" name="VFGPrimaryText"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gUb-MU-8dn">
+                                <rect key="frame" x="16" y="0.0" width="325" height="1"/>
+                                <color key="backgroundColor" name="VFGShimmerViewCenter"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="sur-s8-U0G"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c06-2W-Uag" userLabel="divider 1">
+                                <rect key="frame" x="153" y="58" width="1" height="46"/>
+                                <color key="backgroundColor" name="VFGGreyDividerSix"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="1" id="Hie-Qh-4qK"/>
+                                    <constraint firstAttribute="height" constant="46" id="bEu-3m-xCn"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BJl-m9-ztC" userLabel="divider 2">
+                                <rect key="frame" x="251" y="58" width="1" height="46"/>
+                                <color key="backgroundColor" name="VFGGreyDividerSix"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="46" id="K8h-CD-3Rv"/>
+                                    <constraint firstAttribute="width" constant="1" id="TB8-vC-Lvj"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FGW-2k-2hk" customClass="VFGButton" customModule="VFGMVA10Foundation">
+                                <rect key="frame" x="260" y="58" width="81" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="eNM-5R-JId"/>
+                                </constraints>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" name="VFGPrimaryText"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="titleColor">
+                                        <color key="value" name="VFGSecondaryButtonText"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="darkModeOptionDidPress:" destination="pOx-ps-5cG" eventType="touchUpInside" id="Uvu-U6-byq"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" name="VFGWhiteBackground"/>
+                        <constraints>
+                            <constraint firstItem="P4L-KW-Bal" firstAttribute="leading" secondItem="W9h-Fo-hfX" secondAttribute="leading" constant="16" id="0no-V9-ShV"/>
+                            <constraint firstAttribute="trailing" secondItem="m1C-Iu-SHb" secondAttribute="trailing" constant="16" id="20U-dY-aDz"/>
+                            <constraint firstAttribute="bottom" secondItem="m1C-Iu-SHb" secondAttribute="bottom" constant="18" id="7Zb-sh-uhj"/>
+                            <constraint firstAttribute="trailing" secondItem="gUb-MU-8dn" secondAttribute="trailing" constant="16" id="BXk-yQ-OJB"/>
+                            <constraint firstItem="FGW-2k-2hk" firstAttribute="top" secondItem="kvu-RF-WUX" secondAttribute="top" id="CFZ-oT-CfY"/>
+                            <constraint firstItem="c06-2W-Uag" firstAttribute="leading" secondItem="kvu-RF-WUX" secondAttribute="trailing" constant="8" id="FAc-Tk-loM"/>
+                            <constraint firstItem="WPD-O8-qC6" firstAttribute="width" secondItem="kvu-RF-WUX" secondAttribute="width" id="KSo-XU-Q18"/>
+                            <constraint firstItem="kvu-RF-WUX" firstAttribute="leading" secondItem="W9h-Fo-hfX" secondAttribute="leading" constant="64" id="Kcq-rF-eCv"/>
+                            <constraint firstItem="FGW-2k-2hk" firstAttribute="width" secondItem="kvu-RF-WUX" secondAttribute="width" id="KoY-vf-k37"/>
+                            <constraint firstItem="WPD-O8-qC6" firstAttribute="leading" secondItem="c06-2W-Uag" secondAttribute="trailing" constant="8" id="NNc-eI-W09"/>
+                            <constraint firstItem="gUb-MU-8dn" firstAttribute="top" secondItem="W9h-Fo-hfX" secondAttribute="top" id="SUM-bu-1PY"/>
+                            <constraint firstItem="E1C-p5-cfw" firstAttribute="leading" secondItem="P4L-KW-Bal" secondAttribute="trailing" constant="16" id="Vg7-m5-zCd"/>
+                            <constraint firstItem="c06-2W-Uag" firstAttribute="top" secondItem="kvu-RF-WUX" secondAttribute="top" id="eG4-BX-Sk4"/>
+                            <constraint firstItem="m1C-Iu-SHb" firstAttribute="leading" secondItem="E1C-p5-cfw" secondAttribute="leading" id="eaV-oh-Com"/>
+                            <constraint firstAttribute="trailing" secondItem="FGW-2k-2hk" secondAttribute="trailing" constant="16" id="gnY-4l-N9v"/>
+                            <constraint firstItem="BJl-m9-ztC" firstAttribute="top" secondItem="kvu-RF-WUX" secondAttribute="top" id="jQ7-9i-tPN"/>
+                            <constraint firstItem="FGW-2k-2hk" firstAttribute="leading" secondItem="BJl-m9-ztC" secondAttribute="trailing" constant="8" id="krJ-Ak-HCh"/>
+                            <constraint firstItem="kvu-RF-WUX" firstAttribute="top" secondItem="E1C-p5-cfw" secondAttribute="bottom" constant="13" id="lAA-1S-wEh"/>
+                            <constraint firstItem="E1C-p5-cfw" firstAttribute="centerY" secondItem="P4L-KW-Bal" secondAttribute="centerY" id="moo-3H-oJo"/>
+                            <constraint firstItem="P4L-KW-Bal" firstAttribute="top" secondItem="W9h-Fo-hfX" secondAttribute="top" constant="16" id="n7h-Qd-sch"/>
+                            <constraint firstItem="m1C-Iu-SHb" firstAttribute="top" secondItem="kvu-RF-WUX" secondAttribute="bottom" constant="18" id="pX2-Pd-hNi"/>
+                            <constraint firstItem="WPD-O8-qC6" firstAttribute="top" secondItem="kvu-RF-WUX" secondAttribute="top" id="s2l-dK-IK2"/>
+                            <constraint firstItem="BJl-m9-ztC" firstAttribute="leading" secondItem="WPD-O8-qC6" secondAttribute="trailing" constant="8" id="taU-WL-v8e"/>
+                            <constraint firstItem="gUb-MU-8dn" firstAttribute="leading" secondItem="W9h-Fo-hfX" secondAttribute="leading" constant="16" id="yQf-2x-r1e"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" name="VFGLightGreyBackground"/>
+                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="W9h-Fo-hfX" firstAttribute="top" secondItem="Qor-iW-cXJ" secondAttribute="top" id="7MA-Ln-04I"/>
+                    <constraint firstAttribute="trailing" secondItem="W9h-Fo-hfX" secondAttribute="trailing" constant="16" id="HKa-UN-BA2"/>
+                    <constraint firstItem="W9h-Fo-hfX" firstAttribute="leading" secondItem="Qor-iW-cXJ" secondAttribute="leading" constant="16" id="KCg-bK-bqI"/>
+                    <constraint firstAttribute="bottom" secondItem="W9h-Fo-hfX" secondAttribute="bottom" constant="15" id="STw-uv-8vn"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" name="VFGLightGreyBackground"/>
+            <connections>
+                <outlet property="autoModeOptionButton" destination="kvu-RF-WUX" id="7DP-nY-P5f"/>
+                <outlet property="cardView" destination="W9h-Fo-hfX" id="izq-ZV-RtC"/>
+                <outlet property="darkModeOptionButton" destination="FGW-2k-2hk" id="DAd-x7-U41"/>
+                <outlet property="lightModeOptionButton" destination="WPD-O8-qC6" id="SPN-Rk-sIV"/>
+                <outlet property="selectOptionLabel" destination="m1C-Iu-SHb" id="Mav-bL-vEe"/>
+                <outlet property="titleLabel" destination="E1C-p5-cfw" id="arC-fx-WEd"/>
+                <outlet property="topSeparator" destination="gUb-MU-8dn" id="6z6-IW-HHS"/>
+            </connections>
+            <point key="canvasLocation" x="816.66666666666674" y="272.20982142857139"/>
+        </tableViewCell>
+    </objects>
+    <designables>
+        <designable name="E1C-p5-cfw">
+            <size key="intrinsicContentSize" width="41.5" height="20.5"/>
+        </designable>
+        <designable name="FGW-2k-2hk">
+            <size key="intrinsicContentSize" width="46" height="30"/>
+        </designable>
+        <designable name="WPD-O8-qC6">
+            <size key="intrinsicContentSize" width="46" height="30"/>
+        </designable>
+        <designable name="kvu-RF-WUX">
+            <size key="intrinsicContentSize" width="46" height="30"/>
+        </designable>
+        <designable name="m1C-Iu-SHb">
+            <size key="intrinsicContentSize" width="41.5" height="20.5"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="displayMode" width="32" height="32"/>
+        <namedColor name="VFGGreyDividerSix">
+            <color red="0.74509803921568629" green="0.74509803921568629" blue="0.74509803921568629" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="VFGLightGreyBackground">
+            <color red="0.95686274509803926" green="0.95686274509803926" blue="0.95686274509803926" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="VFGPrimaryText">
+            <color red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="VFGSecondaryButtonText">
+            <color red="0.20000000298023224" green="0.20000000298023224" blue="0.20000000298023224" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="VFGShimmerViewCenter">
+            <color red="0.875" green="0.875" blue="0.875" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="VFGWhiteBackground">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

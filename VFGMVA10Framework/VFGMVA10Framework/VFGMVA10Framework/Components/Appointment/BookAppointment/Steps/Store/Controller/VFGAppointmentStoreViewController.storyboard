@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Appointment Store View Controller-->
+        <scene sceneID="Bh8-B7-1oR">
+            <objects>
+                <viewController storyboardIdentifier="StoreView" id="Kjk-be-kFE" customClass="VFGAppointmentStoreViewController" customModule="VFGMVA10Framework" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="MRa-0D-jIP">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RVg-hG-D8L" customClass="VFGLocationPicker" customModule="VFGMVA10Foundation">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="KsA-Nr-bJe"/>
+                        <color key="backgroundColor" name="VFGVeryLightGreyBackground"/>
+                        <constraints>
+                            <constraint firstItem="RVg-hG-D8L" firstAttribute="leading" secondItem="KsA-Nr-bJe" secondAttribute="leading" id="AWW-eR-whM"/>
+                            <constraint firstItem="RVg-hG-D8L" firstAttribute="bottom" secondItem="MRa-0D-jIP" secondAttribute="bottom" id="MJt-gc-lVp"/>
+                            <constraint firstItem="RVg-hG-D8L" firstAttribute="trailing" secondItem="KsA-Nr-bJe" secondAttribute="trailing" id="cuH-Hf-Png"/>
+                            <constraint firstItem="RVg-hG-D8L" firstAttribute="top" secondItem="MRa-0D-jIP" secondAttribute="top" id="wrU-cs-LPf"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="locationPicker" destination="RVg-hG-D8L" id="uOx-AO-cqE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dzP-OZ-fwz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="179.71014492753625" y="126.5625"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="VFGVeryLightGreyBackground">
+            <color red="0.92156862745098034" green="0.92156862745098034" blue="0.92156862745098034" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

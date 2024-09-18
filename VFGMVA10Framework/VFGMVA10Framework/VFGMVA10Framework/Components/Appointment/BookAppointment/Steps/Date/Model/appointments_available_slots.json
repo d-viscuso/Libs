@@ -1,0 +1,29 @@
+
+{
+  "availableSlots": [
+    {
+      "timeSlots": [
+        {
+          "from": "9am",
+          "to": "10am"
+        },
+        {
+          "from": "11am",
+          "to": "12pm"
+        },
+        {
+          "from": "1pm",
+          "to": "2pm"
+        },
+        {
+          "from": "3pm",
+          "to": "4pm"
+        },
+        {
+          "from": "4pm",
+          "to": "5pm"
+        }
+      ]
+    }
+  ]
+}

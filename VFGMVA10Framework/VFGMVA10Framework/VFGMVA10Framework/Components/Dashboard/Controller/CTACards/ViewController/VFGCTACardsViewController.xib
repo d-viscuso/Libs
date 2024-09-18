@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="vodafone-regular.ttf">
+            <string>VodafoneRg-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="VFGCTACardsViewController" customModule="VFGMVA10Framework" customModuleProvider="target">
+            <connections>
+                <outlet property="cardsCollectionView" destination="nXX-SE-brq" id="suZ-Bh-hqc"/>
+                <outlet property="titleLabel" destination="Z5h-Ql-ZlK" id="iD7-vA-7yj"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4Yk-3Y-FWW">
+                    <rect key="frame" x="0.0" y="59" width="390" height="52"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h0R-xV-x2P" customClass="VFGButton" customModule="VFGMVA10Foundation">
+                            <rect key="frame" x="334" y="6" width="40" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="0M4-ll-gA1"/>
+                                <constraint firstAttribute="width" constant="40" id="xbE-lM-LpO"/>
+                            </constraints>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" image="ic_close"/>
+                            <connections>
+                                <action selector="closeButtonClicked:" destination="-1" eventType="touchUpInside" id="FDS-C7-pw9"/>
+                            </connections>
+                        </button>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LZW-a0-iJp">
+                            <rect key="frame" x="0.0" y="50" width="390" height="2"/>
+                            <color key="backgroundColor" name="VFGGreyDividerSix"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="2" id="cia-Gt-16U"/>
+                            </constraints>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z5h-Ql-ZlK" customClass="VFGLabel" customModule="VFGMVA10Foundation">
+                            <rect key="frame" x="72" y="17" width="246" height="18"/>
+                            <fontDescription key="fontDescription" name="VodafoneRg-Regular" family="Vodafone Rg" pointSize="16"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="LZW-a0-iJp" secondAttribute="trailing" id="2GT-gZ-Py9"/>
+                        <constraint firstItem="Z5h-Ql-ZlK" firstAttribute="centerX" secondItem="4Yk-3Y-FWW" secondAttribute="centerX" id="DbY-Dg-ugk"/>
+                        <constraint firstAttribute="height" constant="52" id="KIZ-U5-BSJ"/>
+                        <constraint firstAttribute="trailing" secondItem="h0R-xV-x2P" secondAttribute="trailing" constant="16" id="QFO-kw-xQv"/>
+                        <constraint firstItem="h0R-xV-x2P" firstAttribute="leading" secondItem="Z5h-Ql-ZlK" secondAttribute="trailing" constant="16" id="YN4-BX-uk1"/>
+                        <constraint firstItem="h0R-xV-x2P" firstAttribute="centerY" secondItem="4Yk-3Y-FWW" secondAttribute="centerY" id="awp-E5-ivf"/>
+                        <constraint firstAttribute="bottom" secondItem="LZW-a0-iJp" secondAttribute="bottom" id="c2o-n9-1ab"/>
+                        <constraint firstItem="LZW-a0-iJp" firstAttribute="leading" secondItem="4Yk-3Y-FWW" secondAttribute="leading" id="exn-hT-1pL"/>
+                        <constraint firstItem="Z5h-Ql-ZlK" firstAttribute="centerY" secondItem="4Yk-3Y-FWW" secondAttribute="centerY" id="vbR-9E-0e5"/>
+                    </constraints>
+                </view>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="nXX-SE-brq">
+                    <rect key="frame" x="0.0" y="111" width="390" height="733"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="3ta-k5-Lq1">
+                        <size key="itemSize" width="128" height="128"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="4Yk-3Y-FWW" secondAttribute="trailing" id="7it-Xj-Fox"/>
+                <constraint firstItem="4Yk-3Y-FWW" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="12" id="C6e-cK-eX0"/>
+                <constraint firstItem="nXX-SE-brq" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Cep-no-wYn"/>
+                <constraint firstAttribute="bottom" secondItem="nXX-SE-brq" secondAttribute="bottom" id="Leg-g4-INU"/>
+                <constraint firstItem="4Yk-3Y-FWW" firstAttribute="top" relation="greaterThanOrEqual" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="36" id="MzY-dH-AEO"/>
+                <constraint firstItem="4Yk-3Y-FWW" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="OeI-G2-q3F"/>
+                <constraint firstItem="nXX-SE-brq" firstAttribute="top" secondItem="4Yk-3Y-FWW" secondAttribute="bottom" id="cF6-KL-l7X"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="nXX-SE-brq" secondAttribute="trailing" id="qQX-F9-oMv"/>
+            </constraints>
+            <point key="canvasLocation" x="17" y="21"/>
+        </view>
+    </objects>
+    <designables>
+        <designable name="Z5h-Ql-ZlK">
+            <size key="intrinsicContentSize" width="4.666666666666667" height="18.666666666666668"/>
+        </designable>
+        <designable name="h0R-xV-x2P">
+            <size key="intrinsicContentSize" width="36" height="26"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="ic_close" width="12" height="12"/>
+        <namedColor name="VFGGreyDividerSix">
+            <color red="0.74509803921568629" green="0.74509803921568629" blue="0.74509803921568629" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

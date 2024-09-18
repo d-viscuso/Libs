@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="vodafone-regular.ttf">
+            <string>VodafoneRg-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="VFGChevronCell" rowHeight="163" id="uaM-yO-wLo" customClass="VFGChevronCell" customModule="VFGMVA10Framework" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="394" height="163"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="uaM-yO-wLo" id="fsm-LY-gm4">
+                <rect key="frame" x="0.0" y="0.0" width="394" height="163"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZN4-9z-imq">
+                        <rect key="frame" x="16" y="16" width="362" height="141"/>
+                        <subviews>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fwb-sA-aRe" userLabel="Cropped Seperator top">
+                                <rect key="frame" x="17" y="0.0" width="328" height="1"/>
+                                <color key="backgroundColor" name="VFGGreyDividerSix"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="GVG-pM-fpw"/>
+                                </constraints>
+                            </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="7sg-Uo-h56" customClass="VFGImageView" customModule="VFGMVA10Foundation">
+                                <rect key="frame" x="19" y="15" width="32" height="32"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <bool key="isElement" value="YES"/>
+                                </accessibility>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="32" id="3zP-D0-UsF"/>
+                                    <constraint firstAttribute="width" constant="32" id="IvZ-gt-QzL"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="FaT-SM-jI8">
+                                <rect key="frame" x="62" y="13" width="284" height="116"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="H1y-Mc-QL7">
+                                        <rect key="frame" x="0.0" y="0.0" width="284" height="32"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cfp-vo-IPJ" customClass="VFGLabel" customModule="VFGMVA10Foundation">
+                                                <rect key="frame" x="0.0" y="0.0" width="31" height="32"/>
+                                                <fontDescription key="fontDescription" name="VodafoneRg-Regular" family="Vodafone Rg" pointSize="18"/>
+                                                <color key="textColor" name="VFGPrimaryText"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icChevronRightRedWhite" translatesAutoresizingMaskIntoConstraints="NO" id="qQD-d6-nbe" customClass="VFGImageView" customModule="VFGMVA10Foundation">
+                                                <rect key="frame" x="252" y="0.0" width="32" height="32"/>
+                                                <accessibility key="accessibilityConfiguration">
+                                                    <bool key="isElement" value="YES"/>
+                                                </accessibility>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="32" id="QtN-4u-jh5"/>
+                                                    <constraint firstAttribute="height" constant="32" id="g19-z3-6S6"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="imageName" value="icChevronRightRedWhite"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </imageView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="qQD-d6-nbe" firstAttribute="centerY" secondItem="Cfp-vo-IPJ" secondAttribute="centerY" id="0dY-ue-s0h"/>
+                                        </constraints>
+                                    </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="glR-8K-FaI" customClass="VFGLabel" customModule="VFGMVA10Foundation">
+                                        <rect key="frame" x="0.0" y="116" width="284" height="0.0"/>
+                                        <fontDescription key="fontDescription" name="VodafoneRg-Regular" family="Vodafone Rg" pointSize="14"/>
+                                        <color key="textColor" name="VFGPrimaryText"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" name="VFGWhiteBackground"/>
+                        <constraints>
+                            <constraint firstItem="FaT-SM-jI8" firstAttribute="top" secondItem="fwb-sA-aRe" secondAttribute="bottom" constant="12" id="5xc-5n-yFw"/>
+                            <constraint firstAttribute="trailing" secondItem="fwb-sA-aRe" secondAttribute="trailing" constant="17" id="Bfo-Ya-UTc"/>
+                            <constraint firstItem="fwb-sA-aRe" firstAttribute="leading" secondItem="ZN4-9z-imq" secondAttribute="leading" constant="17" id="Dn2-UB-uYc"/>
+                            <constraint firstAttribute="bottom" secondItem="FaT-SM-jI8" secondAttribute="bottom" constant="12" id="MZO-So-U56"/>
+                            <constraint firstItem="FaT-SM-jI8" firstAttribute="leading" secondItem="7sg-Uo-h56" secondAttribute="trailing" constant="11" id="SZ9-bl-tfs"/>
+                            <constraint firstItem="fwb-sA-aRe" firstAttribute="top" secondItem="ZN4-9z-imq" secondAttribute="top" id="fbM-Bn-bA1"/>
+                            <constraint firstItem="7sg-Uo-h56" firstAttribute="leading" secondItem="ZN4-9z-imq" secondAttribute="leading" constant="19" id="iMw-di-10N"/>
+                            <constraint firstAttribute="trailing" secondItem="FaT-SM-jI8" secondAttribute="trailing" constant="16" id="mBS-Rz-XYo"/>
+                            <constraint firstItem="7sg-Uo-h56" firstAttribute="top" secondItem="ZN4-9z-imq" secondAttribute="top" constant="15" id="rJm-UA-NXa"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="ZN4-9z-imq" firstAttribute="top" secondItem="fsm-LY-gm4" secondAttribute="top" constant="16" id="2su-3A-PNh"/>
+                    <constraint firstAttribute="bottom" secondItem="ZN4-9z-imq" secondAttribute="bottom" constant="6" id="60U-Tf-9n5"/>
+                    <constraint firstItem="ZN4-9z-imq" firstAttribute="leading" secondItem="fsm-LY-gm4" secondAttribute="leading" constant="16" id="N4k-ty-1yP"/>
+                    <constraint firstAttribute="trailing" secondItem="ZN4-9z-imq" secondAttribute="trailing" constant="16" id="gEj-x7-rxy"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="cardView" destination="ZN4-9z-imq" id="nWN-XH-47b"/>
+                <outlet property="cardViewBottomConstraint" destination="60U-Tf-9n5" id="cgY-y0-uy3"/>
+                <outlet property="cardViewTopConstraints" destination="2su-3A-PNh" id="h8X-BQ-Ned"/>
+                <outlet property="iconImageView" destination="7sg-Uo-h56" id="fDG-u5-4lX"/>
+                <outlet property="separatorView" destination="fwb-sA-aRe" id="sC3-fy-xJl"/>
+                <outlet property="subTitleLabel" destination="glR-8K-FaI" id="wNn-MS-WzB"/>
+                <outlet property="titleLabel" destination="Cfp-vo-IPJ" id="13t-rT-HBP"/>
+            </connections>
+            <point key="canvasLocation" x="-552.17391304347825" y="197.87946428571428"/>
+        </tableViewCell>
+    </objects>
+    <designables>
+        <designable name="Cfp-vo-IPJ">
+            <size key="intrinsicContentSize" width="31" height="20.5"/>
+        </designable>
+        <designable name="glR-8K-FaI"/>
+        <designable name="qQD-d6-nbe">
+            <size key="intrinsicContentSize" width="35" height="35"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="icChevronRightRedWhite" width="35" height="35"/>
+        <namedColor name="VFGGreyDividerSix">
+            <color red="0.74509803921568629" green="0.74509803921568629" blue="0.74509803921568629" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="VFGPrimaryText">
+            <color red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="VFGWhiteBackground">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

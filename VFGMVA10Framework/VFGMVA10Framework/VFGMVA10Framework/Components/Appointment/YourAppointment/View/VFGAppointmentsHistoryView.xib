@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="vodafone-regular.ttf">
+            <string>VodafoneRg-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="VFGAppointmentsHistoryView" customModule="VFGMVA10Framework" customModuleProvider="target">
+            <connections>
+                <outlet property="historyTableView" destination="stv-sf-piA" id="f75-A4-N8J"/>
+                <outlet property="historyTableViewHeight" destination="hJX-FG-1Mx" id="fdM-pv-Ku8"/>
+                <outlet property="historyTitleLabel" destination="M3e-5C-FT1" id="6ZC-MP-SYQ"/>
+                <outlet property="tableContainerView" destination="Qwp-Zp-WYi" id="x5y-xm-OBM"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="467" height="153"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qwp-Zp-WYi">
+                    <rect key="frame" x="0.0" y="0.0" width="467" height="153"/>
+                    <subviews>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="stv-sf-piA">
+                            <rect key="frame" x="20" y="53" width="427" height="100"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="100" id="hJX-FG-1Mx"/>
+                            </constraints>
+                        </tableView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Booking history" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M3e-5C-FT1" customClass="VFGLabel" customModule="VFGMVA10Framework" customModuleProvider="target">
+                            <rect key="frame" x="20" y="5" width="427" height="28"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="28" id="QMr-Zv-zyx"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="VodafoneRg-Regular" family="Vodafone Rg" pointSize="22"/>
+                            <color key="textColor" name="VFGPrimaryText"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="stv-sf-piA" firstAttribute="leading" secondItem="Qwp-Zp-WYi" secondAttribute="leading" constant="20" id="2x2-Ch-PDA"/>
+                        <constraint firstAttribute="trailing" secondItem="M3e-5C-FT1" secondAttribute="trailing" constant="20" id="8w8-K3-OeK"/>
+                        <constraint firstItem="M3e-5C-FT1" firstAttribute="top" secondItem="Qwp-Zp-WYi" secondAttribute="top" constant="5" id="F1o-5t-0kt"/>
+                        <constraint firstAttribute="bottom" secondItem="stv-sf-piA" secondAttribute="bottom" id="bAK-fu-lN8"/>
+                        <constraint firstItem="M3e-5C-FT1" firstAttribute="leading" secondItem="Qwp-Zp-WYi" secondAttribute="leading" constant="20" id="hJI-Dm-fVG"/>
+                        <constraint firstAttribute="trailing" secondItem="stv-sf-piA" secondAttribute="trailing" constant="20" id="p1g-WV-Hvq"/>
+                        <constraint firstItem="stv-sf-piA" firstAttribute="top" secondItem="M3e-5C-FT1" secondAttribute="bottom" constant="20" id="wUM-zp-uHm"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Qwp-Zp-WYi" secondAttribute="trailing" id="OZR-B9-sJs"/>
+                <constraint firstItem="Qwp-Zp-WYi" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="aig-7i-Gv6"/>
+                <constraint firstItem="Qwp-Zp-WYi" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="p9r-34-CuI"/>
+                <constraint firstAttribute="bottom" secondItem="Qwp-Zp-WYi" secondAttribute="bottom" id="zR6-NV-dhB"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="205.07246376811597" y="-14.397321428571427"/>
+        </view>
+    </objects>
+    <designables>
+        <designable name="M3e-5C-FT1">
+            <size key="intrinsicContentSize" width="134" height="26"/>
+        </designable>
+    </designables>
+    <resources>
+        <namedColor name="VFGPrimaryText">
+            <color red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="vodafone-regular.ttf">
+            <string>VodafoneRg-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="VFGTextViewLimitedCharacters" customModule="VFGMVA10Foundation" customModuleProvider="target">
+            <connections>
+                <outlet property="borderedView" destination="pg4-Q6-UHF" id="XMj-ZB-xe0"/>
+                <outlet property="characterNumberLabel" destination="LDJ-cV-C0m" id="czo-Cw-RKY"/>
+                <outlet property="contentView" destination="iN0-l3-epB" id="twF-2y-eXi"/>
+                <outlet property="messageHintView" destination="Tew-hl-VOc" id="Tx4-kS-nfS"/>
+                <outlet property="messageTitle" destination="pg6-GK-dme" id="0IF-fm-ckD"/>
+                <outlet property="textView" destination="gZc-Az-35H" id="1wu-OI-LWB"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="426" height="158"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LDJ-cV-C0m" customClass="VFGLabel" customModule="VFGMVA10Foundation">
+                    <rect key="frame" x="12" y="140.5" width="36" height="17.5"/>
+                    <fontDescription key="fontDescription" name="VodafoneRg-Regular" family="Vodafone Rg" pointSize="14.600000381469727"/>
+                    <color key="textColor" name="VFGDefaultInputOutline"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pg4-Q6-UHF">
+                    <rect key="frame" x="0.0" y="8" width="426" height="128.5"/>
+                    <subviews>
+                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="gZc-Az-35H">
+                            <rect key="frame" x="12" y="6" width="365" height="110.5"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="tintColor" systemColor="tintColor"/>
+                            <color key="textColor" name="VFGDefaultInputOutline"/>
+                            <fontDescription key="fontDescription" name="VodafoneRg-Regular" family="Vodafone Rg" pointSize="18.799999237060547"/>
+                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            <connections>
+                                <outlet property="delegate" destination="-1" id="LIe-Yp-Ksd"/>
+                            </connections>
+                        </textView>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iconsIndicatorsSystemIconsComment333333" translatesAutoresizingMaskIntoConstraints="NO" id="Eip-VE-gs9" customClass="VFGImageView" customModule="VFGMVA10Foundation">
+                            <rect key="frame" x="385" y="7" width="33" height="33"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="33" id="A92-BO-bf2"/>
+                                <constraint firstAttribute="width" constant="33" id="eFf-bu-Mth"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="Eip-VE-gs9" firstAttribute="leading" secondItem="gZc-Az-35H" secondAttribute="trailing" constant="8" id="2iW-lb-KY1"/>
+                        <constraint firstItem="gZc-Az-35H" firstAttribute="leading" secondItem="pg4-Q6-UHF" secondAttribute="leading" constant="12" id="BQm-Pd-25n"/>
+                        <constraint firstAttribute="bottom" secondItem="gZc-Az-35H" secondAttribute="bottom" constant="12" id="BSp-LJ-7Mb"/>
+                        <constraint firstItem="gZc-Az-35H" firstAttribute="top" secondItem="pg4-Q6-UHF" secondAttribute="top" constant="6" id="ef3-MT-fZM"/>
+                        <constraint firstAttribute="trailing" secondItem="Eip-VE-gs9" secondAttribute="trailing" constant="8" id="tnu-k5-WJF"/>
+                        <constraint firstItem="Eip-VE-gs9" firstAttribute="top" secondItem="pg4-Q6-UHF" secondAttribute="top" constant="7" id="zoK-hv-vX9"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" name="VFGOceantext"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="6.2999999999999998"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tew-hl-VOc">
+                    <rect key="frame" x="12" y="0.0" width="163" height="17"/>
+                    <subviews>
+                        <label userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pg6-GK-dme" customClass="VFGLabel" customModule="VFGMVA10Foundation">
+                            <rect key="frame" x="3" y="-0.5" width="157" height="17.5"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="157" id="TY6-EB-w4d"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="VodafoneRg-Regular" family="Vodafone Rg" pointSize="14.600000381469727"/>
+                            <color key="textColor" name="VFGOceantext"/>
+                            <color key="highlightedColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="pg6-GK-dme" secondAttribute="bottom" id="4uk-rq-yIN"/>
+                        <constraint firstAttribute="trailing" secondItem="pg6-GK-dme" secondAttribute="trailing" constant="3" id="P24-gJ-co3"/>
+                        <constraint firstAttribute="height" constant="17" id="cuu-gd-lhQ"/>
+                        <constraint firstItem="pg6-GK-dme" firstAttribute="leading" secondItem="Tew-hl-VOc" secondAttribute="leading" constant="3" id="ohT-2I-YDN"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="LDJ-cV-C0m" secondAttribute="bottom" id="N5f-R7-DIL"/>
+                <constraint firstItem="pg4-Q6-UHF" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="WBg-5K-TSg"/>
+                <constraint firstItem="Tew-hl-VOc" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="12" id="Zg5-OG-TlZ"/>
+                <constraint firstItem="LDJ-cV-C0m" firstAttribute="top" secondItem="pg4-Q6-UHF" secondAttribute="bottom" constant="4" id="dKb-zF-RZd"/>
+                <constraint firstItem="pg4-Q6-UHF" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="hJP-tf-bb5"/>
+                <constraint firstAttribute="trailing" secondItem="pg4-Q6-UHF" secondAttribute="trailing" id="kMZ-CM-N3P"/>
+                <constraint firstItem="LDJ-cV-C0m" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="12" id="kSe-A7-SYt"/>
+                <constraint firstItem="Tew-hl-VOc" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="vfu-WF-j6L"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="146.37681159420291" y="213.61607142857142"/>
+        </view>
+    </objects>
+    <designables>
+        <designable name="Eip-VE-gs9">
+            <size key="intrinsicContentSize" width="34" height="34"/>
+        </designable>
+        <designable name="LDJ-cV-C0m">
+            <size key="intrinsicContentSize" width="36" height="17.5"/>
+        </designable>
+        <designable name="pg6-GK-dme">
+            <size key="intrinsicContentSize" width="36" height="17.5"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="iconsIndicatorsSystemIconsComment333333" width="34" height="34"/>
+        <namedColor name="VFGDefaultInputOutline">
+            <color red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="VFGOceantext">
+            <color red="0.0" green="0.48600000143051147" blue="0.57300001382827759" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="tintColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

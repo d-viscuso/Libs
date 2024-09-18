@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="vodafone-bold.ttf">
+            <string>VodafoneRg-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="VFGBreakdownFooterView" customModule="VFGMVA10Framework" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="115"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total to pay" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bN6-YD-dMl" customClass="VFGLabel">
+                    <rect key="frame" x="17" y="12" width="88.5" height="20"/>
+                    <fontDescription key="fontDescription" name="VodafoneRg-Bold" family="Vodafone Rg" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6W4-Wf-i5U" userLabel="Separator">
+                    <rect key="frame" x="17" y="47" width="380" height="1"/>
+                    <color key="backgroundColor" name="VFGGreyDividerOne"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="uEt-eY-9Ay"/>
+                    </constraints>
+                </view>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="TCL-n4-feM" userLabel="Details">
+                    <rect key="frame" x="17" y="60" width="380" height="0.0"/>
+                    <constraints>
+                        <constraint firstAttribute="height" id="zlj-aI-j7W"/>
+                    </constraints>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="tintColor" name="VFGWhiteBackground"/>
+            <constraints>
+                <constraint firstItem="bN6-YD-dMl" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="17" id="A0A-5S-QM5"/>
+                <constraint firstItem="6W4-Wf-i5U" firstAttribute="top" secondItem="bN6-YD-dMl" secondAttribute="bottom" constant="15" id="FCp-lr-Yq1"/>
+                <constraint firstItem="TCL-n4-feM" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="17" id="JlJ-rW-s3M"/>
+                <constraint firstAttribute="trailing" secondItem="TCL-n4-feM" secondAttribute="trailing" constant="17" id="WhG-Vr-B7r"/>
+                <constraint firstItem="bN6-YD-dMl" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="12" id="elH-LX-Y1c"/>
+                <constraint firstItem="6W4-Wf-i5U" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="17" id="fvm-ua-KXM"/>
+                <constraint firstAttribute="trailing" secondItem="6W4-Wf-i5U" secondAttribute="trailing" constant="17" id="k2v-XN-hbY"/>
+                <constraint firstItem="TCL-n4-feM" firstAttribute="top" secondItem="6W4-Wf-i5U" secondAttribute="bottom" constant="12" id="wMd-G3-HtE"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="detailsStackView" destination="TCL-n4-feM" id="Vvj-xO-h0u"/>
+                <outlet property="detailsStackViewHeightConstraint" destination="zlj-aI-j7W" id="Hgb-6d-LrO"/>
+                <outlet property="titleLabel" destination="bN6-YD-dMl" id="9Yh-dQ-HGT"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="-199.88839285714286"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="VFGGreyDividerOne">
+            <color red="0.92156862745098034" green="0.92156862745098034" blue="0.92156862745098034" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="VFGWhiteBackground">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

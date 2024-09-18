@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="vodafone-lite.ttf">
+            <string>VodafoneLt-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="KFz-hg-w82" customClass="VFPermissionsView" customModule="VFGMVA10Framework" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="335" height="667"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="TopLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7zh-Br-BLs" customClass="VFGLabel" customModule="VFGMVA10Foundation">
+                    <rect key="frame" x="0.0" y="0.0" width="231" height="28"/>
+                    <fontDescription key="fontDescription" name="VodafoneLt-Regular" family="Vodafone Lt" pointSize="25"/>
+                    <color key="textColor" name="VFGPrimaryText"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <stackView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="1000" axis="vertical" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="9dR-bA-jZv">
+                    <rect key="frame" x="0.0" y="73" width="315" height="445"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" id="6eI-xe-MWt"/>
+                    </constraints>
+                </stackView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RiM-an-odM" customClass="VFGButton" customModule="VFGMVA10Foundation">
+                    <rect key="frame" x="0.0" y="558" width="315" height="44"/>
+                    <color key="backgroundColor" name="VFGRedDefaultBackground"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="IYH-6A-89e"/>
+                    </constraints>
+                    <state key="normal" title="Button">
+                        <color key="titleColor" name="VFGWhiteText"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="buttonStyle">
+                            <integer key="value" value="0"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="backgroundStyle">
+                            <integer key="value" value="0"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="onNextAction:" destination="KFz-hg-w82" eventType="touchUpInside" id="HqR-1H-0a2"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="b9L-Cv-I45"/>
+            <color key="backgroundColor" name="VFGWhiteBackgroundTwo"/>
+            <constraints>
+                <constraint firstItem="7zh-Br-BLs" firstAttribute="top" secondItem="KFz-hg-w82" secondAttribute="top" id="5jL-5e-ikI"/>
+                <constraint firstItem="b9L-Cv-I45" firstAttribute="bottom" secondItem="RiM-an-odM" secondAttribute="bottom" constant="65" id="7hz-6o-Nwh"/>
+                <constraint firstItem="9dR-bA-jZv" firstAttribute="top" secondItem="7zh-Br-BLs" secondAttribute="bottom" constant="45" id="VOY-rU-UHa"/>
+                <constraint firstItem="RiM-an-odM" firstAttribute="top" secondItem="9dR-bA-jZv" secondAttribute="bottom" constant="40" id="cdH-mp-X3l"/>
+                <constraint firstItem="9dR-bA-jZv" firstAttribute="leading" secondItem="b9L-Cv-I45" secondAttribute="leading" id="fk3-ei-VP8"/>
+                <constraint firstItem="7zh-Br-BLs" firstAttribute="leading" secondItem="b9L-Cv-I45" secondAttribute="leading" id="grr-Kp-cBe"/>
+                <constraint firstItem="b9L-Cv-I45" firstAttribute="trailing" secondItem="9dR-bA-jZv" secondAttribute="trailing" constant="20" id="iVN-8c-ofd"/>
+                <constraint firstItem="b9L-Cv-I45" firstAttribute="trailing" secondItem="RiM-an-odM" secondAttribute="trailing" constant="20" id="jlq-v5-ahx"/>
+                <constraint firstItem="RiM-an-odM" firstAttribute="leading" secondItem="b9L-Cv-I45" secondAttribute="leading" id="l1A-2b-eCK"/>
+                <constraint firstItem="b9L-Cv-I45" firstAttribute="trailing" secondItem="7zh-Br-BLs" secondAttribute="trailing" constant="104" id="tLQ-Jq-2lI"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="nextButton" destination="RiM-an-odM" id="Kbz-hG-2UK"/>
+                <outlet property="permissionsStackView" destination="9dR-bA-jZv" id="g9A-Lc-LiM"/>
+                <outlet property="titleLabel" destination="7zh-Br-BLs" id="nuF-jT-U0C"/>
+            </connections>
+            <point key="canvasLocation" x="-11130" y="-993"/>
+        </view>
+    </objects>
+    <designables>
+        <designable name="7zh-Br-BLs">
+            <size key="intrinsicContentSize" width="52" height="28"/>
+        </designable>
+        <designable name="RiM-an-odM">
+            <size key="intrinsicContentSize" width="54" height="34"/>
+        </designable>
+    </designables>
+    <resources>
+        <namedColor name="VFGPrimaryText">
+            <color red="0.050980392156862744" green="0.050980392156862744" blue="0.050980392156862744" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="VFGRedDefaultBackground">
+            <color red="0.90196078431372551" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="VFGWhiteBackgroundTwo">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="VFGWhiteText">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

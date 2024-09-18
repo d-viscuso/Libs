@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="VFGCategoryShimmerCollectionCell" id="sBW-RN-ecM" customClass="VFGCategoryShimmerCollectionCell" customModule="VFGMVA10Framework" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="328" height="200"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="328" height="200"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5oz-aS-epe" customClass="VFGShimmerView" customModule="VFGMVA10Foundation">
+                        <rect key="frame" x="0.0" y="0.0" width="328" height="200"/>
+                        <color key="backgroundColor" name="VFGShimmerViewCenter"/>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="c0Q-iS-wz2"/>
+            <constraints>
+                <constraint firstItem="5oz-aS-epe" firstAttribute="leading" secondItem="sBW-RN-ecM" secondAttribute="leading" id="0mJ-bn-Sqe"/>
+                <constraint firstAttribute="trailing" secondItem="5oz-aS-epe" secondAttribute="trailing" id="4P7-gq-8K5"/>
+                <constraint firstAttribute="bottom" secondItem="5oz-aS-epe" secondAttribute="bottom" id="cnN-jz-TZs"/>
+                <constraint firstItem="5oz-aS-epe" firstAttribute="top" secondItem="sBW-RN-ecM" secondAttribute="top" id="yr3-j8-2iO"/>
+            </constraints>
+            <connections>
+                <outletCollection property="shimmerViews" destination="5oz-aS-epe" collectionClass="NSMutableArray" id="xzz-hz-U9z"/>
+            </connections>
+            <point key="canvasLocation" x="-13" y="0.0"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <namedColor name="VFGShimmerViewCenter">
+            <color red="0.87450980392156863" green="0.87450980392156863" blue="0.87450980392156863" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

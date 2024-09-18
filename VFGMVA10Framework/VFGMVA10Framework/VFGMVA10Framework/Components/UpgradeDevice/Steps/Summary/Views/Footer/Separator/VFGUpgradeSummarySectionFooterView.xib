@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="UITableViewHeaderFooterView">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="35"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RuS-9h-afo" userLabel="Separator">
+                    <rect key="frame" x="16" y="34" width="382" height="1"/>
+                    <color key="backgroundColor" name="VFGGreyDividerOne"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="i0w-3z-uoe"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" name="VFGVeryLightGreyBackground"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="RuS-9h-afo" secondAttribute="trailing" constant="16" id="ELi-uR-f98"/>
+                <constraint firstItem="RuS-9h-afo" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="34" id="otp-qY-RnQ"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="RuS-9h-afo" secondAttribute="bottom" id="wBu-tr-EDP"/>
+                <constraint firstItem="RuS-9h-afo" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="zQl-Bk-Ojk"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="137.68115942028987" y="2.6785714285714284"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="VFGGreyDividerOne">
+            <color red="0.92156862745098034" green="0.92156862745098034" blue="0.92156862745098034" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="VFGVeryLightGreyBackground">
+            <color red="0.92156862745098034" green="0.92156862745098034" blue="0.92156862745098034" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="vodafone-bold.ttf">
+            <string>VodafoneRg-Bold</string>
+        </array>
+        <array key="vodafone-regular.ttf">
+            <string>VodafoneRg-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="VFGCountdownView" customModule="VFGMVA10Foundation" customModuleProvider="target">
+            <connections>
+                <outlet property="contentView" destination="iN0-l3-epB" id="CBa-dT-geV"/>
+                <outlet property="daysLabel" destination="5NZ-sa-KhL" id="T26-U6-vTN"/>
+                <outlet property="daysTextLabel" destination="Ygb-a7-Yyz" id="LQd-AP-xaa"/>
+                <outlet property="hoursLabel" destination="VwD-wZ-Cas" id="xbw-x2-2fD"/>
+                <outlet property="hoursTextLabel" destination="0sO-69-WeQ" id="adC-qD-bny"/>
+                <outlet property="minutesLabel" destination="qvp-gA-fAC" id="yS7-tr-lgT"/>
+                <outlet property="minutesTextLabel" destination="tvb-4M-B7r" id="PI0-fQ-MJZ"/>
+                <outlet property="secondsLabel" destination="emR-bk-dwO" id="ves-qF-rxi"/>
+                <outlet property="secondsTextLabel" destination="k4H-Lf-Vgl" id="4tP-0B-VCM"/>
+                <outletCollection property="separatorViews" destination="IN8-Ri-yL9" collectionClass="NSMutableArray" id="JWd-PE-xI6"/>
+                <outletCollection property="separatorViews" destination="5J5-PH-Bov" collectionClass="NSMutableArray" id="595-z4-qlk"/>
+                <outletCollection property="separatorViews" destination="VjA-z4-6FR" collectionClass="NSMutableArray" id="K1c-zB-Yar"/>
+                <outletCollection property="numberLabels" destination="5NZ-sa-KhL" collectionClass="NSMutableArray" id="e4o-9w-pHS"/>
+                <outletCollection property="numberLabels" destination="VwD-wZ-Cas" collectionClass="NSMutableArray" id="2Oh-DW-7Kf"/>
+                <outletCollection property="numberLabels" destination="qvp-gA-fAC" collectionClass="NSMutableArray" id="Jq6-zs-OPM"/>
+                <outletCollection property="numberLabels" destination="emR-bk-dwO" collectionClass="NSMutableArray" id="3XV-GV-9wB"/>
+                <outletCollection property="textLabels" destination="Ygb-a7-Yyz" collectionClass="NSMutableArray" id="Nbl-3C-gpP"/>
+                <outletCollection property="textLabels" destination="0sO-69-WeQ" collectionClass="NSMutableArray" id="8Az-5e-KDI"/>
+                <outletCollection property="textLabels" destination="tvb-4M-B7r" collectionClass="NSMutableArray" id="tlh-yt-x1A"/>
+                <outletCollection property="textLabels" destination="k4H-Lf-Vgl" collectionClass="NSMutableArray" id="ju3-tM-FNv"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="156" height="54"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" spacing="8.5" translatesAutoresizingMaskIntoConstraints="NO" id="Yci-9L-QN7">
+                    <rect key="frame" x="0.0" y="0.0" width="156" height="54"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalCentering" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="oQY-4H-vdW" userLabel="Days Stack View">
+                            <rect key="frame" x="0.0" y="0.0" width="25" height="54"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5NZ-sa-KhL" customClass="VFGLabel" customModule="VFGMVA10Foundation" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="25" height="19"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="19" id="0Sd-Mi-M7e"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="VodafoneRg-Bold" family="Vodafone Rg" pointSize="24"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="days" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ygb-a7-Yyz" customClass="VFGLabel" customModule="VFGMVA10Foundation" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="38" width="25" height="16"/>
+                                    <fontDescription key="fontDescription" name="VodafoneRg-Regular" family="Vodafone Rg" pointSize="14"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                        </stackView>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IN8-Ri-yL9" userLabel="Separator View">
+                            <rect key="frame" x="33.5" y="0.0" width="1" height="54"/>
+                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="1" id="MBL-yf-zNw"/>
+                            </constraints>
+                        </view>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalCentering" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="t40-tC-zhU" userLabel="Hours Stack View">
+                            <rect key="frame" x="43" y="0.0" width="25" height="54"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VwD-wZ-Cas" customClass="VFGLabel" customModule="VFGMVA10Foundation" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="25" height="19"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="19" id="di0-YT-84W"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="VodafoneRg-Bold" family="Vodafone Rg" pointSize="24"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="hrs" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0sO-69-WeQ" customClass="VFGLabel" customModule="VFGMVA10Foundation" customModuleProvider="target">
+                                    <rect key="frame" x="4" y="38" width="17" height="16"/>
+                                    <fontDescription key="fontDescription" name="VodafoneRg-Regular" family="Vodafone Rg" pointSize="14"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                        </stackView>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5J5-PH-Bov" userLabel="Separator View">
+                            <rect key="frame" x="76.5" y="0.0" width="1" height="54"/>
+                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="1" id="yii-02-GL9"/>
+                            </constraints>
+                        </view>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalCentering" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="dgO-Wg-mnK" userLabel="Minutes Stack View">
+                            <rect key="frame" x="86" y="0.0" width="27" height="54"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qvp-gA-fAC" customClass="VFGLabel" customModule="VFGMVA10Foundation" customModuleProvider="target">
+                                    <rect key="frame" x="1" y="0.0" width="25" height="19"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="19" id="M4n-G4-yZt"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="VodafoneRg-Bold" family="Vodafone Rg" pointSize="24"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="mins" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tvb-4M-B7r" customClass="VFGLabel" customModule="VFGMVA10Foundation" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="38" width="27" height="16"/>
+                                    <fontDescription key="fontDescription" name="VodafoneRg-Regular" family="Vodafone Rg" pointSize="14"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                        </stackView>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VjA-z4-6FR" userLabel="Separator View">
+                            <rect key="frame" x="121.5" y="0.0" width="1" height="54"/>
+                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="1" id="3JN-tW-Ci7"/>
+                            </constraints>
+                        </view>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalCentering" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="ajC-RE-L5s" userLabel="Seconds Stack View">
+                            <rect key="frame" x="131" y="0.0" width="25" height="54"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="emR-bk-dwO" customClass="VFGLabel" customModule="VFGMVA10Foundation" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="25" height="19"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="19" id="FbW-e4-gbC"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="VodafoneRg-Bold" family="Vodafone Rg" pointSize="24"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="secs" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k4H-Lf-Vgl" customClass="VFGLabel" customModule="VFGMVA10Foundation" customModuleProvider="target">
+                                    <rect key="frame" x="0.5" y="38" width="24.5" height="16"/>
+                                    <fontDescription key="fontDescription" name="VodafoneRg-Regular" family="Vodafone Rg" pointSize="14"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <constraints>
+                <constraint firstItem="Yci-9L-QN7" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="9SQ-CX-1OG"/>
+                <constraint firstItem="Yci-9L-QN7" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="TAK-wO-4JN"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="137.68115942028987" y="-125.89285714285714"/>
+        </view>
+    </objects>
+    <designables>
+        <designable name="0sO-69-WeQ">
+            <size key="intrinsicContentSize" width="17" height="16"/>
+        </designable>
+        <designable name="5NZ-sa-KhL">
+            <size key="intrinsicContentSize" width="25" height="27"/>
+        </designable>
+        <designable name="VwD-wZ-Cas">
+            <size key="intrinsicContentSize" width="25" height="27"/>
+        </designable>
+        <designable name="Ygb-a7-Yyz">
+            <size key="intrinsicContentSize" width="25" height="16"/>
+        </designable>
+        <designable name="emR-bk-dwO">
+            <size key="intrinsicContentSize" width="25" height="27"/>
+        </designable>
+        <designable name="k4H-Lf-Vgl">
+            <size key="intrinsicContentSize" width="24.5" height="16"/>
+        </designable>
+        <designable name="qvp-gA-fAC">
+            <size key="intrinsicContentSize" width="25" height="27"/>
+        </designable>
+        <designable name="tvb-4M-B7r">
+            <size key="intrinsicContentSize" width="27" height="16"/>
+        </designable>
+    </designables>
+</document>

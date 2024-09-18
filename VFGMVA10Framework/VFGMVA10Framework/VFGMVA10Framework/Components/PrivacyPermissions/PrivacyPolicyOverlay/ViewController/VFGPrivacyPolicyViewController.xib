@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="vodafone-bold.ttf">
+            <string>VodafoneRg-Bold</string>
+        </array>
+        <array key="vodafone-regular.ttf">
+            <string>VodafoneRg-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="VFGPrivacyPolicyViewController" customModule="VFGMVA10Framework" customModuleProvider="target">
+            <connections>
+                <outlet property="backButton" destination="smR-b0-47t" id="T9j-iI-2ba"/>
+                <outlet property="headerTitleLabel" destination="QvM-OA-ZU5" id="cdd-Xv-K6c"/>
+                <outlet property="htmlTextView" destination="toa-ny-LBO" id="HDe-Dh-5nC"/>
+                <outlet property="htmlTextViewHeightConstraint" destination="Wjb-KB-VGy" id="KWk-Kg-eQz"/>
+                <outlet property="titleLabel" destination="udY-EP-wtJ" id="ozC-Tf-vJq"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2RZ-2i-R04">
+                    <rect key="frame" x="0.0" y="44" width="414" height="852"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GJH-VV-WdY">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="445"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="kKi-vZ-FdL">
+                                    <rect key="frame" x="16" y="0.0" width="382" height="429"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uzj-7z-7Eo" userLabel="closeView">
+                                            <rect key="frame" x="0.0" y="0.0" width="382" height="41"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="smR-b0-47t" customClass="VFGButton">
+                                                    <rect key="frame" x="0.0" y="16" width="25" height="25"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="25" id="0K6-m2-27F"/>
+                                                        <constraint firstAttribute="width" constant="25" id="TzI-rY-r6t"/>
+                                                    </constraints>
+                                                    <state key="normal" image="icArrowLeft"/>
+                                                    <connections>
+                                                        <action selector="backButtonDidPressed:" destination="-1" eventType="touchUpInside" id="zUk-7Z-8rY"/>
+                                                    </connections>
+                                                </button>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Privacy Policy" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QvM-OA-ZU5" customClass="VFGLabel" customModule="VFGMVA10Framework" customModuleProvider="target">
+                                                    <rect key="frame" x="33" y="10" width="341" height="37"/>
+                                                    <fontDescription key="fontDescription" name="VodafoneRg-Regular" family="Vodafone Rg" pointSize="20"/>
+                                                    <color key="textColor" name="VFGPrimaryText"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstItem="QvM-OA-ZU5" firstAttribute="leading" secondItem="smR-b0-47t" secondAttribute="trailing" constant="8" id="6OQ-b8-PpM"/>
+                                                <constraint firstItem="smR-b0-47t" firstAttribute="top" secondItem="uzj-7z-7Eo" secondAttribute="top" constant="16" id="PO4-0M-rTf"/>
+                                                <constraint firstItem="QvM-OA-ZU5" firstAttribute="centerY" secondItem="smR-b0-47t" secondAttribute="centerY" id="Rv9-YY-uQo"/>
+                                                <constraint firstItem="QvM-OA-ZU5" firstAttribute="top" secondItem="uzj-7z-7Eo" secondAttribute="top" constant="10" id="ffq-e1-zc0"/>
+                                                <constraint firstAttribute="bottom" secondItem="smR-b0-47t" secondAttribute="bottom" id="p3g-BS-1qi"/>
+                                                <constraint firstAttribute="trailing" secondItem="QvM-OA-ZU5" secondAttribute="trailing" constant="8" id="tEq-mq-cXM"/>
+                                                <constraint firstAttribute="leading" secondItem="smR-b0-47t" secondAttribute="leading" id="zPe-V7-FZc"/>
+                                            </constraints>
+                                        </view>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Some important updates on your privacy settings" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="udY-EP-wtJ" userLabel="TitleLabel" customClass="VFGLabel" customModule="VFGMVA10Framework" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="57" width="382" height="56"/>
+                                            <fontDescription key="fontDescription" name="VodafoneRg-Bold" family="Vodafone Rg" pointSize="25"/>
+                                            <color key="textColor" name="VFGPrimaryText"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="toa-ny-LBO">
+                                            <rect key="frame" x="0.0" y="129" width="382" height="300"/>
+                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="300" id="Wjb-KB-VGy"/>
+                                            </constraints>
+                                            <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                            <color key="textColor" systemColor="labelColor"/>
+                                            <fontDescription key="fontDescription" name="VodafoneRg-Regular" family="Vodafone Rg" pointSize="16"/>
+                                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                        </textView>
+                                    </subviews>
+                                </stackView>
+                            </subviews>
+                            <color key="backgroundColor" name="VFGLightGreyBackground"/>
+                            <constraints>
+                                <constraint firstItem="kKi-vZ-FdL" firstAttribute="leading" secondItem="GJH-VV-WdY" secondAttribute="leading" constant="16" id="9j2-7g-vI1"/>
+                                <constraint firstItem="kKi-vZ-FdL" firstAttribute="top" secondItem="GJH-VV-WdY" secondAttribute="top" id="l4V-4d-cR0"/>
+                                <constraint firstAttribute="bottom" secondItem="kKi-vZ-FdL" secondAttribute="bottom" constant="16" id="tlX-vX-B3T"/>
+                                <constraint firstAttribute="trailing" secondItem="kKi-vZ-FdL" secondAttribute="trailing" constant="16" id="yRq-1N-4km"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="GJH-VV-WdY" firstAttribute="width" secondItem="2RZ-2i-R04" secondAttribute="width" id="8a3-Ed-RJy"/>
+                        <constraint firstItem="GJH-VV-WdY" firstAttribute="top" secondItem="2RZ-2i-R04" secondAttribute="top" id="Fg7-KJ-S5F"/>
+                        <constraint firstAttribute="trailing" secondItem="GJH-VV-WdY" secondAttribute="trailing" id="GKi-Bh-QGX"/>
+                        <constraint firstItem="GJH-VV-WdY" firstAttribute="leading" secondItem="2RZ-2i-R04" secondAttribute="leading" id="SfA-Kb-XfA"/>
+                        <constraint firstAttribute="bottom" secondItem="GJH-VV-WdY" secondAttribute="bottom" id="cFO-dN-cM8"/>
+                    </constraints>
+                    <viewLayoutGuide key="contentLayoutGuide" id="oFL-dM-u30"/>
+                    <viewLayoutGuide key="frameLayoutGuide" id="D7p-hm-6mT"/>
+                </scrollView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" name="VFGLightGreyBackground"/>
+            <constraints>
+                <constraint firstItem="2RZ-2i-R04" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="6NI-Nq-Gpg"/>
+                <constraint firstAttribute="bottom" secondItem="2RZ-2i-R04" secondAttribute="bottom" id="7A8-la-t6t"/>
+                <constraint firstItem="2RZ-2i-R04" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" id="OeA-nx-3lC"/>
+                <constraint firstItem="2RZ-2i-R04" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="jfh-ZG-JkJ"/>
+                <constraint firstItem="2RZ-2i-R04" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="xGc-RA-tWb"/>
+            </constraints>
+            <point key="canvasLocation" x="137.68115942028987" y="101.78571428571428"/>
+        </view>
+    </objects>
+    <designables>
+        <designable name="QvM-OA-ZU5">
+            <size key="intrinsicContentSize" width="106.5" height="22.5"/>
+        </designable>
+        <designable name="smR-b0-47t">
+            <size key="intrinsicContentSize" width="24" height="24"/>
+        </designable>
+        <designable name="udY-EP-wtJ">
+            <size key="intrinsicContentSize" width="518" height="28"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="icArrowLeft" width="24" height="24"/>
+        <namedColor name="VFGLightGreyBackground">
+            <color red="0.95686274509803926" green="0.95686274509803926" blue="0.95686274509803926" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="VFGPrimaryText">
+            <color red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

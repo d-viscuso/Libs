@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="VFGErrorView" customModule="VFGMVA10Foundation" customModuleProvider="target">
+            <connections>
+                <outlet property="contentView" destination="iN0-l3-epB" id="5sl-5J-880"/>
+                <outlet property="errorImageView" destination="mEw-Yv-Uwf" id="2xz-Us-f9c"/>
+                <outlet property="errorMessageLabel" destination="fgZ-oY-Swb" id="8ia-uz-Zsl"/>
+                <outlet property="imageViewHeight" destination="vHU-N4-q2z" id="3dM-qP-0Yq"/>
+                <outlet property="imageViewTopSpace" destination="Wov-RI-b22" id="XQQ-74-kg8"/>
+                <outlet property="imageViewWidth" destination="XnJ-OP-P1A" id="9R0-Mq-2W0"/>
+                <outlet property="refreshImage" destination="qVM-Ng-vyi" id="zKO-qt-GtM"/>
+                <outlet property="stackBottomSpace" destination="l4f-yP-j0N" id="lhF-CM-3Vw"/>
+                <outlet property="tryAgainButton" destination="AWU-DG-ndO" id="tgI-HW-kbf"/>
+                <outlet property="tryAgainLabel" destination="FnG-aC-eui" id="8wd-zd-L8Z"/>
+                <outlet property="tryAgainStackView" destination="sfi-FC-6bR" id="i9Q-o3-XDc"/>
+                <outlet property="tryAgainTopSpace" destination="IcF-1V-Pem" id="xSc-BE-mPE"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="569" height="235"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" image="icWarningHiLightTheme" translatesAutoresizingMaskIntoConstraints="NO" id="mEw-Yv-Uwf" customClass="VFGImageView" customModule="VFGMVA10Foundation" customModuleProvider="target">
+                    <rect key="frame" x="238.5" y="0.0" width="92" height="92"/>
+                    <constraints>
+                        <constraint firstAttribute="width" priority="999" constant="92" id="XnJ-OP-P1A"/>
+                        <constraint firstAttribute="height" priority="999" constant="92" id="vHU-N4-q2z"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="imageName" value="icWarningHiLightTheme"/>
+                    </userDefinedRuntimeAttributes>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fgZ-oY-Swb" customClass="VFGLabel" customModule="VFGMVA10Foundation" customModuleProvider="target">
+                    <rect key="frame" x="25" y="103.5" width="519" height="0.0"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" name="VFGSecondaryText"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="sfi-FC-6bR">
+                    <rect key="frame" x="235.5" y="135.5" width="98.5" height="99.5"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="752" text="Try again" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FnG-aC-eui" customClass="VFGLabel" customModule="VFGMVA10Foundation" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="39.5" width="69.5" height="20.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" name="VFGRedOrangeTextMva12"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icRefreshRed" translatesAutoresizingMaskIntoConstraints="NO" id="qVM-Ng-vyi" customClass="VFGImageView" customModule="VFGMVA10Foundation" customModuleProvider="target">
+                            <rect key="frame" x="73.5" y="37" width="25" height="25"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="25" id="NPW-zv-9Rh"/>
+                                <constraint firstAttribute="width" constant="25" id="kb0-dh-TGJ"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="imageName" value="icRefreshRed"/>
+                            </userDefinedRuntimeAttributes>
+                        </imageView>
+                    </subviews>
+                </stackView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AWU-DG-ndO" customClass="VFGButton" customModule="VFGMVA10Foundation" customModuleProvider="target">
+                    <rect key="frame" x="235.5" y="135.5" width="98.5" height="99.5"/>
+                    <state key="normal">
+                        <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="tryAgainPressed:" destination="-1" eventType="touchUpInside" id="i6H-2p-zih"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="fgZ-oY-Swb" firstAttribute="top" secondItem="mEw-Yv-Uwf" secondAttribute="bottom" constant="11.300000000000001" id="8CP-D3-qFz"/>
+                <constraint firstItem="AWU-DG-ndO" firstAttribute="centerX" secondItem="sfi-FC-6bR" secondAttribute="centerX" id="Boe-XB-dFc"/>
+                <constraint firstAttribute="trailing" secondItem="fgZ-oY-Swb" secondAttribute="trailing" constant="25" id="E3N-Fz-vN1"/>
+                <constraint firstItem="mEw-Yv-Uwf" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="HTS-Q1-9MK"/>
+                <constraint firstItem="sfi-FC-6bR" firstAttribute="top" secondItem="fgZ-oY-Swb" secondAttribute="bottom" priority="999" constant="32" id="IcF-1V-Pem"/>
+                <constraint firstItem="mEw-Yv-Uwf" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Wov-RI-b22"/>
+                <constraint firstItem="fgZ-oY-Swb" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="25" id="XBz-th-W7a"/>
+                <constraint firstItem="AWU-DG-ndO" firstAttribute="height" secondItem="sfi-FC-6bR" secondAttribute="height" id="hYm-pX-PpK"/>
+                <constraint firstAttribute="bottom" secondItem="sfi-FC-6bR" secondAttribute="bottom" id="l4f-yP-j0N"/>
+                <constraint firstItem="AWU-DG-ndO" firstAttribute="width" secondItem="sfi-FC-6bR" secondAttribute="width" id="r8y-qN-ECv"/>
+                <constraint firstItem="AWU-DG-ndO" firstAttribute="centerY" secondItem="sfi-FC-6bR" secondAttribute="centerY" id="ueC-LQ-XKh"/>
+                <constraint firstItem="sfi-FC-6bR" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="zXd-8E-7JY"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="177.536231884058" y="9.7098214285714288"/>
+        </view>
+    </objects>
+    <designables>
+        <designable name="AWU-DG-ndO">
+            <size key="intrinsicContentSize" width="30" height="30"/>
+        </designable>
+        <designable name="mEw-Yv-Uwf">
+            <size key="intrinsicContentSize" width="125" height="125"/>
+        </designable>
+        <designable name="qVM-Ng-vyi">
+            <size key="intrinsicContentSize" width="24" height="24"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="icRefreshRed" width="24" height="24"/>
+        <image name="icWarningHiLightTheme" width="125" height="125"/>
+        <namedColor name="VFGRedOrangeTextMva12">
+            <color red="0.74099999666213989" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="VFGSecondaryText">
+            <color red="0.14901960784313725" green="0.14901960784313725" blue="0.14901960784313725" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

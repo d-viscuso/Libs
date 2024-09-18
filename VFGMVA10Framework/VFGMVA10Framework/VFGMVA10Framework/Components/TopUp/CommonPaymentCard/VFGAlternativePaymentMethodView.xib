@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="VFGAlternativePaymentMethodView" customModule="VFGMVA10Framework" customModuleProvider="target">
+            <connections>
+                <outlet property="alternativePaymentMethodCardView" destination="WSQ-rL-4wW" id="yFi-0g-4nM"/>
+                <outlet property="radioButton" destination="fF5-QR-q3w" id="aUs-oF-sgi"/>
+                <outlet property="title" destination="3aU-ry-qXY" id="pi7-NG-8EK"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SLU-qy-CLL">
+                    <rect key="frame" x="20" y="54" width="374" height="1"/>
+                    <color key="backgroundColor" name="VFGGreyDividerOne"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="WT2-dA-u21"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fF5-QR-q3w" customClass="VFGRadioButton" customModule="VFGMVA10Foundation">
+                    <rect key="frame" x="20" y="75" width="24" height="24"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="24" id="JOK-Xq-gJn"/>
+                        <constraint firstAttribute="width" constant="24" id="mqx-5V-fzg"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="buttonStyle">
+                            <integer key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="string" keyPath="imageName" value="definition_radio_button_off"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="radioButton:" destination="-1" eventType="touchUpInside" id="Fv6-EW-jAh"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3aU-ry-qXY" customClass="VFGLabel">
+                    <rect key="frame" x="49" y="77" width="41.5" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="jnY-JW-cYM">
+                    <rect key="frame" x="0.0" y="99" width="414" height="797"/>
+                    <subviews>
+                        <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WSQ-rL-4wW">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="0.0"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </view>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="SLU-qy-CLL" secondAttribute="trailing" constant="20" id="1Y1-wa-Kml"/>
+                <constraint firstItem="SLU-qy-CLL" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="10" id="63J-hU-OXn"/>
+                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="3aU-ry-qXY" secondAttribute="trailing" constant="10" id="9i3-9K-fdl"/>
+                <constraint firstItem="3aU-ry-qXY" firstAttribute="centerY" secondItem="fF5-QR-q3w" secondAttribute="centerY" id="Qa2-K8-BfX"/>
+                <constraint firstItem="fF5-QR-q3w" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="TUF-LZ-dTE"/>
+                <constraint firstAttribute="trailing" secondItem="jnY-JW-cYM" secondAttribute="trailing" id="X3r-in-8M4"/>
+                <constraint firstItem="jnY-JW-cYM" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Yww-Ao-j03"/>
+                <constraint firstItem="fF5-QR-q3w" firstAttribute="top" secondItem="SLU-qy-CLL" secondAttribute="bottom" constant="20" id="cHU-pO-5k6"/>
+                <constraint firstItem="SLU-qy-CLL" firstAttribute="leading" secondItem="fF5-QR-q3w" secondAttribute="leading" id="gzQ-5n-LqR"/>
+                <constraint firstAttribute="bottom" secondItem="jnY-JW-cYM" secondAttribute="bottom" id="hd3-Nq-xjK"/>
+                <constraint firstItem="3aU-ry-qXY" firstAttribute="leading" secondItem="fF5-QR-q3w" secondAttribute="trailing" constant="5" id="oEg-hz-3zo"/>
+                <constraint firstItem="jnY-JW-cYM" firstAttribute="top" secondItem="fF5-QR-q3w" secondAttribute="bottom" id="vCm-87-xbW"/>
+            </constraints>
+            <point key="canvasLocation" x="-1" y="90"/>
+        </view>
+    </objects>
+    <designables>
+        <designable name="3aU-ry-qXY">
+            <size key="intrinsicContentSize" width="41.5" height="20.5"/>
+        </designable>
+        <designable name="fF5-QR-q3w">
+            <size key="intrinsicContentSize" width="30" height="34"/>
+        </designable>
+    </designables>
+    <resources>
+        <namedColor name="VFGGreyDividerOne">
+            <color red="0.92156862745098034" green="0.92156862745098034" blue="0.92156862745098034" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

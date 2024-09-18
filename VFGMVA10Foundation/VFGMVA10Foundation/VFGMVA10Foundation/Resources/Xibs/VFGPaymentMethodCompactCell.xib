@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="vodafone-regular.ttf">
+            <string>VodafoneRg-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="gTV-IL-0wX" customClass="VFGPaymentMethodCompactCell" customModule="VFGMVA10Foundation" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="200" height="118"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="200" height="118"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kv5-Q7-ehK">
+                        <rect key="frame" x="0.0" y="0.0" width="200" height="118"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalCentering" translatesAutoresizingMaskIntoConstraints="NO" id="yAR-31-kTU">
+                                <rect key="frame" x="10" y="12" width="180" height="94"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1ur-9d-214">
+                                        <rect key="frame" x="0.0" y="0.0" width="180" height="40"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fr7-JC-T2m" customClass="VFGButton" customModule="VFGMVA10Foundation" customModuleProvider="target">
+                                                <rect key="frame" x="155" y="7.5" width="25" height="25"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="25" id="ITj-F6-GjP"/>
+                                                    <constraint firstAttribute="width" constant="25" id="pqV-fQ-RWn"/>
+                                                </constraints>
+                                                <color key="tintColor" name="VFGGreyTint"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="" imagePadding="0.0">
+                                                    <imageReference key="image" image="trash" catalog="system" symbolScale="large"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="deleteCard:" destination="gTV-IL-0wX" eventType="touchUpInside" id="QRm-zI-FLk"/>
+                                                </connections>
+                                            </button>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hmZ-GB-VYQ" customClass="VFGImageView" customModule="VFGMVA10Foundation" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                                                <accessibility key="accessibilityConfiguration">
+                                                    <bool key="isElement" value="YES"/>
+                                                </accessibility>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="262-kD-erM"/>
+                                                    <constraint firstAttribute="width" constant="40" id="b6T-uZ-Tmv"/>
+                                                </constraints>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="hmZ-GB-VYQ" firstAttribute="top" secondItem="1ur-9d-214" secondAttribute="top" id="JGg-tA-m98"/>
+                                            <constraint firstAttribute="trailing" secondItem="Fr7-JC-T2m" secondAttribute="trailing" id="bta-9R-aI6"/>
+                                            <constraint firstAttribute="height" constant="40" id="jWs-SC-md6"/>
+                                            <constraint firstItem="Fr7-JC-T2m" firstAttribute="centerY" secondItem="hmZ-GB-VYQ" secondAttribute="centerY" id="mSz-T9-uip"/>
+                                            <constraint firstItem="hmZ-GB-VYQ" firstAttribute="leading" secondItem="1ur-9d-214" secondAttribute="leading" id="oaG-fk-vpQ"/>
+                                            <constraint firstItem="Fr7-JC-T2m" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="hmZ-GB-VYQ" secondAttribute="trailing" constant="16" id="xwa-fA-YKM"/>
+                                        </constraints>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="justified" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="avY-Ys-nY8" customClass="VFGLabel" customModule="VFGMVA10Foundation" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="48" width="180" height="28"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="28" id="1iA-ap-0tb"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="VodafoneRg-Regular" family="Vodafone Rg" pointSize="18.700000762939453"/>
+                                        <color key="textColor" name="VFGPrimaryText"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="*****99" textAlignment="justified" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hZm-S1-pwm" customClass="VFGLabel" customModule="VFGMVA10Foundation" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="76" width="180" height="18"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="18" id="I24-3v-z1R"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="VodafoneRg-Regular" family="Vodafone Rg" pointSize="14.399999618530273"/>
+                                        <color key="textColor" name="VFGSecondaryText"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="hZm-S1-pwm" firstAttribute="top" secondItem="avY-Ys-nY8" secondAttribute="bottom" id="8g9-GZ-lTY"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="yAR-31-kTU" secondAttribute="bottom" constant="12" id="2fi-J1-qpu"/>
+                            <constraint firstItem="yAR-31-kTU" firstAttribute="centerY" secondItem="Kv5-Q7-ehK" secondAttribute="centerY" id="G9W-ca-zWA"/>
+                            <constraint firstItem="yAR-31-kTU" firstAttribute="leading" secondItem="Kv5-Q7-ehK" secondAttribute="leading" constant="10" id="IQS-wH-6Bt"/>
+                            <constraint firstItem="yAR-31-kTU" firstAttribute="top" secondItem="Kv5-Q7-ehK" secondAttribute="top" constant="12" id="gOX-hg-XKD"/>
+                            <constraint firstAttribute="trailing" secondItem="yAR-31-kTU" secondAttribute="trailing" constant="10" id="pgE-Nr-w0u"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Kv5-Q7-ehK" secondAttribute="trailing" id="7de-QI-sdv"/>
+                <constraint firstItem="Kv5-Q7-ehK" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="cN1-kg-oaw"/>
+                <constraint firstAttribute="bottom" secondItem="Kv5-Q7-ehK" secondAttribute="bottom" id="fMs-ST-GKF"/>
+                <constraint firstItem="Kv5-Q7-ehK" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="ulY-zg-uEa"/>
+            </constraints>
+            <size key="customSize" width="297" height="126"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                    <real key="value" value="6.2000000000000002"/>
+                </userDefinedRuntimeAttribute>
+                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                    <real key="value" value="1"/>
+                </userDefinedRuntimeAttribute>
+                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                    <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <connections>
+                <outlet property="cardImageView" destination="hmZ-GB-VYQ" id="M7e-Xn-ipE"/>
+                <outlet property="cardImageViewHeightConstraint" destination="262-kD-erM" id="taf-Zb-x90"/>
+                <outlet property="cardImageViewWidthConstraint" destination="b6T-uZ-Tmv" id="eNA-i0-ge8"/>
+                <outlet property="cardNameLabel" destination="avY-Ys-nY8" id="XKj-j9-dF5"/>
+                <outlet property="cardNumberLabel" destination="hZm-S1-pwm" id="de9-yM-TT4"/>
+                <outlet property="deleteButton" destination="Fr7-JC-T2m" id="tpj-eX-Pbd"/>
+            </connections>
+            <point key="canvasLocation" x="118.84057971014494" y="155.35714285714286"/>
+        </collectionViewCell>
+    </objects>
+    <designables>
+        <designable name="Fr7-JC-T2m">
+            <size key="intrinsicContentSize" width="43" height="31"/>
+        </designable>
+        <designable name="avY-Ys-nY8">
+            <size key="intrinsicContentSize" width="40.5" height="21"/>
+        </designable>
+        <designable name="hZm-S1-pwm">
+            <size key="intrinsicContentSize" width="44" height="16.5"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="trash" catalog="system" width="121" height="128"/>
+        <namedColor name="VFGGreyTint">
+            <color red="0.20000000298023224" green="0.20000000298023224" blue="0.20000000298023224" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="VFGPrimaryText">
+            <color red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="VFGSecondaryText">
+            <color red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
